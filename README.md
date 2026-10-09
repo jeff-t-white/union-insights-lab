@@ -43,4 +43,15 @@ Only commit information approved for the repository’s audience. Frontend files
 
 ## Deployment
 
-This scaffold is local and has not been published. Deploy `dist/` to a static host when ready. Vite uses relative asset paths so the build can also live under a repository subpath.
+The GitHub Pages deployment is defined in `.github/workflows/deploy.yml`. It installs dependencies, checks TypeScript, builds the site, and publishes only the browser-ready `dist/` folder whenever you push to `main`.
+
+One-time setup on GitHub:
+
+1. Open the repository's **Settings → Pages**.
+2. Change **Source** from **Deploy from a branch** to **GitHub Actions**.
+3. Commit and push the deployment workflow and Vite configuration changes.
+4. Watch **Actions → Deploy website to GitHub Pages** for a successful run, then open https://jeff-t-white.github.io/union-insights-lab/.
+
+If the files were pushed before changing the Pages source, open that workflow under **Actions**, choose **Run workflow**, and run it on `main`.
+
+Publishing directly from the repository root does not build the React/TypeScript source; it can report a successful deployment while showing a blank page. The workflow supplies the missing build step. Vite's production asset base is `/union-insights-lab/`, while local development stays at `/`. If the repository name or hosting path changes, update `vite.config.ts` accordingly. You do not need to commit `dist/`.
