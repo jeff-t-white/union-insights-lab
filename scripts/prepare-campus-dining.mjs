@@ -1,9 +1,11 @@
 import { readFile, writeFile } from 'node:fs/promises';
 const read = async (name) => JSON.parse(await readFile(`src/examples/campus-map/${name}`, 'utf8'));
-const [union, points, source, mobile] = await Promise.all(['dining-buildings.json', 'campus-dining-points.json', 'buildings-source.json', 'mobile-ordering.json'].map(read));
+const [union, points, source, mobile, additional] = await Promise.all(['dining-buildings.json', 'campus-dining-points.json', 'buildings-source.json', 'mobile-ordering.json', 'additional-dining-points.json'].map(read));
 // Reviewed host-building matches, not nearest-building guesses. Each pair is
 // [published map name, earlier Union outlet name] when those names differ.
+const excludedNames = new Set(['Wisconsin Union Catering', 'Pasta Pronto']);
 const groups = {
+  'Levy Hall': ['Hosto'],
   'Memorial Union': [['Der Rathskeller','Rathskeller'], 'Der Stiftskeller', 'Strada', 'Carte', ['Peet’s Coffee','Peets Coffee'], ['Daily Scoop at Memorial Union','Daily Scoop'], ['Badger Market at Memorial Union','Badger Market'], 'Lakeview Lounge', ['Brat Stand','The Brat Stand'], 'BBQ Stand'],
   'Union South': [['The Sett Pub','Sett Pub'], ['Sett Rec','Sett Recreation'], ['Prairie Fire Coffeehouse','Prairie Fire'], 'Naan Stop South', ['Daily Scoop at Union South','Daily Scoop'], 'South Cantina', 'Ginger Root', ['Badger Market at Union South','Badger Market']],
   'Morgridge Hall': ['Ground Truth'], 'Signe Skott Cooper Hall': ['Revive'],
@@ -16,6 +18,7 @@ const groups = {
   'Health Sciences Learning Center': [['Badger Market at Health Sciences Learning Center','Badger Market']],
   'Nancy Nicholas Hall': [['Badger Market at School of Human Ecology',"Badger Market Robin's Nest"]],
   'Fluno Center': [['Fluno Center Executive Dining Room','Oros Executive Dining Room'], 'Smitty’s Study Pub'],
+  'Veterinary Medicine North': [['Badger Market at Veterinary Medicine','Badger Market Veterinary Medicine']],
   'Chazen Museum of Art': [['Chazen Café','Chazen Cafe']],
   'Carson Gulley Center': ['Carson’s Market'],
   'Dejope Residence Hall': ['Four Lakes Market', 'Flamingo Run at Four Lakes Market', 'The Bean & Creamery at Four Lakes Market'],
@@ -25,11 +28,18 @@ const groups = {
   'Bakke Recreation & Wellbeing Center': ['Shake Smart'],
   'Smith Residence Hall': ['Starbucks at Smith'],
   'Babcock Hall': ['Babcock Hall Dairy Store'],
-  'Wisconsin Institute for Discovery': ['Aldo’s Cafe', 'Steenbock’s on Orchard'],
+  'Wisconsin Institute for Discovery': ['Pedone Pinsa', 'Aldo’s Cafe', 'Steenbock’s on Orchard'],
   'UW Health University Hospital': ['Four Lakes Café (UW Hospital Cafeteria)', 'Java Coast', 'Mendota Market'],
 };
-const buildings = union.buildings.map((building) => ({ ...building, outlets: building.outlets.map((outlet) => ({ ...outlet, provider: 'union', locationUrl: outlet.sourceUrl })) }));
-const locations = structuredClone(points.features);
+const buildings = union.buildings.map((building) => ({ ...building, outlets: building.outlets.filter((outlet) => !excludedNames.has(outlet.name)).map((outlet) => ({ ...outlet, provider: 'union', locationUrl: outlet.sourceUrl })) })).filter((building) => building.outlets.length);
+// Keep staff-supplied coordinates separate from the published reference exports.
+// Supplemental coordinates win if a future source refresh includes the same name.
+const mergedPoints = new Map([...points.features, ...additional.features].map((point) => [point.properties.name, point]));
+const locations = structuredClone([...mergedPoints.values()].filter((point) => !excludedNames.has(point.properties.name)));
+for (const location of locations) {
+  const [lon, lat] = location.geometry.coordinates;
+  if (location.geometry.coordinates.length !== 2 || !Number.isFinite(lon) || !Number.isFinite(lat) || lon < -89.5 || lon > -89.3 || lat < 43 || lat > 43.2) throw new Error(`Invalid campus coordinates: ${location.properties.name}`);
+}
 for (const [buildingName, entries] of Object.entries(groups)) {
   let building = buildings.find((item) => item.name === buildingName);
   if (!building) {
@@ -56,7 +66,7 @@ for (const [buildingName, entries] of Object.entries(groups)) {
     outlet.locationUrl = feature.properties.locationUrl;
   }
 }
-// Catering is a campus-wide service: preserve its authored point without guessing a host building.
+// Keep unmatched source records explicit rather than guessing host buildings.
 for (const location of locations) {
   if (!('buildingId' in location.properties)) Object.assign(location.properties, { sourceName: location.properties.name, buildingId: null, buildingName: null, logoPath: null, orderUrl: null });
 }

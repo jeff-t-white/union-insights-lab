@@ -1,5 +1,6 @@
-import { useLayoutEffect, useRef } from 'react';
-import { Map, setWorkerUrl, type GeoJSONSourceSpecification } from 'maplibre-gl';
+import { useLayoutEffect, useRef, type RefObject } from 'react';
+import { flushSync } from 'react-dom';
+import { Map, NavigationControl, FullscreenControl, GeolocateControl, setWorkerUrl, type GeoJSONSourceSpecification } from 'maplibre-gl';
 import buildingLabels from './building-labels.json';
 import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 import 'maplibre-gl/dist/maplibre-gl.css';
@@ -7,14 +8,19 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 setWorkerUrl(workerUrl);
 
 // Keep the basemap separate from React's dining overlays. Both use flat Mercator.
-export function QuietBasemap({ center, zoom, width, height, onError }: {
-  center: [number, number]; zoom: number; width: number; height: number; onError: () => void;
+export function QuietBasemap({ center, zoom, width, height, shell, onReady, onViewChange, onMovementChange, onError }: {
+  center: [number, number]; zoom: number; width: number; height: number;
+  shell: RefObject<HTMLDivElement | null>;
+  onReady: (map: Map, overlayRoot: HTMLElement) => void;
+  onViewChange: (center: [number, number], zoom: number) => void;
+  onMovementChange: (moving: boolean) => void;
+  onError: () => void;
 }) {
   const element = useRef<HTMLDivElement>(null);
   const map = useRef<Map | null>(null);
   const initialView = useRef({ center, zoom });
-  const errorHandler = useRef(onError);
-  errorHandler.current = onError;
+  const callbacks = useRef({ onReady, onViewChange, onMovementChange, onError });
+  callbacks.current = { onReady, onViewChange, onMovementChange, onError };
 
   useLayoutEffect(() => {
     if (!element.current) return;
@@ -26,18 +32,38 @@ export function QuietBasemap({ center, zoom, width, height, onError }: {
         center: initialView.current.center,
         // MapLibre uses a 512px world tile; our D3 projection uses 256px.
         zoom: initialView.current.zoom - 1,
-        interactive: false,
+        interactive: true,
+        cooperativeGestures: true,
+        dragRotate: false,
+        pitchWithRotate: false,
+        touchPitch: false,
+        minZoom: 11,
+        maxZoom: 17,
+        clickTolerance: 5,
         attributionControl: false,
         renderWorldCopies: false,
         maxPitch: 0,
         fadeDuration: 0,
       });
     } catch {
-      errorHandler.current();
+      callbacks.current.onError();
       return;
     }
     map.current = instance;
-    instance.on('error', () => errorHandler.current());
+    instance.on('error', () => callbacks.current.onError());
+    instance.touchZoomRotate.disableRotation();
+    instance.keyboard.disableRotation();
+    instance.addControl(new FullscreenControl({ container: shell.current ?? element.current.closest<HTMLElement>('.map-shell') ?? undefined }), 'top-right');
+    instance.addControl(new NavigationControl({ showCompass: false }), 'top-right');
+    instance.addControl(new GeolocateControl({ positionOptions: { enableHighAccuracy: true }, trackUserLocation: true, fitBoundsOptions: { maxZoom: 17 } }), 'top-right');
+    instance.on('movestart', () => callbacks.current.onMovementChange(true));
+    instance.on('moveend', () => callbacks.current.onMovementChange(false));
+    // Sync the React overlays to the camera actually drawn this frame, including inertia.
+    instance.on('render', () => {
+      const position = instance.getCenter();
+      flushSync(() => callbacks.current.onViewChange([position.lng, position.lat], instance.getZoom() + 1));
+    });
+    callbacks.current.onReady(instance, instance.getCanvasContainer());
     instance.on('style.load', () => {
       const contextLabels = new Set(['water_name_point_label', 'water_name_line_label', 'highway-name-minor', 'highway-name-major']);
       for (const layer of instance.getStyle().layers) {
@@ -66,10 +92,8 @@ export function QuietBasemap({ center, zoom, width, height, onError }: {
     const instance = map.current;
     if (!instance || !width || !height) return;
     instance.resize();
-    instance.jumpTo({ center, zoom: zoom - 1, bearing: 0, pitch: 0 });
-    // Draw before the browser paints the updated React markers, preventing drag lag.
-    instance.redraw();
-  }, [center, zoom, width, height]);
 
-  return <div ref={element} className="quiet-basemap" aria-hidden="true" />;
+  }, [width, height]);
+
+  return <div ref={element} className="quiet-basemap" aria-label="Interactive campus map" />;
 }

@@ -1,0 +1,62 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.42115720260753,
+          43.07573027983368
+        ]
+      },
+      "properties": {
+        "name": "Badger Market at Veterinary Medicine",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/vetmed",
+        "sourceUrl": null,
+        "coordinateMeaning": "Coordinates provided by Wisconsin Union staff on 2026-10-09; latitude 43.07573027983368, longitude -89.42115720260753.",
+        "coordinateSource": "User-provided coordinates",
+        "checked": "2026-10-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40862981444856,
+          43.072935570998034
+        ]
+      },
+      "properties": {
+        "name": "Pedone Pinsa",
+        "provider": "union",
+        "locationUrl": "https://weborder.transactcampus.com/230/2466",
+        "sourceUrl": null,
+        "coordinateMeaning": "Coordinates provided by Wisconsin Union staff on 2026-10-09; latitude 43.072935570998034, longitude -89.40862981444856.",
+        "coordinateSource": "User-provided coordinates",
+        "checked": "2026-10-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40166166766582,
+          43.071962619479805
+        ]
+      },
+      "properties": {
+        "name": "Hosto",
+        "provider": "union",
+        "locationUrl": "https://weborder.transactcampus.com/230/2465",
+        "sourceUrl": null,
+        "coordinateMeaning": "Coordinates provided by Wisconsin Union staff on 2026-10-09; latitude 43.071962619479805, longitude -89.40166166766582.",
+        "coordinateSource": "User-provided coordinates",
+        "checked": "2026-10-09"
+      }
+    }
+  ]
+}
