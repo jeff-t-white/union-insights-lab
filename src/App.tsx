@@ -35,7 +35,7 @@ export function App() {
           <a href="#about">About the lab <span aria-hidden="true">↗</span></a>
         </nav>
       </header>
-      <main id="main" className="container">
+      <main id="main" className={`container${slug === 'campus-map' ? ' map-page' : ''}`}>
         {slug ? (
           <section className="example-page">
             <a className="back-link" href="#collection">← Back to the collection</a>
