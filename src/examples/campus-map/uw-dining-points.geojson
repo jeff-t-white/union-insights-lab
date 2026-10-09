@@ -1,0 +1,840 @@
+{
+  "type": "FeatureCollection",
+  "sourceUrl": "https://www.wisc.edu/dining/",
+  "checked": "2026-10-09",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4077467918396,
+          43.07304557058978
+        ]
+      },
+      "properties": {
+        "name": "Aldo’s Cafe",
+        "provider": "other",
+        "locationUrl": "https://www.aldoscafemadison.com/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.41377639770508,
+          43.074953908620465
+        ]
+      },
+      "properties": {
+        "name": "Babcock Hall Dairy Store",
+        "provider": "other",
+        "locationUrl": "http://babcockhalldairystore.wisc.edu",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40987646579744,
+          43.07202280234115
+        ]
+      },
+      "properties": {
+        "name": "Badger Market at Engineering",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/e2-engineering-eatery/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.43014860153197,
+          43.07750871578119
+        ]
+      },
+      "properties": {
+        "name": "Badger Market at Health Sciences Learning Center",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/badger-market-in-health-sciences-learning-center/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40525636076927,
+          43.075708214760944
+        ]
+      },
+      "properties": {
+        "name": "Badger Market at Ingraham",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/badger-market-in-ingraham/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40658271312712,
+          43.073746999483326
+        ]
+      },
+      "properties": {
+        "name": "Badger Market at Medical Sciences",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/badger-market-in-medical-sciences/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39957590369761,
+          43.07623497066268
+        ]
+      },
+      "properties": {
+        "name": "Badger Market at Memorial Union",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/badger-market/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40891623497009,
+          43.07571017398558
+        ]
+      },
+      "properties": {
+        "name": "Badger Market at School of Human Ecology",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/robins-nest/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40866947174072,
+          43.07214036277812
+        ]
+      },
+      "properties": {
+        "name": "Badger Market at Union South",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/badger-market-in-union-south/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39927369356157,
+          43.07692879957428
+        ]
+      },
+      "properties": {
+        "name": "BBQ Stand",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/bbq-stand/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39991742372516,
+          43.07679165642565
+        ]
+      },
+      "properties": {
+        "name": "Brat Stand",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/the-brat-stand/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.41146433353424,
+          43.07725794187876
+        ]
+      },
+      "properties": {
+        "name": "Carson’s Market",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/carsons/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39974039793016,
+          43.07621957026633
+        ]
+      },
+      "properties": {
+        "name": "Carte",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/carte/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39871625509114,
+          43.073915559193296
+        ]
+      },
+      "properties": {
+        "name": "Chazen Café",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/chazen-cafe/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4021087884903,
+          43.0757297662285
+        ]
+      },
+      "properties": {
+        "name": "Crossroads Café",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/crossroads-cafe/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39932525892675,
+          43.07631591947299
+        ]
+      },
+      "properties": {
+        "name": "Daily Scoop at Memorial Union",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/daily-scoop-in-memorial-union/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40770924091339,
+          43.07173281896576
+        ]
+      },
+      "properties": {
+        "name": "Daily Scoop at Union South",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/daily-scoop-in-union-south/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39981818199159,
+          43.07632536742433
+        ]
+      },
+      "properties": {
+        "name": "Der Rathskeller",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/der-rathskeller/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40006762742996,
+          43.07636063310307
+        ]
+      },
+      "properties": {
+        "name": "Der Stiftskeller",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/der-stiftskeller/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.41768169403076,
+          43.07769287721222
+        ]
+      },
+      "properties": {
+        "name": "Flamingo Run at Four Lakes Market",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/four-lakes/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39886580919848,
+          43.07112654966981
+        ]
+      },
+      "properties": {
+        "name": "Flamingo Run at Gordon Avenue Market",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/gordon/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40133094787599,
+          43.0738763123135
+        ]
+      },
+      "properties": {
+        "name": "Flamingo Run at Rheta’s Market",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/rhetas/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39658343791962,
+          43.07292801188913
+        ]
+      },
+      "properties": {
+        "name": "Fluno Center Executive Dining Room",
+        "provider": "union",
+        "locationUrl": "https://fluno.com/dining/oros",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.43192958831787,
+          43.07640373557179
+        ]
+      },
+      "properties": {
+        "name": "Four Lakes Café (UW Hospital Cafeteria)",
+        "provider": "other",
+        "locationUrl": "http://www.uwhealth.org/patient-guides/uw-hospital/cafeteria-and-dining/10158",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.41787481307983,
+          43.077673285596944
+        ]
+      },
+      "properties": {
+        "name": "Four Lakes Market",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/four-lakes/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40854609012601,
+          43.0719365912107
+        ]
+      },
+      "properties": {
+        "name": "Ginger Root",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/ginger-root/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39840734004974,
+          43.07122338538928
+        ]
+      },
+      "properties": {
+        "name": "Gordon Avenue Market",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/gordon/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40683120891676,
+          43.073038904194696
+        ]
+      },
+      "properties": {
+        "name": "Ground Truth",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/ground-truth",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.43171501159668,
+          43.07653696119239
+        ]
+      },
+      "properties": {
+        "name": "Java Coast",
+        "provider": "other",
+        "locationUrl": "https://www.uwhealth.org/locations/university-hospital-170",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39937829971313,
+          43.07660749228606
+        ]
+      },
+      "properties": {
+        "name": "Lakeview Lounge",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/lakeview-lounge/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40695822238924,
+          43.07689353422253
+        ]
+      },
+      "properties": {
+        "name": "Liz’s Market",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/liz/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.43173110485075,
+          43.07639589876153
+        ]
+      },
+      "properties": {
+        "name": "Mendota Market",
+        "provider": "other",
+        "locationUrl": "https://www.uwhealth.org/locations/university-hospital-170",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.41223144531249,
+          43.075870830192805
+        ]
+      },
+      "properties": {
+        "name": "Microcosm Café",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/microcosm-cafe/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40843880176544,
+          43.07188172951909
+        ]
+      },
+      "properties": {
+        "name": "Naan Stop South",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/naan-stop-south",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40101444721222,
+          43.07670937038911
+        ]
+      },
+      "properties": {
+        "name": "Open Book Café",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/open-book-cafe/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39924955368043,
+          43.07619605976195
+        ]
+      },
+      "properties": {
+        "name": "Peet’s Coffee",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/peets-coffee-and-tea/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40833151340486,
+          43.072046314446595
+        ]
+      },
+      "properties": {
+        "name": "Prairie Fire Coffeehouse",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/prairie-fire/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.42795991897583,
+          43.07752438911603
+        ]
+      },
+      "properties": {
+        "name": "Revive",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/revive/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40174075017589,
+          43.07391858581536
+        ]
+      },
+      "properties": {
+        "name": "Rheta’s Market",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/rhetas/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4075644016266,
+          43.07141148443369
+        ]
+      },
+      "properties": {
+        "name": "Sett Rec",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/events-and-activities/climbing-and-bowling/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.42037423374131,
+          43.076924253651185
+        ]
+      },
+      "properties": {
+        "name": "Shake Smart",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/shake-smart/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39659953117369,
+          43.07300638438127
+        ]
+      },
+      "properties": {
+        "name": "Smitty’s Study Pub",
+        "provider": "union",
+        "locationUrl": "https://fluno.com/dining/smittys/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.408358335495,
+          43.07183470517291
+        ]
+      },
+      "properties": {
+        "name": "South Cantina",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/southcantina/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40022587776183,
+          43.06868399178814
+        ]
+      },
+      "properties": {
+        "name": "Starbucks at Smith",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/starbucks/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40770387649536,
+          43.072606683623555
+        ]
+      },
+      "properties": {
+        "name": "Steenbock’s on Orchard",
+        "provider": "other",
+        "locationUrl": "https://www.steenbocksonorchard.com/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39952850341797,
+          43.076368469917824
+        ]
+      },
+      "properties": {
+        "name": "Strada",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/strada/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4175797700882,
+          43.07762234736787
+        ]
+      },
+      "properties": {
+        "name": "The Bean & Creamery at Four Lakes Market",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/four-lakes/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40771996974944,
+          43.07147810270681
+        ]
+      },
+      "properties": {
+        "name": "The Sett Pub",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/the-sett/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40194785594943,
+          43.07276342932944
+        ]
+      },
+      "properties": {
+        "name": "Wisconsin Union Catering",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/host-your-event/catering",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position."
+      }
+    }
+  ]
+}

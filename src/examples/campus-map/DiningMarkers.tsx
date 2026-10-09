@@ -1,0 +1,47 @@
+import { useEffect, useRef, useState } from 'react';
+import type { GeoProjection } from 'd3';
+import campusData from './campus-dining-points.json';
+
+export const providers = [
+  { id: 'union', label: 'Wisconsin Union' },
+  { id: 'housing', label: 'University Housing' },
+  { id: 'other', label: 'Other Dining Options' },
+] as const;
+export type Provider = typeof providers[number]['id'];
+export const campusLocations = campusData.features;
+export type DiningLocation = typeof campusLocations[number];
+
+export function DiningMarkers({ locations, projection, width, height, selected, onSelect }: {
+  locations: DiningLocation[]; projection: GeoProjection; width: number; height: number;
+  selected: DiningLocation | null; onSelect: (location: DiningLocation | null) => void;
+}) {
+  const [hovered, setHovered] = useState<DiningLocation | null>(null);
+  const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const active = locations.find((location) => location === (hovered ?? selected));
+  function show(location: DiningLocation) {
+    if (timer.current) clearTimeout(timer.current);
+    setHovered(location);
+  }
+  function leave() { timer.current = setTimeout(() => setHovered(null), 180); }
+  useEffect(() => () => { if (timer.current) clearTimeout(timer.current); }, []);
+  return <>
+    <div className="dining-markers" aria-label="Campus dining locations">
+      {locations.map((location) => {
+        const [x, y] = projection([location.geometry.coordinates[0], location.geometry.coordinates[1]])!;
+        if (x < 0 || y < 0 || x > width || y > height) return null;
+        const { name, provider } = location.properties;
+        return <button key={name} type="button" className={`dining-marker provider-${provider}${active === location ? ' is-active' : ''}`}
+          style={{ left: x, top: y }} aria-label={`${name}, ${providers.find((item) => item.id === provider)?.label}`}
+          aria-pressed={selected === location} onPointerEnter={() => show(location)} onPointerLeave={leave}
+          onFocus={() => show(location)} onBlur={leave} onClick={() => onSelect(selected === location ? null : location)}
+          onKeyDown={(event) => { if (event.key === 'Escape') { setHovered(null); onSelect(null); } }}><span /></button>;
+      })}
+    </div>
+    {active && <aside className="building-popup location-popup" aria-label="Dining location details" onPointerEnter={() => show(active)} onPointerLeave={leave}>
+      <button type="button" className="popup-close" aria-label="Close dining location details" onClick={() => { setHovered(null); onSelect(null); }}>×</button>
+      <h3>{active.properties.name}</h3>
+      <p>{providers.find((item) => item.id === active.properties.provider)?.label}</p>
+      <a href={active.properties.locationUrl}>Location information & hours ↗</a>
+    </aside>}
+  </>;
+}
