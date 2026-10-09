@@ -1,6 +1,7 @@
 import { geoMercator } from 'd3';
 import { useEffect, useId, useRef, useState } from 'react';
-import { DINING_SOURCE, TILE_URL } from './mapConfig';
+import { DINING_SOURCE } from './mapConfig';
+import { QuietBasemap } from './QuietBasemap';
 import { fitDiningView } from './fitDiningView';
 import './campus-map.css';
 import diningData from './campus-dining.json';
@@ -96,14 +97,10 @@ export function CampusMap() {
 
   const baseZoom = fitDiningView(viewPoints, width, height).zoom;
   const zoom = Math.max(12, Math.min(18, baseZoom + zoomOffset));
-  const tileZoom = Math.floor(zoom);
-  const tileDisplaySize = TILE_SIZE * 2 ** (zoom - tileZoom);
   const worldSize = TILE_SIZE * 2 ** zoom;
-  // The tile grid and future dining markers share this Mercator projection.
+  // The basemap and dining overlays share a flat Mercator camera.
   const worldProjection = geoMercator().scale(worldSize / (2 * Math.PI)).translate([worldSize / 2, worldSize / 2]);
   const worldCenter = worldProjection(center)!;
-  const left = worldCenter[0] - width / 2;
-  const top = worldCenter[1] - height / 2;
   const projection = geoMercator().scale(worldSize / (2 * Math.PI)).center(center).translate([width / 2, height / 2]);
   function changeZoom(direction: number, x = width / 2, y = height / 2) {
     const nextZoom = Math.max(12, Math.min(18, zoom + direction));
@@ -123,15 +120,6 @@ export function CampusMap() {
       const [x, y] = projection([point[0], point[1]])!;
       return `${index ? 'L' : 'M'}${x},${y}`;
     }).join(' ') + 'Z').join(' ');
-  }
-  const tiles = [];
-  if (width > 0) {
-    for (let x = Math.floor(left / tileDisplaySize); x <= Math.floor((left + width) / tileDisplaySize); x++) {
-      for (let y = Math.floor(top / tileDisplaySize); y <= Math.floor((top + height) / tileDisplaySize); y++) {
-        if (x < 0 || y < 0 || x >= 2 ** tileZoom || y >= 2 ** tileZoom) continue;
-        tiles.push({ x, y, url: TILE_URL.replace('{z}', String(tileZoom)).replace('{x}', String(x)).replace('{y}', String(y)) });
-      }
-    }
   }
 
   function reset() {
@@ -160,10 +148,10 @@ export function CampusMap() {
         setCenter(fitDiningView(points.length ? points : diningPoints, width, height).center); setZoomOffset(0);
       }} /><span className="provider-symbol" />{provider.label} ({campusLocations.filter((location) => location.properties.provider === provider.id).length})</label>)}<span aria-live="polite">{visibleLocations.length} locations shown</span></fieldset>
       <div className="map-frame" ref={container}>
-        <svg width="100%" height={height} viewBox={`0 0 ${width || 1} ${height}`} role="img" aria-labelledby={`${titleId} ${descriptionId}`}>
+        <QuietBasemap center={center} zoom={zoom} width={width} height={height} onError={() => setTileError(true)} />
+        <svg className="map-description" width="100%" height={height} viewBox={`0 0 ${width || 1} ${height}`} role="img" aria-labelledby={`${titleId} ${descriptionId}`}>
           <title id={titleId}>Street map of the UW–Madison campus</title>
           <desc id={descriptionId}>Campus and surrounding streets along the south shore of Lake Mendota. Shaded footprints highlight dining buildings: red for Union, blue for Housing, gold for Other, and purple for shared providers. The building list below provides the same information.</desc>
-          {tiles.map((tile) => <image key={`${tileZoom}/${tile.x}/${tile.y}`} href={tile.url} x={tile.x * tileDisplaySize - left} y={tile.y * tileDisplaySize - top} width={tileDisplaySize + 0.5} height={tileDisplaySize + 0.5} onError={() => setTileError(true)} />)}
         </svg>
         <div className="map-drag-surface" aria-hidden="true"
           onPointerDown={(event) => {
@@ -204,14 +192,14 @@ export function CampusMap() {
           <button type="button" aria-label="Zoom out" disabled={zoom === 12} onClick={() => changeZoom(-1)}>−</button>
         </div>
         <span className="map-north" aria-hidden="true">↑ N</span>
-        <div className="map-attribution">© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a></div>
+        <div className="map-attribution"><a href="https://openfreemap.org/">OpenFreeMap</a> · © <a href="https://openmaptiles.org/">OpenMapTiles</a> · © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a></div>
       </div>
       </div>
-      {tileError && <p className="map-error" role="status">Some map tiles couldn’t load. Check your internet connection, then reset the view or reload the page.</p>}
+      {tileError && <p className="map-error" role="status">The background map couldn’t fully load. Check your internet connection and reload the page. You can still browse the dining lists below.</p>}
       <p className="map-instructions">Drag to explore. Hold Ctrl and scroll to zoom toward your cursor, or use + and −. Hover, focus, or tap a marker for location details, or a shaded building for its dining options. Purple shading indicates a building shared by providers.</p>
       <details className="dining-list"><summary>Browse dining locations ({visibleLocations.length})</summary><div>{visibleLocations.map((location) => <section key={location.properties.sourceName}><button type="button" onClick={() => { setCenter(location.geometry.coordinates as [number, number]); setZoomOffset(18 - baseZoom); setSelectedLocation(location); setSelectedId(null); setHoveredId(null); container.current?.scrollIntoView({ block: 'center' }); }}>{location.properties.name} ↗</button><p>{location.properties.buildingName ? `${location.properties.buildingName} · ` : ""}{providers.find((provider) => provider.id === location.properties.provider)?.label}</p><a href={location.properties.locationUrl}>Location information & hours ↗</a></section>)}</div></details>
       <details className="dining-list"><summary>Browse dining by building ({visibleBuildings.length} buildings)</summary><div>{visibleBuildings.map((building) => <section key={building.id}><button type="button" onClick={() => { const points = building.rings[0]; setCenter([points.reduce((sum, point) => sum + point[0], 0) / points.length, points.reduce((sum, point) => sum + point[1], 0) / points.length]); setZoomOffset(17 - baseZoom); setSelectedLocation(null); setSelectedId(building.id); setHoveredId(null); container.current?.scrollIntoView({ block: 'center' }); }}>{building.name} ↗</button><p>{building.address}</p><OutletList outlets={building.outlets} /></section>)}</div></details>
-      <div className="map-notes"><div><p className="eyebrow">First exploration</p><h2>Find your next campus stop.</h2><p>Building shading follows the provider colors above. Purple identifies buildings with more than one active provider. Some buildings house several outlets; hover or select one to see its options. Terrace and seasonal outlets are grouped with Memorial Union.</p></div><div><p className="eyebrow">Sources & scope</p><p>Basemap and building shapes: <a href="https://www.openstreetmap.org/">OpenStreetMap</a>. Map tiles load over the internet. Shapes represent buildings, not exact counter locations or an official campus boundary.</p><p>Marker coordinates: <a href="https://www.wisc.edu/dining/">UW–Madison dining map ↗</a>. Published positions are not surveyed counter locations. Babcock is included under Other Dining Options; Pasta Pronto is excluded. Union outlets missing from that source remain in the building listings.</p><p>Dining listings: <a href={DINING_SOURCE}>Wisconsin Union’s food & drink directory ↗</a>. Names and available logos updated from <a href="https://weborder.transactcampus.com/230">Union mobile ordering ↗</a>. Checked {diningData.checked}; the map also includes Union outlets not on mobile ordering. Seasonal listings do not indicate what is open now.</p><a className="map-issue" href="https://www.openstreetmap.org/fixthemap">Report a basemap issue ↗</a></div></div>
+      <div className="map-notes"><div><p className="eyebrow">First exploration</p><h2>Find your next campus stop.</h2><p>Building shading follows the provider colors above. Purple identifies buildings with more than one active provider. Some buildings house several outlets; hover or select one to see its options. Terrace and seasonal outlets are grouped with Memorial Union.</p></div><div><p className="eyebrow">Sources & scope</p><p>Light basemap: <a href="https://openfreemap.org/">OpenFreeMap</a> / <a href="https://openmaptiles.org/">OpenMapTiles</a>. Map data and building shapes: <a href="https://www.openstreetmap.org/">OpenStreetMap</a>. Map tiles load over the internet. Shapes represent buildings, not exact counter locations or an official campus boundary.</p><p>Marker coordinates: <a href="https://www.wisc.edu/dining/">UW–Madison dining map ↗</a>. Published positions are not surveyed counter locations. Babcock is included under Other Dining Options; Pasta Pronto is excluded. Union outlets missing from that source remain in the building listings.</p><p>Dining listings: <a href={DINING_SOURCE}>Wisconsin Union’s food & drink directory ↗</a>. Names and available logos updated from <a href="https://weborder.transactcampus.com/230">Union mobile ordering ↗</a>. Checked {diningData.checked}; the map also includes Union outlets not on mobile ordering. Seasonal listings do not indicate what is open now.</p><a className="map-issue" href="https://www.openstreetmap.org/fixthemap">Report a basemap issue ↗</a></div></div>
     </div>
   );
 }

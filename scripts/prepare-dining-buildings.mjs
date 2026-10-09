@@ -21,9 +21,11 @@ const entries = [
   ['Chazen Museum of Art', '750 University Avenue', ['Chazen Café']],
 ];
 const source = JSON.parse(await readFile('src/examples/campus-map/buildings-source.json', 'utf8'));
+const medicalSciences = JSON.parse(await readFile('src/examples/campus-map/medical-sciences-footprint.json', 'utf8'));
 const ordering = JSON.parse(await readFile('src/examples/campus-map/mobile-ordering.json', 'utf8'));
 const buildings = entries.map(([name, address, outlets]) => {
-  const entry = source.elements.find((item) => item.tags.name === name);
+  // The similarly named northern wing is not the market's host building.
+  const entry = name === 'Medical Sciences' ? medicalSciences : source.elements.find((item) => item.tags.name === name);
   if (!entry) throw new Error(`Missing footprint: ${name}`);
   // Local correction from Wisconsin Union staff: Memorial Union does not have
   // the courtyard implied by this OSM relation's inner ring. Keep its exterior
