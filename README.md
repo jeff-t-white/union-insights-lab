@@ -29,6 +29,14 @@ Open the first card on the home page, or visit `/#/examples/campus-map` on the l
 
 To refresh geometry, run `node scripts/fetch-campus-data.mjs` (internet required), then `node scripts/prepare-dining-buildings.mjs`. The latter explicitly matches OSM building names and validates closed rings before saving the small selected dataset. Review outlet/building mappings in that script against the official directory when refreshing. The full OSM download is ignored by Git. Data is © OpenStreetMap contributors under ODbL; attribution appears on the map. The building layer uses projected SVG paths with an even-odd fill for interior rings, while the original basemap labels remain visible. Memorial Union has a documented local correction from Union staff: its inner cutout is omitted, retaining the exterior outline without implying a courtyard. The Terrace remains outdoor space north of the building, between the building and Lake Mendota. This correction is applied in the preparation script so refreshing data preserves it; it does not edit OpenStreetMap itself.
 
+## Mobile-ordering names and logos
+
+The map uses a reviewed snapshot of [UW–Madison mobile ordering](https://weborder.transactcampus.com/230) for 21 Union outlet names, logos, and direct ordering links. The broader Union dining directory supplies the remaining outlets; absence from mobile ordering does not remove a location. Pasta Pronto is excluded as permanently closed, and Babcock Dairy Store is excluded because it is not operated by the Union (user-provided corrections). No live opening status or wait times are copied.
+
+The snapshot is `src/examples/campus-map/mobile-ordering.json`; each logo is stored under `public/dining-logos/`, with its original URL recorded in the snapshot. Logos remain the property of their respective owners. Paths use Vite's deployment base so they work locally and on GitHub Pages. Veterinary Medicine's market is mapped to the North building at 515 Easterday Lane, matching both the ordering platform and the [Union listing](https://union.wisc.edu/dine/find-food-and-drink/vetmed).
+
+To refresh, capture the rendered public ordering directory HTML (the initial page source is only a JavaScript shell), then run `node scripts/import-ordering-directory.mjs <rendered-directory.html>` followed by `node scripts/prepare-dining-buildings.mjs`. The importer requires an explicit building mapping for every included ordering location and validates downloaded logo file signatures. Review new, moved, renamed, or removed listings before changing those mappings. Never supply an account page, order history, or a customer-data export.
+
 ## Visualization conventions
 
 Follow [Yan Holtz’s React Graph Gallery approach](https://www.react-graph-gallery.com/about): **D3 calculates; React renders.** Use D3 for scales, layouts, projections, and paths; render SVG elements in JSX. Avoid D3 selections modifying React-owned DOM. Import only the D3 utilities the example uses.

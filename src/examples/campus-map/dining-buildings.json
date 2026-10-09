@@ -8,17 +8,72 @@
       "name": "Memorial Union",
       "address": "800 Langdon Street",
       "outlets": [
-        "Der Rathskeller",
-        "Der Stiftskeller",
-        "Strada",
-        "Carte",
-        "Peet’s Coffee",
-        "Daily Scoop",
-        "Badger Market",
-        "Lakeview Lounge",
-        "The Brat Stand",
-        "BBQ Stand",
-        "Terrace Pop-Up Store"
+        {
+          "name": "Rathskeller",
+          "logoPath": "dining-logos/2155.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2155"
+        },
+        {
+          "name": "Der Stiftskeller",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null
+        },
+        {
+          "name": "Strada",
+          "logoPath": "dining-logos/2153.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2153"
+        },
+        {
+          "name": "Carte",
+          "logoPath": "dining-logos/2154.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2154"
+        },
+        {
+          "name": "Peets Coffee",
+          "logoPath": "dining-logos/1972.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/1972"
+        },
+        {
+          "name": "Daily Scoop",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null
+        },
+        {
+          "name": "Badger Market",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null
+        },
+        {
+          "name": "Lakeview Lounge",
+          "logoPath": "dining-logos/1973.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/1973"
+        },
+        {
+          "name": "The Brat Stand",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null
+        },
+        {
+          "name": "BBQ Stand",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null
+        },
+        {
+          "name": "Terrace Pop-Up Store",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null
+        }
       ],
       "geometryNote": "Inner cutout omitted per Wisconsin Union staff correction. Exterior outline retained; Terrace is outdoor space north of the building.",
       "rings": [
@@ -447,14 +502,54 @@
       "name": "Union South",
       "address": "1308 West Dayton Street",
       "outlets": [
-        "Sett Pub",
-        "Sett Recreation",
-        "Prairie Fire",
-        "Naan Stop South",
-        "Daily Scoop",
-        "South Cantina",
-        "Ginger Root",
-        "Badger Market"
+        {
+          "name": "Sett Pub",
+          "logoPath": "dining-logos/2148.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2148"
+        },
+        {
+          "name": "Sett Recreation",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null
+        },
+        {
+          "name": "Prairie Fire",
+          "logoPath": "dining-logos/1974.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/1974"
+        },
+        {
+          "name": "Naan Stop South",
+          "logoPath": "dining-logos/2157.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2157"
+        },
+        {
+          "name": "Daily Scoop",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null
+        },
+        {
+          "name": "South Cantina",
+          "logoPath": "dining-logos/1969.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/1969"
+        },
+        {
+          "name": "Ginger Root",
+          "logoPath": "dining-logos/2147.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2147"
+        },
+        {
+          "name": "Badger Market",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null
+        }
       ],
       "rings": [
         [
@@ -614,7 +709,12 @@
       "name": "Levy Hall",
       "address": "232 North Park Street",
       "outlets": [
-        "Hosto Cafe"
+        {
+          "name": "Hosto",
+          "logoPath": "dining-logos/2465.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2465"
+        }
       ],
       "rings": [
         [
@@ -646,7 +746,12 @@
       "name": "Morgridge Hall",
       "address": "1205 University Avenue",
       "outlets": [
-        "Ground Truth"
+        {
+          "name": "Ground Truth",
+          "logoPath": "dining-logos/2468.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2468"
+        }
       ],
       "rings": [
         [
@@ -702,7 +807,12 @@
       "name": "Signe Skott Cooper Hall",
       "address": "701 Highland Avenue",
       "outlets": [
-        "Revive"
+        {
+          "name": "Revive",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null
+        }
       ],
       "rings": [
         [
@@ -810,7 +920,12 @@
       "name": "Wisconsin Institute for Discovery",
       "address": "330 North Orchard Street",
       "outlets": [
-        "Pedone Pinsa"
+        {
+          "name": "Pedone Pinsa",
+          "logoPath": "dining-logos/2466.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2466"
+        }
       ],
       "rings": [
         [
@@ -890,7 +1005,12 @@
       "name": "Helen C. White Hall",
       "address": "600 North Park Street",
       "outlets": [
-        "Open Book Café"
+        {
+          "name": "Open Book Cafe",
+          "logoPath": "dining-logos/2156.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2156"
+        }
       ],
       "rings": [
         [
@@ -1078,7 +1198,12 @@
       "name": "Microbial Sciences Building",
       "address": "1550 Linden Drive",
       "outlets": [
-        "Microcosm Café"
+        {
+          "name": "Microcosm Cafe",
+          "logoPath": "dining-logos/2152.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2152"
+        }
       ],
       "rings": [
         [
@@ -1258,7 +1383,12 @@
       "name": "Engineering Hall",
       "address": "1415 Engineering Drive",
       "outlets": [
-        "Badger Market"
+        {
+          "name": "Badger Market Engineering",
+          "logoPath": "dining-logos/2150.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2150"
+        }
       ],
       "rings": [
         [
@@ -1386,7 +1516,12 @@
       "name": "Education Building",
       "address": "1000 Bascom Mall",
       "outlets": [
-        "Crossroads Café"
+        {
+          "name": "Crossroads Cafe",
+          "logoPath": "dining-logos/2467.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2467"
+        }
       ],
       "rings": [
         [
@@ -1502,125 +1637,284 @@
       ]
     },
     {
-      "id": "way/38019751",
-      "name": "Veterinary Medicine South",
-      "address": "2015 Linden Drive",
+      "id": "relation/17899257",
+      "name": "Veterinary Medicine North",
+      "address": "515 Easterday Lane",
       "outlets": [
-        "Badger Market"
+        {
+          "name": "Badger Market Veterinary Medicine",
+          "logoPath": "dining-logos/2151.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2151"
+        }
       ],
       "rings": [
         [
           [
-            -89.4211527,
-            43.0753408
-          ],
-          [
-            -89.4212641,
-            43.0753414
-          ],
-          [
-            -89.421267,
-            43.0750483
-          ],
-          [
-            -89.4206882,
-            43.0750452
-          ],
-          [
-            -89.4206904,
-            43.0748203
-          ],
-          [
-            -89.420444,
-            43.074819
-          ],
-          [
-            -89.4204441,
-            43.0748092
-          ],
-          [
-            -89.4198765,
-            43.0748062
-          ],
-          [
-            -89.4198764,
-            43.0748173
-          ],
-          [
-            -89.4196339,
-            43.074816
-          ],
-          [
-            -89.4196317,
-            43.0750394
-          ],
-          [
-            -89.41928,
-            43.0750375
-          ],
-          [
-            -89.4192776,
-            43.0752837
-          ],
-          [
-            -89.4192771,
-            43.0753299
-          ],
-          [
-            -89.4194529,
-            43.0753308
-          ],
-          [
-            -89.4194863,
-            43.075331
-          ],
-          [
-            -89.4194851,
-            43.0754518
-          ],
-          [
-            -89.4197542,
-            43.0754533
-          ],
-          [
-            -89.4197554,
-            43.0753324
-          ],
-          [
-            -89.4201441,
-            43.0753345
-          ],
-          [
-            -89.4202116,
-            43.0753349
-          ],
-          [
-            -89.420211,
-            43.0753972
-          ],
-          [
-            -89.420375,
-            43.0753983
-          ],
-          [
-            -89.4204541,
-            43.0753982
-          ],
-          [
             -89.4207476,
             43.0754
+          ],
+          [
+            -89.4207469,
+            43.0754595
+          ],
+          [
+            -89.4209602,
+            43.0754841
+          ],
+          [
+            -89.4209587,
+            43.0756255
+          ],
+          [
+            -89.4205296,
+            43.075623
+          ],
+          [
+            -89.4205295,
+            43.0756285
+          ],
+          [
+            -89.4204544,
+            43.0756279
+          ],
+          [
+            -89.4203749,
+            43.0756277
+          ],
+          [
+            -89.4203202,
+            43.0756272
+          ],
+          [
+            -89.4203008,
+            43.0756237
+          ],
+          [
+            -89.4203003,
+            43.0756792
+          ],
+          [
+            -89.4202999,
+            43.0757231
+          ],
+          [
+            -89.4202997,
+            43.0757362
+          ],
+          [
+            -89.4202942,
+            43.0763096
+          ],
+          [
+            -89.420336,
+            43.0763098
+          ],
+          [
+            -89.420336,
+            43.076326
+          ],
+          [
+            -89.4206372,
+            43.0763278
+          ],
+          [
+            -89.4206379,
+            43.0762927
+          ],
+          [
+            -89.4206463,
+            43.0762928
+          ],
+          [
+            -89.4206497,
+            43.0762928
+          ],
+          [
+            -89.4206497,
+            43.0762938
+          ],
+          [
+            -89.4206563,
+            43.0762939
+          ],
+          [
+            -89.4206563,
+            43.076295
+          ],
+          [
+            -89.4207752,
+            43.0762957
+          ],
+          [
+            -89.4208065,
+            43.0762959
+          ],
+          [
+            -89.4208063,
+            43.0763143
+          ],
+          [
+            -89.421136,
+            43.0763161
+          ],
+          [
+            -89.4211336,
+            43.0763034
+          ],
+          [
+            -89.4211852,
+            43.076306
+          ],
+          [
+            -89.4212008,
+            43.0761411
+          ],
+          [
+            -89.4211509,
+            43.0761386
+          ],
+          [
+            -89.4211821,
+            43.0758371
+          ],
+          [
+            -89.4211743,
+            43.075771
+          ],
+          [
+            -89.4211791,
+            43.0757707
+          ],
+          [
+            -89.4211626,
+            43.0756336
+          ],
+          [
+            -89.4210708,
+            43.0756396
+          ],
+          [
+            -89.4210686,
+            43.0756346
+          ],
+          [
+            -89.4210581,
+            43.0755343
           ],
           [
             -89.421118,
             43.075402
           ],
           [
-            -89.4211521,
-            43.0754022
+            -89.4207476,
+            43.0754
+          ]
+        ],
+        [
+          [
+            -89.4206527,
+            43.0758446
           ],
           [
-            -89.4211527,
-            43.0753408
+            -89.4207194,
+            43.0758446
+          ],
+          [
+            -89.420719,
+            43.0758806
+          ],
+          [
+            -89.4207317,
+            43.0758807
+          ],
+          [
+            -89.4207318,
+            43.0758711
+          ],
+          [
+            -89.421077,
+            43.0758731
+          ],
+          [
+            -89.4210769,
+            43.0758737
+          ],
+          [
+            -89.4210689,
+            43.0759503
+          ],
+          [
+            -89.4210679,
+            43.0759568
+          ],
+          [
+            -89.4210662,
+            43.0759632
+          ],
+          [
+            -89.4210637,
+            43.0759694
+          ],
+          [
+            -89.4210606,
+            43.0759755
+          ],
+          [
+            -89.4210568,
+            43.0759815
+          ],
+          [
+            -89.4210523,
+            43.0759871
+          ],
+          [
+            -89.4210472,
+            43.0759925
+          ],
+          [
+            -89.4208056,
+            43.0762147
+          ],
+          [
+            -89.4208027,
+            43.0762172
+          ],
+          [
+            -89.4207995,
+            43.0762195
+          ],
+          [
+            -89.4207961,
+            43.0762215
+          ],
+          [
+            -89.4207924,
+            43.0762233
+          ],
+          [
+            -89.4207886,
+            43.0762248
+          ],
+          [
+            -89.4207845,
+            43.0762261
+          ],
+          [
+            -89.4207803,
+            43.0762272
+          ],
+          [
+            -89.4207761,
+            43.0762279
+          ],
+          [
+            -89.4206483,
+            43.076229
+          ],
+          [
+            -89.4206527,
+            43.0758446
           ]
         ]
       ]
@@ -1630,8 +1924,18 @@
       "name": "Medical Sciences",
       "address": "1300 University Avenue (Charter Street entrance)",
       "outlets": [
-        "Badger Market",
-        "Naan Stop Express"
+        {
+          "name": "Badger Market Medical Sciences",
+          "logoPath": "dining-logos/2146.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2146"
+        },
+        {
+          "name": "Naan Stop Express",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null
+        }
       ],
       "rings": [
         [
@@ -1723,7 +2027,12 @@
       "name": "Ingraham Hall",
       "address": "1155 Observatory Drive",
       "outlets": [
-        "Badger Market"
+        {
+          "name": "Badger Market",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null
+        }
       ],
       "rings": [
         [
@@ -1983,7 +2292,12 @@
       "name": "Health Sciences Learning Center",
       "address": "750 Highland Avenue",
       "outlets": [
-        "Badger Market"
+        {
+          "name": "Badger Market",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null
+        }
       ],
       "rings": [
         [
@@ -2227,7 +2541,12 @@
       "name": "Nancy Nicholas Hall",
       "address": "1300 Linden Drive",
       "outlets": [
-        "Robin’s Nest"
+        {
+          "name": "Badger Market Robin's Nest",
+          "logoPath": "dining-logos/2149.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2149"
+        }
       ],
       "rings": [
         [
@@ -2395,8 +2714,18 @@
       "name": "Fluno Center",
       "address": "601 University Avenue",
       "outlets": [
-        "Oros Executive Dining Room",
-        "Smitty’s Study Pub"
+        {
+          "name": "Oros Executive Dining Room",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null
+        },
+        {
+          "name": "Smitty’s Study Pub",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null
+        }
       ],
       "rings": [
         [
@@ -2576,7 +2905,12 @@
       "name": "Chazen Museum of Art",
       "address": "750 University Avenue",
       "outlets": [
-        "Chazen Café"
+        {
+          "name": "Chazen Cafe",
+          "logoPath": "dining-logos/1975.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/1975"
+        }
       ],
       "rings": [
         [

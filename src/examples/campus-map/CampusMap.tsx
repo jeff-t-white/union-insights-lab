@@ -4,6 +4,7 @@ import { DINING_SOURCE, TILE_URL } from './mapConfig';
 import { fitDiningView } from './fitDiningView';
 import './campus-map.css';
 import diningData from './dining-buildings.json';
+import { OutletList } from './OutletList';
 
 const TILE_SIZE = 256;
 const diningPoints = diningData.buildings.flatMap((building) => building.rings.flat());
@@ -167,7 +168,7 @@ export function CampusMap() {
           onLostPointerCapture={() => { drag.current = null; }}
         />
         <svg className="building-overlay" width="100%" height={height} viewBox={`0 0 ${width || 1} ${height}`} aria-label="Dining building highlights">
-          {diningData.buildings.map((building) => <path key={building.id} d={footprintPath(building.rings)} fillRule="evenodd" className={`dining-footprint${selected?.id === building.id ? ' is-active' : ''}`} tabIndex={0} role="button" aria-label={`${building.name}: ${building.outlets.join(', ')}`} aria-pressed={selectedId === building.id}
+          {diningData.buildings.map((building) => <path key={building.id} d={footprintPath(building.rings)} fillRule="evenodd" className={`dining-footprint${selected?.id === building.id ? ' is-active' : ''}`} tabIndex={0} role="button" aria-label={`${building.name}: ${building.outlets.map((outlet) => outlet.name).join(', ')}`} aria-pressed={selectedId === building.id}
             onPointerEnter={() => showBuilding(building.id)} onPointerLeave={leaveBuilding}
             onFocus={() => showBuilding(building.id)} onBlur={leaveBuilding}
             onClick={() => setSelectedId((value) => value === building.id ? null : building.id)}
@@ -176,7 +177,7 @@ export function CampusMap() {
         {selected && <aside className="building-popup" aria-label="Dining building details" onPointerEnter={() => showBuilding(selected.id)} onPointerLeave={leaveBuilding}>
           <button className="popup-close" type="button" aria-label="Close building details" onClick={() => { setSelectedId(null); setHoveredId(null); }}>×</button>
           <h3>{selected.name}</h3><p>{selected.address}</p>
-          <ul>{selected.outlets.map((outlet) => <li key={outlet}>{outlet}</li>)}</ul>
+          <OutletList outlets={selected.outlets} />
           <a href={DINING_SOURCE}>Current hours & menus ↗</a>
         </aside>}
         <div className="map-controls" role="group" aria-label="Map controls">
@@ -189,8 +190,8 @@ export function CampusMap() {
       </div>
       {tileError && <p className="map-error" role="status">Some map tiles couldn’t load. Check your internet connection, then reset the view or reload the page.</p>}
       <p className="map-instructions">Drag to explore. Hold Ctrl and scroll to zoom toward your cursor, or use + and −. Hover, focus, or tap a red building for dining details.</p>
-      <details className="dining-list"><summary>Browse dining by building ({diningData.buildings.length} buildings)</summary><div>{diningData.buildings.map((building) => <section key={building.id}><button type="button" onClick={() => { const points = building.rings[0]; setCenter([points.reduce((sum, point) => sum + point[0], 0) / points.length, points.reduce((sum, point) => sum + point[1], 0) / points.length]); setZoomOffset(17 - baseZoom); setSelectedId(building.id); setHoveredId(null); container.current?.scrollIntoView({ block: 'center' }); }}>{building.name} ↗</button><p>{building.address}</p><ul>{building.outlets.map((outlet) => <li key={outlet}>{outlet}</li>)}</ul></section>)}</div></details>
-      <div className="map-notes"><div><p className="eyebrow">First exploration</p><h2>Find your next campus stop.</h2><p>Red outlines highlight buildings with Wisconsin Union dining. Some buildings house several outlets; hover or select one to see its options. Terrace and seasonal outlets are grouped with Memorial Union.</p></div><div><p className="eyebrow">Sources & scope</p><p>Basemap and building shapes: <a href="https://www.openstreetmap.org/">OpenStreetMap</a>. Map tiles load over the internet. Shapes represent buildings, not exact counter locations or an official campus boundary.</p><p>Dining listings: <a href={DINING_SOURCE}>Wisconsin Union’s food & drink directory ↗</a>. Checked {diningData.checked}; listings include seasonal options and do not indicate what is open now.</p><a className="map-issue" href="https://www.openstreetmap.org/fixthemap">Report a basemap issue ↗</a></div></div>
+      <details className="dining-list"><summary>Browse dining by building ({diningData.buildings.length} buildings)</summary><div>{diningData.buildings.map((building) => <section key={building.id}><button type="button" onClick={() => { const points = building.rings[0]; setCenter([points.reduce((sum, point) => sum + point[0], 0) / points.length, points.reduce((sum, point) => sum + point[1], 0) / points.length]); setZoomOffset(17 - baseZoom); setSelectedId(building.id); setHoveredId(null); container.current?.scrollIntoView({ block: 'center' }); }}>{building.name} ↗</button><p>{building.address}</p><OutletList outlets={building.outlets} /></section>)}</div></details>
+      <div className="map-notes"><div><p className="eyebrow">First exploration</p><h2>Find your next campus stop.</h2><p>Red outlines highlight buildings with Wisconsin Union dining. Some buildings house several outlets; hover or select one to see its options. Terrace and seasonal outlets are grouped with Memorial Union.</p></div><div><p className="eyebrow">Sources & scope</p><p>Basemap and building shapes: <a href="https://www.openstreetmap.org/">OpenStreetMap</a>. Map tiles load over the internet. Shapes represent buildings, not exact counter locations or an official campus boundary.</p><p>Dining listings: <a href={DINING_SOURCE}>Wisconsin Union’s food & drink directory ↗</a>. Names and available logos updated from <a href="https://weborder.transactcampus.com/230">Union mobile ordering ↗</a>. Checked {diningData.checked}; the map also includes Union outlets not on mobile ordering. Seasonal listings do not indicate what is open now.</p><a className="map-issue" href="https://www.openstreetmap.org/fixthemap">Report a basemap issue ↗</a></div></div>
     </div>
   );
 }

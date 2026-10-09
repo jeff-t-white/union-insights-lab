@@ -12,7 +12,7 @@ const entries = [
   ['Microbial Sciences Building', '1550 Linden Drive', ['Microcosm Café']],
   ['Engineering Hall', '1415 Engineering Drive', ['Badger Market']],
   ['Education Building', '1000 Bascom Mall', ['Crossroads Café']],
-  ['Veterinary Medicine South', '2015 Linden Drive', ['Badger Market']],
+  ['Veterinary Medicine North', '515 Easterday Lane', ['Badger Market']],
   ['Medical Sciences', '1300 University Avenue (Charter Street entrance)', ['Badger Market', 'Naan Stop Express']],
   ['Ingraham Hall', '1155 Observatory Drive', ['Badger Market']],
   ['Health Sciences Learning Center', '750 Highland Avenue', ['Badger Market']],
@@ -21,6 +21,7 @@ const entries = [
   ['Chazen Museum of Art', '750 University Avenue', ['Chazen Café']],
 ];
 const source = JSON.parse(await readFile('src/examples/campus-map/buildings-source.json', 'utf8'));
+const ordering = JSON.parse(await readFile('src/examples/campus-map/mobile-ordering.json', 'utf8'));
 const buildings = entries.map(([name, address, outlets]) => {
   const entry = source.elements.find((item) => item.tags.name === name);
   if (!entry) throw new Error(`Missing footprint: ${name}`);
@@ -32,7 +33,13 @@ const buildings = entries.map(([name, address, outlets]) => {
     : undefined;
   const rings = entry.geometry ? [entry.geometry] : entry.members.filter((member) => member.type === 'way' && member.geometry && (!geometryNote || member.role === 'outer')).sort((a, b) => (a.role === 'inner') - (b.role === 'inner')).map((member) => member.geometry);
   if (!rings.length || rings.some((ring) => ring[0].lat !== ring.at(-1).lat || ring[0].lon !== ring.at(-1).lon)) throw new Error(`Unclosed footprint: ${name}`);
-  return { id: `${entry.type}/${entry.id}`, name, address, outlets, ...(geometryNote ? { geometryNote } : {}), rings: rings.map((ring) => ring.map(({ lon, lat }) => [lon, lat])) };
+  const enrichedOutlets = outlets.map((outlet) => {
+    const mobile = ordering.locations.find((location) => location.building === name && location.previousName === outlet);
+    return mobile
+      ? { name: mobile.name, logoPath: mobile.logoPath, sourceUrl: ordering.source, orderUrl: mobile.orderUrl }
+      : { name: outlet, logoPath: null, sourceUrl: 'https://union.wisc.edu/dine/find-food-and-drink', orderUrl: null };
+  });
+  return { id: `${entry.type}/${entry.id}`, name, address, outlets: enrichedOutlets, ...(geometryNote ? { geometryNote } : {}), rings: rings.map((ring) => ring.map(({ lon, lat }) => [lon, lat])) };
 });
 await writeFile('src/examples/campus-map/dining-buildings.json', JSON.stringify({ checked: '2026-10-09', source: 'https://union.wisc.edu/dine/find-food-and-drink', geometrySource: 'https://www.openstreetmap.org/copyright', buildings }, null, 2));
 console.log(`Prepared ${buildings.length} footprints and ${buildings.reduce((sum, building) => sum + building.outlets.length, 0)} directory entries.`);

@@ -1,0 +1,199 @@
+{
+  "source": "https://weborder.transactcampus.com/230",
+  "checked": "2026-10-09",
+  "excluded": [
+    "Pasta Pronto",
+    "Babcock Dairy Store"
+  ],
+  "locations": [
+    {
+      "id": "1969",
+      "building": "Union South",
+      "previousName": "South Cantina",
+      "name": "South Cantina",
+      "logoPath": "dining-logos/1969.jpg",
+      "logoSource": "https://hangrybbprod.blob.core.windows.net/campuses/icon_location_230_240_3622_1705440458585.jpg",
+      "orderUrl": "https://weborder.transactcampus.com/230/1969"
+    },
+    {
+      "id": "1974",
+      "building": "Union South",
+      "previousName": "Prairie Fire",
+      "name": "Prairie Fire",
+      "logoPath": "dining-logos/1974.jpg",
+      "logoSource": "https://hangrybbprod.blob.core.windows.net/campuses/icon_location_230_240_3622_1712933852603.jpg",
+      "orderUrl": "https://weborder.transactcampus.com/230/1974"
+    },
+    {
+      "id": "2147",
+      "building": "Union South",
+      "previousName": "Ginger Root",
+      "name": "Ginger Root",
+      "logoPath": "dining-logos/2147.jpg",
+      "logoSource": "https://hangrybbprod.blob.core.windows.net/campuses/icon_location_230_240_3622_1725469383960.jpg",
+      "orderUrl": "https://weborder.transactcampus.com/230/2147"
+    },
+    {
+      "id": "2148",
+      "building": "Union South",
+      "previousName": "Sett Pub",
+      "name": "Sett Pub",
+      "logoPath": "dining-logos/2148.jpg",
+      "logoSource": "https://hangrybbprod.blob.core.windows.net/campuses/icon_location_230_240_3622_1725469446928.jpg",
+      "orderUrl": "https://weborder.transactcampus.com/230/2148"
+    },
+    {
+      "id": "2157",
+      "building": "Union South",
+      "previousName": "Naan Stop South",
+      "name": "Naan Stop South",
+      "logoPath": "dining-logos/2157.jpg",
+      "logoSource": "https://hangrybbprod.blob.core.windows.net/campuses/icon_location_230_240_4087_1754499444585.jpg",
+      "orderUrl": "https://weborder.transactcampus.com/230/2157"
+    },
+    {
+      "id": "1972",
+      "building": "Memorial Union",
+      "previousName": "Peet’s Coffee",
+      "name": "Peets Coffee",
+      "logoPath": "dining-logos/1972.jpg",
+      "logoSource": "https://hangrybbprod.blob.core.windows.net/campuses/icon_location_230_240_3622_1712933895076.jpg",
+      "orderUrl": "https://weborder.transactcampus.com/230/1972"
+    },
+    {
+      "id": "1973",
+      "building": "Memorial Union",
+      "previousName": "Lakeview Lounge",
+      "name": "Lakeview Lounge",
+      "logoPath": "dining-logos/1973.jpg",
+      "logoSource": "https://hangrybbprod.blob.core.windows.net/campuses/icon_location_230_240_3622_1712934138266.jpg",
+      "orderUrl": "https://weborder.transactcampus.com/230/1973"
+    },
+    {
+      "id": "2153",
+      "building": "Memorial Union",
+      "previousName": "Strada",
+      "name": "Strada",
+      "logoPath": "dining-logos/2153.jpg",
+      "logoSource": "https://hangrybbprod.blob.core.windows.net/campuses/icon_location_230_240_3622_1722548068766.jpg",
+      "orderUrl": "https://weborder.transactcampus.com/230/2153"
+    },
+    {
+      "id": "2154",
+      "building": "Memorial Union",
+      "previousName": "Carte",
+      "name": "Carte",
+      "logoPath": "dining-logos/2154.jpg",
+      "logoSource": "https://hangrybbprod.blob.core.windows.net/campuses/icon_location_230_240_3622_1722548095613.jpg",
+      "orderUrl": "https://weborder.transactcampus.com/230/2154"
+    },
+    {
+      "id": "2155",
+      "building": "Memorial Union",
+      "previousName": "Der Rathskeller",
+      "name": "Rathskeller",
+      "logoPath": "dining-logos/2155.jpg",
+      "logoSource": "https://hangrybbprod.blob.core.windows.net/campuses/icon_location_230_240_3622_1728059111521.jpg",
+      "orderUrl": "https://weborder.transactcampus.com/230/2155"
+    },
+    {
+      "id": "2150",
+      "building": "Engineering Hall",
+      "previousName": "Badger Market",
+      "name": "Badger Market Engineering",
+      "logoPath": "dining-logos/2150.jpg",
+      "logoSource": "https://hangrybbprod.blob.core.windows.net/campuses/icon_location_230_240_3622_1725470040552.jpg",
+      "orderUrl": "https://weborder.transactcampus.com/230/2150"
+    },
+    {
+      "id": "2146",
+      "building": "Medical Sciences",
+      "previousName": "Badger Market",
+      "name": "Badger Market Medical Sciences",
+      "logoPath": "dining-logos/2146.jpg",
+      "logoSource": "https://hangrybbprod.blob.core.windows.net/campuses/icon_location_230_240_3622_1725470040552.jpg",
+      "orderUrl": "https://weborder.transactcampus.com/230/2146"
+    },
+    {
+      "id": "1975",
+      "building": "Chazen Museum of Art",
+      "previousName": "Chazen Café",
+      "name": "Chazen Cafe",
+      "logoPath": "dining-logos/1975.jpg",
+      "logoSource": "https://hangrybbprod.blob.core.windows.net/campuses/icon_location_230_240_3622_1722547987438.jpg",
+      "orderUrl": "https://weborder.transactcampus.com/230/1975"
+    },
+    {
+      "id": "2152",
+      "building": "Microbial Sciences Building",
+      "previousName": "Microcosm Café",
+      "name": "Microcosm Cafe",
+      "logoPath": "dining-logos/2152.jpg",
+      "logoSource": "https://hangrybbprod.blob.core.windows.net/campuses/icon_location_230_240_3622_1725469527992.jpg",
+      "orderUrl": "https://weborder.transactcampus.com/230/2152"
+    },
+    {
+      "id": "2151",
+      "building": "Veterinary Medicine North",
+      "previousName": "Badger Market",
+      "name": "Badger Market Veterinary Medicine",
+      "logoPath": "dining-logos/2151.jpg",
+      "logoSource": "https://hangrybbprod.blob.core.windows.net/campuses/icon_location_230_240_3622_1725470040552.jpg",
+      "orderUrl": "https://weborder.transactcampus.com/230/2151"
+    },
+    {
+      "id": "2156",
+      "building": "Helen C. White Hall",
+      "previousName": "Open Book Café",
+      "name": "Open Book Cafe",
+      "logoPath": "dining-logos/2156.jpg",
+      "logoSource": "https://hangrybbprod.blob.core.windows.net/campuses/icon_location_230_240_4087_1743169803931.jpg",
+      "orderUrl": "https://weborder.transactcampus.com/230/2156"
+    },
+    {
+      "id": "2149",
+      "building": "Nancy Nicholas Hall",
+      "previousName": "Robin’s Nest",
+      "name": "Badger Market Robin's Nest",
+      "logoPath": "dining-logos/2149.jpg",
+      "logoSource": "https://hangrybbprod.blob.core.windows.net/campuses/icon_location_230_240_3622_1725470040552.jpg",
+      "orderUrl": "https://weborder.transactcampus.com/230/2149"
+    },
+    {
+      "id": "2467",
+      "building": "Education Building",
+      "previousName": "Crossroads Café",
+      "name": "Crossroads Cafe",
+      "logoPath": "dining-logos/2467.jpg",
+      "logoSource": "https://hangrybbprod.blob.core.windows.net/campuses/icon_location_230_240_3618_1755618821074.jpg",
+      "orderUrl": "https://weborder.transactcampus.com/230/2467"
+    },
+    {
+      "id": "2468",
+      "building": "Morgridge Hall",
+      "previousName": "Ground Truth",
+      "name": "Ground Truth",
+      "logoPath": "dining-logos/2468.jpg",
+      "logoSource": "https://hangrybbprod.blob.core.windows.net/campuses/icon_location_230_240_3618_1755618792297.jpg",
+      "orderUrl": "https://weborder.transactcampus.com/230/2468"
+    },
+    {
+      "id": "2466",
+      "building": "Wisconsin Institute for Discovery",
+      "previousName": "Pedone Pinsa",
+      "name": "Pedone Pinsa",
+      "logoPath": "dining-logos/2466.jpg",
+      "logoSource": "https://hangrybbprod.blob.core.windows.net/campuses/icon_location_230_240_4087_1787584060489.jpg",
+      "orderUrl": "https://weborder.transactcampus.com/230/2466"
+    },
+    {
+      "id": "2465",
+      "building": "Levy Hall",
+      "previousName": "Hosto Cafe",
+      "name": "Hosto",
+      "logoPath": "dining-logos/2465.jpg",
+      "logoSource": "https://hangrybbprod.blob.core.windows.net/campuses/icon_location_230_240_4087_1787584669694.jpg",
+      "orderUrl": "https://weborder.transactcampus.com/230/2465"
+    }
+  ]
+}
