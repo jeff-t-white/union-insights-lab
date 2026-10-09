@@ -4,14 +4,4 @@ export const CAMPUS_CENTER: [number, number] = [-89.418, 43.0765];
 export const TILE_URL = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
 export const DINING_SOURCE = 'https://union.wisc.edu/dine/find-food-and-drink';
 
-export type DiningLocation = {
-  id: string;
-  name: string;
-  building: string;
-  address: string;
-  coordinates: [longitude: number, latitude: number];
-  sourceUrl: string;
-};
-
-// Populate only after verifying the locations. No placeholder coordinates.
-export const diningLocations: DiningLocation[] = [];
+// Dining building shapes and grouped outlets live in dining-buildings.json.

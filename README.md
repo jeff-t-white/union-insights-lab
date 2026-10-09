@@ -21,11 +21,13 @@ Open the local URL printed by Vite. `npm run build` checks TypeScript and builds
 
 ## Campus map
 
-Open the first card on the home page, or visit `/#/examples/campus-map` on the local dev server. Drag to pan, use the zoom/arrow buttons, or reset to the initial campus view. Buttons also support keyboard navigation.
+Open the first card on the home page, or visit `/#/examples/campus-map` on the local dev server. Drag to pan, hold Ctrl and scroll to zoom around the cursor, use the zoom/arrow buttons, or reset to the initial campus view. Ordinary scrolling still scrolls the page. Buttons also support keyboard navigation.
 
 `src/examples/campus-map/CampusMap.tsx` renders visible OpenStreetMap tiles using React. D3's Mercator projection places the tiles and will position future markers in the same coordinate system. `ResizeObserver` measures the container, and React owns the view state. No API key is needed; an internet connection is required for tiles. Tile use follows the [OpenStreetMap tile policy](https://operations.osmfoundation.org/policies/tiles/), with visible attribution and ordinary browser caching; no offline downloading or prefetching is included.
 
-`src/examples/campus-map/mapConfig.ts` holds the view center, tile provider, official dining-directory link, and a typed, currently empty dining dataset. Add verified dining locations here using **[longitude, latitude]**, not the reverse. The next step is to verify building addresses/coordinates from the Wisconsin Union directory, accounting for multiple outlets in the same building, then render their markers. The current map has no dining pins or official campus boundary.
+`src/examples/campus-map/mapConfig.ts` holds the view center, tile provider, and official dining-directory link. `dining-buildings.json` contains 17 OSM footprints and 36 directory entries grouped by building, checked October 9, 2026. Hover, keyboard-focus, or tap a highlighted building to see its outlets and street address; the expandable building list provides the same information and can center the map on a building. Seasonal Terrace listings are grouped with Memorial Union. The footprint identifies the host building, not the exact dining counter; the popup links to current Union hours and menus rather than storing a stale open/closed status.
+
+To refresh geometry, run `node scripts/fetch-campus-data.mjs` (internet required), then `node scripts/prepare-dining-buildings.mjs`. The latter explicitly matches OSM building names and validates closed rings before saving the small selected dataset. Review outlet/building mappings in that script against the official directory when refreshing. The full OSM download is ignored by Git. Data is © OpenStreetMap contributors under ODbL; attribution appears on the map. The building layer uses projected SVG paths with an even-odd fill to preserve courtyard holes, while the original basemap labels remain visible.
 
 ## Visualization conventions
 
