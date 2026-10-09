@@ -1,10 +1,13 @@
 import { geoMercator } from 'd3';
 import { useEffect, useId, useRef, useState } from 'react';
-import { CAMPUS_CENTER, DINING_SOURCE, TILE_URL } from './mapConfig';
+import { DINING_SOURCE, TILE_URL } from './mapConfig';
+import { fitDiningView } from './fitDiningView';
 import './campus-map.css';
 import diningData from './dining-buildings.json';
 
 const TILE_SIZE = 256;
+const diningPoints = diningData.buildings.flatMap((building) => building.rings.flat());
+const diningCenter = fitDiningView(diningPoints, 1000, 600).center;
 
 export function CampusMap() {
   const container = useRef<HTMLDivElement>(null);
@@ -13,7 +16,7 @@ export function CampusMap() {
   const [height, setHeight] = useState(500);
   const [expanded, setExpanded] = useState(false);
   const expandButton = useRef<HTMLButtonElement>(null);
-  const [center, setCenter] = useState<[number, number]>(CAMPUS_CENTER);
+  const [center, setCenter] = useState<[number, number]>(diningCenter);
   const [zoomOffset, setZoomOffset] = useState(0);
   const [tileError, setTileError] = useState(false);
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -81,7 +84,10 @@ export function CampusMap() {
     return () => element.removeEventListener('wheel', onWheel);
   }, []);
 
-  const zoom = Math.max(12, Math.min(18, (width >= 700 ? 14 : 13) + zoomOffset));
+  const baseZoom = fitDiningView(diningPoints, width, height).zoom;
+  const zoom = Math.max(12, Math.min(18, baseZoom + zoomOffset));
+  const tileZoom = Math.floor(zoom);
+  const tileDisplaySize = TILE_SIZE * 2 ** (zoom - tileZoom);
   const worldSize = TILE_SIZE * 2 ** zoom;
   // The tile grid and future dining markers share this Mercator projection.
   const worldProjection = geoMercator().scale(worldSize / (2 * Math.PI)).translate([worldSize / 2, worldSize / 2]);
@@ -99,7 +105,7 @@ export function CampusMap() {
       worldCenter[1] + (y - height / 2) * (1 - 1 / ratio),
     ]);
     if (nextCenter) setCenter(nextCenter);
-    setZoomOffset(nextZoom - (width >= 700 ? 14 : 13));
+    setZoomOffset(nextZoom - baseZoom);
   }
   useEffect(() => { zoomRef.current = changeZoom; });
   function footprintPath(rings: number[][][]) {
@@ -110,21 +116,16 @@ export function CampusMap() {
   }
   const tiles = [];
   if (width > 0) {
-    for (let x = Math.floor(left / TILE_SIZE); x <= Math.floor((left + width) / TILE_SIZE); x++) {
-      for (let y = Math.floor(top / TILE_SIZE); y <= Math.floor((top + height) / TILE_SIZE); y++) {
-        if (x < 0 || y < 0 || x >= 2 ** zoom || y >= 2 ** zoom) continue;
-        tiles.push({ x, y, url: TILE_URL.replace('{z}', String(zoom)).replace('{x}', String(x)).replace('{y}', String(y)) });
+    for (let x = Math.floor(left / tileDisplaySize); x <= Math.floor((left + width) / tileDisplaySize); x++) {
+      for (let y = Math.floor(top / tileDisplaySize); y <= Math.floor((top + height) / tileDisplaySize); y++) {
+        if (x < 0 || y < 0 || x >= 2 ** tileZoom || y >= 2 ** tileZoom) continue;
+        tiles.push({ x, y, url: TILE_URL.replace('{z}', String(tileZoom)).replace('{x}', String(x)).replace('{y}', String(y)) });
       }
     }
   }
 
-  function pan(dx: number, dy: number) {
-    const next = projection.invert?.([width / 2 + dx, height / 2 + dy]);
-    if (next) setCenter(next);
-  }
-
   function reset() {
-    setCenter(CAMPUS_CENTER);
+    setCenter(diningCenter);
     setZoomOffset(0);
     setTileError(false);
     setSelectedId(null);
@@ -145,7 +146,7 @@ export function CampusMap() {
         <svg width="100%" height={height} viewBox={`0 0 ${width || 1} ${height}`} role="img" aria-labelledby={`${titleId} ${descriptionId}`}>
           <title id={titleId}>Street map of the UW–Madison campus</title>
           <desc id={descriptionId}>Campus and surrounding streets along the south shore of Lake Mendota. Red footprints highlight buildings with Union dining. The building list below provides the same information.</desc>
-          {tiles.map((tile) => <image key={`${zoom}/${tile.x}/${tile.y}`} href={tile.url} x={tile.x * TILE_SIZE - left} y={tile.y * TILE_SIZE - top} width={TILE_SIZE} height={TILE_SIZE} onError={() => setTileError(true)} />)}
+          {tiles.map((tile) => <image key={`${tileZoom}/${tile.x}/${tile.y}`} href={tile.url} x={tile.x * tileDisplaySize - left} y={tile.y * tileDisplaySize - top} width={tileDisplaySize + 0.5} height={tileDisplaySize + 0.5} onError={() => setTileError(true)} />)}
         </svg>
         <div className="map-drag-surface" aria-hidden="true"
           onPointerDown={(event) => {
@@ -181,11 +182,6 @@ export function CampusMap() {
         <div className="map-controls" role="group" aria-label="Map controls">
           <button type="button" aria-label="Zoom in" disabled={zoom === 18} onClick={() => changeZoom(1)}>+</button>
           <button type="button" aria-label="Zoom out" disabled={zoom === 12} onClick={() => changeZoom(-1)}>−</button>
-          <span className="control-divider" />
-          <button type="button" aria-label="Pan north" onClick={() => pan(0, -150)}>↑</button>
-          <button type="button" aria-label="Pan west" onClick={() => pan(-150, 0)}>←</button>
-          <button type="button" aria-label="Pan east" onClick={() => pan(150, 0)}>→</button>
-          <button type="button" aria-label="Pan south" onClick={() => pan(0, 150)}>↓</button>
         </div>
         <span className="map-north" aria-hidden="true">↑ N</span>
         <div className="map-attribution">© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a></div>
@@ -193,7 +189,7 @@ export function CampusMap() {
       </div>
       {tileError && <p className="map-error" role="status">Some map tiles couldn’t load. Check your internet connection, then reset the view or reload the page.</p>}
       <p className="map-instructions">Drag to explore. Hold Ctrl and scroll to zoom toward your cursor, or use + and −. Hover, focus, or tap a red building for dining details.</p>
-      <details className="dining-list"><summary>Browse dining by building ({diningData.buildings.length} buildings)</summary><div>{diningData.buildings.map((building) => <section key={building.id}><button type="button" onClick={() => { const points = building.rings[0]; setCenter([points.reduce((sum, point) => sum + point[0], 0) / points.length, points.reduce((sum, point) => sum + point[1], 0) / points.length]); setZoomOffset(17 - (width >= 700 ? 14 : 13)); setSelectedId(building.id); setHoveredId(null); container.current?.scrollIntoView({ block: 'center' }); }}>{building.name} ↗</button><p>{building.address}</p><ul>{building.outlets.map((outlet) => <li key={outlet}>{outlet}</li>)}</ul></section>)}</div></details>
+      <details className="dining-list"><summary>Browse dining by building ({diningData.buildings.length} buildings)</summary><div>{diningData.buildings.map((building) => <section key={building.id}><button type="button" onClick={() => { const points = building.rings[0]; setCenter([points.reduce((sum, point) => sum + point[0], 0) / points.length, points.reduce((sum, point) => sum + point[1], 0) / points.length]); setZoomOffset(17 - baseZoom); setSelectedId(building.id); setHoveredId(null); container.current?.scrollIntoView({ block: 'center' }); }}>{building.name} ↗</button><p>{building.address}</p><ul>{building.outlets.map((outlet) => <li key={outlet}>{outlet}</li>)}</ul></section>)}</div></details>
       <div className="map-notes"><div><p className="eyebrow">First exploration</p><h2>Find your next campus stop.</h2><p>Red outlines highlight buildings with Wisconsin Union dining. Some buildings house several outlets; hover or select one to see its options. Terrace and seasonal outlets are grouped with Memorial Union.</p></div><div><p className="eyebrow">Sources & scope</p><p>Basemap and building shapes: <a href="https://www.openstreetmap.org/">OpenStreetMap</a>. Map tiles load over the internet. Shapes represent buildings, not exact counter locations or an official campus boundary.</p><p>Dining listings: <a href={DINING_SOURCE}>Wisconsin Union’s food & drink directory ↗</a>. Checked {diningData.checked}; listings include seasonal options and do not indicate what is open now.</p><a className="map-issue" href="https://www.openstreetmap.org/fixthemap">Report a basemap issue ↗</a></div></div>
     </div>
   );

@@ -21,7 +21,7 @@ Open the local URL printed by Vite. `npm run build` checks TypeScript and builds
 
 ## Campus map
 
-Open the first card on the home page, or visit `/#/examples/campus-map` on the local dev server. Drag to pan, hold Ctrl and scroll to zoom around the cursor, use the zoom/arrow buttons, or reset to the initial campus view. Ordinary scrolling still scrolls the page. Buttons also support keyboard navigation.
+Open the first card on the home page, or visit `/#/examples/campus-map` on the local dev server. Drag to pan, hold Ctrl and scroll to zoom around the cursor, use the +/− buttons, or reset to the initial campus view. Ordinary scrolling still scrolls the page. Buttons also support keyboard navigation.
 
 `src/examples/campus-map/CampusMap.tsx` renders visible OpenStreetMap tiles using React. D3's Mercator projection places the tiles and will position future markers in the same coordinate system. `ResizeObserver` measures the container, and React owns the view state. No API key is needed; an internet connection is required for tiles. Tile use follows the [OpenStreetMap tile policy](https://operations.osmfoundation.org/policies/tiles/), with visible attribution and ordinary browser caching; no offline downloading or prefetching is included.
 
