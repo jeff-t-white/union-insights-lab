@@ -60,5 +60,8 @@ for (const [buildingName, entries] of Object.entries(groups)) {
 for (const location of locations) {
   if (!('buildingId' in location.properties)) Object.assign(location.properties, { sourceName: location.properties.name, buildingId: null, buildingName: null, logoPath: null, orderUrl: null });
 }
+// React uses this identity for markers and directory rows; display names may repeat.
+const identities = locations.map((location) => location.properties.sourceName);
+if (identities.some((id) => !id) || new Set(identities).size !== locations.length) throw new Error('Dining marker identities must be unique');
 await writeFile('src/examples/campus-map/campus-dining.json', JSON.stringify({ checked: points.checked, buildings, locations }, null, 2) + '\n');
 console.log(`Prepared ${buildings.length} buildings, ${locations.length} markers; ${locations.filter((item) => item.properties.buildingId).length} explicit building matches.`);

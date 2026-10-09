@@ -32,7 +32,8 @@ export function DiningMarkers({ locations, projection, width, height, selected, 
         const [x, y] = projection([location.geometry.coordinates[0], location.geometry.coordinates[1]])!;
         if (x < 0 || y < 0 || x > width || y > height) return null;
         const { name, provider } = location.properties;
-        return <button key={name} type="button" className={`dining-marker provider-${provider}${active === location ? ' is-active' : ''}`}
+        // Published source names remain unique even when display names are shared.
+        return <button key={location.properties.sourceName} type="button" className={`dining-marker provider-${provider}${active === location ? ' is-active' : ''}`}
           style={{ left: x, top: y }} aria-label={`${name}, ${providers.find((item) => item.id === provider)?.label}`}
           aria-pressed={selected === location} onPointerEnter={() => show(location)} onPointerLeave={leave}
           onFocus={() => show(location)} onBlur={leave} onClick={() => onSelect(selected === location ? null : location)}
