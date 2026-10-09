@@ -24,9 +24,15 @@ const source = JSON.parse(await readFile('src/examples/campus-map/buildings-sour
 const buildings = entries.map(([name, address, outlets]) => {
   const entry = source.elements.find((item) => item.tags.name === name);
   if (!entry) throw new Error(`Missing footprint: ${name}`);
-  const rings = entry.geometry ? [entry.geometry] : entry.members.filter((member) => member.type === 'way' && member.geometry).sort((a, b) => (a.role === 'inner') - (b.role === 'inner')).map((member) => member.geometry);
+  // Local correction from Wisconsin Union staff: Memorial Union does not have
+  // the courtyard implied by this OSM relation's inner ring. Keep its exterior
+  // footprint; the Terrace remains outdoor space outside that perimeter.
+  const geometryNote = name === 'Memorial Union'
+    ? 'Inner cutout omitted per Wisconsin Union staff correction. Exterior outline retained; Terrace is outdoor space north of the building.'
+    : undefined;
+  const rings = entry.geometry ? [entry.geometry] : entry.members.filter((member) => member.type === 'way' && member.geometry && (!geometryNote || member.role === 'outer')).sort((a, b) => (a.role === 'inner') - (b.role === 'inner')).map((member) => member.geometry);
   if (!rings.length || rings.some((ring) => ring[0].lat !== ring.at(-1).lat || ring[0].lon !== ring.at(-1).lon)) throw new Error(`Unclosed footprint: ${name}`);
-  return { id: `${entry.type}/${entry.id}`, name, address, outlets, rings: rings.map((ring) => ring.map(({ lon, lat }) => [lon, lat])) };
+  return { id: `${entry.type}/${entry.id}`, name, address, outlets, ...(geometryNote ? { geometryNote } : {}), rings: rings.map((ring) => ring.map(({ lon, lat }) => [lon, lat])) };
 });
 await writeFile('src/examples/campus-map/dining-buildings.json', JSON.stringify({ checked: '2026-10-09', source: 'https://union.wisc.edu/dine/find-food-and-drink', geometrySource: 'https://www.openstreetmap.org/copyright', buildings }, null, 2));
 console.log(`Prepared ${buildings.length} footprints and ${buildings.reduce((sum, building) => sum + building.outlets.length, 0)} directory entries.`);
