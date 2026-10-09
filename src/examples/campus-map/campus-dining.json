@@ -1,0 +1,6894 @@
+{
+  "checked": "2026-10-09",
+  "buildings": [
+    {
+      "id": "relation/19355831",
+      "name": "Memorial Union",
+      "address": "800 Langdon Street",
+      "outlets": [
+        {
+          "name": "Rathskeller",
+          "logoPath": "dining-logos/2155.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2155",
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/der-rathskeller/"
+        },
+        {
+          "name": "Der Stiftskeller",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null,
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/der-stiftskeller/"
+        },
+        {
+          "name": "Strada",
+          "logoPath": "dining-logos/2153.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2153",
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/strada/"
+        },
+        {
+          "name": "Carte",
+          "logoPath": "dining-logos/2154.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2154",
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/carte/"
+        },
+        {
+          "name": "Peets Coffee",
+          "logoPath": "dining-logos/1972.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/1972",
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/peets-coffee-and-tea/"
+        },
+        {
+          "name": "Daily Scoop",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null,
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/daily-scoop-in-memorial-union/"
+        },
+        {
+          "name": "Badger Market",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null,
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/badger-market/"
+        },
+        {
+          "name": "Lakeview Lounge",
+          "logoPath": "dining-logos/1973.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/1973",
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/lakeview-lounge/"
+        },
+        {
+          "name": "The Brat Stand",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null,
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/the-brat-stand/"
+        },
+        {
+          "name": "BBQ Stand",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null,
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/bbq-stand/"
+        },
+        {
+          "name": "Terrace Pop-Up Store",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null,
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink"
+        }
+      ],
+      "geometryNote": "Inner cutout omitted per Wisconsin Union staff correction. Exterior outline retained; Terrace is outdoor space north of the building.",
+      "rings": [
+        [
+          [
+            -89.4005291,
+            43.0768637
+          ],
+          [
+            -89.4004794,
+            43.0768629
+          ],
+          [
+            -89.4004574,
+            43.076863
+          ],
+          [
+            -89.4004573,
+            43.0768726
+          ],
+          [
+            -89.4004548,
+            43.0769304
+          ],
+          [
+            -89.4003852,
+            43.0769294
+          ],
+          [
+            -89.4001648,
+            43.0769264
+          ],
+          [
+            -89.4001656,
+            43.0768815
+          ],
+          [
+            -89.4001664,
+            43.0768379
+          ],
+          [
+            -89.4001664,
+            43.0768362
+          ],
+          [
+            -89.4001511,
+            43.0768361
+          ],
+          [
+            -89.4001425,
+            43.076836
+          ],
+          [
+            -89.4001476,
+            43.0765466
+          ],
+          [
+            -89.4001303,
+            43.0765464
+          ],
+          [
+            -89.4001306,
+            43.0765305
+          ],
+          [
+            -89.4001122,
+            43.0765304
+          ],
+          [
+            -89.4001131,
+            43.0764741
+          ],
+          [
+            -89.4001221,
+            43.0764742
+          ],
+          [
+            -89.4001232,
+            43.0763952
+          ],
+          [
+            -89.4000935,
+            43.076395
+          ],
+          [
+            -89.4000522,
+            43.0763946
+          ],
+          [
+            -89.4000518,
+            43.0764168
+          ],
+          [
+            -89.4000231,
+            43.0764165
+          ],
+          [
+            -89.400023,
+            43.0764195
+          ],
+          [
+            -89.399999,
+            43.0764193
+          ],
+          [
+            -89.3999651,
+            43.0764191
+          ],
+          [
+            -89.3999647,
+            43.0764537
+          ],
+          [
+            -89.3999519,
+            43.0764532
+          ],
+          [
+            -89.3999423,
+            43.0764551
+          ],
+          [
+            -89.3999278,
+            43.0764602
+          ],
+          [
+            -89.3999115,
+            43.0764724
+          ],
+          [
+            -89.3998949,
+            43.0764838
+          ],
+          [
+            -89.3998802,
+            43.0764897
+          ],
+          [
+            -89.3998603,
+            43.0764935
+          ],
+          [
+            -89.3998404,
+            43.0764943
+          ],
+          [
+            -89.3998203,
+            43.0764922
+          ],
+          [
+            -89.3998004,
+            43.0764854
+          ],
+          [
+            -89.3997824,
+            43.0764776
+          ],
+          [
+            -89.3997675,
+            43.0764654
+          ],
+          [
+            -89.3997579,
+            43.0764555
+          ],
+          [
+            -89.399748,
+            43.0764502
+          ],
+          [
+            -89.3997357,
+            43.0764462
+          ],
+          [
+            -89.3997262,
+            43.0764457
+          ],
+          [
+            -89.3997142,
+            43.0764454
+          ],
+          [
+            -89.3996854,
+            43.0764444
+          ],
+          [
+            -89.3996674,
+            43.0764438
+          ],
+          [
+            -89.3996678,
+            43.0765103
+          ],
+          [
+            -89.3996648,
+            43.0766304
+          ],
+          [
+            -89.399164,
+            43.0766237
+          ],
+          [
+            -89.399176,
+            43.0761419
+          ],
+          [
+            -89.3992712,
+            43.0761431
+          ],
+          [
+            -89.3992713,
+            43.0761372
+          ],
+          [
+            -89.3993935,
+            43.0761382
+          ],
+          [
+            -89.399513,
+            43.0761398
+          ],
+          [
+            -89.3995128,
+            43.0761465
+          ],
+          [
+            -89.3996243,
+            43.0761478
+          ],
+          [
+            -89.3996244,
+            43.0761404
+          ],
+          [
+            -89.3996382,
+            43.0761405
+          ],
+          [
+            -89.3996386,
+            43.0761323
+          ],
+          [
+            -89.3996391,
+            43.0761015
+          ],
+          [
+            -89.3996439,
+            43.0761015
+          ],
+          [
+            -89.3997484,
+            43.0761023
+          ],
+          [
+            -89.3997482,
+            43.0761122
+          ],
+          [
+            -89.3998022,
+            43.0761126
+          ],
+          [
+            -89.3999017,
+            43.0761132
+          ],
+          [
+            -89.3999485,
+            43.0761137
+          ],
+          [
+            -89.3999487,
+            43.0761046
+          ],
+          [
+            -89.3999533,
+            43.0761048
+          ],
+          [
+            -89.3999958,
+            43.0761054
+          ],
+          [
+            -89.4000179,
+            43.0761058
+          ],
+          [
+            -89.400055,
+            43.0761057
+          ],
+          [
+            -89.4000592,
+            43.0761057
+          ],
+          [
+            -89.4000585,
+            43.0761477
+          ],
+          [
+            -89.4000714,
+            43.0761478
+          ],
+          [
+            -89.4000713,
+            43.0761559
+          ],
+          [
+            -89.4000787,
+            43.076156
+          ],
+          [
+            -89.4000789,
+            43.0761421
+          ],
+          [
+            -89.4000853,
+            43.0761427
+          ],
+          [
+            -89.4001317,
+            43.0761431
+          ],
+          [
+            -89.4001833,
+            43.0761431
+          ],
+          [
+            -89.4001831,
+            43.0761518
+          ],
+          [
+            -89.4002131,
+            43.0761521
+          ],
+          [
+            -89.4002135,
+            43.0761254
+          ],
+          [
+            -89.4002303,
+            43.0761256
+          ],
+          [
+            -89.4003882,
+            43.0761272
+          ],
+          [
+            -89.4004046,
+            43.0761274
+          ],
+          [
+            -89.400404,
+            43.076157
+          ],
+          [
+            -89.4004227,
+            43.0761572
+          ],
+          [
+            -89.4004226,
+            43.0761645
+          ],
+          [
+            -89.4004704,
+            43.076165
+          ],
+          [
+            -89.4005227,
+            43.0761655
+          ],
+          [
+            -89.4005413,
+            43.0761657
+          ],
+          [
+            -89.4005394,
+            43.0762608
+          ],
+          [
+            -89.4005212,
+            43.0762606
+          ],
+          [
+            -89.4004948,
+            43.0762603
+          ],
+          [
+            -89.400493,
+            43.0763489
+          ],
+          [
+            -89.4005047,
+            43.076349
+          ],
+          [
+            -89.4005025,
+            43.0764611
+          ],
+          [
+            -89.4004892,
+            43.0764609
+          ],
+          [
+            -89.4004878,
+            43.0765375
+          ],
+          [
+            -89.4005152,
+            43.0765378
+          ],
+          [
+            -89.4005352,
+            43.076538
+          ],
+          [
+            -89.4005331,
+            43.0766495
+          ],
+          [
+            -89.4005291,
+            43.0768637
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "way/153660065",
+      "name": "Union South",
+      "address": "1308 West Dayton Street",
+      "outlets": [
+        {
+          "name": "Sett Pub",
+          "logoPath": "dining-logos/2148.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2148",
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/the-sett/"
+        },
+        {
+          "name": "Sett Recreation",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null,
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/events-and-activities/climbing-and-bowling/"
+        },
+        {
+          "name": "Prairie Fire",
+          "logoPath": "dining-logos/1974.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/1974",
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/prairie-fire/"
+        },
+        {
+          "name": "Naan Stop South",
+          "logoPath": "dining-logos/2157.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2157",
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/naan-stop-south"
+        },
+        {
+          "name": "Daily Scoop",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null,
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/daily-scoop-in-union-south/"
+        },
+        {
+          "name": "South Cantina",
+          "logoPath": "dining-logos/1969.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/1969",
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/southcantina/"
+        },
+        {
+          "name": "Ginger Root",
+          "logoPath": "dining-logos/2147.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2147",
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/ginger-root/"
+        },
+        {
+          "name": "Badger Market",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null,
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/badger-market-in-union-south/"
+        }
+      ],
+      "rings": [
+        [
+          [
+            -89.4086774,
+            43.0723675
+          ],
+          [
+            -89.4077379,
+            43.0720517
+          ],
+          [
+            -89.4077632,
+            43.0720125
+          ],
+          [
+            -89.4077089,
+            43.0719919
+          ],
+          [
+            -89.4076842,
+            43.0720336
+          ],
+          [
+            -89.4075988,
+            43.0720046
+          ],
+          [
+            -89.4075448,
+            43.0719854
+          ],
+          [
+            -89.4075427,
+            43.0718096
+          ],
+          [
+            -89.4075154,
+            43.0718086
+          ],
+          [
+            -89.4074909,
+            43.0718081
+          ],
+          [
+            -89.4074943,
+            43.0715762
+          ],
+          [
+            -89.4074985,
+            43.0712891
+          ],
+          [
+            -89.4075747,
+            43.0712891
+          ],
+          [
+            -89.4077668,
+            43.0712889
+          ],
+          [
+            -89.4078652,
+            43.0712888
+          ],
+          [
+            -89.4078658,
+            43.0714059
+          ],
+          [
+            -89.4078807,
+            43.0714582
+          ],
+          [
+            -89.4079063,
+            43.0715118
+          ],
+          [
+            -89.4079398,
+            43.0715679
+          ],
+          [
+            -89.4079829,
+            43.0716236
+          ],
+          [
+            -89.4080407,
+            43.0716725
+          ],
+          [
+            -89.408107,
+            43.0717146
+          ],
+          [
+            -89.4081893,
+            43.0717545
+          ],
+          [
+            -89.4082532,
+            43.0717738
+          ],
+          [
+            -89.4083229,
+            43.0717916
+          ],
+          [
+            -89.4083737,
+            43.0718025
+          ],
+          [
+            -89.4084259,
+            43.0718118
+          ],
+          [
+            -89.4084841,
+            43.0718195
+          ],
+          [
+            -89.4085426,
+            43.0718241
+          ],
+          [
+            -89.4086727,
+            43.0718265
+          ],
+          [
+            -89.4086754,
+            43.0718377
+          ],
+          [
+            -89.408689,
+            43.0718372
+          ],
+          [
+            -89.4087794,
+            43.0718336
+          ],
+          [
+            -89.4087903,
+            43.0721894
+          ],
+          [
+            -89.4086748,
+            43.0721864
+          ],
+          [
+            -89.4086765,
+            43.0722919
+          ],
+          [
+            -89.4086774,
+            43.0723675
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "way/1531310168",
+      "name": "Levy Hall",
+      "address": "232 North Park Street",
+      "outlets": [
+        {
+          "name": "Hosto",
+          "logoPath": "dining-logos/2465.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2465",
+          "provider": "union",
+          "locationUrl": "https://weborder.transactcampus.com/230"
+        }
+      ],
+      "rings": [
+        [
+          [
+            -89.4010902,
+            43.0719593
+          ],
+          [
+            -89.4010993,
+            43.071584
+          ],
+          [
+            -89.4020103,
+            43.0715958
+          ],
+          [
+            -89.4020011,
+            43.0719712
+          ],
+          [
+            -89.4010902,
+            43.0719593
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "way/1391651477",
+      "name": "Morgridge Hall",
+      "address": "1205 University Avenue",
+      "outlets": [
+        {
+          "name": "Ground Truth",
+          "logoPath": "dining-logos/2468.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2468",
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/ground-truth"
+        }
+      ],
+      "rings": [
+        [
+          [
+            -89.4071883,
+            43.0731926
+          ],
+          [
+            -89.406413,
+            43.0731919
+          ],
+          [
+            -89.4063581,
+            43.0731533
+          ],
+          [
+            -89.4062228,
+            43.0731555
+          ],
+          [
+            -89.4060836,
+            43.0730116
+          ],
+          [
+            -89.4063862,
+            43.0728675
+          ],
+          [
+            -89.4066583,
+            43.0727201
+          ],
+          [
+            -89.4066581,
+            43.0723525
+          ],
+          [
+            -89.4071938,
+            43.0723543
+          ],
+          [
+            -89.4071913,
+            43.0727285
+          ],
+          [
+            -89.4071883,
+            43.0731926
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "way/174188355",
+      "name": "Signe Skott Cooper Hall",
+      "address": "701 Highland Avenue",
+      "outlets": [
+        {
+          "name": "Revive",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null,
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/revive/"
+        }
+      ],
+      "rings": [
+        [
+          [
+            -89.4282432,
+            43.0776758
+          ],
+          [
+            -89.4282433,
+            43.0776486
+          ],
+          [
+            -89.4282434,
+            43.0776025
+          ],
+          [
+            -89.4278805,
+            43.0776019
+          ],
+          [
+            -89.4278793,
+            43.0779602
+          ],
+          [
+            -89.4277655,
+            43.07796
+          ],
+          [
+            -89.4277653,
+            43.0780079
+          ],
+          [
+            -89.4277103,
+            43.0780078
+          ],
+          [
+            -89.4277105,
+            43.0779599
+          ],
+          [
+            -89.4275509,
+            43.0779596
+          ],
+          [
+            -89.427552,
+            43.0776414
+          ],
+          [
+            -89.4275824,
+            43.0776415
+          ],
+          [
+            -89.4275828,
+            43.0774989
+          ],
+          [
+            -89.4275581,
+            43.0774989
+          ],
+          [
+            -89.4275583,
+            43.0774421
+          ],
+          [
+            -89.4275696,
+            43.0774421
+          ],
+          [
+            -89.4275702,
+            43.0772455
+          ],
+          [
+            -89.4276938,
+            43.0772457
+          ],
+          [
+            -89.4276937,
+            43.0772636
+          ],
+          [
+            -89.428714,
+            43.0772654
+          ],
+          [
+            -89.4287129,
+            43.0776075
+          ],
+          [
+            -89.4285977,
+            43.0776073
+          ],
+          [
+            -89.4285975,
+            43.0776765
+          ],
+          [
+            -89.4282432,
+            43.0776758
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "way/153063315",
+      "name": "Wisconsin Institute for Discovery",
+      "address": "330 North Orchard Street",
+      "outlets": [
+        {
+          "name": "Pedone Pinsa",
+          "logoPath": "dining-logos/2466.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2466",
+          "provider": "union",
+          "locationUrl": "https://weborder.transactcampus.com/230"
+        },
+        {
+          "name": "Aldo’s Cafe",
+          "provider": "other",
+          "logoPath": null,
+          "orderUrl": null,
+          "sourceUrl": "https://www.wisc.edu/dining/",
+          "locationUrl": "https://www.aldoscafemadison.com/"
+        },
+        {
+          "name": "Steenbock’s on Orchard",
+          "provider": "other",
+          "logoPath": null,
+          "orderUrl": null,
+          "sourceUrl": "https://www.wisc.edu/dining/",
+          "locationUrl": "https://www.steenbocksonorchard.com/"
+        }
+      ],
+      "rings": [
+        [
+          [
+            -89.4087891,
+            43.072843
+          ],
+          [
+            -89.4086606,
+            43.0728107
+          ],
+          [
+            -89.4086506,
+            43.0728263
+          ],
+          [
+            -89.4084781,
+            43.0727752
+          ],
+          [
+            -89.4084987,
+            43.0727402
+          ],
+          [
+            -89.4080027,
+            43.072581
+          ],
+          [
+            -89.4079827,
+            43.0726142
+          ],
+          [
+            -89.4077138,
+            43.0725132
+          ],
+          [
+            -89.4077256,
+            43.072498
+          ],
+          [
+            -89.4075106,
+            43.0724114
+          ],
+          [
+            -89.4075087,
+            43.0732265
+          ],
+          [
+            -89.4078377,
+            43.0732269
+          ],
+          [
+            -89.4078377,
+            43.0732062
+          ],
+          [
+            -89.4086393,
+            43.0732068
+          ],
+          [
+            -89.4086393,
+            43.0732246
+          ],
+          [
+            -89.4087889,
+            43.0732246
+          ],
+          [
+            -89.4087891,
+            43.072843
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "way/37749300",
+      "name": "Helen C. White Hall",
+      "address": "600 North Park Street",
+      "outlets": [
+        {
+          "name": "Open Book Cafe",
+          "logoPath": "dining-logos/2156.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2156",
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/open-book-cafe/"
+        }
+      ],
+      "rings": [
+        [
+          [
+            -89.4008541,
+            43.0763553
+          ],
+          [
+            -89.4008525,
+            43.0764465
+          ],
+          [
+            -89.4009053,
+            43.0764471
+          ],
+          [
+            -89.4009041,
+            43.0764829
+          ],
+          [
+            -89.4008311,
+            43.0764815
+          ],
+          [
+            -89.4008053,
+            43.0764812
+          ],
+          [
+            -89.4007827,
+            43.0764796
+          ],
+          [
+            -89.4007678,
+            43.0764794
+          ],
+          [
+            -89.4007656,
+            43.0765687
+          ],
+          [
+            -89.4007655,
+            43.0765849
+          ],
+          [
+            -89.4007642,
+            43.0766264
+          ],
+          [
+            -89.4007631,
+            43.0767194
+          ],
+          [
+            -89.4007617,
+            43.0767502
+          ],
+          [
+            -89.400762,
+            43.0767748
+          ],
+          [
+            -89.4007618,
+            43.076794
+          ],
+          [
+            -89.4007612,
+            43.0768983
+          ],
+          [
+            -89.4008204,
+            43.0768997
+          ],
+          [
+            -89.4008912,
+            43.0769002
+          ],
+          [
+            -89.4008908,
+            43.0769388
+          ],
+          [
+            -89.4017988,
+            43.0769513
+          ],
+          [
+            -89.4018001,
+            43.0769189
+          ],
+          [
+            -89.4018529,
+            43.0769191
+          ],
+          [
+            -89.4018567,
+            43.0768029
+          ],
+          [
+            -89.4018734,
+            43.0768032
+          ],
+          [
+            -89.4018744,
+            43.0767716
+          ],
+          [
+            -89.4018577,
+            43.0767714
+          ],
+          [
+            -89.4018646,
+            43.0765557
+          ],
+          [
+            -89.4018824,
+            43.0765561
+          ],
+          [
+            -89.4018834,
+            43.0765262
+          ],
+          [
+            -89.4018656,
+            43.0765259
+          ],
+          [
+            -89.4018692,
+            43.0764142
+          ],
+          [
+            -89.4018145,
+            43.0764138
+          ],
+          [
+            -89.4018143,
+            43.0763834
+          ],
+          [
+            -89.4014774,
+            43.0763774
+          ],
+          [
+            -89.4014665,
+            43.0763774
+          ],
+          [
+            -89.4014659,
+            43.0764088
+          ],
+          [
+            -89.4014074,
+            43.0764075
+          ],
+          [
+            -89.4014073,
+            43.0764833
+          ],
+          [
+            -89.4014079,
+            43.076651
+          ],
+          [
+            -89.401282,
+            43.0766469
+          ],
+          [
+            -89.4011305,
+            43.0766488
+          ],
+          [
+            -89.4011308,
+            43.0765701
+          ],
+          [
+            -89.400863,
+            43.0763622
+          ],
+          [
+            -89.4008541,
+            43.0763553
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "way/38855860",
+      "name": "Microbial Sciences Building",
+      "address": "1550 Linden Drive",
+      "outlets": [
+        {
+          "name": "Microcosm Cafe",
+          "logoPath": "dining-logos/2152.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2152",
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/microcosm-cafe/"
+        }
+      ],
+      "rings": [
+        [
+          [
+            -89.4125116,
+            43.0757535
+          ],
+          [
+            -89.4125113,
+            43.0760741
+          ],
+          [
+            -89.412483,
+            43.0760742
+          ],
+          [
+            -89.4124846,
+            43.0761359
+          ],
+          [
+            -89.4124057,
+            43.0761372
+          ],
+          [
+            -89.4123406,
+            43.0761382
+          ],
+          [
+            -89.4123391,
+            43.0762382
+          ],
+          [
+            -89.412257,
+            43.0762387
+          ],
+          [
+            -89.4122565,
+            43.076258
+          ],
+          [
+            -89.4121498,
+            43.0762575
+          ],
+          [
+            -89.411883,
+            43.0762561
+          ],
+          [
+            -89.4118897,
+            43.0760672
+          ],
+          [
+            -89.4121116,
+            43.0760685
+          ],
+          [
+            -89.4120905,
+            43.0759896
+          ],
+          [
+            -89.4120535,
+            43.0759901
+          ],
+          [
+            -89.4119679,
+            43.075679
+          ],
+          [
+            -89.4119107,
+            43.0756803
+          ],
+          [
+            -89.4119125,
+            43.0757393
+          ],
+          [
+            -89.4113101,
+            43.0757355
+          ],
+          [
+            -89.4113103,
+            43.0757194
+          ],
+          [
+            -89.4112349,
+            43.0757189
+          ],
+          [
+            -89.4112297,
+            43.0755645
+          ],
+          [
+            -89.4112851,
+            43.0755639
+          ],
+          [
+            -89.4112885,
+            43.0755514
+          ],
+          [
+            -89.411487,
+            43.0755222
+          ],
+          [
+            -89.4114868,
+            43.0754526
+          ],
+          [
+            -89.4114338,
+            43.075452
+          ],
+          [
+            -89.4114334,
+            43.0754278
+          ],
+          [
+            -89.4114322,
+            43.0753565
+          ],
+          [
+            -89.4115112,
+            43.0753559
+          ],
+          [
+            -89.4115105,
+            43.0753116
+          ],
+          [
+            -89.411724,
+            43.0753129
+          ],
+          [
+            -89.4119217,
+            43.075314
+          ],
+          [
+            -89.4119224,
+            43.0753615
+          ],
+          [
+            -89.4120301,
+            43.0753621
+          ],
+          [
+            -89.4120296,
+            43.0754533
+          ],
+          [
+            -89.4119441,
+            43.0754561
+          ],
+          [
+            -89.4119931,
+            43.0756141
+          ],
+          [
+            -89.4120157,
+            43.075613
+          ],
+          [
+            -89.4120181,
+            43.0755671
+          ],
+          [
+            -89.4125126,
+            43.075568
+          ],
+          [
+            -89.4125116,
+            43.0757535
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "way/56997838",
+      "name": "Engineering Hall",
+      "address": "1415 Engineering Drive",
+      "outlets": [
+        {
+          "name": "Badger Market Engineering",
+          "logoPath": "dining-logos/2150.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2150",
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/e2-engineering-eatery/"
+        }
+      ],
+      "rings": [
+        [
+          [
+            -89.4112652,
+            43.072121
+          ],
+          [
+            -89.4108311,
+            43.0721164
+          ],
+          [
+            -89.4108305,
+            43.0721461
+          ],
+          [
+            -89.4107567,
+            43.0721453
+          ],
+          [
+            -89.410756,
+            43.0721799
+          ],
+          [
+            -89.4098799,
+            43.0721707
+          ],
+          [
+            -89.4098805,
+            43.0721361
+          ],
+          [
+            -89.4098115,
+            43.0721354
+          ],
+          [
+            -89.4098121,
+            43.0721057
+          ],
+          [
+            -89.4093696,
+            43.0721011
+          ],
+          [
+            -89.4093723,
+            43.0719655
+          ],
+          [
+            -89.4096855,
+            43.0719688
+          ],
+          [
+            -89.4096882,
+            43.0718319
+          ],
+          [
+            -89.4093011,
+            43.0718279
+          ],
+          [
+            -89.409304,
+            43.0716848
+          ],
+          [
+            -89.4096897,
+            43.0716888
+          ],
+          [
+            -89.4096923,
+            43.0715575
+          ],
+          [
+            -89.4093746,
+            43.0715542
+          ],
+          [
+            -89.4093778,
+            43.0713933
+          ],
+          [
+            -89.4112792,
+            43.0714132
+          ],
+          [
+            -89.4112761,
+            43.0715694
+          ],
+          [
+            -89.411011,
+            43.0715666
+          ],
+          [
+            -89.4110083,
+            43.0717021
+          ],
+          [
+            -89.4112755,
+            43.0717049
+          ],
+          [
+            -89.4112727,
+            43.0718456
+          ],
+          [
+            -89.4110024,
+            43.0718427
+          ],
+          [
+            -89.4110002,
+            43.0719546
+          ],
+          [
+            -89.4112684,
+            43.0719574
+          ],
+          [
+            -89.4112652,
+            43.072121
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "way/37751914",
+      "name": "Education Building",
+      "address": "1000 Bascom Mall",
+      "outlets": [
+        {
+          "name": "Crossroads Cafe",
+          "logoPath": "dining-logos/2467.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2467",
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/crossroads-cafe/"
+        }
+      ],
+      "rings": [
+        [
+          [
+            -89.4026275,
+            43.07555
+          ],
+          [
+            -89.4026239,
+            43.07574
+          ],
+          [
+            -89.4026072,
+            43.0757398
+          ],
+          [
+            -89.4026037,
+            43.0759285
+          ],
+          [
+            -89.4024796,
+            43.0759273
+          ],
+          [
+            -89.4024204,
+            43.0759267
+          ],
+          [
+            -89.4024206,
+            43.0759141
+          ],
+          [
+            -89.4023609,
+            43.0759135
+          ],
+          [
+            -89.4022902,
+            43.0759127
+          ],
+          [
+            -89.4022055,
+            43.0759119
+          ],
+          [
+            -89.402158,
+            43.0759114
+          ],
+          [
+            -89.4021562,
+            43.0760055
+          ],
+          [
+            -89.4020353,
+            43.076004
+          ],
+          [
+            -89.401973,
+            43.0760034
+          ],
+          [
+            -89.4019775,
+            43.075768
+          ],
+          [
+            -89.4019779,
+            43.0757519
+          ],
+          [
+            -89.4019783,
+            43.0757271
+          ],
+          [
+            -89.4019647,
+            43.0757269
+          ],
+          [
+            -89.4019681,
+            43.0755433
+          ],
+          [
+            -89.4021675,
+            43.0755452
+          ],
+          [
+            -89.4021672,
+            43.0755607
+          ],
+          [
+            -89.402249,
+            43.0755616
+          ],
+          [
+            -89.4023109,
+            43.0755622
+          ],
+          [
+            -89.4023605,
+            43.0755627
+          ],
+          [
+            -89.4024295,
+            43.0755634
+          ],
+          [
+            -89.4024298,
+            43.075548
+          ],
+          [
+            -89.4026275,
+            43.07555
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "relation/17899257",
+      "name": "Veterinary Medicine North",
+      "address": "515 Easterday Lane",
+      "outlets": [
+        {
+          "name": "Badger Market Veterinary Medicine",
+          "logoPath": "dining-logos/2151.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2151",
+          "provider": "union",
+          "locationUrl": "https://weborder.transactcampus.com/230"
+        }
+      ],
+      "rings": [
+        [
+          [
+            -89.4207476,
+            43.0754
+          ],
+          [
+            -89.4207469,
+            43.0754595
+          ],
+          [
+            -89.4209602,
+            43.0754841
+          ],
+          [
+            -89.4209587,
+            43.0756255
+          ],
+          [
+            -89.4205296,
+            43.075623
+          ],
+          [
+            -89.4205295,
+            43.0756285
+          ],
+          [
+            -89.4204544,
+            43.0756279
+          ],
+          [
+            -89.4203749,
+            43.0756277
+          ],
+          [
+            -89.4203202,
+            43.0756272
+          ],
+          [
+            -89.4203008,
+            43.0756237
+          ],
+          [
+            -89.4203003,
+            43.0756792
+          ],
+          [
+            -89.4202999,
+            43.0757231
+          ],
+          [
+            -89.4202997,
+            43.0757362
+          ],
+          [
+            -89.4202942,
+            43.0763096
+          ],
+          [
+            -89.420336,
+            43.0763098
+          ],
+          [
+            -89.420336,
+            43.076326
+          ],
+          [
+            -89.4206372,
+            43.0763278
+          ],
+          [
+            -89.4206379,
+            43.0762927
+          ],
+          [
+            -89.4206463,
+            43.0762928
+          ],
+          [
+            -89.4206497,
+            43.0762928
+          ],
+          [
+            -89.4206497,
+            43.0762938
+          ],
+          [
+            -89.4206563,
+            43.0762939
+          ],
+          [
+            -89.4206563,
+            43.076295
+          ],
+          [
+            -89.4207752,
+            43.0762957
+          ],
+          [
+            -89.4208065,
+            43.0762959
+          ],
+          [
+            -89.4208063,
+            43.0763143
+          ],
+          [
+            -89.421136,
+            43.0763161
+          ],
+          [
+            -89.4211336,
+            43.0763034
+          ],
+          [
+            -89.4211852,
+            43.076306
+          ],
+          [
+            -89.4212008,
+            43.0761411
+          ],
+          [
+            -89.4211509,
+            43.0761386
+          ],
+          [
+            -89.4211821,
+            43.0758371
+          ],
+          [
+            -89.4211743,
+            43.075771
+          ],
+          [
+            -89.4211791,
+            43.0757707
+          ],
+          [
+            -89.4211626,
+            43.0756336
+          ],
+          [
+            -89.4210708,
+            43.0756396
+          ],
+          [
+            -89.4210686,
+            43.0756346
+          ],
+          [
+            -89.4210581,
+            43.0755343
+          ],
+          [
+            -89.421118,
+            43.075402
+          ],
+          [
+            -89.4207476,
+            43.0754
+          ]
+        ],
+        [
+          [
+            -89.4206527,
+            43.0758446
+          ],
+          [
+            -89.4207194,
+            43.0758446
+          ],
+          [
+            -89.420719,
+            43.0758806
+          ],
+          [
+            -89.4207317,
+            43.0758807
+          ],
+          [
+            -89.4207318,
+            43.0758711
+          ],
+          [
+            -89.421077,
+            43.0758731
+          ],
+          [
+            -89.4210769,
+            43.0758737
+          ],
+          [
+            -89.4210689,
+            43.0759503
+          ],
+          [
+            -89.4210679,
+            43.0759568
+          ],
+          [
+            -89.4210662,
+            43.0759632
+          ],
+          [
+            -89.4210637,
+            43.0759694
+          ],
+          [
+            -89.4210606,
+            43.0759755
+          ],
+          [
+            -89.4210568,
+            43.0759815
+          ],
+          [
+            -89.4210523,
+            43.0759871
+          ],
+          [
+            -89.4210472,
+            43.0759925
+          ],
+          [
+            -89.4208056,
+            43.0762147
+          ],
+          [
+            -89.4208027,
+            43.0762172
+          ],
+          [
+            -89.4207995,
+            43.0762195
+          ],
+          [
+            -89.4207961,
+            43.0762215
+          ],
+          [
+            -89.4207924,
+            43.0762233
+          ],
+          [
+            -89.4207886,
+            43.0762248
+          ],
+          [
+            -89.4207845,
+            43.0762261
+          ],
+          [
+            -89.4207803,
+            43.0762272
+          ],
+          [
+            -89.4207761,
+            43.0762279
+          ],
+          [
+            -89.4206483,
+            43.076229
+          ],
+          [
+            -89.4206527,
+            43.0758446
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "way/172992066",
+      "name": "Medical Sciences",
+      "address": "1300 University Avenue (Charter Street entrance)",
+      "outlets": [
+        {
+          "name": "Badger Market Medical Sciences",
+          "logoPath": "dining-logos/2146.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2146",
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/badger-market-in-medical-sciences/"
+        },
+        {
+          "name": "Naan Stop Express",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null,
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink"
+        }
+      ],
+      "rings": [
+        [
+          [
+            -89.4068162,
+            43.074809
+          ],
+          [
+            -89.406814,
+            43.0749639
+          ],
+          [
+            -89.40682,
+            43.0749639
+          ],
+          [
+            -89.4068197,
+            43.0749788
+          ],
+          [
+            -89.4064814,
+            43.074976
+          ],
+          [
+            -89.4064815,
+            43.0749698
+          ],
+          [
+            -89.4064752,
+            43.0749698
+          ],
+          [
+            -89.4064804,
+            43.0746338
+          ],
+          [
+            -89.4064811,
+            43.0745909
+          ],
+          [
+            -89.4066668,
+            43.0745924
+          ],
+          [
+            -89.4066828,
+            43.074593
+          ],
+          [
+            -89.4066818,
+            43.0746355
+          ],
+          [
+            -89.4066803,
+            43.0747013
+          ],
+          [
+            -89.4066804,
+            43.0747154
+          ],
+          [
+            -89.4068716,
+            43.074717
+          ],
+          [
+            -89.4068724,
+            43.0746614
+          ],
+          [
+            -89.4070084,
+            43.0746625
+          ],
+          [
+            -89.4070075,
+            43.0747052
+          ],
+          [
+            -89.407006,
+            43.0748104
+          ],
+          [
+            -89.4068162,
+            43.074809
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "way/38855397",
+      "name": "Ingraham Hall",
+      "address": "1155 Observatory Drive",
+      "outlets": [
+        {
+          "name": "Badger Market",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null,
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/badger-market-in-ingraham/"
+        }
+      ],
+      "rings": [
+        [
+          [
+            -89.4051465,
+            43.0752478
+          ],
+          [
+            -89.4051773,
+            43.0752521
+          ],
+          [
+            -89.4051849,
+            43.0752531
+          ],
+          [
+            -89.4051977,
+            43.0752546
+          ],
+          [
+            -89.4052266,
+            43.0751067
+          ],
+          [
+            -89.4053768,
+            43.0751224
+          ],
+          [
+            -89.4053711,
+            43.0751605
+          ],
+          [
+            -89.4053935,
+            43.0751633
+          ],
+          [
+            -89.4053818,
+            43.0752205
+          ],
+          [
+            -89.4053588,
+            43.0752181
+          ],
+          [
+            -89.4053565,
+            43.0752266
+          ],
+          [
+            -89.4053546,
+            43.0752363
+          ],
+          [
+            -89.4053524,
+            43.0752473
+          ],
+          [
+            -89.4053479,
+            43.0752705
+          ],
+          [
+            -89.405391,
+            43.0752748
+          ],
+          [
+            -89.4053926,
+            43.0752659
+          ],
+          [
+            -89.4054018,
+            43.0752665
+          ],
+          [
+            -89.4054156,
+            43.0752678
+          ],
+          [
+            -89.4054262,
+            43.075269
+          ],
+          [
+            -89.4054347,
+            43.0752439
+          ],
+          [
+            -89.4054534,
+            43.0751765
+          ],
+          [
+            -89.4054623,
+            43.0751347
+          ],
+          [
+            -89.4057071,
+            43.0751581
+          ],
+          [
+            -89.405694,
+            43.0752918
+          ],
+          [
+            -89.4057164,
+            43.0752945
+          ],
+          [
+            -89.4057429,
+            43.075297
+          ],
+          [
+            -89.4057394,
+            43.0753697
+          ],
+          [
+            -89.4057364,
+            43.0754308
+          ],
+          [
+            -89.4055951,
+            43.0754139
+          ],
+          [
+            -89.4055722,
+            43.0754115
+          ],
+          [
+            -89.4055489,
+            43.0754088
+          ],
+          [
+            -89.4054133,
+            43.0753944
+          ],
+          [
+            -89.4054088,
+            43.0754155
+          ],
+          [
+            -89.4053669,
+            43.0754112
+          ],
+          [
+            -89.4053254,
+            43.0756168
+          ],
+          [
+            -89.4053211,
+            43.0756458
+          ],
+          [
+            -89.4055988,
+            43.0756747
+          ],
+          [
+            -89.4056099,
+            43.0756759
+          ],
+          [
+            -89.4055942,
+            43.0757562
+          ],
+          [
+            -89.4056426,
+            43.0757613
+          ],
+          [
+            -89.4056293,
+            43.0758292
+          ],
+          [
+            -89.4056425,
+            43.0758306
+          ],
+          [
+            -89.4056316,
+            43.0758865
+          ],
+          [
+            -89.4056204,
+            43.0758853
+          ],
+          [
+            -89.4056034,
+            43.0758832
+          ],
+          [
+            -89.4055716,
+            43.0758803
+          ],
+          [
+            -89.405575,
+            43.0758628
+          ],
+          [
+            -89.4054452,
+            43.0758493
+          ],
+          [
+            -89.4051423,
+            43.0758177
+          ],
+          [
+            -89.4051194,
+            43.0758153
+          ],
+          [
+            -89.4050769,
+            43.0758106
+          ],
+          [
+            -89.4050639,
+            43.0758093
+          ],
+          [
+            -89.4050693,
+            43.0757816
+          ],
+          [
+            -89.4050748,
+            43.0757523
+          ],
+          [
+            -89.405079,
+            43.0757305
+          ],
+          [
+            -89.4050511,
+            43.0757276
+          ],
+          [
+            -89.4050585,
+            43.0756899
+          ],
+          [
+            -89.4050627,
+            43.0756681
+          ],
+          [
+            -89.4050979,
+            43.0754886
+          ],
+          [
+            -89.4051002,
+            43.0754767
+          ],
+          [
+            -89.4051029,
+            43.0754636
+          ],
+          [
+            -89.4051465,
+            43.0752478
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "way/107463323",
+      "name": "Health Sciences Learning Center",
+      "address": "750 Highland Avenue",
+      "outlets": [
+        {
+          "name": "Badger Market",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null,
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/badger-market-in-health-sciences-learning-center/"
+        }
+      ],
+      "rings": [
+        [
+          [
+            -89.431064,
+            43.077516
+          ],
+          [
+            -89.4313588,
+            43.0775232
+          ],
+          [
+            -89.4314071,
+            43.0775244
+          ],
+          [
+            -89.4314378,
+            43.0775468
+          ],
+          [
+            -89.431468,
+            43.0775244
+          ],
+          [
+            -89.4314837,
+            43.0775138
+          ],
+          [
+            -89.4314193,
+            43.0774629
+          ],
+          [
+            -89.4313735,
+            43.077493
+          ],
+          [
+            -89.4313217,
+            43.0774921
+          ],
+          [
+            -89.4310265,
+            43.077487
+          ],
+          [
+            -89.4310276,
+            43.0773572
+          ],
+          [
+            -89.4307989,
+            43.0773552
+          ],
+          [
+            -89.4308012,
+            43.0772233
+          ],
+          [
+            -89.4301149,
+            43.0772169
+          ],
+          [
+            -89.4301157,
+            43.0772065
+          ],
+          [
+            -89.4300538,
+            43.0772073
+          ],
+          [
+            -89.4300538,
+            43.0772164
+          ],
+          [
+            -89.4294954,
+            43.0772093
+          ],
+          [
+            -89.4294948,
+            43.0771821
+          ],
+          [
+            -89.4294319,
+            43.0771819
+          ],
+          [
+            -89.4294295,
+            43.0774188
+          ],
+          [
+            -89.4294834,
+            43.0774187
+          ],
+          [
+            -89.4294836,
+            43.0774813
+          ],
+          [
+            -89.4294836,
+            43.0774934
+          ],
+          [
+            -89.4298845,
+            43.0775018
+          ],
+          [
+            -89.4298855,
+            43.0775466
+          ],
+          [
+            -89.4298862,
+            43.0775751
+          ],
+          [
+            -89.4299233,
+            43.0775751
+          ],
+          [
+            -89.4299237,
+            43.0776138
+          ],
+          [
+            -89.4298705,
+            43.0776161
+          ],
+          [
+            -89.4298247,
+            43.0776195
+          ],
+          [
+            -89.4297734,
+            43.0776258
+          ],
+          [
+            -89.4297063,
+            43.0776421
+          ],
+          [
+            -89.4296586,
+            43.0776556
+          ],
+          [
+            -89.4296145,
+            43.0776746
+          ],
+          [
+            -89.4295485,
+            43.0777055
+          ],
+          [
+            -89.4295596,
+            43.0777426
+          ],
+          [
+            -89.4295937,
+            43.0778796
+          ],
+          [
+            -89.4298804,
+            43.0778843
+          ],
+          [
+            -89.4300328,
+            43.077885
+          ],
+          [
+            -89.4300652,
+            43.0778852
+          ],
+          [
+            -89.4300666,
+            43.0779101
+          ],
+          [
+            -89.430111,
+            43.0779109
+          ],
+          [
+            -89.4301101,
+            43.0778849
+          ],
+          [
+            -89.4302345,
+            43.0778844
+          ],
+          [
+            -89.4303367,
+            43.0778774
+          ],
+          [
+            -89.4304362,
+            43.0778683
+          ],
+          [
+            -89.4305245,
+            43.0778531
+          ],
+          [
+            -89.4306182,
+            43.0778328
+          ],
+          [
+            -89.4306957,
+            43.077814
+          ],
+          [
+            -89.4307709,
+            43.0777889
+          ],
+          [
+            -89.4308681,
+            43.0777543
+          ],
+          [
+            -89.430943,
+            43.0777209
+          ],
+          [
+            -89.4309186,
+            43.0776963
+          ],
+          [
+            -89.4310189,
+            43.0776511
+          ],
+          [
+            -89.4310204,
+            43.0775832
+          ],
+          [
+            -89.4310653,
+            43.077584
+          ],
+          [
+            -89.431064,
+            43.077516
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "way/38855398",
+      "name": "Nancy Nicholas Hall",
+      "address": "1300 Linden Drive",
+      "outlets": [
+        {
+          "name": "Badger Market Robin's Nest",
+          "logoPath": "dining-logos/2149.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/2149",
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/robins-nest/"
+        }
+      ],
+      "rings": [
+        [
+          [
+            -89.4077631,
+            43.0758218
+          ],
+          [
+            -89.4077641,
+            43.0755648
+          ],
+          [
+            -89.4079486,
+            43.0755651
+          ],
+          [
+            -89.4079481,
+            43.0756774
+          ],
+          [
+            -89.4079888,
+            43.0756775
+          ],
+          [
+            -89.4079889,
+            43.0756521
+          ],
+          [
+            -89.4081957,
+            43.0756526
+          ],
+          [
+            -89.4083715,
+            43.0756531
+          ],
+          [
+            -89.4083713,
+            43.0756774
+          ],
+          [
+            -89.408424,
+            43.0756775
+          ],
+          [
+            -89.4084246,
+            43.0755621
+          ],
+          [
+            -89.4086136,
+            43.0755625
+          ],
+          [
+            -89.4086134,
+            43.0756076
+          ],
+          [
+            -89.4086434,
+            43.0756077
+          ],
+          [
+            -89.4086435,
+            43.0755776
+          ],
+          [
+            -89.4087029,
+            43.0755778
+          ],
+          [
+            -89.408703,
+            43.0755711
+          ],
+          [
+            -89.4092224,
+            43.0755722
+          ],
+          [
+            -89.4092223,
+            43.0756144
+          ],
+          [
+            -89.4092959,
+            43.0756145
+          ],
+          [
+            -89.4092961,
+            43.0755667
+          ],
+          [
+            -89.4096231,
+            43.0755673
+          ],
+          [
+            -89.4096224,
+            43.0758538
+          ],
+          [
+            -89.4094759,
+            43.075853
+          ],
+          [
+            -89.4094769,
+            43.0758685
+          ],
+          [
+            -89.4094282,
+            43.0758647
+          ],
+          [
+            -89.4094267,
+            43.0758762
+          ],
+          [
+            -89.4090499,
+            43.0758471
+          ],
+          [
+            -89.408778,
+            43.0758629
+          ],
+          [
+            -89.4087769,
+            43.0758546
+          ],
+          [
+            -89.4087002,
+            43.0758573
+          ],
+          [
+            -89.4086926,
+            43.0758137
+          ],
+          [
+            -89.4086057,
+            43.0758135
+          ],
+          [
+            -89.4086055,
+            43.0758719
+          ],
+          [
+            -89.4084206,
+            43.0758715
+          ],
+          [
+            -89.4084209,
+            43.0758132
+          ],
+          [
+            -89.4079474,
+            43.0758122
+          ],
+          [
+            -89.4079474,
+            43.0758222
+          ],
+          [
+            -89.4077631,
+            43.0758218
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "way/103242254",
+      "name": "Fluno Center",
+      "address": "601 University Avenue",
+      "outlets": [
+        {
+          "name": "Oros Executive Dining Room",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null,
+          "provider": "union",
+          "locationUrl": "https://fluno.com/dining/oros"
+        },
+        {
+          "name": "Smitty’s Study Pub",
+          "logoPath": null,
+          "sourceUrl": "https://union.wisc.edu/dine/find-food-and-drink",
+          "orderUrl": null,
+          "provider": "union",
+          "locationUrl": "https://fluno.com/dining/smittys/"
+        }
+      ],
+      "rings": [
+        [
+          [
+            -89.3967532,
+            43.0725659
+          ],
+          [
+            -89.3965004,
+            43.0725616
+          ],
+          [
+            -89.3964997,
+            43.0725854
+          ],
+          [
+            -89.396499,
+            43.0726072
+          ],
+          [
+            -89.3964984,
+            43.0726255
+          ],
+          [
+            -89.3964981,
+            43.072635
+          ],
+          [
+            -89.3964976,
+            43.0726505
+          ],
+          [
+            -89.396497,
+            43.0726689
+          ],
+          [
+            -89.3964155,
+            43.0726677
+          ],
+          [
+            -89.396415,
+            43.0726819
+          ],
+          [
+            -89.396413,
+            43.0727476
+          ],
+          [
+            -89.3964123,
+            43.0727681
+          ],
+          [
+            -89.3964098,
+            43.0728487
+          ],
+          [
+            -89.3962638,
+            43.0728463
+          ],
+          [
+            -89.3962634,
+            43.0728569
+          ],
+          [
+            -89.3962173,
+            43.0728562
+          ],
+          [
+            -89.3960757,
+            43.0728538
+          ],
+          [
+            -89.3960569,
+            43.0728667
+          ],
+          [
+            -89.3959988,
+            43.0729066
+          ],
+          [
+            -89.3959911,
+            43.0729119
+          ],
+          [
+            -89.3959881,
+            43.0729981
+          ],
+          [
+            -89.3960705,
+            43.0730596
+          ],
+          [
+            -89.3961871,
+            43.0730615
+          ],
+          [
+            -89.3962409,
+            43.0730228
+          ],
+          [
+            -89.3962983,
+            43.0730235
+          ],
+          [
+            -89.3962977,
+            43.0730515
+          ],
+          [
+            -89.3963423,
+            43.0730521
+          ],
+          [
+            -89.3969956,
+            43.0730605
+          ],
+          [
+            -89.3969962,
+            43.0730355
+          ],
+          [
+            -89.3970041,
+            43.0730406
+          ],
+          [
+            -89.3970127,
+            43.0730462
+          ],
+          [
+            -89.3970445,
+            43.0730466
+          ],
+          [
+            -89.3970663,
+            43.0730306
+          ],
+          [
+            -89.3970664,
+            43.0730214
+          ],
+          [
+            -89.3970666,
+            43.0730098
+          ],
+          [
+            -89.3970569,
+            43.0730008
+          ],
+          [
+            -89.3970575,
+            43.0729807
+          ],
+          [
+            -89.3970613,
+            43.0728597
+          ],
+          [
+            -89.3969257,
+            43.0728575
+          ],
+          [
+            -89.3967441,
+            43.0728544
+          ],
+          [
+            -89.3967511,
+            43.072634
+          ],
+          [
+            -89.3967532,
+            43.0725659
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "way/295708135",
+      "name": "Chazen Museum of Art",
+      "address": "750 University Avenue",
+      "outlets": [
+        {
+          "name": "Chazen Cafe",
+          "logoPath": "dining-logos/1975.jpg",
+          "sourceUrl": "https://weborder.transactcampus.com/230",
+          "orderUrl": "https://weborder.transactcampus.com/230/1975",
+          "provider": "union",
+          "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/chazen-cafe/"
+        }
+      ],
+      "rings": [
+        [
+          [
+            -89.3989115,
+            43.0737904
+          ],
+          [
+            -89.3989382,
+            43.0737907
+          ],
+          [
+            -89.3989535,
+            43.0737909
+          ],
+          [
+            -89.3989532,
+            43.0738028
+          ],
+          [
+            -89.3990385,
+            43.0738039
+          ],
+          [
+            -89.3990976,
+            43.0738047
+          ],
+          [
+            -89.399128,
+            43.0738052
+          ],
+          [
+            -89.3991283,
+            43.0737939
+          ],
+          [
+            -89.3991487,
+            43.0737941
+          ],
+          [
+            -89.3991619,
+            43.0737943
+          ],
+          [
+            -89.3991759,
+            43.0737945
+          ],
+          [
+            -89.3991791,
+            43.0736664
+          ],
+          [
+            -89.3991643,
+            43.0736662
+          ],
+          [
+            -89.3990427,
+            43.0736645
+          ],
+          [
+            -89.3989415,
+            43.0736631
+          ],
+          [
+            -89.398405,
+            43.0736556
+          ],
+          [
+            -89.3984036,
+            43.0737062
+          ],
+          [
+            -89.3984018,
+            43.0737754
+          ],
+          [
+            -89.3983984,
+            43.0739072
+          ],
+          [
+            -89.3983663,
+            43.0739067
+          ],
+          [
+            -89.3983634,
+            43.074018
+          ],
+          [
+            -89.3983794,
+            43.0740182
+          ],
+          [
+            -89.3983966,
+            43.0740185
+          ],
+          [
+            -89.3983939,
+            43.0741217
+          ],
+          [
+            -89.3984385,
+            43.0741223
+          ],
+          [
+            -89.3984379,
+            43.0741454
+          ],
+          [
+            -89.3987732,
+            43.0741501
+          ],
+          [
+            -89.3987738,
+            43.0741276
+          ],
+          [
+            -89.3988106,
+            43.0741282
+          ],
+          [
+            -89.3989021,
+            43.0741294
+          ],
+          [
+            -89.3989025,
+            43.074115
+          ],
+          [
+            -89.3989139,
+            43.0741151
+          ],
+          [
+            -89.3989146,
+            43.0740884
+          ],
+          [
+            -89.3989169,
+            43.0739984
+          ],
+          [
+            -89.3989173,
+            43.0739842
+          ],
+          [
+            -89.3989178,
+            43.073966
+          ],
+          [
+            -89.398907,
+            43.0739659
+          ],
+          [
+            -89.3989115,
+            43.0737904
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "way/38953112",
+      "name": "Carson Gulley Center",
+      "address": "1515 Tripp Circle",
+      "outlets": [
+        {
+          "name": "Carson’s Market",
+          "provider": "housing",
+          "logoPath": null,
+          "orderUrl": null,
+          "sourceUrl": "https://www.wisc.edu/dining/",
+          "locationUrl": "https://www.housing.wisc.edu/dining/locations/carsons/"
+        }
+      ],
+      "rings": [
+        [
+          [
+            -89.4113204,
+            43.0773103
+          ],
+          [
+            -89.4114184,
+            43.0773103
+          ],
+          [
+            -89.411459,
+            43.0773103
+          ],
+          [
+            -89.4115238,
+            43.0773103
+          ],
+          [
+            -89.4115238,
+            43.0772545
+          ],
+          [
+            -89.4115237,
+            43.0770583
+          ],
+          [
+            -89.4115237,
+            43.0770032
+          ],
+          [
+            -89.4114943,
+            43.0770032
+          ],
+          [
+            -89.4114943,
+            43.0769831
+          ],
+          [
+            -89.4114633,
+            43.0769831
+          ],
+          [
+            -89.4114321,
+            43.0769831
+          ],
+          [
+            -89.4114322,
+            43.0770032
+          ],
+          [
+            -89.4113248,
+            43.0770032
+          ],
+          [
+            -89.4113248,
+            43.0770703
+          ],
+          [
+            -89.4111507,
+            43.0770703
+          ],
+          [
+            -89.4111507,
+            43.0770957
+          ],
+          [
+            -89.4111202,
+            43.0770957
+          ],
+          [
+            -89.4111202,
+            43.0772202
+          ],
+          [
+            -89.4111567,
+            43.0772202
+          ],
+          [
+            -89.4111567,
+            43.0772961
+          ],
+          [
+            -89.4113204,
+            43.0772961
+          ],
+          [
+            -89.4113204,
+            43.0773103
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "way/173709889",
+      "name": "Dejope Residence Hall",
+      "address": "640 Elm Drive",
+      "outlets": [
+        {
+          "name": "Four Lakes Market",
+          "provider": "housing",
+          "logoPath": null,
+          "orderUrl": null,
+          "sourceUrl": "https://www.wisc.edu/dining/",
+          "locationUrl": "https://www.housing.wisc.edu/dining/locations/four-lakes/"
+        },
+        {
+          "name": "Flamingo Run at Four Lakes Market",
+          "provider": "housing",
+          "logoPath": null,
+          "orderUrl": null,
+          "sourceUrl": "https://www.wisc.edu/dining/",
+          "locationUrl": "https://www.housing.wisc.edu/dining/locations/four-lakes/"
+        },
+        {
+          "name": "The Bean & Creamery at Four Lakes Market",
+          "provider": "housing",
+          "logoPath": null,
+          "orderUrl": null,
+          "sourceUrl": "https://www.wisc.edu/dining/",
+          "locationUrl": "https://www.housing.wisc.edu/dining/locations/four-lakes/"
+        }
+      ],
+      "rings": [
+        [
+          [
+            -89.4186217,
+            43.0782191
+          ],
+          [
+            -89.4185971,
+            43.078287
+          ],
+          [
+            -89.4184824,
+            43.0782632
+          ],
+          [
+            -89.4184846,
+            43.0782528
+          ],
+          [
+            -89.4183506,
+            43.0781772
+          ],
+          [
+            -89.4183508,
+            43.0781663
+          ],
+          [
+            -89.4183353,
+            43.0781575
+          ],
+          [
+            -89.4183183,
+            43.0781586
+          ],
+          [
+            -89.4182064,
+            43.0780666
+          ],
+          [
+            -89.4182082,
+            43.0780552
+          ],
+          [
+            -89.4181955,
+            43.0780424
+          ],
+          [
+            -89.4181788,
+            43.0780415
+          ],
+          [
+            -89.4181091,
+            43.0779424
+          ],
+          [
+            -89.4180571,
+            43.0779631
+          ],
+          [
+            -89.4179107,
+            43.0781369
+          ],
+          [
+            -89.4175027,
+            43.0779603
+          ],
+          [
+            -89.4171674,
+            43.0778152
+          ],
+          [
+            -89.4172673,
+            43.0776953
+          ],
+          [
+            -89.4172854,
+            43.0777033
+          ],
+          [
+            -89.4173304,
+            43.0776493
+          ],
+          [
+            -89.4172224,
+            43.0776141
+          ],
+          [
+            -89.4169626,
+            43.0776144
+          ],
+          [
+            -89.4167323,
+            43.0775559
+          ],
+          [
+            -89.4167419,
+            43.0775334
+          ],
+          [
+            -89.4167659,
+            43.0774837
+          ],
+          [
+            -89.4167925,
+            43.0774903
+          ],
+          [
+            -89.4168395,
+            43.0775031
+          ],
+          [
+            -89.4168502,
+            43.077447
+          ],
+          [
+            -89.4169015,
+            43.0774464
+          ],
+          [
+            -89.416902,
+            43.0774394
+          ],
+          [
+            -89.4169876,
+            43.0774394
+          ],
+          [
+            -89.4169882,
+            43.077443
+          ],
+          [
+            -89.4170872,
+            43.0774432
+          ],
+          [
+            -89.417087,
+            43.0774508
+          ],
+          [
+            -89.4171918,
+            43.0774524
+          ],
+          [
+            -89.4171912,
+            43.0774432
+          ],
+          [
+            -89.4173872,
+            43.0774458
+          ],
+          [
+            -89.4173871,
+            43.0774541
+          ],
+          [
+            -89.4174206,
+            43.0774537
+          ],
+          [
+            -89.4174211,
+            43.0774455
+          ],
+          [
+            -89.4176277,
+            43.0774445
+          ],
+          [
+            -89.4176869,
+            43.0774309
+          ],
+          [
+            -89.417799,
+            43.0774123
+          ],
+          [
+            -89.4179004,
+            43.0774056
+          ],
+          [
+            -89.4180663,
+            43.077406
+          ],
+          [
+            -89.4180659,
+            43.0774313
+          ],
+          [
+            -89.4180659,
+            43.0774532
+          ],
+          [
+            -89.4181154,
+            43.0774588
+          ],
+          [
+            -89.418095,
+            43.0774828
+          ],
+          [
+            -89.4181045,
+            43.07749
+          ],
+          [
+            -89.4180774,
+            43.0775169
+          ],
+          [
+            -89.4181225,
+            43.0775321
+          ],
+          [
+            -89.4182427,
+            43.0775339
+          ],
+          [
+            -89.4182436,
+            43.07767
+          ],
+          [
+            -89.4182297,
+            43.0776712
+          ],
+          [
+            -89.4182268,
+            43.0777076
+          ],
+          [
+            -89.4182372,
+            43.0777412
+          ],
+          [
+            -89.4182518,
+            43.0777404
+          ],
+          [
+            -89.4182795,
+            43.0778236
+          ],
+          [
+            -89.4183302,
+            43.0779002
+          ],
+          [
+            -89.4184738,
+            43.0778558
+          ],
+          [
+            -89.4185323,
+            43.0779396
+          ],
+          [
+            -89.4184044,
+            43.0779886
+          ],
+          [
+            -89.4184576,
+            43.0780351
+          ],
+          [
+            -89.4184353,
+            43.0780482
+          ],
+          [
+            -89.4185098,
+            43.0780927
+          ],
+          [
+            -89.4185239,
+            43.0780772
+          ],
+          [
+            -89.4186391,
+            43.0781268
+          ],
+          [
+            -89.4186714,
+            43.0781488
+          ],
+          [
+            -89.418622,
+            43.0782066
+          ],
+          [
+            -89.4186217,
+            43.0782191
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "way/193492268",
+      "name": "Gordon Dining and Event Center",
+      "address": "770 West Dayton Street",
+      "outlets": [
+        {
+          "name": "Gordon Avenue Market",
+          "provider": "housing",
+          "logoPath": null,
+          "orderUrl": null,
+          "sourceUrl": "https://www.wisc.edu/dining/",
+          "locationUrl": "https://www.housing.wisc.edu/dining/locations/gordon/"
+        },
+        {
+          "name": "Flamingo Run at Gordon Avenue Market",
+          "provider": "housing",
+          "logoPath": null,
+          "orderUrl": null,
+          "sourceUrl": "https://www.wisc.edu/dining/",
+          "locationUrl": "https://www.housing.wisc.edu/dining/locations/gordon/"
+        }
+      ],
+      "rings": [
+        [
+          [
+            -89.3988238,
+            43.0713971
+          ],
+          [
+            -89.3980422,
+            43.0713851
+          ],
+          [
+            -89.3978943,
+            43.0713828
+          ],
+          [
+            -89.397895,
+            43.0713604
+          ],
+          [
+            -89.3978514,
+            43.0713597
+          ],
+          [
+            -89.3976407,
+            43.0713563
+          ],
+          [
+            -89.3976321,
+            43.0713561
+          ],
+          [
+            -89.3976375,
+            43.0712551
+          ],
+          [
+            -89.3977772,
+            43.0712573
+          ],
+          [
+            -89.397784,
+            43.0710213
+          ],
+          [
+            -89.3985512,
+            43.0710332
+          ],
+          [
+            -89.3985508,
+            43.0710477
+          ],
+          [
+            -89.3986844,
+            43.0710497
+          ],
+          [
+            -89.3986847,
+            43.07104
+          ],
+          [
+            -89.39872,
+            43.0710406
+          ],
+          [
+            -89.3987205,
+            43.0710232
+          ],
+          [
+            -89.39892,
+            43.0710262
+          ],
+          [
+            -89.3989838,
+            43.0710271
+          ],
+          [
+            -89.3989757,
+            43.071316
+          ],
+          [
+            -89.3989592,
+            43.0713157
+          ],
+          [
+            -89.3989588,
+            43.0713303
+          ],
+          [
+            -89.3989934,
+            43.0713308
+          ],
+          [
+            -89.3989917,
+            43.0713885
+          ],
+          [
+            -89.398904,
+            43.0713871
+          ],
+          [
+            -89.3988241,
+            43.0713859
+          ],
+          [
+            -89.3988238,
+            43.0713971
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "way/37751511",
+      "name": "Waters Residence Hall",
+      "address": "1200 Observatory Drive",
+      "outlets": [
+        {
+          "name": "Liz’s Market",
+          "provider": "housing",
+          "logoPath": null,
+          "orderUrl": null,
+          "sourceUrl": "https://www.wisc.edu/dining/",
+          "locationUrl": "https://www.housing.wisc.edu/dining/locations/liz/"
+        }
+      ],
+      "rings": [
+        [
+          [
+            -89.4073213,
+            43.076743
+          ],
+          [
+            -89.4073068,
+            43.0768669
+          ],
+          [
+            -89.4073002,
+            43.0768665
+          ],
+          [
+            -89.4072991,
+            43.0768762
+          ],
+          [
+            -89.4072955,
+            43.0769071
+          ],
+          [
+            -89.4076101,
+            43.0769267
+          ],
+          [
+            -89.4075983,
+            43.0770279
+          ],
+          [
+            -89.4076284,
+            43.0770297
+          ],
+          [
+            -89.4076382,
+            43.0770381
+          ],
+          [
+            -89.4076424,
+            43.0770459
+          ],
+          [
+            -89.4076383,
+            43.0770803
+          ],
+          [
+            -89.407637,
+            43.0770913
+          ],
+          [
+            -89.407973,
+            43.0771126
+          ],
+          [
+            -89.4079694,
+            43.0771426
+          ],
+          [
+            -89.4080042,
+            43.0771448
+          ],
+          [
+            -89.4079965,
+            43.0772094
+          ],
+          [
+            -89.4079631,
+            43.0772073
+          ],
+          [
+            -89.4079599,
+            43.0772337
+          ],
+          [
+            -89.4075411,
+            43.0772095
+          ],
+          [
+            -89.4075436,
+            43.0771804
+          ],
+          [
+            -89.4075458,
+            43.0771441
+          ],
+          [
+            -89.4075478,
+            43.0771276
+          ],
+          [
+            -89.4075516,
+            43.0771097
+          ],
+          [
+            -89.4075528,
+            43.0770955
+          ],
+          [
+            -89.4075337,
+            43.0770946
+          ],
+          [
+            -89.407539,
+            43.0770479
+          ],
+          [
+            -89.4071885,
+            43.0770266
+          ],
+          [
+            -89.4071818,
+            43.0770257
+          ],
+          [
+            -89.4071948,
+            43.0769137
+          ],
+          [
+            -89.4070256,
+            43.0769032
+          ],
+          [
+            -89.4070238,
+            43.0769186
+          ],
+          [
+            -89.406874,
+            43.0769094
+          ],
+          [
+            -89.4068758,
+            43.076894
+          ],
+          [
+            -89.4067082,
+            43.076884
+          ],
+          [
+            -89.4066963,
+            43.0769899
+          ],
+          [
+            -89.4066909,
+            43.0769896
+          ],
+          [
+            -89.4063353,
+            43.0769684
+          ],
+          [
+            -89.40633,
+            43.0770157
+          ],
+          [
+            -89.4063118,
+            43.0770147
+          ],
+          [
+            -89.40631,
+            43.0770303
+          ],
+          [
+            -89.406299,
+            43.0771303
+          ],
+          [
+            -89.4058779,
+            43.0771055
+          ],
+          [
+            -89.405881,
+            43.0770767
+          ],
+          [
+            -89.4058453,
+            43.0770746
+          ],
+          [
+            -89.4058528,
+            43.0770065
+          ],
+          [
+            -89.4058902,
+            43.0770087
+          ],
+          [
+            -89.4058928,
+            43.0769855
+          ],
+          [
+            -89.4058949,
+            43.076982
+          ],
+          [
+            -89.4059005,
+            43.0769808
+          ],
+          [
+            -89.4059508,
+            43.0769836
+          ],
+          [
+            -89.4059504,
+            43.0769868
+          ],
+          [
+            -89.406231,
+            43.0770026
+          ],
+          [
+            -89.4062362,
+            43.0769531
+          ],
+          [
+            -89.4062507,
+            43.0769423
+          ],
+          [
+            -89.4062619,
+            43.0769399
+          ],
+          [
+            -89.4062814,
+            43.0769412
+          ],
+          [
+            -89.4062933,
+            43.0768435
+          ],
+          [
+            -89.40661,
+            43.076864
+          ],
+          [
+            -89.4066124,
+            43.0768443
+          ],
+          [
+            -89.4066149,
+            43.0768235
+          ],
+          [
+            -89.40661,
+            43.0768232
+          ],
+          [
+            -89.4066244,
+            43.0767015
+          ],
+          [
+            -89.4068758,
+            43.0767174
+          ],
+          [
+            -89.4068947,
+            43.0767186
+          ],
+          [
+            -89.4068962,
+            43.0767057
+          ],
+          [
+            -89.4069766,
+            43.0767107
+          ],
+          [
+            -89.4070494,
+            43.0767153
+          ],
+          [
+            -89.4070482,
+            43.076726
+          ],
+          [
+            -89.4073213,
+            43.076743
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "way/39201164",
+      "name": "Chadbourne Residence Hall",
+      "address": "420 North Park Street",
+      "outlets": [
+        {
+          "name": "Rheta’s Market",
+          "provider": "housing",
+          "logoPath": null,
+          "orderUrl": null,
+          "sourceUrl": "https://www.wisc.edu/dining/",
+          "locationUrl": "https://www.housing.wisc.edu/dining/locations/rhetas/"
+        },
+        {
+          "name": "Flamingo Run at Rheta’s Market",
+          "provider": "housing",
+          "logoPath": null,
+          "orderUrl": null,
+          "sourceUrl": "https://www.wisc.edu/dining/",
+          "locationUrl": "https://www.housing.wisc.edu/dining/locations/rhetas/"
+        }
+      ],
+      "rings": [
+        [
+          [
+            -89.4010965,
+            43.0740773
+          ],
+          [
+            -89.4010099,
+            43.0740415
+          ],
+          [
+            -89.4010336,
+            43.0740168
+          ],
+          [
+            -89.4010215,
+            43.0740117
+          ],
+          [
+            -89.400973,
+            43.0739911
+          ],
+          [
+            -89.401076,
+            43.0738614
+          ],
+          [
+            -89.4010763,
+            43.0738361
+          ],
+          [
+            -89.4010091,
+            43.0738356
+          ],
+          [
+            -89.4010094,
+            43.0738113
+          ],
+          [
+            -89.4010096,
+            43.0737898
+          ],
+          [
+            -89.4010774,
+            43.0737903
+          ],
+          [
+            -89.4010777,
+            43.0737633
+          ],
+          [
+            -89.4009758,
+            43.0736286
+          ],
+          [
+            -89.4009959,
+            43.0736205
+          ],
+          [
+            -89.4010253,
+            43.0736086
+          ],
+          [
+            -89.4010194,
+            43.0736008
+          ],
+          [
+            -89.4010133,
+            43.0735928
+          ],
+          [
+            -89.4010102,
+            43.0735887
+          ],
+          [
+            -89.401102,
+            43.0735516
+          ],
+          [
+            -89.4011168,
+            43.0735711
+          ],
+          [
+            -89.4011295,
+            43.0735659
+          ],
+          [
+            -89.4011426,
+            43.0735832
+          ],
+          [
+            -89.4012225,
+            43.0736889
+          ],
+          [
+            -89.4012104,
+            43.0736938
+          ],
+          [
+            -89.4012216,
+            43.0737086
+          ],
+          [
+            -89.4012456,
+            43.0737187
+          ],
+          [
+            -89.4012613,
+            43.0736989
+          ],
+          [
+            -89.4012475,
+            43.073693
+          ],
+          [
+            -89.4012673,
+            43.073668
+          ],
+          [
+            -89.4013032,
+            43.0736832
+          ],
+          [
+            -89.4013358,
+            43.0736971
+          ],
+          [
+            -89.401371,
+            43.0737119
+          ],
+          [
+            -89.4013507,
+            43.0737376
+          ],
+          [
+            -89.4013349,
+            43.0737309
+          ],
+          [
+            -89.4013196,
+            43.0737503
+          ],
+          [
+            -89.4013471,
+            43.0737619
+          ],
+          [
+            -89.4013522,
+            43.0737641
+          ],
+          [
+            -89.4013808,
+            43.0737643
+          ],
+          [
+            -89.4013809,
+            43.0737535
+          ],
+          [
+            -89.4015519,
+            43.0737547
+          ],
+          [
+            -89.4015518,
+            43.073766
+          ],
+          [
+            -89.4015868,
+            43.0737663
+          ],
+          [
+            -89.4015854,
+            43.073829
+          ],
+          [
+            -89.40155,
+            43.0738286
+          ],
+          [
+            -89.4015492,
+            43.0738698
+          ],
+          [
+            -89.4013443,
+            43.0738683
+          ],
+          [
+            -89.4012538,
+            43.0739054
+          ],
+          [
+            -89.4012182,
+            43.07392
+          ],
+          [
+            -89.4010965,
+            43.0740773
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "way/916831421",
+      "name": "Bakke Recreation & Wellbeing Center",
+      "address": "1976 Observatory Drive",
+      "outlets": [
+        {
+          "name": "Shake Smart",
+          "provider": "housing",
+          "logoPath": null,
+          "orderUrl": null,
+          "sourceUrl": "https://www.wisc.edu/dining/",
+          "locationUrl": "https://www.housing.wisc.edu/dining/locations/shake-smart/"
+        }
+      ],
+      "rings": [
+        [
+          [
+            -89.4210325,
+            43.0771105
+          ],
+          [
+            -89.4210238,
+            43.0771483
+          ],
+          [
+            -89.4209937,
+            43.0771769
+          ],
+          [
+            -89.420951,
+            43.0771943
+          ],
+          [
+            -89.4208539,
+            43.0772018
+          ],
+          [
+            -89.4207669,
+            43.0772171
+          ],
+          [
+            -89.4206837,
+            43.0772372
+          ],
+          [
+            -89.4205963,
+            43.0772676
+          ],
+          [
+            -89.4205289,
+            43.0773017
+          ],
+          [
+            -89.4204661,
+            43.0773377
+          ],
+          [
+            -89.420422,
+            43.0773695
+          ],
+          [
+            -89.4203762,
+            43.0774059
+          ],
+          [
+            -89.420342,
+            43.0774358
+          ],
+          [
+            -89.4203102,
+            43.0774544
+          ],
+          [
+            -89.42027,
+            43.0774612
+          ],
+          [
+            -89.4198791,
+            43.0774582
+          ],
+          [
+            -89.4191155,
+            43.0774519
+          ],
+          [
+            -89.4191208,
+            43.0770844
+          ],
+          [
+            -89.4192171,
+            43.0770826
+          ],
+          [
+            -89.4192181,
+            43.0766666
+          ],
+          [
+            -89.419431,
+            43.0766542
+          ],
+          [
+            -89.4196481,
+            43.0766531
+          ],
+          [
+            -89.4198716,
+            43.0766571
+          ],
+          [
+            -89.4200852,
+            43.0766683
+          ],
+          [
+            -89.4201377,
+            43.076683
+          ],
+          [
+            -89.4201762,
+            43.0767037
+          ],
+          [
+            -89.4201986,
+            43.076732
+          ],
+          [
+            -89.4202106,
+            43.076763
+          ],
+          [
+            -89.4202305,
+            43.076782
+          ],
+          [
+            -89.4202604,
+            43.0768002
+          ],
+          [
+            -89.4203059,
+            43.0768124
+          ],
+          [
+            -89.4203511,
+            43.0768113
+          ],
+          [
+            -89.4203836,
+            43.0768053
+          ],
+          [
+            -89.420416,
+            43.0767886
+          ],
+          [
+            -89.420437,
+            43.0767631
+          ],
+          [
+            -89.4204571,
+            43.0766869
+          ],
+          [
+            -89.420471,
+            43.0766672
+          ],
+          [
+            -89.4205049,
+            43.0766545
+          ],
+          [
+            -89.4205339,
+            43.0766546
+          ],
+          [
+            -89.4209927,
+            43.0766573
+          ],
+          [
+            -89.4210289,
+            43.076817
+          ],
+          [
+            -89.4210325,
+            43.0771105
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "way/102239119",
+      "name": "Smith Residence Hall",
+      "address": "35 North Park Street",
+      "outlets": [
+        {
+          "name": "Starbucks at Smith",
+          "provider": "housing",
+          "logoPath": null,
+          "orderUrl": null,
+          "sourceUrl": "https://www.wisc.edu/dining/",
+          "locationUrl": "https://www.housing.wisc.edu/dining/locations/starbucks/"
+        }
+      ],
+      "rings": [
+        [
+          [
+            -89.400308,
+            43.0685763
+          ],
+          [
+            -89.400267,
+            43.0685758
+          ],
+          [
+            -89.4002672,
+            43.0685653
+          ],
+          [
+            -89.4002485,
+            43.0685651
+          ],
+          [
+            -89.4002399,
+            43.068565
+          ],
+          [
+            -89.4002321,
+            43.0685649
+          ],
+          [
+            -89.4001874,
+            43.0685644
+          ],
+          [
+            -89.4001872,
+            43.0685765
+          ],
+          [
+            -89.4001451,
+            43.0685759
+          ],
+          [
+            -89.4001445,
+            43.0686025
+          ],
+          [
+            -89.4001091,
+            43.068602
+          ],
+          [
+            -89.400096,
+            43.0686018
+          ],
+          [
+            -89.4000909,
+            43.0688143
+          ],
+          [
+            -89.4001027,
+            43.0688144
+          ],
+          [
+            -89.4001016,
+            43.0688603
+          ],
+          [
+            -89.4000902,
+            43.0688602
+          ],
+          [
+            -89.4000846,
+            43.0690705
+          ],
+          [
+            -89.4001333,
+            43.0690712
+          ],
+          [
+            -89.4001321,
+            43.0691177
+          ],
+          [
+            -89.4003082,
+            43.0691202
+          ],
+          [
+            -89.4003078,
+            43.0691315
+          ],
+          [
+            -89.4003987,
+            43.0691329
+          ],
+          [
+            -89.4004003,
+            43.0690708
+          ],
+          [
+            -89.4004212,
+            43.0690711
+          ],
+          [
+            -89.4004403,
+            43.0690713
+          ],
+          [
+            -89.4004379,
+            43.0691588
+          ],
+          [
+            -89.4004894,
+            43.0691596
+          ],
+          [
+            -89.4004881,
+            43.0692081
+          ],
+          [
+            -89.400438,
+            43.0692073
+          ],
+          [
+            -89.400433,
+            43.0693914
+          ],
+          [
+            -89.4004299,
+            43.0695083
+          ],
+          [
+            -89.4004784,
+            43.069509
+          ],
+          [
+            -89.4004777,
+            43.0695372
+          ],
+          [
+            -89.4005181,
+            43.0695377
+          ],
+          [
+            -89.4005178,
+            43.0695494
+          ],
+          [
+            -89.4005331,
+            43.0695496
+          ],
+          [
+            -89.4005514,
+            43.0695498
+          ],
+          [
+            -89.4005922,
+            43.0695504
+          ],
+          [
+            -89.4005924,
+            43.0695451
+          ],
+          [
+            -89.4005925,
+            43.0695392
+          ],
+          [
+            -89.4006355,
+            43.0695398
+          ],
+          [
+            -89.4006362,
+            43.0695136
+          ],
+          [
+            -89.400685,
+            43.0695142
+          ],
+          [
+            -89.4006927,
+            43.0692112
+          ],
+          [
+            -89.4006456,
+            43.0692106
+          ],
+          [
+            -89.4006468,
+            43.0691634
+          ],
+          [
+            -89.4006959,
+            43.0691641
+          ],
+          [
+            -89.4007013,
+            43.0689523
+          ],
+          [
+            -89.4006533,
+            43.0689516
+          ],
+          [
+            -89.4006542,
+            43.0689168
+          ],
+          [
+            -89.4005049,
+            43.0689149
+          ],
+          [
+            -89.4004981,
+            43.0689033
+          ],
+          [
+            -89.4004859,
+            43.0688911
+          ],
+          [
+            -89.4004728,
+            43.0688845
+          ],
+          [
+            -89.4004583,
+            43.0688819
+          ],
+          [
+            -89.4004394,
+            43.0688821
+          ],
+          [
+            -89.400417,
+            43.0688881
+          ],
+          [
+            -89.4004088,
+            43.0688931
+          ],
+          [
+            -89.400401,
+            43.0688978
+          ],
+          [
+            -89.400391,
+            43.0689128
+          ],
+          [
+            -89.4003779,
+            43.0689573
+          ],
+          [
+            -89.4003452,
+            43.0689568
+          ],
+          [
+            -89.4003479,
+            43.0688636
+          ],
+          [
+            -89.4003002,
+            43.0688631
+          ],
+          [
+            -89.4003011,
+            43.0688196
+          ],
+          [
+            -89.4003504,
+            43.0688201
+          ],
+          [
+            -89.4003503,
+            43.0688044
+          ],
+          [
+            -89.4003502,
+            43.0687903
+          ],
+          [
+            -89.4003548,
+            43.0686162
+          ],
+          [
+            -89.4003548,
+            43.0686065
+          ],
+          [
+            -89.4003074,
+            43.0686059
+          ],
+          [
+            -89.4003075,
+            43.0686015
+          ],
+          [
+            -89.400308,
+            43.0685763
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "way/38856035",
+      "name": "Babcock Hall",
+      "address": "1605 Linden Drive",
+      "outlets": [
+        {
+          "name": "Babcock Hall Dairy Store",
+          "provider": "other",
+          "logoPath": null,
+          "orderUrl": null,
+          "sourceUrl": "https://www.wisc.edu/dining/",
+          "locationUrl": "http://babcockhalldairystore.wisc.edu"
+        }
+      ],
+      "rings": [
+        [
+          [
+            -89.412962,
+            43.0749615
+          ],
+          [
+            -89.4129634,
+            43.0748859
+          ],
+          [
+            -89.4129186,
+            43.0748855
+          ],
+          [
+            -89.4129224,
+            43.0746901
+          ],
+          [
+            -89.4136593,
+            43.0746978
+          ],
+          [
+            -89.4136597,
+            43.0746433
+          ],
+          [
+            -89.4135813,
+            43.0746274
+          ],
+          [
+            -89.4136113,
+            43.074553
+          ],
+          [
+            -89.413612,
+            43.0744989
+          ],
+          [
+            -89.4138988,
+            43.074502
+          ],
+          [
+            -89.4139,
+            43.0745866
+          ],
+          [
+            -89.414427,
+            43.0745878
+          ],
+          [
+            -89.4144253,
+            43.0749975
+          ],
+          [
+            -89.4137627,
+            43.0749874
+          ],
+          [
+            -89.4137632,
+            43.0749641
+          ],
+          [
+            -89.4136835,
+            43.0749633
+          ],
+          [
+            -89.4136829,
+            43.0749951
+          ],
+          [
+            -89.4136652,
+            43.0749949
+          ],
+          [
+            -89.4136645,
+            43.0750308
+          ],
+          [
+            -89.4131095,
+            43.075025
+          ],
+          [
+            -89.4131108,
+            43.074963
+          ],
+          [
+            -89.412962,
+            43.0749615
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "way/870590639",
+      "name": "UW Health University Hospital",
+      "address": "600 Highland Avenue",
+      "outlets": [
+        {
+          "name": "Four Lakes Café (UW Hospital Cafeteria)",
+          "provider": "other",
+          "logoPath": null,
+          "orderUrl": null,
+          "sourceUrl": "https://www.wisc.edu/dining/",
+          "locationUrl": "http://www.uwhealth.org/patient-guides/uw-hospital/cafeteria-and-dining/10158"
+        },
+        {
+          "name": "Java Coast",
+          "provider": "other",
+          "logoPath": null,
+          "orderUrl": null,
+          "sourceUrl": "https://www.wisc.edu/dining/",
+          "locationUrl": "https://www.uwhealth.org/locations/university-hospital-170"
+        },
+        {
+          "name": "Mendota Market",
+          "provider": "other",
+          "logoPath": null,
+          "orderUrl": null,
+          "sourceUrl": "https://www.wisc.edu/dining/",
+          "locationUrl": "https://www.uwhealth.org/locations/university-hospital-170"
+        }
+      ],
+      "rings": [
+        [
+          [
+            -89.4312729,
+            43.0759808
+          ],
+          [
+            -89.4312599,
+            43.0759707
+          ],
+          [
+            -89.4312942,
+            43.0759473
+          ],
+          [
+            -89.4312947,
+            43.0759258
+          ],
+          [
+            -89.4312623,
+            43.0759004
+          ],
+          [
+            -89.4312629,
+            43.0759
+          ],
+          [
+            -89.4312306,
+            43.0758995
+          ],
+          [
+            -89.4312044,
+            43.075919
+          ],
+          [
+            -89.43116,
+            43.0758875
+          ],
+          [
+            -89.4311863,
+            43.0758678
+          ],
+          [
+            -89.431121,
+            43.0758215
+          ],
+          [
+            -89.4311228,
+            43.0757636
+          ],
+          [
+            -89.4310894,
+            43.075763
+          ],
+          [
+            -89.4310909,
+            43.0757157
+          ],
+          [
+            -89.4311734,
+            43.075717
+          ],
+          [
+            -89.4311753,
+            43.0756577
+          ],
+          [
+            -89.4310934,
+            43.0756563
+          ],
+          [
+            -89.4311047,
+            43.0752944
+          ],
+          [
+            -89.4311675,
+            43.0752955
+          ],
+          [
+            -89.4311903,
+            43.0752798
+          ],
+          [
+            -89.4311915,
+            43.0752413
+          ],
+          [
+            -89.4314155,
+            43.075245
+          ],
+          [
+            -89.4314134,
+            43.0753116
+          ],
+          [
+            -89.4314351,
+            43.0753301
+          ],
+          [
+            -89.4314632,
+            43.0753125
+          ],
+          [
+            -89.4314637,
+            43.0752975
+          ],
+          [
+            -89.4314861,
+            43.0752822
+          ],
+          [
+            -89.4315291,
+            43.0752829
+          ],
+          [
+            -89.4315291,
+            43.0752802
+          ],
+          [
+            -89.4315375,
+            43.0752748
+          ],
+          [
+            -89.4315383,
+            43.075242
+          ],
+          [
+            -89.4315469,
+            43.0752362
+          ],
+          [
+            -89.4315668,
+            43.0752365
+          ],
+          [
+            -89.4315859,
+            43.0752223
+          ],
+          [
+            -89.4315961,
+            43.0752224
+          ],
+          [
+            -89.431641,
+            43.0752229
+          ],
+          [
+            -89.4316442,
+            43.075223
+          ],
+          [
+            -89.4316625,
+            43.0752376
+          ],
+          [
+            -89.4316829,
+            43.0752379
+          ],
+          [
+            -89.4316821,
+            43.0752715
+          ],
+          [
+            -89.4316996,
+            43.0752853
+          ],
+          [
+            -89.4316986,
+            43.0753311
+          ],
+          [
+            -89.4318231,
+            43.0754262
+          ],
+          [
+            -89.4318495,
+            43.0754265
+          ],
+          [
+            -89.4318723,
+            43.0754099
+          ],
+          [
+            -89.4318957,
+            43.0754271
+          ],
+          [
+            -89.4318993,
+            43.0754271
+          ],
+          [
+            -89.4318998,
+            43.0754016
+          ],
+          [
+            -89.4318888,
+            43.0754015
+          ],
+          [
+            -89.4318899,
+            43.0753552
+          ],
+          [
+            -89.4319009,
+            43.0753553
+          ],
+          [
+            -89.4319014,
+            43.0753345
+          ],
+          [
+            -89.4319325,
+            43.0753126
+          ],
+          [
+            -89.4319783,
+            43.0753132
+          ],
+          [
+            -89.4320025,
+            43.0753324
+          ],
+          [
+            -89.4320017,
+            43.0753662
+          ],
+          [
+            -89.4319731,
+            43.075386
+          ],
+          [
+            -89.4319724,
+            43.0754157
+          ],
+          [
+            -89.4319896,
+            43.0754283
+          ],
+          [
+            -89.4320234,
+            43.0754287
+          ],
+          [
+            -89.4321523,
+            43.0753384
+          ],
+          [
+            -89.4321534,
+            43.07529
+          ],
+          [
+            -89.4321738,
+            43.0752761
+          ],
+          [
+            -89.4321745,
+            43.0752449
+          ],
+          [
+            -89.4321936,
+            43.0752451
+          ],
+          [
+            -89.4322099,
+            43.0752324
+          ],
+          [
+            -89.4322749,
+            43.0752332
+          ],
+          [
+            -89.4322905,
+            43.0752472
+          ],
+          [
+            -89.4323128,
+            43.0752474
+          ],
+          [
+            -89.432322,
+            43.0752548
+          ],
+          [
+            -89.4323212,
+            43.0752873
+          ],
+          [
+            -89.4323258,
+            43.0752899
+          ],
+          [
+            -89.4323224,
+            43.0754339
+          ],
+          [
+            -89.4324101,
+            43.075435
+          ],
+          [
+            -89.4324982,
+            43.0754361
+          ],
+          [
+            -89.432517,
+            43.0754229
+          ],
+          [
+            -89.4325616,
+            43.0754568
+          ],
+          [
+            -89.4325276,
+            43.0754807
+          ],
+          [
+            -89.432527,
+            43.0755036
+          ],
+          [
+            -89.4325602,
+            43.0755289
+          ],
+          [
+            -89.4325112,
+            43.0755633
+          ],
+          [
+            -89.4325067,
+            43.0755599
+          ],
+          [
+            -89.4323989,
+            43.0755586
+          ],
+          [
+            -89.432353,
+            43.075558
+          ],
+          [
+            -89.4323503,
+            43.0756296
+          ],
+          [
+            -89.4324476,
+            43.0756316
+          ],
+          [
+            -89.4325167,
+            43.0756852
+          ],
+          [
+            -89.4324906,
+            43.0757031
+          ],
+          [
+            -89.4325023,
+            43.0757122
+          ],
+          [
+            -89.4323822,
+            43.0757947
+          ],
+          [
+            -89.4323705,
+            43.0757856
+          ],
+          [
+            -89.4323446,
+            43.0758034
+          ],
+          [
+            -89.4324719,
+            43.0759022
+          ],
+          [
+            -89.4324834,
+            43.0759023
+          ],
+          [
+            -89.4325041,
+            43.0758881
+          ],
+          [
+            -89.4325502,
+            43.075924
+          ],
+          [
+            -89.4325161,
+            43.0759474
+          ],
+          [
+            -89.4325155,
+            43.0759718
+          ],
+          [
+            -89.4325474,
+            43.0759966
+          ],
+          [
+            -89.4325411,
+            43.0760009
+          ],
+          [
+            -89.4325606,
+            43.0760163
+          ],
+          [
+            -89.4326122,
+            43.0760163
+          ],
+          [
+            -89.4326392,
+            43.075998
+          ],
+          [
+            -89.4326817,
+            43.0760316
+          ],
+          [
+            -89.4326546,
+            43.0760499
+          ],
+          [
+            -89.4327918,
+            43.0761585
+          ],
+          [
+            -89.4328685,
+            43.0761068
+          ],
+          [
+            -89.4329385,
+            43.0761621
+          ],
+          [
+            -89.433125,
+            43.0760364
+          ],
+          [
+            -89.4330895,
+            43.0760083
+          ],
+          [
+            -89.433162,
+            43.0759595
+          ],
+          [
+            -89.4332056,
+            43.075994
+          ],
+          [
+            -89.4332337,
+            43.0759751
+          ],
+          [
+            -89.4332834,
+            43.0760144
+          ],
+          [
+            -89.4332553,
+            43.0760333
+          ],
+          [
+            -89.4333812,
+            43.076133
+          ],
+          [
+            -89.4334111,
+            43.0761128
+          ],
+          [
+            -89.4334234,
+            43.0761226
+          ],
+          [
+            -89.4334984,
+            43.0761819
+          ],
+          [
+            -89.4334976,
+            43.0762365
+          ],
+          [
+            -89.4333779,
+            43.0763171
+          ],
+          [
+            -89.4333656,
+            43.0763074
+          ],
+          [
+            -89.4332878,
+            43.0763598
+          ],
+          [
+            -89.4332675,
+            43.076365
+          ],
+          [
+            -89.4332246,
+            43.0763852
+          ],
+          [
+            -89.4331896,
+            43.0764123
+          ],
+          [
+            -89.433167,
+            43.0764413
+          ],
+          [
+            -89.4331222,
+            43.0764715
+          ],
+          [
+            -89.4331438,
+            43.0764886
+          ],
+          [
+            -89.4330859,
+            43.0765277
+          ],
+          [
+            -89.4330814,
+            43.0765241
+          ],
+          [
+            -89.4329964,
+            43.0765814
+          ],
+          [
+            -89.4329123,
+            43.0766381
+          ],
+          [
+            -89.4329358,
+            43.0766567
+          ],
+          [
+            -89.4328617,
+            43.0767067
+          ],
+          [
+            -89.4328382,
+            43.0766881
+          ],
+          [
+            -89.4326629,
+            43.0768063
+          ],
+          [
+            -89.4326829,
+            43.0768221
+          ],
+          [
+            -89.4326927,
+            43.0768299
+          ],
+          [
+            -89.4326419,
+            43.0768642
+          ],
+          [
+            -89.4326369,
+            43.0768675
+          ],
+          [
+            -89.4326719,
+            43.0768952
+          ],
+          [
+            -89.4326095,
+            43.0769373
+          ],
+          [
+            -89.4327585,
+            43.0770553
+          ],
+          [
+            -89.4327778,
+            43.0770423
+          ],
+          [
+            -89.4328318,
+            43.077085
+          ],
+          [
+            -89.4328125,
+            43.077098
+          ],
+          [
+            -89.4328074,
+            43.0771251
+          ],
+          [
+            -89.4328289,
+            43.0771421
+          ],
+          [
+            -89.4327725,
+            43.0771802
+          ],
+          [
+            -89.432751,
+            43.0771631
+          ],
+          [
+            -89.432543,
+            43.0773034
+          ],
+          [
+            -89.4325436,
+            43.0773039
+          ],
+          [
+            -89.4325417,
+            43.0773455
+          ],
+          [
+            -89.4325212,
+            43.0773599
+          ],
+          [
+            -89.4325207,
+            43.0773712
+          ],
+          [
+            -89.4325044,
+            43.0773827
+          ],
+          [
+            -89.432476,
+            43.0773819
+          ],
+          [
+            -89.432472,
+            43.0773788
+          ],
+          [
+            -89.4324558,
+            43.0773902
+          ],
+          [
+            -89.4324362,
+            43.0773753
+          ],
+          [
+            -89.4322485,
+            43.0775019
+          ],
+          [
+            -89.4322426,
+            43.0775059
+          ],
+          [
+            -89.4322672,
+            43.0775253
+          ],
+          [
+            -89.4322452,
+            43.0775402
+          ],
+          [
+            -89.4322249,
+            43.0775402
+          ],
+          [
+            -89.4322121,
+            43.0775402
+          ],
+          [
+            -89.432192,
+            43.0775243
+          ],
+          [
+            -89.4321615,
+            43.0775243
+          ],
+          [
+            -89.4321396,
+            43.0775391
+          ],
+          [
+            -89.4321033,
+            43.0775391
+          ],
+          [
+            -89.4320823,
+            43.0775225
+          ],
+          [
+            -89.4321008,
+            43.07751
+          ],
+          [
+            -89.4320907,
+            43.0775021
+          ],
+          [
+            -89.4319005,
+            43.0773515
+          ],
+          [
+            -89.4318822,
+            43.0773639
+          ],
+          [
+            -89.4318691,
+            43.0773535
+          ],
+          [
+            -89.4316301,
+            43.0775146
+          ],
+          [
+            -89.4316504,
+            43.0775306
+          ],
+          [
+            -89.431631,
+            43.0775437
+          ],
+          [
+            -89.4315969,
+            43.0775431
+          ],
+          [
+            -89.4315779,
+            43.0775281
+          ],
+          [
+            -89.4315402,
+            43.0775273
+          ],
+          [
+            -89.4315212,
+            43.0775402
+          ],
+          [
+            -89.4314872,
+            43.0775396
+          ],
+          [
+            -89.431468,
+            43.0775244
+          ],
+          [
+            -89.4314837,
+            43.0775138
+          ],
+          [
+            -89.4314193,
+            43.0774629
+          ],
+          [
+            -89.4313058,
+            43.0773731
+          ],
+          [
+            -89.4312869,
+            43.0773859
+          ],
+          [
+            -89.4312637,
+            43.0773676
+          ],
+          [
+            -89.4312647,
+            43.0773461
+          ],
+          [
+            -89.4312871,
+            43.077331
+          ],
+          [
+            -89.4312871,
+            43.0773081
+          ],
+          [
+            -89.4312668,
+            43.077292
+          ],
+          [
+            -89.4312681,
+            43.0772684
+          ],
+          [
+            -89.4312906,
+            43.0772533
+          ],
+          [
+            -89.4313147,
+            43.0772723
+          ],
+          [
+            -89.431508,
+            43.077142
+          ],
+          [
+            -89.4314823,
+            43.0771217
+          ],
+          [
+            -89.4314993,
+            43.0771102
+          ],
+          [
+            -89.4314938,
+            43.0771059
+          ],
+          [
+            -89.4314943,
+            43.0770817
+          ],
+          [
+            -89.4314982,
+            43.077079
+          ],
+          [
+            -89.4314823,
+            43.0770665
+          ],
+          [
+            -89.4314929,
+            43.0770593
+          ],
+          [
+            -89.4313141,
+            43.0769178
+          ],
+          [
+            -89.4312947,
+            43.0769308
+          ],
+          [
+            -89.4312461,
+            43.0768923
+          ],
+          [
+            -89.4312654,
+            43.0768793
+          ],
+          [
+            -89.4311402,
+            43.0767802
+          ],
+          [
+            -89.4310805,
+            43.076733
+          ],
+          [
+            -89.4310419,
+            43.0767024
+          ],
+          [
+            -89.4310216,
+            43.0767161
+          ],
+          [
+            -89.4309692,
+            43.0766747
+          ],
+          [
+            -89.4309896,
+            43.076661
+          ],
+          [
+            -89.4308622,
+            43.0765601
+          ],
+          [
+            -89.4307617,
+            43.0764806
+          ],
+          [
+            -89.4307516,
+            43.0764725
+          ],
+          [
+            -89.4307513,
+            43.0764517
+          ],
+          [
+            -89.4307882,
+            43.0764292
+          ],
+          [
+            -89.4307627,
+            43.076413
+          ],
+          [
+            -89.4307651,
+            43.0763231
+          ],
+          [
+            -89.430868,
+            43.0762538
+          ],
+          [
+            -89.431016,
+            43.0761541
+          ],
+          [
+            -89.4309911,
+            43.0761344
+          ],
+          [
+            -89.4310462,
+            43.0760973
+          ],
+          [
+            -89.4310711,
+            43.0761169
+          ],
+          [
+            -89.4311143,
+            43.0760878
+          ],
+          [
+            -89.4312122,
+            43.0760218
+          ],
+          [
+            -89.4311855,
+            43.0760007
+          ],
+          [
+            -89.4312192,
+            43.0759779
+          ],
+          [
+            -89.4312329,
+            43.0759687
+          ],
+          [
+            -89.4312596,
+            43.0759898
+          ],
+          [
+            -89.4312729,
+            43.0759808
+          ]
+        ]
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4077467918396,
+          43.07304557058978
+        ]
+      },
+      "properties": {
+        "name": "Aldo’s Cafe",
+        "provider": "other",
+        "locationUrl": "https://www.aldoscafemadison.com/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Aldo’s Cafe",
+        "buildingId": "way/153063315",
+        "buildingName": "Wisconsin Institute for Discovery",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.41377639770508,
+          43.074953908620465
+        ]
+      },
+      "properties": {
+        "name": "Babcock Hall Dairy Store",
+        "provider": "other",
+        "locationUrl": "http://babcockhalldairystore.wisc.edu",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Babcock Hall Dairy Store",
+        "buildingId": "way/38856035",
+        "buildingName": "Babcock Hall",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40987646579744,
+          43.07202280234115
+        ]
+      },
+      "properties": {
+        "name": "Badger Market Engineering",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/e2-engineering-eatery/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Badger Market at Engineering",
+        "buildingId": "way/56997838",
+        "buildingName": "Engineering Hall",
+        "logoPath": "dining-logos/2150.jpg",
+        "orderUrl": "https://weborder.transactcampus.com/230/2150"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.43014860153197,
+          43.07750871578119
+        ]
+      },
+      "properties": {
+        "name": "Badger Market",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/badger-market-in-health-sciences-learning-center/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Badger Market at Health Sciences Learning Center",
+        "buildingId": "way/107463323",
+        "buildingName": "Health Sciences Learning Center",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40525636076927,
+          43.075708214760944
+        ]
+      },
+      "properties": {
+        "name": "Badger Market",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/badger-market-in-ingraham/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Badger Market at Ingraham",
+        "buildingId": "way/38855397",
+        "buildingName": "Ingraham Hall",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40658271312712,
+          43.073746999483326
+        ]
+      },
+      "properties": {
+        "name": "Badger Market Medical Sciences",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/badger-market-in-medical-sciences/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Badger Market at Medical Sciences",
+        "buildingId": "way/172992066",
+        "buildingName": "Medical Sciences",
+        "logoPath": "dining-logos/2146.jpg",
+        "orderUrl": "https://weborder.transactcampus.com/230/2146"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39957590369761,
+          43.07623497066268
+        ]
+      },
+      "properties": {
+        "name": "Badger Market",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/badger-market/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Badger Market at Memorial Union",
+        "buildingId": "relation/19355831",
+        "buildingName": "Memorial Union",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40891623497009,
+          43.07571017398558
+        ]
+      },
+      "properties": {
+        "name": "Badger Market Robin's Nest",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/robins-nest/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Badger Market at School of Human Ecology",
+        "buildingId": "way/38855398",
+        "buildingName": "Nancy Nicholas Hall",
+        "logoPath": "dining-logos/2149.jpg",
+        "orderUrl": "https://weborder.transactcampus.com/230/2149"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40866947174072,
+          43.07214036277812
+        ]
+      },
+      "properties": {
+        "name": "Badger Market",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/badger-market-in-union-south/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Badger Market at Union South",
+        "buildingId": "way/153660065",
+        "buildingName": "Union South",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39927369356157,
+          43.07692879957428
+        ]
+      },
+      "properties": {
+        "name": "BBQ Stand",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/bbq-stand/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "BBQ Stand",
+        "buildingId": "relation/19355831",
+        "buildingName": "Memorial Union",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39991742372516,
+          43.07679165642565
+        ]
+      },
+      "properties": {
+        "name": "The Brat Stand",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/the-brat-stand/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Brat Stand",
+        "buildingId": "relation/19355831",
+        "buildingName": "Memorial Union",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.41146433353424,
+          43.07725794187876
+        ]
+      },
+      "properties": {
+        "name": "Carson’s Market",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/carsons/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Carson’s Market",
+        "buildingId": "way/38953112",
+        "buildingName": "Carson Gulley Center",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39974039793016,
+          43.07621957026633
+        ]
+      },
+      "properties": {
+        "name": "Carte",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/carte/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Carte",
+        "buildingId": "relation/19355831",
+        "buildingName": "Memorial Union",
+        "logoPath": "dining-logos/2154.jpg",
+        "orderUrl": "https://weborder.transactcampus.com/230/2154"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39871625509114,
+          43.073915559193296
+        ]
+      },
+      "properties": {
+        "name": "Chazen Cafe",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/chazen-cafe/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Chazen Café",
+        "buildingId": "way/295708135",
+        "buildingName": "Chazen Museum of Art",
+        "logoPath": "dining-logos/1975.jpg",
+        "orderUrl": "https://weborder.transactcampus.com/230/1975"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4021087884903,
+          43.0757297662285
+        ]
+      },
+      "properties": {
+        "name": "Crossroads Cafe",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/crossroads-cafe/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Crossroads Café",
+        "buildingId": "way/37751914",
+        "buildingName": "Education Building",
+        "logoPath": "dining-logos/2467.jpg",
+        "orderUrl": "https://weborder.transactcampus.com/230/2467"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39932525892675,
+          43.07631591947299
+        ]
+      },
+      "properties": {
+        "name": "Daily Scoop",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/daily-scoop-in-memorial-union/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Daily Scoop at Memorial Union",
+        "buildingId": "relation/19355831",
+        "buildingName": "Memorial Union",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40770924091339,
+          43.07173281896576
+        ]
+      },
+      "properties": {
+        "name": "Daily Scoop",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/daily-scoop-in-union-south/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Daily Scoop at Union South",
+        "buildingId": "way/153660065",
+        "buildingName": "Union South",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39981818199159,
+          43.07632536742433
+        ]
+      },
+      "properties": {
+        "name": "Rathskeller",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/der-rathskeller/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Der Rathskeller",
+        "buildingId": "relation/19355831",
+        "buildingName": "Memorial Union",
+        "logoPath": "dining-logos/2155.jpg",
+        "orderUrl": "https://weborder.transactcampus.com/230/2155"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40006762742996,
+          43.07636063310307
+        ]
+      },
+      "properties": {
+        "name": "Der Stiftskeller",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/der-stiftskeller/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Der Stiftskeller",
+        "buildingId": "relation/19355831",
+        "buildingName": "Memorial Union",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.41768169403076,
+          43.07769287721222
+        ]
+      },
+      "properties": {
+        "name": "Flamingo Run at Four Lakes Market",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/four-lakes/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Flamingo Run at Four Lakes Market",
+        "buildingId": "way/173709889",
+        "buildingName": "Dejope Residence Hall",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39886580919848,
+          43.07112654966981
+        ]
+      },
+      "properties": {
+        "name": "Flamingo Run at Gordon Avenue Market",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/gordon/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Flamingo Run at Gordon Avenue Market",
+        "buildingId": "way/193492268",
+        "buildingName": "Gordon Dining and Event Center",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40133094787599,
+          43.0738763123135
+        ]
+      },
+      "properties": {
+        "name": "Flamingo Run at Rheta’s Market",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/rhetas/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Flamingo Run at Rheta’s Market",
+        "buildingId": "way/39201164",
+        "buildingName": "Chadbourne Residence Hall",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39658343791962,
+          43.07292801188913
+        ]
+      },
+      "properties": {
+        "name": "Oros Executive Dining Room",
+        "provider": "union",
+        "locationUrl": "https://fluno.com/dining/oros",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Fluno Center Executive Dining Room",
+        "buildingId": "way/103242254",
+        "buildingName": "Fluno Center",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.43192958831787,
+          43.07640373557179
+        ]
+      },
+      "properties": {
+        "name": "Four Lakes Café (UW Hospital Cafeteria)",
+        "provider": "other",
+        "locationUrl": "http://www.uwhealth.org/patient-guides/uw-hospital/cafeteria-and-dining/10158",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Four Lakes Café (UW Hospital Cafeteria)",
+        "buildingId": "way/870590639",
+        "buildingName": "UW Health University Hospital",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.41787481307983,
+          43.077673285596944
+        ]
+      },
+      "properties": {
+        "name": "Four Lakes Market",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/four-lakes/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Four Lakes Market",
+        "buildingId": "way/173709889",
+        "buildingName": "Dejope Residence Hall",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40854609012601,
+          43.0719365912107
+        ]
+      },
+      "properties": {
+        "name": "Ginger Root",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/ginger-root/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Ginger Root",
+        "buildingId": "way/153660065",
+        "buildingName": "Union South",
+        "logoPath": "dining-logos/2147.jpg",
+        "orderUrl": "https://weborder.transactcampus.com/230/2147"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39840734004974,
+          43.07122338538928
+        ]
+      },
+      "properties": {
+        "name": "Gordon Avenue Market",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/gordon/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Gordon Avenue Market",
+        "buildingId": "way/193492268",
+        "buildingName": "Gordon Dining and Event Center",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40683120891676,
+          43.073038904194696
+        ]
+      },
+      "properties": {
+        "name": "Ground Truth",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/ground-truth",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Ground Truth",
+        "buildingId": "way/1391651477",
+        "buildingName": "Morgridge Hall",
+        "logoPath": "dining-logos/2468.jpg",
+        "orderUrl": "https://weborder.transactcampus.com/230/2468"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.43171501159668,
+          43.07653696119239
+        ]
+      },
+      "properties": {
+        "name": "Java Coast",
+        "provider": "other",
+        "locationUrl": "https://www.uwhealth.org/locations/university-hospital-170",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Java Coast",
+        "buildingId": "way/870590639",
+        "buildingName": "UW Health University Hospital",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39937829971313,
+          43.07660749228606
+        ]
+      },
+      "properties": {
+        "name": "Lakeview Lounge",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/lakeview-lounge/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Lakeview Lounge",
+        "buildingId": "relation/19355831",
+        "buildingName": "Memorial Union",
+        "logoPath": "dining-logos/1973.jpg",
+        "orderUrl": "https://weborder.transactcampus.com/230/1973"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40695822238924,
+          43.07689353422253
+        ]
+      },
+      "properties": {
+        "name": "Liz’s Market",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/liz/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Liz’s Market",
+        "buildingId": "way/37751511",
+        "buildingName": "Waters Residence Hall",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.43173110485075,
+          43.07639589876153
+        ]
+      },
+      "properties": {
+        "name": "Mendota Market",
+        "provider": "other",
+        "locationUrl": "https://www.uwhealth.org/locations/university-hospital-170",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Mendota Market",
+        "buildingId": "way/870590639",
+        "buildingName": "UW Health University Hospital",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.41223144531249,
+          43.075870830192805
+        ]
+      },
+      "properties": {
+        "name": "Microcosm Cafe",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/microcosm-cafe/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Microcosm Café",
+        "buildingId": "way/38855860",
+        "buildingName": "Microbial Sciences Building",
+        "logoPath": "dining-logos/2152.jpg",
+        "orderUrl": "https://weborder.transactcampus.com/230/2152"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40843880176544,
+          43.07188172951909
+        ]
+      },
+      "properties": {
+        "name": "Naan Stop South",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/naan-stop-south",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Naan Stop South",
+        "buildingId": "way/153660065",
+        "buildingName": "Union South",
+        "logoPath": "dining-logos/2157.jpg",
+        "orderUrl": "https://weborder.transactcampus.com/230/2157"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40101444721222,
+          43.07670937038911
+        ]
+      },
+      "properties": {
+        "name": "Open Book Cafe",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/open-book-cafe/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Open Book Café",
+        "buildingId": "way/37749300",
+        "buildingName": "Helen C. White Hall",
+        "logoPath": "dining-logos/2156.jpg",
+        "orderUrl": "https://weborder.transactcampus.com/230/2156"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39924955368043,
+          43.07619605976195
+        ]
+      },
+      "properties": {
+        "name": "Peets Coffee",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/peets-coffee-and-tea/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Peet’s Coffee",
+        "buildingId": "relation/19355831",
+        "buildingName": "Memorial Union",
+        "logoPath": "dining-logos/1972.jpg",
+        "orderUrl": "https://weborder.transactcampus.com/230/1972"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40833151340486,
+          43.072046314446595
+        ]
+      },
+      "properties": {
+        "name": "Prairie Fire",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/prairie-fire/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Prairie Fire Coffeehouse",
+        "buildingId": "way/153660065",
+        "buildingName": "Union South",
+        "logoPath": "dining-logos/1974.jpg",
+        "orderUrl": "https://weborder.transactcampus.com/230/1974"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.42795991897583,
+          43.07752438911603
+        ]
+      },
+      "properties": {
+        "name": "Revive",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/revive/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Revive",
+        "buildingId": "way/174188355",
+        "buildingName": "Signe Skott Cooper Hall",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40174075017589,
+          43.07391858581536
+        ]
+      },
+      "properties": {
+        "name": "Rheta’s Market",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/rhetas/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Rheta’s Market",
+        "buildingId": "way/39201164",
+        "buildingName": "Chadbourne Residence Hall",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4075644016266,
+          43.07141148443369
+        ]
+      },
+      "properties": {
+        "name": "Sett Recreation",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/events-and-activities/climbing-and-bowling/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Sett Rec",
+        "buildingId": "way/153660065",
+        "buildingName": "Union South",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.42037423374131,
+          43.076924253651185
+        ]
+      },
+      "properties": {
+        "name": "Shake Smart",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/shake-smart/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Shake Smart",
+        "buildingId": "way/916831421",
+        "buildingName": "Bakke Recreation & Wellbeing Center",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39659953117369,
+          43.07300638438127
+        ]
+      },
+      "properties": {
+        "name": "Smitty’s Study Pub",
+        "provider": "union",
+        "locationUrl": "https://fluno.com/dining/smittys/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Smitty’s Study Pub",
+        "buildingId": "way/103242254",
+        "buildingName": "Fluno Center",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.408358335495,
+          43.07183470517291
+        ]
+      },
+      "properties": {
+        "name": "South Cantina",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/southcantina/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "South Cantina",
+        "buildingId": "way/153660065",
+        "buildingName": "Union South",
+        "logoPath": "dining-logos/1969.jpg",
+        "orderUrl": "https://weborder.transactcampus.com/230/1969"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40022587776183,
+          43.06868399178814
+        ]
+      },
+      "properties": {
+        "name": "Starbucks at Smith",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/starbucks/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Starbucks at Smith",
+        "buildingId": "way/102239119",
+        "buildingName": "Smith Residence Hall",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40770387649536,
+          43.072606683623555
+        ]
+      },
+      "properties": {
+        "name": "Steenbock’s on Orchard",
+        "provider": "other",
+        "locationUrl": "https://www.steenbocksonorchard.com/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Steenbock’s on Orchard",
+        "buildingId": "way/153063315",
+        "buildingName": "Wisconsin Institute for Discovery",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39952850341797,
+          43.076368469917824
+        ]
+      },
+      "properties": {
+        "name": "Strada",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/strada/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Strada",
+        "buildingId": "relation/19355831",
+        "buildingName": "Memorial Union",
+        "logoPath": "dining-logos/2153.jpg",
+        "orderUrl": "https://weborder.transactcampus.com/230/2153"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4175797700882,
+          43.07762234736787
+        ]
+      },
+      "properties": {
+        "name": "The Bean & Creamery at Four Lakes Market",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/four-lakes/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "The Bean & Creamery at Four Lakes Market",
+        "buildingId": "way/173709889",
+        "buildingName": "Dejope Residence Hall",
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40771996974944,
+          43.07147810270681
+        ]
+      },
+      "properties": {
+        "name": "Sett Pub",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/dine/find-food-and-drink/the-sett/",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "The Sett Pub",
+        "buildingId": "way/153660065",
+        "buildingName": "Union South",
+        "logoPath": "dining-logos/2148.jpg",
+        "orderUrl": "https://weborder.transactcampus.com/230/2148"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40194785594943,
+          43.07276342932944
+        ]
+      },
+      "properties": {
+        "name": "Wisconsin Union Catering",
+        "provider": "union",
+        "locationUrl": "https://union.wisc.edu/host-your-event/catering",
+        "sourceUrl": "https://www.wisc.edu/dining/",
+        "coordinateMeaning": "Published UW dining map marker; not independently surveyed or verified as an exact counter position.",
+        "sourceName": "Wisconsin Union Catering",
+        "buildingId": null,
+        "buildingName": null,
+        "logoPath": null,
+        "orderUrl": null
+      }
+    }
+  ]
+}
