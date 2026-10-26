@@ -21,7 +21,8 @@ const defaultLocationKinds = locationKinds.filter((kind) => kind !== 'vending');
 function filteredMap(enabled: Provider[], kinds: LocationKind[]) {
   const locations = campusLocations.filter((location) => enabled.includes(displayProvider(location)) && kinds.includes(locationKind(location)));
   const buildings = diningData.buildings.map((building) => ({ ...building, outlets: building.outlets.filter((outlet) => enabled.includes(outlet.provider as Provider) && kinds.includes(diningKind(outlet.name, outlet.provider))) })).filter((building) => building.outlets.length);
-  return { locations, buildings, points: [...buildings.flatMap((building) => building.rings.flat()), ...locations.map((location) => location.geometry.coordinates)] };
+  const vendingBuildings = vendingData.buildings.filter((building) => locations.some((location) => location.properties.sourceName === building.id));
+  return { locations, buildings, vendingBuildings, points: [...buildings.flatMap((building) => building.rings.flat()), ...vendingBuildings.flatMap((building) => building.rings.flat()), ...locations.map((location) => location.geometry.coordinates)] };
 }
 
 export function CampusMap() {
@@ -32,10 +33,11 @@ export function CampusMap() {
   const [moving, setMoving] = useState(false);
   const [view, setView] = useState({ center: diningCenter, zoom: 15 });
   const initialFit = useRef(false);
+  const [defaultZoom, setDefaultZoom] = useState<number | null>(null);
   const [enabled, setEnabled] = useState<Provider[]>(['union', 'housing', 'other']);
   const [enabledKinds, setEnabledKinds] = useState<LocationKind[]>(defaultLocationKinds);
   const [selectedLocation, setSelectedLocation] = useState<DiningLocation | null>(null);
-  const { locations: visibleLocations, buildings: visibleBuildings, points: visiblePoints } = filteredMap(enabled, enabledKinds);
+  const { locations: visibleLocations, buildings: visibleBuildings, vendingBuildings: visibleVendingBuildings, points: visiblePoints } = filteredMap(enabled, enabledKinds);
   const viewPoints = visiblePoints.length ? visiblePoints : diningPoints;
   const [width, setWidth] = useState(0);
   const [height, setHeight] = useState(500);
@@ -87,6 +89,7 @@ export function CampusMap() {
     if (!overlayRoot || !width || !height || initialFit.current) return;
     initialFit.current = true;
     const fit = fitDiningView(viewPoints, width, height);
+    setDefaultZoom(fit.zoom);
     navigate(fit.center, fit.zoom, 0);
   }, [overlayRoot, width, height, viewPoints]);
   function footprintPath(rings: number[][][]) {
@@ -136,6 +139,9 @@ export function CampusMap() {
           <title id={titleId}>Street map of the UW–Madison campus</title>
           <desc id={descriptionId}>Campus and surrounding streets along the south shore of Lake Mendota. Symbols identify cafés, cafeterias, markets, restaurants, and vending host buildings. Provider colors are red for Union, blue for Housing, and green for Other, including vending. Purple footprints identify shared dining buildings. The location directory below provides the same information.</desc>
         </svg>
+        <svg className="building-overlay vending-overlay provider-other" width="100%" height={height} viewBox={`0 0 ${width || 1} ${height}`} aria-hidden="true">
+          {visibleVendingBuildings.filter((building) => !visibleBuildings.some((dining) => dining.id === building.diningBuildingId)).map((building) => <path key={building.id} data-vending-building={building.id} d={footprintPath(building.rings)} className="vending-footprint" />)}
+        </svg>
         <svg className="building-overlay" width="100%" height={height} viewBox={`0 0 ${width || 1} ${height}`} aria-label="Dining building highlights">
           {visibleBuildings.map((building) => <path key={building.id} d={footprintPath(building.rings)} fillRule="evenodd" className={`dining-footprint provider-${new Set(building.outlets.map((outlet) => outlet.provider)).size > 1 ? 'shared' : building.outlets[0].provider}${selected?.id === building.id ? ' is-active' : ''}`} tabIndex={0} role="button" aria-label={`${building.name}: ${building.outlets.map((outlet) => outlet.name).join(', ')}`} aria-pressed={selectedId === building.id}
             onPointerEnter={() => showBuilding(building.id)} onPointerLeave={leaveBuilding}
@@ -143,7 +149,7 @@ export function CampusMap() {
             onClick={() => { if (!nativeMap.current?.isMoving()) setSelectedId((value) => value === building.id ? null : building.id); }}
             onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); setSelectedId((value) => value === building.id ? null : building.id); } if (event.key === 'Escape') { setSelectedId(null); setHoveredId(null); } }}><title>{building.name}</title></path>)}
         </svg>
-        <DiningMarkers popupRoot={container.current} moving={moving} key={`${enabled.join(',')}-${enabledKinds.join(',')}`} onActivate={() => { if (hoverTimer.current) clearTimeout(hoverTimer.current); setSelectedId(null); setHoveredId(null); }} locations={visibleLocations} projection={projection} width={width} height={height} selected={selectedLocation} onSelect={(location) => { setSelectedLocation(location); setSelectedId(null); setHoveredId(null); }} />
+        <DiningMarkers offsetVending={defaultZoom !== null && zoom > defaultZoom + 0.01} popupRoot={container.current} moving={moving} key={`${enabled.join(',')}-${enabledKinds.join(',')}`} onActivate={() => { if (hoverTimer.current) clearTimeout(hoverTimer.current); setSelectedId(null); setHoveredId(null); }} locations={visibleLocations} projection={projection} width={width} height={height} selected={selectedLocation} onSelect={(location) => { setSelectedLocation(location); setSelectedId(null); setHoveredId(null); }} />
         {!visibleLocations.length && <p className="map-empty" role="status">Choose a provider and location type above to show locations.</p>}
         </>, overlayRoot)}
         {selected && <aside className="building-popup" aria-label="Dining building details" onPointerEnter={() => showBuilding(selected.id)} onPointerLeave={leaveBuilding}>

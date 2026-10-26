@@ -18,6 +18,14 @@ import zipfile
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 NS = {"m": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
 SOURCE = "https://map.wisc.edu/api/v1/map_objects.geojson"
+# Reuse reviewed dining geometry for shared buildings so both outlines align.
+DINING_BUILDING_IDS = {
+    647: 'way/153660065', 689: 'way/174188355', 490: 'way/37749300',
+    551: 'way/38855860', 378: 'way/56997838', 721: 'relation/17899257',
+    407: 'way/38855397', 397: 'way/107463323', 404: 'way/38855398',
+    385: 'way/103242254', 374: 'way/37751511', 360: 'way/39201164',
+    546: 'way/102239119', 534: 'way/173709889',
+}
 
 
 def read_locations(path):
@@ -60,6 +68,7 @@ def main():
     campus = {b["id"]: b for b in json.loads(pathlib.Path(args.campus_source).read_text(encoding="utf-8-sig"))}
     matches = json.loads((ROOT / "scripts/vending-building-matches.json").read_text())
     reviewed = {(m["account"], m["location"]): m for m in matches}
+    dining = {b['id']: b for b in json.loads((ROOT / 'src/examples/campus-map/campus-dining.json').read_text(encoding='utf-8'))['buildings']}
     buildings = {}
     unresolved = []
     for key, group in groups.items():
@@ -78,6 +87,14 @@ def main():
         building_key = (building["id"], provider)
         if building_key not in buildings:
             buildings[building_key] = {"id": f"vending-{building['id']}-{provider}", "name": building["name"], "provider": provider, "address": building.get("street_address") or "", "coordinates": coordinates, "mapObjectId": building["id"], "buildingNumber": building.get("building_number"), "areas": [], "machineCount": 0, "locationCount": 0}
+            dining_id = DINING_BUILDING_IDS.get(building['id'])
+            geometry = building['geojson']
+            if geometry['type'] != 'Polygon':
+                raise ValueError(f"Unreviewed footprint geometry: {building['id']}")
+            rings = dining[dining_id]['rings'] if dining_id else geometry['coordinates']
+            if not rings or any(len(ring) < 4 or ring[0] != ring[-1] or any(len(point) != 2 or not all(math.isfinite(v) for v in point) or not (-90 < point[0] < -88 and 42 < point[1] < 44) for point in ring) for ring in rings):
+                raise ValueError(f"Invalid footprint rings: {building['id']}")
+            buildings[building_key].update({'rings': rings, 'diningBuildingId': dining_id, 'footprintSource': 'Reviewed dining footprint (OpenStreetMap)' if dining_id else SOURCE})
         record = buildings[building_key]
         record["areas"] = sorted(set(record["areas"]) | group["names"])
         record["machineCount"] += len(group["machines"])

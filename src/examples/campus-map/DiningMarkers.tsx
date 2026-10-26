@@ -38,10 +38,11 @@ export function displayProvider(location: DiningLocation): Provider {
   return location.properties.kind === 'vending' ? 'other' : location.properties.provider as Provider;
 }
 
-export function DiningMarkers({ locations, projection, width, height, selected, onSelect, onActivate, moving, popupRoot }: {
+export function DiningMarkers({ locations, projection, width, height, selected, onSelect, onActivate, moving, popupRoot, offsetVending }: {
   locations: DiningLocation[]; projection: GeoProjection; width: number; height: number;
   onActivate: () => void; moving: boolean; popupRoot: HTMLElement | null;
   selected: DiningLocation | null; onSelect: (location: DiningLocation | null) => void;
+  offsetVending: boolean;
 }) {
   const [hovered, setHovered] = useState<DiningLocation | null>(null);
   const layer = useRef<HTMLDivElement>(null);
@@ -86,7 +87,7 @@ export function DiningMarkers({ locations, projection, width, height, selected, 
     return () => { document.removeEventListener('pointerdown', outside); document.removeEventListener('keydown', escape); };
   }, [active]);
   return <>
-    <div ref={layer} className="dining-markers" aria-label="Campus dining and vending locations">
+    <div ref={layer} className={`dining-markers${offsetVending ? ' offset-vending' : ''}`} aria-label="Campus dining and vending locations">
       {points.map(({ location, id, x, y }) => {
         const { name, provider } = location.properties;
         const kind = locationKind(location);
