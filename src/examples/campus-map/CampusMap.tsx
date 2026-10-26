@@ -14,9 +14,10 @@ import { diningKind, LocationSymbol, symbolLabels, type LocationKind } from './L
 
 const TILE_SIZE = 256;
 const buildingPoints = diningData.buildings.flatMap((building) => building.rings.flat());
-const diningPoints = [...buildingPoints, ...campusLocations.map((location) => location.geometry.coordinates)];
+const diningPoints = [...buildingPoints, ...campusLocations.filter((location) => location.properties.kind !== 'vending').map((location) => location.geometry.coordinates)];
 const diningCenter = fitDiningView(diningPoints, 1000, 600).center;
 const locationKinds = Object.keys(symbolLabels) as LocationKind[];
+const defaultLocationKinds = locationKinds.filter((kind) => kind !== 'vending');
 function filteredMap(enabled: Provider[], kinds: LocationKind[]) {
   const locations = campusLocations.filter((location) => enabled.includes(displayProvider(location)) && kinds.includes(locationKind(location)));
   const buildings = diningData.buildings.map((building) => ({ ...building, outlets: building.outlets.filter((outlet) => enabled.includes(outlet.provider as Provider) && kinds.includes(diningKind(outlet.name, outlet.provider))) })).filter((building) => building.outlets.length);
@@ -32,7 +33,7 @@ export function CampusMap() {
   const [view, setView] = useState({ center: diningCenter, zoom: 15 });
   const initialFit = useRef(false);
   const [enabled, setEnabled] = useState<Provider[]>(['union', 'housing', 'other']);
-  const [enabledKinds, setEnabledKinds] = useState<LocationKind[]>(locationKinds);
+  const [enabledKinds, setEnabledKinds] = useState<LocationKind[]>(defaultLocationKinds);
   const [selectedLocation, setSelectedLocation] = useState<DiningLocation | null>(null);
   const { locations: visibleLocations, buildings: visibleBuildings, points: visiblePoints } = filteredMap(enabled, enabledKinds);
   const viewPoints = visiblePoints.length ? visiblePoints : diningPoints;

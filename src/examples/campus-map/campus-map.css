@@ -12,10 +12,12 @@
 
 /* Location type is shown by the icon; provider is shown by its color. */
 .location-symbol{display:block;width:17px;height:17px;flex-shrink:0}
-.campus-example .dining-marker{width:27px;height:27px;padding:4px;border:1px solid #ffffff;border-radius:50%;background:#fffffff2;color:var(--marker-color);box-shadow:0 1px 4px #0004;touch-action:manipulation}
-.campus-example .dining-marker .location-symbol{width:17px;height:17px;pointer-events:none}
+.campus-example .dining-marker{width:27px;height:27px;padding:5px;border:0;border-radius:50%;background:transparent;color:var(--marker-color);box-shadow:none;touch-action:manipulation;isolation:isolate}
+.campus-example .dining-marker::before{content:"";position:absolute;inset:3px;border-radius:inherit;background:#ffffffb8;box-shadow:0 1px 2px #00000012;z-index:-1;pointer-events:none}
+.campus-example .dining-marker .location-symbol{width:16px;height:16px;pointer-events:none}
 .campus-example .dining-marker.kind-vending{border-radius:5px}
-.campus-example .dining-marker:hover,.campus-example .dining-marker.is-active{background:white;box-shadow:0 0 0 2px var(--marker-color),0 2px 6px #0004;z-index:2}
+.campus-example .dining-marker:hover,.campus-example .dining-marker.is-active,.campus-example .dining-marker:focus-visible{background:transparent;box-shadow:none;z-index:2}
+.campus-example .dining-marker:hover::before,.campus-example .dining-marker.is-active::before,.campus-example .dining-marker:focus-visible::before{background:#fffffff2;box-shadow:0 0 0 1px var(--marker-color),0 1px 3px #00000020}
 .symbol-legend{display:flex;flex-wrap:wrap;gap:9px 20px;padding:9px 20px;background:#faf9f6;border:1px solid var(--line);border-bottom:0;color:#525652;font-size:11px;flex-shrink:0}
 .symbol-legend label{display:inline-flex;align-items:center;gap:6px;cursor:pointer}.symbol-legend legend{float:left;font-weight:600;margin-right:8px}.symbol-legend{margin:0;min-width:0}.symbol-legend input{width:17px;height:17px;accent-color:var(--marker-color,#525652)}.symbol-legend .provider-other{color:var(--marker-color)}
 .symbol-legend .location-symbol{width:15px;height:15px}
