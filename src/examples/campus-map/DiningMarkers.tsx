@@ -14,6 +14,7 @@ export type Provider = typeof providers[number]['id'];
 export type DiningLocation = Omit<typeof campusData.locations[number], 'properties'> & {
   properties: typeof campusData.locations[number]['properties'] & {
     kind?: 'vending'; address?: string; areas?: string[]; machineCount?: number; locationCount?: number;
+    supplementalOnly?: boolean; evidenceNote?: string | null; managementLabel?: string | null;
   };
 };
 export const campusLocations: DiningLocation[] = [
@@ -26,7 +27,9 @@ export const campusLocations: DiningLocation[] = [
       sourceUrl: vendingData.coordinateSource,
       locationUrl: `https://map.wisc.edu/?initObj=${building.buildingNumber}`,
       coordinateMeaning: vendingData.coordinateMeaning, logoPath: null, orderUrl: null,
-      address: building.address, areas: building.areas, machineCount: building.machineCount, locationCount: building.locationCount,
+      address: building.address, areas: [...new Set([...building.areas, ...building.supplementalAreas])], machineCount: building.machineCount, locationCount: building.locationCount,
+      supplementalOnly: building.supplementalOnly, managementLabel: building.managementLabel,
+      evidenceNote: building.supplementalEvidence.length ? `${building.supplementalOnly ? 'Referenced in the provider lookup; no September sales rows. Current machine count unconfirmed.' : 'Additional areas referenced in the provider lookup; these do not increase the September sales machine count.'}${building.supplementalEvidence.some((evidence) => evidence === 'Not Serviced this Month') ? ' Also referenced in the not-serviced sheet.' : ''}` : null,
     },
   })),
 ];
@@ -36,6 +39,16 @@ export function locationKind(location: DiningLocation): LocationKind {
 }
 export function displayProvider(location: DiningLocation): Provider {
   return location.properties.kind === 'vending' ? 'other' : location.properties.provider as Provider;
+}
+
+export function VendingDetails({ location }: { location: DiningLocation }) {
+  return <>
+    <p>{location.properties.address}</p>
+    {!location.properties.supplementalOnly && <p>{location.properties.machineCount} machines in sales records across {location.properties.locationCount} vendor locations · {vendingData.period}</p>}
+    {location.properties.evidenceNote && <p>{location.properties.evidenceNote}</p>}
+    <p>Host-building location; exact machine positions and current availability are unconfirmed.</p>
+    <ul aria-label="Workbook vending area names">{location.properties.areas?.map((area) => <li key={area}>{area}</li>)}</ul>
+  </>;
 }
 
 export function DiningMarkers({ locations, projection, width, height, selected, onSelect, onActivate, moving, popupRoot, offsetVending }: {
@@ -107,13 +120,8 @@ export function DiningMarkers({ locations, projection, width, height, selected, 
       onFocusCapture={keepOpen} onBlurCapture={(event) => { if (!event.currentTarget.contains(event.relatedTarget)) leave(); }}>
       <button type="button" className="popup-close" aria-label="Close location details" onClick={close}>×</button>
       <h3>{active.properties.name}</h3>
-      <p>{active.properties.kind === 'vending' ? 'Managed by: ' : ''}{providers.find((item) => item.id === active.properties.provider)?.label}</p><p>{active.properties.buildingName}</p>
-      {active.properties.kind === 'vending' && <>
-        <p>{active.properties.address}</p>
-        <p>{active.properties.machineCount} reported machines across {active.properties.locationCount} vendor locations · {vendingData.period}</p>
-        <p>Host-building location; exact machine positions and current availability are unconfirmed.</p>
-        <ul aria-label="Reported vending areas">{active.properties.areas?.map((area) => <li key={area}>{area}</li>)}</ul>
-      </>}
+      <p>{active.properties.managementLabel ?? `${active.properties.kind === 'vending' ? 'Managed by: ' : ''}${providers.find((item) => item.id === active.properties.provider)?.label}`}</p><p>{active.properties.buildingName}</p>
+      {active.properties.kind === 'vending' && <VendingDetails location={active} />}
       {active.properties.logoPath && <img className="location-logo" src={`${import.meta.env.BASE_URL}${active.properties.logoPath}`} alt="" width="64" height="64" />}
       {active.properties.orderUrl && <p><a href={active.properties.orderUrl}>Mobile ordering ↗</a></p>}
       <a href={active.properties.locationUrl}>{active.properties.kind === 'vending' ? 'Host building on UW campus map ↗' : 'Location information & hours ↗'}</a>
