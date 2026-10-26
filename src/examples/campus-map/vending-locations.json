@@ -1,0 +1,1314 @@
+{
+  "period": "September 2026",
+  "checked": "2026-10-26",
+  "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+  "coordinateMeaning": "Campus map host-building reference point, not an exact machine position.",
+  "totalLocations": 111,
+  "unresolved": [
+    {
+      "account": "1025",
+      "location": "39",
+      "reason": "Medical Science could refer to multiple campus buildings."
+    },
+    {
+      "account": "1025",
+      "location": "44",
+      "reason": "Old Middleton Library identity requires confirmation."
+    },
+    {
+      "account": "1025",
+      "location": "45",
+      "reason": "Primate Center could refer to multiple facilities."
+    },
+    {
+      "account": "1025",
+      "location": "46",
+      "reason": "Hygiene Lab identity requires confirmation."
+    },
+    {
+      "account": "1025",
+      "location": "86",
+      "reason": "No usable location name; await provider master list."
+    },
+    {
+      "account": "1025",
+      "location": "91",
+      "reason": "Physical Science Lab PS1 is not identified in the campus map export."
+    },
+    {
+      "account": "1025",
+      "location": "118",
+      "reason": "Source names conflict: Shell versus Sterling Hall."
+    },
+    {
+      "account": "1025",
+      "location": "125",
+      "reason": "Educational Hall is ambiguous between education buildings."
+    },
+    {
+      "account": "1025",
+      "location": "132",
+      "reason": "No usable location name; await provider master list."
+    },
+    {
+      "account": "1025",
+      "location": "162",
+      "reason": "Bio-Chem East is ambiguous between biochemistry buildings."
+    },
+    {
+      "account": "1025",
+      "location": "179",
+      "reason": "ROTC building is not specified."
+    },
+    {
+      "account": "1025",
+      "location": "188",
+      "reason": "DoIT Digital & Printing building is not specified."
+    },
+    {
+      "account": "1025",
+      "location": "190",
+      "reason": "No usable location name; await provider master list."
+    },
+    {
+      "account": "1025",
+      "location": "191",
+      "reason": "No usable location name; await provider master list."
+    },
+    {
+      "account": "1025",
+      "location": "193",
+      "reason": "Bio Chem Delli does not identify a unique biochemistry building."
+    },
+    {
+      "account": "1025",
+      "location": "196",
+      "reason": "No usable location name; await provider master list."
+    },
+    {
+      "account": "1025",
+      "location": "197",
+      "reason": "No usable location name; await provider master list."
+    },
+    {
+      "account": "1026",
+      "location": "1",
+      "reason": "No usable location name; await provider master list."
+    },
+    {
+      "account": "1026",
+      "location": "2",
+      "reason": "No usable location name; await provider master list."
+    },
+    {
+      "account": "1026",
+      "location": "3",
+      "reason": "No usable location name; await provider master list."
+    },
+    {
+      "account": "1026",
+      "location": "4",
+      "reason": "No usable location name; await provider master list."
+    },
+    {
+      "account": "1026",
+      "location": "9",
+      "reason": "No usable location name; await provider master list."
+    },
+    {
+      "account": "1026",
+      "location": "11",
+      "reason": "No usable location name; await provider master list."
+    },
+    {
+      "account": "1026",
+      "location": "13",
+      "reason": "No usable location name; await provider master list."
+    },
+    {
+      "account": "1026",
+      "location": "14",
+      "reason": "No usable location name; await provider master list."
+    },
+    {
+      "account": "1026",
+      "location": "15",
+      "reason": "No usable location name; await provider master list."
+    },
+    {
+      "account": "1026",
+      "location": "16",
+      "reason": "No usable location name; await provider master list."
+    },
+    {
+      "account": "1026",
+      "location": "17",
+      "reason": "No usable location name; await provider master list."
+    },
+    {
+      "account": "1026",
+      "location": "20",
+      "reason": "No usable location name; await provider master list."
+    },
+    {
+      "account": "1026",
+      "location": "21",
+      "reason": "No usable location name; await provider master list."
+    },
+    {
+      "account": "1026",
+      "location": "25",
+      "reason": "No usable location name; await provider master list."
+    },
+    {
+      "account": "1026",
+      "location": "28",
+      "reason": "No usable location name; await provider master list."
+    },
+    {
+      "account": "1028",
+      "location": "1",
+      "reason": "No usable location name; await provider master list."
+    },
+    {
+      "account": "1028",
+      "location": "2",
+      "reason": "No usable location name; await provider master list."
+    }
+  ],
+  "buildings": [
+    {
+      "id": "vending-548-union",
+      "name": "21 N. Park St.",
+      "provider": "union",
+      "address": "21 N. Park St.",
+      "coordinates": [
+        -89.40001835655292,
+        43.06819743717501
+      ],
+      "mapObjectId": 548,
+      "buildingNumber": "1078",
+      "areas": [
+        "21 N Park/Welc Center 6Fl",
+        "East-Welcome Center-1st F"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-697-union",
+      "name": "30 N. Mills St.",
+      "provider": "union",
+      "address": "30 N. Mills St.",
+      "coordinates": [
+        -89.40454551786085,
+        43.068539090148676
+      ],
+      "mapObjectId": 697,
+      "buildingNumber": "0124",
+      "areas": [
+        "30 North Mills-4th Fl",
+        "North Mills - 4th Floor"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-525-union",
+      "name": "333 East Campus Mall",
+      "provider": "union",
+      "address": "333 East Campus Mall",
+      "coordinates": [
+        -89.39873499064846,
+        43.07238842928146
+      ],
+      "mapObjectId": 525,
+      "buildingNumber": "0467",
+      "areas": [
+        "Student Act. Ctr 3rd Fl",
+        "Student Activities Center"
+      ],
+      "machineCount": 4,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-339-union",
+      "name": "Agricultural Hall",
+      "provider": "union",
+      "address": "1450 Linden Dr.",
+      "coordinates": [
+        -89.41028421715275,
+        43.07570879386304
+      ],
+      "mapObjectId": 339,
+      "buildingNumber": "0070",
+      "areas": [
+        "Ag Hall",
+        "Ag Hall Room 50"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-342-union",
+      "name": "Animal Science Building",
+      "provider": "union",
+      "address": "1675 Observatory Dr.",
+      "coordinates": [
+        -89.41529900110932,
+        43.076098504071
+      ],
+      "mapObjectId": 342,
+      "buildingNumber": "0118",
+      "areas": [
+        "Animal Science"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-521-union",
+      "name": "Art Lofts",
+      "provider": "union",
+      "address": "111 N. Frances St.",
+      "coordinates": [
+        -89.39535377230082,
+        43.069054868097254
+      ],
+      "mapObjectId": 521,
+      "buildingNumber": "0220",
+      "areas": [
+        "Art Loft-1st Fl"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-344-union",
+      "name": "Atmospheric, Oceanic and Space Sciences Building",
+      "provider": "union",
+      "address": "1225 W. Dayton St.",
+      "coordinates": [
+        -89.40693445771427,
+        43.070735865297706
+      ],
+      "mapObjectId": 344,
+      "buildingNumber": "0156",
+      "areas": [
+        "Meteorology & Space Scien",
+        "Meteorology/Space Sc 4th"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-348-union",
+      "name": "Bascom Hall",
+      "provider": "union",
+      "address": "500 Lincoln Dr.",
+      "coordinates": [
+        -89.40433580443906,
+        43.07534639770641
+      ],
+      "mapObjectId": 348,
+      "buildingNumber": "0050",
+      "areas": [
+        "Bascom Hall-Main",
+        "Bascom Hall-main"
+      ],
+      "machineCount": 4,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-354-union",
+      "name": "Birge Hall",
+      "provider": "union",
+      "address": "430 Lincoln Dr.",
+      "coordinates": [
+        -89.40382960029869,
+        43.07443071706577
+      ],
+      "mapObjectId": 354,
+      "buildingNumber": "0054",
+      "areas": [
+        "Birge Hall B1",
+        "Birge Hall-1st Fl"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-449-union",
+      "name": "Brogden Psychology Building",
+      "provider": "union",
+      "address": "1202 W. Johnson St.",
+      "coordinates": [
+        -89.40621825054812,
+        43.07258389626221
+      ],
+      "mapObjectId": 449,
+      "buildingNumber": "0470",
+      "areas": [
+        "Brogden Psychology",
+        "Brogden Psychology Bldg"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-360-housing",
+      "name": "Chadbourne Residence Hall",
+      "provider": "housing",
+      "address": "420 N. Park St.",
+      "coordinates": [
+        -89.40121067983512,
+        43.07380625427833
+      ],
+      "mapObjectId": 360,
+      "buildingNumber": "0557",
+      "areas": [
+        "Chadbourne Hall Basement"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-361-union",
+      "name": "Chamberlin Hall",
+      "provider": "union",
+      "address": "1150 University Ave.",
+      "coordinates": [
+        -89.40544068768608,
+        43.073874885388314
+      ],
+      "mapObjectId": 361,
+      "buildingNumber": "0055",
+      "areas": [
+        "Chamberlain Hall-2nd Fl"
+      ],
+      "machineCount": 3,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-363-union",
+      "name": "Chemistry Building",
+      "provider": "union",
+      "address": "1101 University Ave.",
+      "coordinates": [
+        -89.40476253837683,
+        43.07268086795938
+      ],
+      "mapObjectId": 363,
+      "buildingNumber": "0047",
+      "areas": [
+        "Chemistry - 5th fl",
+        "Chemistry 5th Floor"
+      ],
+      "machineCount": 3,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-366-union",
+      "name": "Computer Sciences",
+      "provider": "union",
+      "address": "1210 W. Dayton St.",
+      "coordinates": [
+        -89.40672926189517,
+        43.07147417619353
+      ],
+      "mapObjectId": 366,
+      "buildingNumber": "0155",
+      "areas": [
+        "Computer Science Basement",
+        "Computer Science-Basement"
+      ],
+      "machineCount": 3,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-534-housing",
+      "name": "Dejope Residence Hall",
+      "provider": "housing",
+      "address": "640 Elm Drive",
+      "coordinates": [
+        -89.41776736230737,
+        43.07775001972469
+      ],
+      "mapObjectId": 534,
+      "buildingNumber": "0567",
+      "areas": [
+        "Dejope"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-373-union",
+      "name": "Educational Sciences",
+      "provider": "union",
+      "address": "1025 W. Johnson St.",
+      "coordinates": [
+        -89.40328789229113,
+        43.07183249640019
+      ],
+      "mapObjectId": 373,
+      "buildingNumber": "0154",
+      "areas": [
+        "Educational Science-Basem",
+        "Educational Science-Basement"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-376-union",
+      "name": "Engineering Centers Building",
+      "provider": "union",
+      "address": "1550 Engineering Dr.",
+      "coordinates": [
+        -89.41341764133341,
+        43.072728717607276
+      ],
+      "mapObjectId": 376,
+      "buildingNumber": "0481",
+      "areas": [
+        "Engineering Centers Buil",
+        "Engineerung Centers Building"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-378-union",
+      "name": "Engineering Hall",
+      "provider": "union",
+      "address": "1415 Engineering Dr.",
+      "coordinates": [
+        -89.41032548902132,
+        43.0717750222946
+      ],
+      "mapObjectId": 378,
+      "buildingNumber": "0408",
+      "areas": [
+        "Electrical Engineering-1s",
+        "Eng Hall - Electicial"
+      ],
+      "machineCount": 4,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-379-union",
+      "name": "Engineering Research Building",
+      "provider": "union",
+      "address": "1500 Engineering Dr.",
+      "coordinates": [
+        -89.41162469216303,
+        43.072608761834815
+      ],
+      "mapObjectId": 379,
+      "buildingNumber": "0762",
+      "areas": [
+        "Engineering Research Bui",
+        "Engineering Research Building"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-380-union",
+      "name": "Environmental Health and Safety Building",
+      "provider": "union",
+      "address": "30 East Campus Mall",
+      "coordinates": [
+        -89.39967194451924,
+        43.06885266728973
+      ],
+      "mapObjectId": 380,
+      "buildingNumber": "0549",
+      "areas": [
+        "Environ Health & Safety",
+        "Environ Health & Safety-"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-381-union",
+      "name": "Enzyme Institute",
+      "provider": "union",
+      "address": "1710 University Ave.",
+      "coordinates": [
+        -89.41539527386477,
+        43.07376203112649
+      ],
+      "mapObjectId": 381,
+      "buildingNumber": "0479",
+      "areas": [
+        "Enzyme Lab-1st Fl"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-385-union",
+      "name": "Fluno Center For Executive Education",
+      "provider": "union",
+      "address": "601 University Ave.",
+      "coordinates": [
+        -89.39655032711285,
+        43.07287969496379
+      ],
+      "mapObjectId": 385,
+      "buildingNumber": "0139",
+      "areas": [
+        "Fluno Ctr 5th Floor",
+        "Fluno Ctr 6th Floor",
+        "Fluno Ctr 7th Floor"
+      ],
+      "machineCount": 4,
+      "locationCount": 4
+    },
+    {
+      "id": "vending-388-union",
+      "name": "Genetics-Biotechnology Center Building",
+      "provider": "union",
+      "address": "425 Henry Mall",
+      "coordinates": [
+        -89.40937813352107,
+        43.07382219127579
+      ],
+      "mapObjectId": 388,
+      "buildingNumber": "0082",
+      "areas": [
+        "Bio Tech-5th Fl"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-392-union",
+      "name": "Goodnight Hall",
+      "provider": "union",
+      "address": "1975 Willow Dr.",
+      "coordinates": [
+        -89.41868933155772,
+        43.07884163047381
+      ],
+      "mapObjectId": 392,
+      "buildingNumber": "0508",
+      "areas": [
+        "Good Night Hall-4th Fl"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-394-union",
+      "name": "Grainger Hall",
+      "provider": "union",
+      "address": "975 University Ave.",
+      "coordinates": [
+        -89.40156601661423,
+        43.07271207889702
+      ],
+      "mapObjectId": 394,
+      "buildingNumber": "0140",
+      "areas": [
+        "Grainger Hall"
+      ],
+      "machineCount": 4,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-397-union",
+      "name": "Health Sciences Learning Center",
+      "provider": "union",
+      "address": "750 Highland Ave.",
+      "coordinates": [
+        -89.43025562106574,
+        43.077531159841286
+      ],
+      "mapObjectId": 397,
+      "buildingNumber": "1480",
+      "areas": [
+        "Health Sciences Learning",
+        "Health Sciences Learning_"
+      ],
+      "machineCount": 4,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-490-union",
+      "name": "Helen C. White Hall",
+      "provider": "union",
+      "address": "600 N. Park St.",
+      "coordinates": [
+        -89.40134662074041,
+        43.076696908922145
+      ],
+      "mapObjectId": 490,
+      "buildingNumber": "0018",
+      "areas": [
+        "Helen C. White-1st Fl",
+        "Helen C. White-1st Flr",
+        "Helen C. White-5th Fl"
+      ],
+      "machineCount": 8,
+      "locationCount": 2
+    },
+    {
+      "id": "vending-407-union",
+      "name": "Ingraham Hall",
+      "provider": "union",
+      "address": "1155 Observatory Dr.",
+      "coordinates": [
+        -89.40536604421118,
+        43.07548942359363
+      ],
+      "mapObjectId": 407,
+      "buildingNumber": "0056",
+      "areas": [
+        "Commerce/Ingrahm-Basement"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-416-union",
+      "name": "Lathrop Hall",
+      "provider": "union",
+      "address": "1050 University Ave.",
+      "coordinates": [
+        -89.40301673496198,
+        43.07369127109724
+      ],
+      "mapObjectId": 416,
+      "buildingNumber": "0032",
+      "areas": [
+        "Lathrop Hall- Basement"
+      ],
+      "machineCount": 3,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-420-housing",
+      "name": "Lowell Center",
+      "provider": "housing",
+      "address": "610 Langdon St.",
+      "coordinates": [
+        -89.3958111338856,
+        43.07626741285504
+      ],
+      "mapObjectId": 420,
+      "buildingNumber": "0502",
+      "areas": [
+        "Lowell Hall 1st Floor"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-427-union",
+      "name": "Mechanical Engineering Building",
+      "provider": "union",
+      "address": "1513 University Ave.",
+      "coordinates": [
+        -89.41244870446849,
+        43.07277068567592
+      ],
+      "mapObjectId": 427,
+      "buildingNumber": "0407",
+      "areas": [
+        "Mech Engineering Rm 1272",
+        "Mechanical Engineering"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-431-union",
+      "name": "Memorial Library",
+      "provider": "union",
+      "address": "728 State St.",
+      "coordinates": [
+        -89.3979786545855,
+        43.075361560608634
+      ],
+      "mapObjectId": 431,
+      "buildingNumber": "0015",
+      "areas": [
+        "Memorial Library-1st Fl L",
+        "Memorial Library-3rd Fl",
+        "Memorial Library-3rd Fl L"
+      ],
+      "machineCount": 3,
+      "locationCount": 2
+    },
+    {
+      "id": "vending-551-union",
+      "name": "Microbial Sciences",
+      "provider": "union",
+      "address": "1550 Linden Dr.",
+      "coordinates": [
+        -89.41198389684384,
+        43.075747824829655
+      ],
+      "mapObjectId": 551,
+      "buildingNumber": "0060",
+      "areas": [
+        "Bacterioloy",
+        "Microbites Rm 2506"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-405-union",
+      "name": "Mosse Humanities Building",
+      "provider": "union",
+      "address": "455 N. Park St.",
+      "coordinates": [
+        -89.4000552245385,
+        43.074172265595365
+      ],
+      "mapObjectId": 405,
+      "buildingNumber": "0469",
+      "areas": [
+        "Humanities-1st Fl",
+        "Humanities-7th Fl"
+      ],
+      "machineCount": 5,
+      "locationCount": 2
+    },
+    {
+      "id": "vending-404-union",
+      "name": "Nancy Nicholas Hall",
+      "provider": "union",
+      "address": "1300 Linden Dr.",
+      "coordinates": [
+        -89.40876992940423,
+        43.07571591385996
+      ],
+      "mapObjectId": 404,
+      "buildingNumber": "0085",
+      "areas": [
+        "Hm Ecology 2nd Robbins",
+        "Hunan Ecilogy"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-438-union",
+      "name": "Nielsen Tennis Stadium",
+      "provider": "union",
+      "address": "1000 Highland Ave.",
+      "coordinates": [
+        -89.43027681853992,
+        43.07962774985195
+      ],
+      "mapObjectId": 438,
+      "buildingNumber": "0038",
+      "areas": [
+        "Nielsen Tennis Stadium"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-439-union",
+      "name": "Noland Hall",
+      "provider": "union",
+      "address": "250 N. Mills St.",
+      "coordinates": [
+        -89.40453632517186,
+        43.07153122673736
+      ],
+      "mapObjectId": 439,
+      "buildingNumber": "0402",
+      "areas": [
+        "Nolen",
+        "Nolen/Zoology-1st Fl"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-550-housing",
+      "name": "Ogg Residence Hall",
+      "provider": "housing",
+      "address": "835 W. Dayton St.",
+      "coordinates": [
+        -89.40002924881604,
+        43.070536335080945
+      ],
+      "mapObjectId": 550,
+      "buildingNumber": "1243",
+      "areas": [
+        "Ogg Hall"
+      ],
+      "machineCount": 3,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-450-union",
+      "name": "Pyle Center",
+      "provider": "union",
+      "address": "702 Langdon St.",
+      "coordinates": [
+        -89.39778056817491,
+        43.076272112872935
+      ],
+      "mapObjectId": 450,
+      "buildingNumber": "0006",
+      "areas": [
+        "Pyle Center-2nd Fl",
+        "Pyle Center-Basement"
+      ],
+      "machineCount": 4,
+      "locationCount": 2
+    },
+    {
+      "id": "vending-452-union",
+      "name": "Rennebohm Hall",
+      "provider": "union",
+      "address": "777 Highland Ave.",
+      "coordinates": [
+        -89.42818033412811,
+        43.07848475884766
+      ],
+      "mapObjectId": 452,
+      "buildingNumber": "0034",
+      "areas": [
+        "Rennebohm Hall-1st Fl",
+        "Rennebohm Hall-2nd Fl"
+      ],
+      "machineCount": 4,
+      "locationCount": 2
+    },
+    {
+      "id": "vending-453-union",
+      "name": "Russell Laboratories",
+      "provider": "union",
+      "address": "1630 Linden Dr.",
+      "coordinates": [
+        -89.4135833554534,
+        43.075485580515924
+      ],
+      "mapObjectId": 453,
+      "buildingNumber": "0114",
+      "areas": [
+        "Russell Lab Bsmt By Elev"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-455-union",
+      "name": "School of Social Work Building",
+      "provider": "union",
+      "address": "1350 University Ave.",
+      "coordinates": [
+        -89.40820534127505,
+        43.074312628453825
+      ],
+      "mapObjectId": 455,
+      "buildingNumber": "0453",
+      "areas": [
+        "Social Work - 2nd Floor",
+        "Social Work-2nd Fl"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-459-housing",
+      "name": "Sellery Residence Hall",
+      "provider": "housing",
+      "address": "821 W. Johnson St.",
+      "coordinates": [
+        -89.40000895469616,
+        43.07164463190376
+      ],
+      "mapObjectId": 459,
+      "buildingNumber": "1245",
+      "areas": [
+        "Sellery Hall"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-466-union",
+      "name": "Sewell Social Sciences",
+      "provider": "union",
+      "address": "1180 Observatory Dr.",
+      "coordinates": [
+        -89.40525869993579,
+        43.076528947135394
+      ],
+      "mapObjectId": 466,
+      "buildingNumber": "0046",
+      "areas": [
+        "Soc Sci-Sewel 4th Fl"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-689-union",
+      "name": "Signe Skott Cooper Hall",
+      "provider": "union",
+      "address": "701 Highland Ave",
+      "coordinates": [
+        -89.42805964352885,
+        43.07752145214933
+      ],
+      "mapObjectId": 689,
+      "buildingNumber": "0044",
+      "areas": [
+        "Room 1262 School of Nursing",
+        "School of Nursing"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-546-housing",
+      "name": "Smith Residence Hall",
+      "provider": "housing",
+      "address": "35 N. Park St.",
+      "coordinates": [
+        -89.40039268946671,
+        43.06903738975022
+      ],
+      "mapObjectId": 546,
+      "buildingNumber": "1079",
+      "areas": [
+        "Smith Hall"
+      ],
+      "machineCount": 3,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-471-union",
+      "name": "Steenbock Library",
+      "provider": "union",
+      "address": "550 Babcock Dr.",
+      "coordinates": [
+        -89.41336793404993,
+        43.07611022967858
+      ],
+      "mapObjectId": 471,
+      "buildingNumber": "0079",
+      "areas": [
+        "Steenbock Library",
+        "Steenbock Library 1st Fl"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-478-union",
+      "name": "Teacher Education",
+      "provider": "union",
+      "address": "225 N. Mills St.",
+      "coordinates": [
+        -89.4035993074876,
+        43.0713080547704
+      ],
+      "mapObjectId": 478,
+      "buildingNumber": "0153",
+      "areas": [
+        "Teachers Ed-1st Fl"
+      ],
+      "machineCount": 3,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-411-union",
+      "name": "The Kohl Center",
+      "provider": "union",
+      "address": "601 W. Dayton St.",
+      "coordinates": [
+        -89.39679870361853,
+        43.069414741327655
+      ],
+      "mapObjectId": 411,
+      "buildingNumber": "0225",
+      "areas": [
+        "Kohl Center Loading Dock"
+      ],
+      "machineCount": 1,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-370-union",
+      "name": "U.S. Dairy Forage Research Center",
+      "provider": "union",
+      "address": "1925 Linden Dr. ",
+      "coordinates": [
+        -89.41806685310046,
+        43.075285267876716
+      ],
+      "mapObjectId": 370,
+      "buildingNumber": "0096",
+      "areas": [
+        "Dairy Forage 2nd Fl",
+        "Dairy Forage Bldg"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-654-union",
+      "name": "UW Medical Foundation Centennial Building",
+      "provider": "union",
+      "address": "1685 Highland Ave ",
+      "coordinates": [
+        -89.43311773560353,
+        43.07540916393189
+      ],
+      "mapObjectId": 654,
+      "buildingNumber": "1435",
+      "areas": [
+        "Centennial-Medical Found"
+      ],
+      "machineCount": 1,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-647-union",
+      "name": "Union South",
+      "provider": "union",
+      "address": "1308 W Dayton St",
+      "coordinates": [
+        -89.40807376056726,
+        43.07185606563247
+      ],
+      "mapObjectId": 647,
+      "buildingNumber": "0088",
+      "areas": [
+        "Union South 4th",
+        "Union South 5th"
+      ],
+      "machineCount": 4,
+      "locationCount": 2
+    },
+    {
+      "id": "vending-481-union",
+      "name": "Van Hise Hall",
+      "provider": "union",
+      "address": "1220 Linden Dr.",
+      "coordinates": [
+        -89.4067986416194,
+        43.075577164154005
+      ],
+      "mapObjectId": 481,
+      "buildingNumber": "0482",
+      "areas": [
+        "Van Hise 3rd Floor",
+        "Van Hise 3rd Flr"
+      ],
+      "machineCount": 3,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-482-union",
+      "name": "Van Vleck Hall",
+      "provider": "union",
+      "address": "480 Lincoln Dr.",
+      "coordinates": [
+        -89.40493702344519,
+        43.07480652279825
+      ],
+      "mapObjectId": 482,
+      "buildingNumber": "0048",
+      "areas": [
+        "UW Van Vleck",
+        "UW Van Vleck-Level B3"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-721-union",
+      "name": "Veterinary Medicine North",
+      "provider": "union",
+      "address": "515 Easterday Ln",
+      "coordinates": [
+        -89.42071135717248,
+        43.07590543787955
+      ],
+      "mapObjectId": 721,
+      "buildingNumber": "0793",
+      "areas": [
+        "Vet School New Building"
+      ],
+      "machineCount": 3,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-484-union",
+      "name": "Veterinary Medicine South",
+      "provider": "union",
+      "address": "2015 Linden Dr. ",
+      "coordinates": [
+        -89.42024585961936,
+        43.07513833653663
+      ],
+      "mapObjectId": 484,
+      "buildingNumber": "0093",
+      "areas": [
+        "Vet School 1st FL LG Anim",
+        "Vet School 2nd Fl"
+      ],
+      "machineCount": 3,
+      "locationCount": 2
+    },
+    {
+      "id": "vending-485-union",
+      "name": "Vilas Hall",
+      "provider": "union",
+      "address": "821 University Ave.",
+      "coordinates": [
+        -89.39986377177232,
+        43.07264502572392
+      ],
+      "mapObjectId": 485,
+      "buildingNumber": "0545",
+      "areas": [
+        "Vilas Hall/Bsmt Rm 1153",
+        "Vilas Hall/Comm Arts-7th"
+      ],
+      "machineCount": 3,
+      "locationCount": 2
+    },
+    {
+      "id": "vending-487-union",
+      "name": "WARF Office Building",
+      "provider": "union",
+      "address": "610 Walnut St.",
+      "coordinates": [
+        -89.42604763396352,
+        43.076243174666224
+      ],
+      "mapObjectId": 487,
+      "buildingNumber": "0039",
+      "areas": [
+        "WARF-1st Fl",
+        "Warf-1st Fl"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-374-housing",
+      "name": "Waters Residence Hall",
+      "provider": "housing",
+      "address": "1200 Observatory Dr.",
+      "coordinates": [
+        -89.40694288799442,
+        43.07694917047651
+      ],
+      "mapObjectId": 374,
+      "buildingNumber": "0559",
+      "areas": [
+        "Elizabeth Waters East 2nd"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-489-union",
+      "name": "Wendt Commons",
+      "provider": "union",
+      "address": "215 N. Randall Ave.",
+      "coordinates": [
+        -89.40865348630953,
+        43.071467152055256
+      ],
+      "mapObjectId": 489,
+      "buildingNumber": "0404",
+      "areas": [
+        "Wendt Library - 4th Fl",
+        "Wendt Library-2nd Fl"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-652-union",
+      "name": "Wisconsin Energy Institute",
+      "provider": "union",
+      "address": "1552 University Ave ",
+      "coordinates": [
+        -89.41403025588802,
+        43.073746675296206
+      ],
+      "mapObjectId": 652,
+      "buildingNumber": "0752",
+      "areas": [
+        "Energy Institute",
+        "Energy Institute Ground"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-618-union",
+      "name": "Wisconsin Institutes for Medical Research",
+      "provider": "union",
+      "address": "1111 Highland Ave.",
+      "coordinates": [
+        -89.43177772800334,
+        43.07804183708091
+      ],
+      "mapObjectId": 618,
+      "buildingNumber": "1485",
+      "areas": [
+        "WI Inst Med Research 3rd",
+        "WI Inst Med Research-1st",
+        "WI Inst Med Research-7th",
+        "Wi Inst Med Research"
+      ],
+      "machineCount": 6,
+      "locationCount": 3
+    },
+    {
+      "id": "vending-547-union",
+      "name": "Wisconsin Veterinary Diagnostic Laboratory",
+      "provider": "union",
+      "address": "445 Easterday Ln",
+      "coordinates": [
+        -89.42145593392064,
+        43.074451005744685
+      ],
+      "mapObjectId": 547,
+      "buildingNumber": "0126",
+      "areas": [
+        "Diagnostic Lab 2nd floor",
+        "Diagnostic Lab-2nd Fl"
+      ],
+      "machineCount": 2,
+      "locationCount": 1
+    },
+    {
+      "id": "vending-491-housing",
+      "name": "Witte Residence Hall",
+      "provider": "housing",
+      "address": "615 W. Johnson St.",
+      "coordinates": [
+        -89.3969440656365,
+        43.07159091764505
+      ],
+      "mapObjectId": 491,
+      "buildingNumber": "1246",
+      "areas": [
+        "Witte"
+      ],
+      "machineCount": 3,
+      "locationCount": 1
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+"""Import only location metadata from worksheets 7–9; Python standard library only.
+
+Usage: python scripts/prepare-vending.py <workbook.xlsx> <campus-map-source.json>
+The second argument is a saved https://map.wisc.edu/api/v1/map_objects.geojson.
+Explicit reviewed matches live in vending-building-matches.json. No financial
+values or individual machine numbers are written to the application dataset.
+"""
+import collections
+import datetime
+import json
+import math
+import pathlib
+import re
+import sys
+import xml.etree.ElementTree as ET
+import zipfile
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+NS = {"m": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
+SOURCE = "https://map.wisc.edu/api/v1/map_objects.geojson"
+
+
+def read_locations(path):
+    groups = collections.defaultdict(lambda: {"names": set(), "machines": set()})
+    with zipfile.ZipFile(path) as archive:
+        strings = ["".join(e.itertext()) for e in ET.fromstring(archive.read("xl/sharedStrings.xml")).findall("m:si", NS)]
+        relationships = {e.attrib["Id"]: e.attrib["Target"] for e in ET.fromstring(archive.read("xl/_rels/workbook.xml.rels"))}
+        sheets = ET.fromstring(archive.read("xl/workbook.xml")).findall("m:sheets/m:sheet", NS)
+        for index in (6, 7, 8):
+            sheet = sheets[index]
+            target = relationships[sheet.attrib["{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id"]]
+            member = target.lstrip("/") if target.startswith("/") else "xl/" + target
+            for row in ET.fromstring(archive.read(member)).findall("m:sheetData/m:row", NS):
+                if row.attrib["r"] == "1":
+                    continue
+                values = {}
+                for cell in row.findall("m:c", NS):
+                    value = cell.find("m:v", NS)
+                    text = value.text if value is not None else "".join(cell.itertext()) if cell.attrib.get("t") == "inlineStr" else ""
+                    if cell.attrib.get("t") == "s":
+                        text = strings[int(text)]
+                    values[re.sub(r"\d", "", cell.attrib["r"])] = text
+                if not values.get("E") or not values.get("C"):
+                    continue
+                group = groups[(values["B"], values["C"])]
+                group["machines"].add(values["E"])
+                if values.get("G") and not values["G"].startswith("#"):
+                    group["names"].add(values["G"].strip())
+    return groups
+
+
+def main():
+    workbook, campus_path = sys.argv[1:]
+    groups = read_locations(workbook)
+    campus = {b["id"]: b for b in json.loads(pathlib.Path(campus_path).read_text(encoding="utf-8-sig"))}
+    matches = json.loads((ROOT / "scripts/vending-building-matches.json").read_text())
+    reviewed = {(m["account"], m["location"]): m for m in matches}
+    buildings = {}
+    unresolved = []
+    for key, group in groups.items():
+        match = reviewed.get(key)
+        # Changed names require another review; never silently reuse old mappings.
+        if not match or not match["mapObjectId"] or set(match["expectedSourceNames"]) != group["names"]:
+            unresolved.append({"account": key[0], "location": key[1], "reason": match["reason"] if match and not match["mapObjectId"] else "New or changed source names require review."})
+            continue
+        building = campus[match["mapObjectId"]]
+        if building["object_type"] not in ("building", "building_partial"):
+            raise ValueError(f"Not a building: {building['id']}")
+        coordinates = building["lnglat"]
+        if len(coordinates) != 2 or not all(math.isfinite(v) for v in coordinates) or not (-90 < coordinates[0] < -88 and 42 < coordinates[1] < 44):
+            raise ValueError(f"Invalid campus coordinates: {building['id']}")
+        provider = {"1025": "union", "1026": "housing", "1028": "other"}[key[0]]
+        building_key = (building["id"], provider)
+        if building_key not in buildings:
+            buildings[building_key] = {"id": f"vending-{building['id']}-{provider}", "name": building["name"], "provider": provider, "address": building.get("street_address") or "", "coordinates": coordinates, "mapObjectId": building["id"], "buildingNumber": building.get("building_number"), "areas": [], "machineCount": 0, "locationCount": 0}
+        record = buildings[building_key]
+        record["areas"] = sorted(set(record["areas"]) | group["names"])
+        record["machineCount"] += len(group["machines"])
+        record["locationCount"] += 1
+    data = {"period": "September 2026", "checked": datetime.date.today().isoformat(), "coordinateSource": SOURCE, "coordinateMeaning": "Campus map host-building reference point, not an exact machine position.", "totalLocations": len(groups), "unresolved": unresolved, "buildings": sorted(buildings.values(), key=lambda b: b["name"])}
+    (ROOT / "src/examples/campus-map/vending-locations.json").write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    print(f"{len(buildings)} building markers; {sum(b['locationCount'] for b in buildings.values())} matched locations; {len(unresolved)} unresolved; {sum(b['machineCount'] for b in buildings.values())} reported machines mapped.")
+
+
+if __name__ == "__main__":
+    main()

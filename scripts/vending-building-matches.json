@@ -1,0 +1,992 @@
+[
+  {
+    "account": "1025",
+    "location": "6",
+    "mapObjectId": 438,
+    "expectedSourceNames": [
+      "Nielsen Tennis Stadium"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "9",
+    "mapObjectId": 452,
+    "expectedSourceNames": [
+      "Rennebohm Hall-1st Fl"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "10",
+    "mapObjectId": 452,
+    "expectedSourceNames": [
+      "Rennebohm Hall-2nd Fl"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "11",
+    "mapObjectId": 453,
+    "expectedSourceNames": [
+      "Russell Lab Bsmt By Elev"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "16",
+    "mapObjectId": 471,
+    "expectedSourceNames": [
+      "Steenbock Library",
+      "Steenbock Library 1st Fl"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "20",
+    "mapObjectId": 484,
+    "expectedSourceNames": [
+      "Vet School 1st FL LG Anim"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "21",
+    "mapObjectId": 484,
+    "expectedSourceNames": [
+      "Vet School 2nd Fl"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "24",
+    "mapObjectId": 487,
+    "expectedSourceNames": [
+      "WARF-1st Fl",
+      "Warf-1st Fl"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "26",
+    "mapObjectId": 388,
+    "expectedSourceNames": [
+      "Bio Tech-5th Fl"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "30",
+    "mapObjectId": 366,
+    "expectedSourceNames": [
+      "Computer Science Basement",
+      "Computer Science-Basement"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "33",
+    "mapObjectId": 373,
+    "expectedSourceNames": [
+      "Educational Science-Basem",
+      "Educational Science-Basement"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "35",
+    "mapObjectId": 378,
+    "expectedSourceNames": [
+      "Electrical Engineering-1s",
+      "Eng Hall - Electicial"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "36",
+    "mapObjectId": 394,
+    "expectedSourceNames": [
+      "Grainger Hall"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "37",
+    "mapObjectId": 411,
+    "expectedSourceNames": [
+      "Kohl Center Loading Dock"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "39",
+    "mapObjectId": null,
+    "expectedSourceNames": [
+      "Medical Science-Basement"
+    ],
+    "reason": "Medical Science could refer to multiple campus buildings."
+  },
+  {
+    "account": "1025",
+    "location": "42",
+    "mapObjectId": 344,
+    "expectedSourceNames": [
+      "Meteorology & Space Scien",
+      "Meteorology/Space Sc 4th"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "44",
+    "mapObjectId": null,
+    "expectedSourceNames": [
+      "Old Middleton Library-2nd"
+    ],
+    "reason": "Old Middleton Library identity requires confirmation."
+  },
+  {
+    "account": "1025",
+    "location": "45",
+    "mapObjectId": null,
+    "expectedSourceNames": [
+      "Primate Center Basement",
+      "Primate Center-Basement"
+    ],
+    "reason": "Primate Center could refer to multiple facilities."
+  },
+  {
+    "account": "1025",
+    "location": "46",
+    "mapObjectId": null,
+    "expectedSourceNames": [
+      "Hygiene Lab-2nd Fl"
+    ],
+    "reason": "Hygiene Lab identity requires confirmation."
+  },
+  {
+    "account": "1025",
+    "location": "51",
+    "mapObjectId": 455,
+    "expectedSourceNames": [
+      "Social Work - 2nd Floor",
+      "Social Work-2nd Fl"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "52",
+    "mapObjectId": 380,
+    "expectedSourceNames": [
+      "Environ Health & Safety",
+      "Environ Health & Safety-"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "53",
+    "mapObjectId": 521,
+    "expectedSourceNames": [
+      "Art Loft-1st Fl"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "55",
+    "mapObjectId": 478,
+    "expectedSourceNames": [
+      "Teachers Ed-1st Fl"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "56",
+    "mapObjectId": 485,
+    "expectedSourceNames": [
+      "Vilas Hall/Bsmt Rm 1153"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "60",
+    "mapObjectId": 439,
+    "expectedSourceNames": [
+      "Nolen",
+      "Nolen/Zoology-1st Fl"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "61",
+    "mapObjectId": 339,
+    "expectedSourceNames": [
+      "Ag Hall",
+      "Ag Hall Room 50"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "63",
+    "mapObjectId": 348,
+    "expectedSourceNames": [
+      "Bascom Hall-Main",
+      "Bascom Hall-main"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "64",
+    "mapObjectId": 354,
+    "expectedSourceNames": [
+      "Birge Hall B1",
+      "Birge Hall-1st Fl"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "67",
+    "mapObjectId": 407,
+    "expectedSourceNames": [
+      "Commerce/Ingrahm-Basement"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "68",
+    "mapObjectId": 490,
+    "expectedSourceNames": [
+      "Helen C. White-1st Fl",
+      "Helen C. White-1st Flr"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "69",
+    "mapObjectId": 490,
+    "expectedSourceNames": [
+      "Helen C. White-5th Fl"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "72",
+    "mapObjectId": 405,
+    "expectedSourceNames": [
+      "Humanities-7th Fl"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "73",
+    "mapObjectId": 405,
+    "expectedSourceNames": [
+      "Humanities-1st Fl"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "74",
+    "mapObjectId": 416,
+    "expectedSourceNames": [
+      "Lathrop Hall- Basement"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "78",
+    "mapObjectId": 431,
+    "expectedSourceNames": [
+      "Memorial Library-1st Fl L"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "79",
+    "mapObjectId": 431,
+    "expectedSourceNames": [
+      "Memorial Library-3rd Fl",
+      "Memorial Library-3rd Fl L"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "81",
+    "mapObjectId": 450,
+    "expectedSourceNames": [
+      "Pyle Center-Basement"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "83",
+    "mapObjectId": 450,
+    "expectedSourceNames": [
+      "Pyle Center-2nd Fl"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "86",
+    "mapObjectId": null,
+    "expectedSourceNames": [],
+    "reason": "No usable location name; await provider master list."
+  },
+  {
+    "account": "1025",
+    "location": "88",
+    "mapObjectId": 482,
+    "expectedSourceNames": [
+      "UW Van Vleck",
+      "UW Van Vleck-Level B3"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "91",
+    "mapObjectId": null,
+    "expectedSourceNames": [
+      "Physical Science Lab-PS1"
+    ],
+    "reason": "Physical Science Lab PS1 is not identified in the campus map export."
+  },
+  {
+    "account": "1025",
+    "location": "102",
+    "mapObjectId": 361,
+    "expectedSourceNames": [
+      "Chamberlain Hall-2nd Fl"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "108",
+    "mapObjectId": 397,
+    "expectedSourceNames": [
+      "Health Sciences Learning",
+      "Health Sciences Learning_"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "111",
+    "mapObjectId": 485,
+    "expectedSourceNames": [
+      "Vilas Hall/Comm Arts-7th"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "112",
+    "mapObjectId": 618,
+    "expectedSourceNames": [
+      "WI Inst Med Research-7th"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "114",
+    "mapObjectId": 618,
+    "expectedSourceNames": [
+      "WI Inst Med Research-1st",
+      "Wi Inst Med Research"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "115",
+    "mapObjectId": 489,
+    "expectedSourceNames": [
+      "Wendt Library - 4th Fl",
+      "Wendt Library-2nd Fl"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "118",
+    "mapObjectId": null,
+    "expectedSourceNames": [
+      "Shell",
+      "Sterling Hallgrdfl 1305"
+    ],
+    "reason": "Source names conflict: Shell versus Sterling Hall."
+  },
+  {
+    "account": "1025",
+    "location": "123",
+    "mapObjectId": 654,
+    "expectedSourceNames": [
+      "Centennial-Medical Found"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "124",
+    "mapObjectId": 370,
+    "expectedSourceNames": [
+      "Dairy Forage 2nd Fl",
+      "Dairy Forage Bldg"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "125",
+    "mapObjectId": null,
+    "expectedSourceNames": [
+      "Educational Hall"
+    ],
+    "reason": "Educational Hall is ambiguous between education buildings."
+  },
+  {
+    "account": "1025",
+    "location": "126",
+    "mapObjectId": 363,
+    "expectedSourceNames": [
+      "Chemistry - 5th fl",
+      "Chemistry 5th Floor"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "129",
+    "mapObjectId": 548,
+    "expectedSourceNames": [
+      "21 N Park/Welc Center 6Fl",
+      "East-Welcome Center-1st F"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "132",
+    "mapObjectId": null,
+    "expectedSourceNames": [],
+    "reason": "No usable location name; await provider master list."
+  },
+  {
+    "account": "1025",
+    "location": "133",
+    "mapObjectId": 342,
+    "expectedSourceNames": [
+      "Animal Science"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "135",
+    "mapObjectId": 551,
+    "expectedSourceNames": [
+      "Bacterioloy",
+      "Microbites Rm 2506"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "144",
+    "mapObjectId": 547,
+    "expectedSourceNames": [
+      "Diagnostic Lab 2nd floor",
+      "Diagnostic Lab-2nd Fl"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "148",
+    "mapObjectId": 381,
+    "expectedSourceNames": [
+      "Enzyme Lab-1st Fl"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "151",
+    "mapObjectId": 392,
+    "expectedSourceNames": [
+      "Good Night Hall-4th Fl"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "159",
+    "mapObjectId": 647,
+    "expectedSourceNames": [
+      "Union South 4th"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "160",
+    "mapObjectId": 647,
+    "expectedSourceNames": [
+      "Union South 5th"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "161",
+    "mapObjectId": 618,
+    "expectedSourceNames": [
+      "WI Inst Med Research 3rd"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "162",
+    "mapObjectId": null,
+    "expectedSourceNames": [
+      "Bio-Chem East"
+    ],
+    "reason": "Bio-Chem East is ambiguous between biochemistry buildings."
+  },
+  {
+    "account": "1025",
+    "location": "166",
+    "mapObjectId": 404,
+    "expectedSourceNames": [
+      "Hm Ecology 2nd Robbins",
+      "Hunan Ecilogy"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates.",
+    "reference": "https://guide.wisc.edu/undergraduate/human-ecology/"
+  },
+  {
+    "account": "1025",
+    "location": "167",
+    "mapObjectId": 652,
+    "expectedSourceNames": [
+      "Energy Institute",
+      "Energy Institute Ground"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "169",
+    "mapObjectId": 466,
+    "expectedSourceNames": [
+      "Soc Sci-Sewel 4th Fl"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "170",
+    "mapObjectId": 481,
+    "expectedSourceNames": [
+      "Van Hise 3rd Floor",
+      "Van Hise 3rd Flr"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "171",
+    "mapObjectId": 449,
+    "expectedSourceNames": [
+      "Brogden Psychology",
+      "Brogden Psychology Bldg"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "172",
+    "mapObjectId": 379,
+    "expectedSourceNames": [
+      "Engineering Research Bui",
+      "Engineering Research Building"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "174",
+    "mapObjectId": 427,
+    "expectedSourceNames": [
+      "Mech Engineering Rm 1272",
+      "Mechanical Engineering"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "175",
+    "mapObjectId": 376,
+    "expectedSourceNames": [
+      "Engineering Centers Buil",
+      "Engineerung Centers Building"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "177",
+    "mapObjectId": 525,
+    "expectedSourceNames": [
+      "Student Act. Ctr 3rd Fl",
+      "Student Activities Center"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates.",
+    "reference": "https://soli.wisc.edu/student-activity-center-sac/"
+  },
+  {
+    "account": "1025",
+    "location": "178",
+    "mapObjectId": 689,
+    "expectedSourceNames": [
+      "Room 1262 School of Nursing",
+      "School of Nursing"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "179",
+    "mapObjectId": null,
+    "expectedSourceNames": [
+      "ROTC"
+    ],
+    "reason": "ROTC building is not specified."
+  },
+  {
+    "account": "1025",
+    "location": "180",
+    "mapObjectId": 697,
+    "expectedSourceNames": [
+      "30 North Mills-4th Fl",
+      "North Mills - 4th Floor"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "184",
+    "mapObjectId": 385,
+    "expectedSourceNames": [
+      "Fluno Ctr 5th Floor"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "185",
+    "mapObjectId": 385,
+    "expectedSourceNames": [
+      "Fluno Ctr 5th Floor"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "186",
+    "mapObjectId": 385,
+    "expectedSourceNames": [
+      "Fluno Ctr 6th Floor"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "187",
+    "mapObjectId": 385,
+    "expectedSourceNames": [
+      "Fluno Ctr 7th Floor"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "188",
+    "mapObjectId": null,
+    "expectedSourceNames": [
+      "DoIT Digital & Printing"
+    ],
+    "reason": "DoIT Digital & Printing building is not specified."
+  },
+  {
+    "account": "1025",
+    "location": "190",
+    "mapObjectId": null,
+    "expectedSourceNames": [],
+    "reason": "No usable location name; await provider master list."
+  },
+  {
+    "account": "1025",
+    "location": "191",
+    "mapObjectId": null,
+    "expectedSourceNames": [],
+    "reason": "No usable location name; await provider master list."
+  },
+  {
+    "account": "1025",
+    "location": "192",
+    "mapObjectId": 721,
+    "expectedSourceNames": [
+      "Vet School New Building"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1025",
+    "location": "193",
+    "mapObjectId": null,
+    "expectedSourceNames": [
+      "UW Campus Bio Chem Delli"
+    ],
+    "reason": "Bio Chem Delli does not identify a unique biochemistry building."
+  },
+  {
+    "account": "1025",
+    "location": "196",
+    "mapObjectId": null,
+    "expectedSourceNames": [],
+    "reason": "No usable location name; await provider master list."
+  },
+  {
+    "account": "1025",
+    "location": "197",
+    "mapObjectId": null,
+    "expectedSourceNames": [],
+    "reason": "No usable location name; await provider master list."
+  },
+  {
+    "account": "1026",
+    "location": "1",
+    "mapObjectId": null,
+    "expectedSourceNames": [],
+    "reason": "No usable location name; await provider master list."
+  },
+  {
+    "account": "1026",
+    "location": "2",
+    "mapObjectId": null,
+    "expectedSourceNames": [],
+    "reason": "No usable location name; await provider master list."
+  },
+  {
+    "account": "1026",
+    "location": "3",
+    "mapObjectId": null,
+    "expectedSourceNames": [],
+    "reason": "No usable location name; await provider master list."
+  },
+  {
+    "account": "1026",
+    "location": "4",
+    "mapObjectId": null,
+    "expectedSourceNames": [],
+    "reason": "No usable location name; await provider master list."
+  },
+  {
+    "account": "1026",
+    "location": "8",
+    "mapObjectId": 491,
+    "expectedSourceNames": [
+      "Witte"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1026",
+    "location": "9",
+    "mapObjectId": null,
+    "expectedSourceNames": [],
+    "reason": "No usable location name; await provider master list."
+  },
+  {
+    "account": "1026",
+    "location": "10",
+    "mapObjectId": 360,
+    "expectedSourceNames": [
+      "Chadbourne Hall Basement"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1026",
+    "location": "11",
+    "mapObjectId": null,
+    "expectedSourceNames": [],
+    "reason": "No usable location name; await provider master list."
+  },
+  {
+    "account": "1026",
+    "location": "12",
+    "mapObjectId": 546,
+    "expectedSourceNames": [
+      "Smith Hall"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1026",
+    "location": "13",
+    "mapObjectId": null,
+    "expectedSourceNames": [],
+    "reason": "No usable location name; await provider master list."
+  },
+  {
+    "account": "1026",
+    "location": "14",
+    "mapObjectId": null,
+    "expectedSourceNames": [],
+    "reason": "No usable location name; await provider master list."
+  },
+  {
+    "account": "1026",
+    "location": "15",
+    "mapObjectId": null,
+    "expectedSourceNames": [],
+    "reason": "No usable location name; await provider master list."
+  },
+  {
+    "account": "1026",
+    "location": "16",
+    "mapObjectId": null,
+    "expectedSourceNames": [],
+    "reason": "No usable location name; await provider master list."
+  },
+  {
+    "account": "1026",
+    "location": "17",
+    "mapObjectId": null,
+    "expectedSourceNames": [],
+    "reason": "No usable location name; await provider master list."
+  },
+  {
+    "account": "1026",
+    "location": "18",
+    "mapObjectId": 374,
+    "expectedSourceNames": [
+      "Elizabeth Waters East 2nd"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1026",
+    "location": "20",
+    "mapObjectId": null,
+    "expectedSourceNames": [],
+    "reason": "No usable location name; await provider master list."
+  },
+  {
+    "account": "1026",
+    "location": "21",
+    "mapObjectId": null,
+    "expectedSourceNames": [],
+    "reason": "No usable location name; await provider master list."
+  },
+  {
+    "account": "1026",
+    "location": "22",
+    "mapObjectId": 550,
+    "expectedSourceNames": [
+      "Ogg Hall"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1026",
+    "location": "25",
+    "mapObjectId": null,
+    "expectedSourceNames": [],
+    "reason": "No usable location name; await provider master list."
+  },
+  {
+    "account": "1026",
+    "location": "27",
+    "mapObjectId": 534,
+    "expectedSourceNames": [
+      "Dejope"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1026",
+    "location": "28",
+    "mapObjectId": null,
+    "expectedSourceNames": [],
+    "reason": "No usable location name; await provider master list."
+  },
+  {
+    "account": "1026",
+    "location": "29",
+    "mapObjectId": 459,
+    "expectedSourceNames": [
+      "Sellery Hall"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1026",
+    "location": "30",
+    "mapObjectId": 420,
+    "expectedSourceNames": [
+      "Lowell Hall 1st Floor"
+    ],
+    "reason": "Named host building matched to official campus map; floor labels do not set coordinates."
+  },
+  {
+    "account": "1028",
+    "location": "1",
+    "mapObjectId": null,
+    "expectedSourceNames": [],
+    "reason": "No usable location name; await provider master list."
+  },
+  {
+    "account": "1028",
+    "location": "2",
+    "mapObjectId": null,
+    "expectedSourceNames": [],
+    "reason": "No usable location name; await provider master list."
+  }
+]
