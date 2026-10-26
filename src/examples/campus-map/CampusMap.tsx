@@ -120,7 +120,7 @@ export function CampusMap() {
       <fieldset className="provider-filters"><legend>Dining providers</legend>{providers.map((provider) => <label key={provider.id} className={`provider-${provider.id}`}><input type="checkbox" checked={enabled.includes(provider.id)} onChange={() => {
         const next = enabled.includes(provider.id) ? enabled.filter((id) => id !== provider.id) : [...enabled, provider.id];
         setEnabled(next); setSelectedLocation(null); setSelectedId(null); setHoveredId(null);
-      }} /><span className="provider-symbol" />{provider.label}</label>)}
+      }} />{provider.label}</label>)}
         <span aria-live="polite">{visibleLocations.filter((location) => location.properties.kind !== 'vending').length} dining · {visibleLocations.filter((location) => location.properties.kind === 'vending').length} vending buildings shown</span>
       </fieldset>
       <fieldset className="symbol-legend"><legend>Location types</legend>{locationKinds.map((kind) => <label key={kind} className={kind === 'vending' ? 'provider-other' : undefined}>
