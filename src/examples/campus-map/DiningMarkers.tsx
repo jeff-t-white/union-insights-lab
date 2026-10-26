@@ -44,34 +44,67 @@ export function DiningMarkers({ locations, projection, width, height, selected, 
   selected: DiningLocation | null; onSelect: (location: DiningLocation | null) => void;
 }) {
   const [hovered, setHovered] = useState<DiningLocation | null>(null);
+  const layer = useRef<HTMLDivElement>(null);
+  const popup = useRef<HTMLElement>(null);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const points = locations.map((location) => {
+    const [x, y] = projection([location.geometry.coordinates[0], location.geometry.coordinates[1]])!;
+    return { id: location.properties.sourceName, x, y, location };
+  }).filter(({ x, y }) => x >= 0 && y >= 0 && x <= width && y <= height);
   const active = !moving && locations.find((location) => location === (hovered ?? selected));
+  function keepOpen() {
+    if (timer.current) clearTimeout(timer.current);
+  }
+  function close() {
+    keepOpen();
+    if (timer.current) clearTimeout(timer.current);
+    setHovered(null); onSelect(null);
+  }
   function show(location: DiningLocation) {
     if (moving) return;
+    keepOpen();
     if (timer.current) clearTimeout(timer.current);
     onActivate();
     setHovered(location);
   }
-  function leave() { timer.current = setTimeout(() => setHovered(null), 180); }
-  useEffect(() => { if (moving) setHovered(null); }, [moving]);
+  function leave() {
+    // Cancel the previous close before scheduling another boundary leave.
+    keepOpen();
+    if (popup.current?.contains(document.activeElement)) return;
+    timer.current = setTimeout(() => setHovered(null), 450);
+  }
+  useEffect(() => { if (moving) { keepOpen(); setHovered(null); } }, [moving]);
   useEffect(() => () => { if (timer.current) clearTimeout(timer.current); }, []);
+  useEffect(() => {
+    if (!active) return;
+    const outside = (event: PointerEvent) => {
+      if (event.target instanceof Element && !layer.current?.contains(event.target) && !event.target.closest('.location-popup')) close();
+    };
+    const escape = (event: KeyboardEvent) => { if (event.key === 'Escape') close(); };
+    document.addEventListener('pointerdown', outside);
+    document.addEventListener('keydown', escape);
+    return () => { document.removeEventListener('pointerdown', outside); document.removeEventListener('keydown', escape); };
+  }, [active]);
   return <>
-    <div className="dining-markers" aria-label="Campus dining and vending locations">
-      {locations.map((location) => {
-        const [x, y] = projection([location.geometry.coordinates[0], location.geometry.coordinates[1]])!;
-        if (x < 0 || y < 0 || x > width || y > height) return null;
+    <div ref={layer} className="dining-markers" aria-label="Campus dining and vending locations">
+      {points.map(({ location, id, x, y }) => {
         const { name, provider } = location.properties;
         const kind = locationKind(location);
         // Published source names remain unique even when display names are shared.
-        return <button key={location.properties.sourceName} type="button" className={`dining-marker kind-${kind} provider-${displayProvider(location)}${active === location ? ' is-active' : ''}`}
-          data-location-id={location.properties.sourceName} style={{ left: x, top: y }} aria-label={`${name}${location.properties.buildingName && kind !== 'vending' ? ` at ${location.properties.buildingName}` : ""}, ${symbolLabels[kind]}, ${providers.find((item) => item.id === provider)?.label}`}
-          aria-pressed={selected === location} onPointerEnter={() => show(location)} onPointerLeave={leave}
-          onFocus={() => show(location)} onBlur={leave} onClick={() => { if (!moving) onSelect(selected === location ? null : location); }}
-          onKeyDown={(event) => { if (event.key === 'Escape') { setHovered(null); onSelect(null); } }}><LocationSymbol kind={kind} /></button>;
+        return <button key={id} type="button" className={`dining-marker kind-${kind} provider-${displayProvider(location)}${active === location ? ' is-active' : ''}`}
+          data-location-id={id} style={{ left: x, top: y }} aria-label={`${name}${location.properties.buildingName && kind !== 'vending' ? ` at ${location.properties.buildingName}` : ""}, ${symbolLabels[kind]}, ${providers.find((item) => item.id === provider)?.label}`}
+          aria-pressed={selected === location} onPointerEnter={(event) => { if (event.pointerType !== 'touch') show(location); }} onPointerLeave={(event) => { if (event.pointerType !== 'touch') leave(); }}
+          onFocus={() => show(location)} onBlur={leave} onClick={() => {
+            if (moving) return;
+            keepOpen();
+            onSelect(selected === location ? null : location);
+          }}
+          onKeyDown={(event) => { if (event.key === 'Escape') close(); }}><LocationSymbol kind={kind} /></button>;
       })}
     </div>
-    {active && popupRoot && createPortal(<aside className="building-popup location-popup" aria-label="Location details" onPointerEnter={() => show(active)} onPointerLeave={leave}>
-      <button type="button" className="popup-close" aria-label="Close location details" onClick={() => { setHovered(null); onSelect(null); }}>×</button>
+    {active && popupRoot && createPortal(<aside ref={popup} className="building-popup location-popup" aria-label="Location details" onPointerEnter={keepOpen} onPointerLeave={leave}
+      onFocusCapture={keepOpen} onBlurCapture={(event) => { if (!event.currentTarget.contains(event.relatedTarget)) leave(); }}>
+      <button type="button" className="popup-close" aria-label="Close location details" onClick={close}>×</button>
       <h3>{active.properties.name}</h3>
       <p>{active.properties.kind === 'vending' ? 'Managed by: ' : ''}{providers.find((item) => item.id === active.properties.provider)?.label}</p><p>{active.properties.buildingName}</p>
       {active.properties.kind === 'vending' && <>
