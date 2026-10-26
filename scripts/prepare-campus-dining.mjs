@@ -1,6 +1,10 @@
 import { readFile, writeFile } from 'node:fs/promises';
 const read = async (name) => JSON.parse(await readFile(`src/examples/campus-map/${name}`, 'utf8'));
 const [union, points, source, mobile, additional] = await Promise.all(['dining-buildings.json', 'campus-dining-points.json', 'buildings-source.json', 'mobile-ordering.json', 'additional-dining-points.json'].map(read));
+const rhetasComplex = await read('rhetas-complex-footprint.json');
+for (const ring of rhetasComplex.rings) {
+  if (ring.length < 4 || String(ring[0]) !== String(ring.at(-1)) || ring.some(([lon, lat]) => !Number.isFinite(lon) || !Number.isFinite(lat) || lon < -89.5 || lon > -89.3 || lat < 43 || lat > 43.2)) throw new Error('Invalid Barnard–Chadbourne complex footprint');
+}
 // Reviewed host-building matches, not nearest-building guesses. Each pair is
 // [published map name, earlier Union outlet name] when those names differ.
 const excludedNames = new Set(['Wisconsin Union Catering', 'Pasta Pronto']);
@@ -42,6 +46,11 @@ for (const location of locations) {
 }
 for (const [buildingName, entries] of Object.entries(groups)) {
   let building = buildings.find((item) => item.name === buildingName);
+  // Rheta's occupies the connection between these halls, not Chadbourne alone.
+  if (buildingName === 'Chadbourne Residence Hall') {
+    building = { ...rhetasComplex, outlets: [] };
+    buildings.push(building);
+  }
   if (!building) {
     const element = source.elements.find((item) => item.tags.name === buildingName);
     if (!element?.geometry) throw new Error(`Missing footprint: ${buildingName}`);
@@ -62,7 +71,7 @@ for (const [buildingName, entries] of Object.entries(groups)) {
     }
     // The existing Union directory already applies mobile-ordering name precedence.
     const ordering = mobile.locations.find((item) => item.building === buildingName && item.name === outlet.name);
-    Object.assign(feature.properties, { sourceName, name: outlet.name, buildingId: building.id, buildingName, logoPath: ordering?.logoPath ?? outlet.logoPath, orderUrl: ordering?.orderUrl ?? outlet.orderUrl });
+    Object.assign(feature.properties, { sourceName, name: outlet.name, buildingId: building.id, buildingName: building.name, logoPath: ordering?.logoPath ?? outlet.logoPath, orderUrl: ordering?.orderUrl ?? outlet.orderUrl });
     outlet.locationUrl = feature.properties.locationUrl;
   }
 }

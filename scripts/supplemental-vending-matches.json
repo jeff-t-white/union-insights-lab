@@ -1,0 +1,17 @@
+[
+  { "location": "23", "name": "Waisman Center 6th fl", "mapObjectId": 486, "reference": "https://map.wisc.edu/?initObj=0459" },
+  { "location": "32", "name": "DoIT Center-3rd Fl", "mapObjectId": 366, "reference": "https://kb.wisc.edu/ac/44970" },
+  { "location": "38", "name": "Mcardle Labe", "mapObjectId": 423, "reference": "https://intranet.med.wisc.edu/facilities/buildings/" },
+  { "location": "43", "name": "Nutritional Science", "mapObjectId": 441, "reference": "https://map.wisc.edu/?initObj=0449" },
+  { "location": "75", "name": "Law Bldg Career Serv-1st", "mapObjectId": 417, "reference": "https://map.wisc.edu/?initObj=0430" },
+  { "location": "84", "name": "Pyle Center-3rd Fl", "mapObjectId": 450, "reference": "https://map.wisc.edu/?initObj=0006" },
+  { "location": "87", "name": "Science Hall-Basement", "mapObjectId": 457, "reference": "https://map.wisc.edu/?initObj=0053" },
+  { "location": "127", "name": "Chemistry - 1st fl", "mapObjectId": 363, "reference": "https://map.wisc.edu/?initObj=0047" },
+  { "location": "183", "name": "UW Extension Room B121a", "mapObjectId": null, "reason": "Room label does not establish which Extension building; confirm street address." },
+  { "location": "93", "name": "Charmony Farms", "mapObjectId": null, "reason": "Farm reference does not identify the machine's host building or footprint." },
+  { "location": "5", "name": "Natatarium", "mapObjectId": null, "reason": "Legacy facility name; do not transfer machines to a replacement facility without confirmation." },
+  { "location": "49", "name": "Serf-1st Fl", "mapObjectId": null, "reason": "Legacy facility name; do not transfer machines to a replacement facility without confirmation." },
+  { "location": "12", "name": "Shell", "mapObjectId": null, "reason": "Legacy facility name; location number also occurs in Housing. Needs provider confirmation." },
+  { "location": "13", "name": "Shell", "mapObjectId": null, "reason": "Legacy facility name; a lookup machine appears at a conflicting sales location. Needs provider confirmation." },
+  { "location": "122", "name": "Zoology", "mapObjectId": null, "reason": "Department-only name does not establish a unique current host building." }
+]

@@ -1,4 +1,4 @@
-"""Import only location metadata from worksheets 7–9; Python standard library only.
+"""Import location metadata from sales sheets 7–9 and supplemental sheets 6/10.
 
 Usage: python scripts/prepare-vending.py <workbook.xlsx> <campus-map-source.json>
 The second argument is a saved https://map.wisc.edu/api/v1/map_objects.geojson.
@@ -14,6 +14,7 @@ import pathlib
 import re
 import xml.etree.ElementTree as ET
 import zipfile
+from supplemental_vending import append_supplemental
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 NS = {"m": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
@@ -26,6 +27,34 @@ DINING_BUILDING_IDS = {
     385: 'way/103242254', 374: 'way/37751511', 360: 'way/39201164',
     546: 'way/102239119', 534: 'way/173709889',
 }
+
+
+def make_building(building, provider, dining):
+    if building['object_type'] not in ('building', 'building_partial'):
+        raise ValueError(f"Not a building: {building['id']}")
+    coordinates = building['lnglat']
+    if len(coordinates) != 2 or not all(math.isfinite(v) for v in coordinates) or not (-90 < coordinates[0] < -88 and 42 < coordinates[1] < 44):
+        raise ValueError(f"Invalid campus coordinates: {building['id']}")
+    dining_id = DINING_BUILDING_IDS.get(building['id'])
+    geometry = building['geojson']
+    if geometry['type'] != 'Polygon':
+        raise ValueError(f"Unreviewed footprint geometry: {building['id']}")
+    # Chadbourne vending does not establish machines across the dining complex.
+    use_dining_rings = dining_id and building['id'] != 360
+    rings = dining[dining_id]['rings'] if use_dining_rings else geometry['coordinates']
+    if not rings or any(len(ring) < 4 or ring[0] != ring[-1] or any(len(point) != 2 or not all(math.isfinite(v) for v in point) or not (-90 < point[0] < -88 and 42 < point[1] < 44) for point in ring) for ring in rings):
+        raise ValueError(f"Invalid footprint rings: {building['id']}")
+    return {
+        'id': f"vending-{building['id']}-{provider}", 'name': building['name'],
+        'provider': provider, 'address': building.get('street_address') or '',
+        'coordinates': coordinates, 'mapObjectId': building['id'],
+        'buildingNumber': building.get('building_number'), 'areas': [],
+        'machineCount': 0, 'locationCount': 0, 'rings': rings,
+        'diningBuildingId': dining_id,
+        'footprintSource': 'Reviewed dining footprint (OpenStreetMap)' if use_dining_rings else SOURCE,
+        'supplementalOnly': False, 'managementLabel': None,
+        'supplementalAreas': [], 'supplementalEvidence': [], 'supplementalReferences': [],
+    }
 
 
 def read_locations(path):
@@ -78,30 +107,18 @@ def main():
             unresolved.append({"account": key[0], "location": key[1], "reason": match["reason"] if match and not match["mapObjectId"] else "New or changed source names require review."})
             continue
         building = campus[match["mapObjectId"]]
-        if building["object_type"] not in ("building", "building_partial"):
-            raise ValueError(f"Not a building: {building['id']}")
-        coordinates = building["lnglat"]
-        if len(coordinates) != 2 or not all(math.isfinite(v) for v in coordinates) or not (-90 < coordinates[0] < -88 and 42 < coordinates[1] < 44):
-            raise ValueError(f"Invalid campus coordinates: {building['id']}")
         provider = {"1025": "union", "1026": "housing", "1028": "other"}[key[0]]
         building_key = (building["id"], provider)
         if building_key not in buildings:
-            buildings[building_key] = {"id": f"vending-{building['id']}-{provider}", "name": building["name"], "provider": provider, "address": building.get("street_address") or "", "coordinates": coordinates, "mapObjectId": building["id"], "buildingNumber": building.get("building_number"), "areas": [], "machineCount": 0, "locationCount": 0}
-            dining_id = DINING_BUILDING_IDS.get(building['id'])
-            geometry = building['geojson']
-            if geometry['type'] != 'Polygon':
-                raise ValueError(f"Unreviewed footprint geometry: {building['id']}")
-            rings = dining[dining_id]['rings'] if dining_id else geometry['coordinates']
-            if not rings or any(len(ring) < 4 or ring[0] != ring[-1] or any(len(point) != 2 or not all(math.isfinite(v) for v in point) or not (-90 < point[0] < -88 and 42 < point[1] < 44) for point in ring) for ring in rings):
-                raise ValueError(f"Invalid footprint rings: {building['id']}")
-            buildings[building_key].update({'rings': rings, 'diningBuildingId': dining_id, 'footprintSource': 'Reviewed dining footprint (OpenStreetMap)' if dining_id else SOURCE})
+            buildings[building_key] = make_building(building, provider, dining)
         record = buildings[building_key]
         record["areas"] = sorted(set(record["areas"]) | group["names"])
         record["machineCount"] += len(group["machines"])
         record["locationCount"] += 1
     data = {"period": args.period, "checked": args.checked, "coordinateSource": SOURCE, "coordinateMeaning": "Campus map host-building reference point, not an exact machine position.", "totalLocations": len(groups), "unresolved": unresolved, "buildings": sorted(buildings.values(), key=lambda b: b["name"])}
+    append_supplemental(data, args.workbook, campus, lambda building, provider: make_building(building, provider, dining))
     (ROOT / "src/examples/campus-map/vending-locations.json").write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"{len(buildings)} building markers; {sum(b['locationCount'] for b in buildings.values())} matched locations; {len(unresolved)} unresolved; {sum(b['machineCount'] for b in buildings.values())} reported machines mapped.")
+    print(f"{len(data['buildings'])} building markers; {sum(b['locationCount'] for b in buildings.values())} matched sales locations; {len(unresolved)} sales locations unresolved; {data['supplementalMappedLocations']} supplemental references mapped; {len(data['supplementalPending'])} supplemental references pending.")
 
 
 if __name__ == "__main__":

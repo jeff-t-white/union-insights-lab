@@ -319,7 +319,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-697-union",
@@ -379,7 +384,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-525-union",
@@ -439,7 +449,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-339-union",
@@ -607,7 +622,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-342-union",
@@ -786,7 +806,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-521-union",
@@ -861,7 +886,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-344-union",
@@ -973,7 +1003,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-348-union",
@@ -1367,7 +1402,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-354-union",
@@ -1663,7 +1703,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-449-union",
@@ -1783,7 +1828,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-360-housing",
@@ -1804,205 +1854,198 @@
       "rings": [
         [
           [
-            -89.4010965,
-            43.0740773
-          ],
-          [
-            -89.4010099,
-            43.0740415
-          ],
-          [
-            -89.4010336,
-            43.0740168
-          ],
-          [
-            -89.4010215,
-            43.0740117
-          ],
-          [
-            -89.400973,
-            43.0739911
-          ],
-          [
-            -89.401076,
-            43.0738614
-          ],
-          [
-            -89.4010763,
-            43.0738361
-          ],
-          [
-            -89.4010091,
-            43.0738356
-          ],
-          [
-            -89.4010094,
-            43.0738113
-          ],
-          [
-            -89.4010096,
-            43.0737898
-          ],
-          [
-            -89.4010774,
-            43.0737903
-          ],
-          [
-            -89.4010777,
-            43.0737633
-          ],
-          [
-            -89.4009758,
-            43.0736286
-          ],
-          [
-            -89.4009959,
-            43.0736205
-          ],
-          [
-            -89.4010253,
-            43.0736086
-          ],
-          [
-            -89.4010194,
-            43.0736008
-          ],
-          [
-            -89.4010133,
-            43.0735928
-          ],
-          [
-            -89.4010102,
-            43.0735887
-          ],
-          [
-            -89.401102,
-            43.0735516
-          ],
-          [
-            -89.4011168,
-            43.0735711
-          ],
-          [
-            -89.4011295,
-            43.0735659
-          ],
-          [
-            -89.4011426,
-            43.0735832
-          ],
-          [
-            -89.4012225,
-            43.0736889
-          ],
-          [
-            -89.4012104,
-            43.0736938
-          ],
-          [
-            -89.4012216,
-            43.0737086
-          ],
-          [
-            -89.4012456,
-            43.0737187
-          ],
-          [
-            -89.4012613,
-            43.0736989
-          ],
-          [
-            -89.4012475,
-            43.073693
-          ],
-          [
-            -89.4012673,
-            43.073668
-          ],
-          [
-            -89.4013032,
-            43.0736832
-          ],
-          [
-            -89.4013358,
-            43.0736971
-          ],
-          [
-            -89.401371,
-            43.0737119
-          ],
-          [
-            -89.4013507,
-            43.0737376
-          ],
-          [
-            -89.4013349,
-            43.0737309
-          ],
-          [
-            -89.4013196,
-            43.0737503
-          ],
-          [
-            -89.4013471,
-            43.0737619
-          ],
-          [
-            -89.4013522,
-            43.0737641
-          ],
-          [
-            -89.4013808,
-            43.0737643
-          ],
-          [
-            -89.4013809,
-            43.0737535
-          ],
-          [
-            -89.4015519,
-            43.0737547
+            -89.4015886,
+            43.073766301
           ],
           [
             -89.4015518,
-            43.073766
+            43.073766001
           ],
           [
-            -89.4015868,
-            43.0737663
+            -89.4015519,
+            43.073754701
           ],
           [
-            -89.4015854,
-            43.073829
+            -89.4013809,
+            43.073753501
           ],
           [
-            -89.40155,
-            43.0738286
+            -89.4013808,
+            43.073764301
           ],
           [
-            -89.4015492,
-            43.0738698
+            -89.4013522,
+            43.073764101
           ],
           [
-            -89.4013443,
-            43.0738683
+            -89.4013196,
+            43.073750301
           ],
           [
-            -89.4012538,
-            43.0739054
+            -89.4013349,
+            43.073730901
           ],
           [
-            -89.4012182,
-            43.07392
+            -89.4013508,
+            43.073737601
+          ],
+          [
+            -89.4013711,
+            43.073711901
+          ],
+          [
+            -89.4012673,
+            43.073668001
+          ],
+          [
+            -89.4012475,
+            43.073693001
+          ],
+          [
+            -89.4012613,
+            43.073698901
+          ],
+          [
+            -89.4012456,
+            43.073718701
+          ],
+          [
+            -89.4012216,
+            43.073708601
+          ],
+          [
+            -89.4012104,
+            43.073693801
+          ],
+          [
+            -89.4012225,
+            43.073688901
+          ],
+          [
+            -89.4011426,
+            43.073583201
+          ],
+          [
+            -89.4011295,
+            43.073565901
+          ],
+          [
+            -89.4011168,
+            43.073571101
+          ],
+          [
+            -89.401102,
+            43.073551601
+          ],
+          [
+            -89.4010102,
+            43.073588701
+          ],
+          [
+            -89.4010133,
+            43.073592801
+          ],
+          [
+            -89.4010194,
+            43.073600801
+          ],
+          [
+            -89.4010253,
+            43.073608601
+          ],
+          [
+            -89.4009959,
+            43.073620501
+          ],
+          [
+            -89.4009758,
+            43.073628601
+          ],
+          [
+            -89.4010777,
+            43.073763301
+          ],
+          [
+            -89.4010774,
+            43.073790301
+          ],
+          [
+            -89.4010096,
+            43.073789801
+          ],
+          [
+            -89.4010094,
+            43.073811301
+          ],
+          [
+            -89.4010091,
+            43.073835601
+          ],
+          [
+            -89.4010763,
+            43.073836101
+          ],
+          [
+            -89.401076,
+            43.073861401
+          ],
+          [
+            -89.400973,
+            43.073991101
+          ],
+          [
+            -89.4010215,
+            43.074011701
+          ],
+          [
+            -89.4010336,
+            43.074016801
+          ],
+          [
+            -89.401023,
+            43.074024501
+          ],
+          [
+            -89.4010099,
+            43.074041501
           ],
           [
             -89.4010965,
-            43.0740773
+            43.074077301
+          ],
+          [
+            -89.4012182,
+            43.073920001
+          ],
+          [
+            -89.4013443,
+            43.073868301
+          ],
+          [
+            -89.4015519,
+            43.073869801
+          ],
+          [
+            -89.4015524,
+            43.073830401
+          ],
+          [
+            -89.4015877,
+            43.073830701
+          ],
+          [
+            -89.4015886,
+            43.073766301
           ]
         ]
       ],
       "diningBuildingId": "way/39201164",
-      "footprintSource": "Reviewed dining footprint (OpenStreetMap)"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-361-union",
@@ -2137,7 +2180,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-363-union",
@@ -2373,7 +2421,18 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [
+        "Chemistry - 1st fl"
+      ],
+      "supplementalEvidence": [
+        "Milk Location Lookup"
+      ],
+      "supplementalReferences": [
+        "https://map.wisc.edu/?initObj=0047"
+      ]
     },
     {
       "id": "vending-366-union",
@@ -2465,7 +2524,19 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [
+        "DoIT Center-3rd Fl"
+      ],
+      "supplementalEvidence": [
+        "Milk Location Lookup",
+        "Not Serviced this Month"
+      ],
+      "supplementalReferences": [
+        "https://kb.wisc.edu/ac/44970"
+      ]
     },
     {
       "id": "vending-534-housing",
@@ -2772,7 +2843,12 @@
         ]
       ],
       "diningBuildingId": "way/173709889",
-      "footprintSource": "Reviewed dining footprint (OpenStreetMap)"
+      "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-373-union",
@@ -2932,7 +3008,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-376-union",
@@ -3052,7 +3133,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-378-union",
@@ -3192,7 +3278,12 @@
         ]
       ],
       "diningBuildingId": "way/56997838",
-      "footprintSource": "Reviewed dining footprint (OpenStreetMap)"
+      "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-379-union",
@@ -3280,7 +3371,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-380-union",
@@ -3356,7 +3452,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-381-union",
@@ -3499,7 +3600,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-385-union",
@@ -3692,7 +3798,12 @@
         ]
       ],
       "diningBuildingId": "way/103242254",
-      "footprintSource": "Reviewed dining footprint (OpenStreetMap)"
+      "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-388-union",
@@ -3851,7 +3962,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-392-union",
@@ -3950,7 +4066,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-394-union",
@@ -4397,7 +4518,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-397-union",
@@ -4653,7 +4779,12 @@
         ]
       ],
       "diningBuildingId": "way/107463323",
-      "footprintSource": "Reviewed dining footprint (OpenStreetMap)"
+      "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-490-union",
@@ -4854,7 +4985,12 @@
         ]
       ],
       "diningBuildingId": "way/37749300",
-      "footprintSource": "Reviewed dining footprint (OpenStreetMap)"
+      "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-407-union",
@@ -5125,7 +5261,12 @@
         ]
       ],
       "diningBuildingId": "way/38855397",
-      "footprintSource": "Reviewed dining footprint (OpenStreetMap)"
+      "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-416-union",
@@ -5240,7 +5381,169 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
+      "id": "vending-417-other",
+      "name": "Law Building",
+      "provider": "other",
+      "address": "975 Bascom Mall",
+      "coordinates": [
+        -89.40227888466082,
+        43.07455253245244
+      ],
+      "mapObjectId": 417,
+      "buildingNumber": "0430",
+      "areas": [],
+      "machineCount": 0,
+      "locationCount": 0,
+      "rings": [
+        [
+          [
+            -89.4028382,
+            43.074723601
+          ],
+          [
+            -89.4026054,
+            43.074697501
+          ],
+          [
+            -89.4026493,
+            43.074482201
+          ],
+          [
+            -89.4027247,
+            43.074490801
+          ],
+          [
+            -89.4027614,
+            43.074326401
+          ],
+          [
+            -89.4026278,
+            43.074312501
+          ],
+          [
+            -89.4026003,
+            43.074309701
+          ],
+          [
+            -89.4025748,
+            43.074307601
+          ],
+          [
+            -89.4024728,
+            43.074298101
+          ],
+          [
+            -89.4024534,
+            43.074379001
+          ],
+          [
+            -89.4024098,
+            43.074381601
+          ],
+          [
+            -89.4023558,
+            43.074384301
+          ],
+          [
+            -89.4023513,
+            43.074194301
+          ],
+          [
+            -89.4022996,
+            43.074194301
+          ],
+          [
+            -89.4023008,
+            43.074281201
+          ],
+          [
+            -89.4017661,
+            43.074281901
+          ],
+          [
+            -89.4017651,
+            43.074478601
+          ],
+          [
+            -89.4018683,
+            43.074478101
+          ],
+          [
+            -89.4018686,
+            43.074492901
+          ],
+          [
+            -89.40187,
+            43.074723601
+          ],
+          [
+            -89.402024,
+            43.074720101
+          ],
+          [
+            -89.4020245,
+            43.074806301
+          ],
+          [
+            -89.4020738,
+            43.074806401
+          ],
+          [
+            -89.402074,
+            43.074832801
+          ],
+          [
+            -89.402075,
+            43.074848601
+          ],
+          [
+            -89.4022252,
+            43.074847801
+          ],
+          [
+            -89.4023662,
+            43.074848001
+          ],
+          [
+            -89.4025833,
+            43.074848301
+          ],
+          [
+            -89.4025826,
+            43.074811701
+          ],
+          [
+            -89.4028153,
+            43.074836801
+          ],
+          [
+            -89.4028382,
+            43.074723601
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": true,
+      "managementLabel": "Management account unconfirmed in provider lookup",
+      "supplementalAreas": [
+        "Law Bldg Career Serv-1st"
+      ],
+      "supplementalEvidence": [
+        "Milk Location Lookup",
+        "Not Serviced this Month"
+      ],
+      "supplementalReferences": [
+        "https://map.wisc.edu/?initObj=0430"
+      ]
     },
     {
       "id": "vending-420-housing",
@@ -5371,7 +5674,72 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
+      "id": "vending-423-other",
+      "name": "McArdle Building",
+      "provider": "other",
+      "address": "447 Lorch St.",
+      "coordinates": [
+        -89.40893869614477,
+        43.07443293674064
+      ],
+      "mapObjectId": 423,
+      "buildingNumber": "0468",
+      "areas": [],
+      "machineCount": 0,
+      "locationCount": 0,
+      "rings": [
+        [
+          [
+            -89.4092191,
+            43.074338101
+          ],
+          [
+            -89.4086595,
+            43.074336201
+          ],
+          [
+            -89.4086583,
+            43.074527701
+          ],
+          [
+            -89.4087356,
+            43.074528001
+          ],
+          [
+            -89.4088952,
+            43.074528601
+          ],
+          [
+            -89.4092178,
+            43.074529701
+          ],
+          [
+            -89.4092191,
+            43.074338101
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": true,
+      "managementLabel": "Management account unconfirmed in provider lookup",
+      "supplementalAreas": [
+        "Mcardle Labe"
+      ],
+      "supplementalEvidence": [
+        "Milk Location Lookup"
+      ],
+      "supplementalReferences": [
+        "https://intranet.med.wisc.edu/facilities/buildings/"
+      ]
     },
     {
       "id": "vending-427-union",
@@ -5471,7 +5839,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-431-union",
@@ -5648,7 +6021,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-551-union",
@@ -5840,7 +6218,12 @@
         ]
       ],
       "diningBuildingId": "way/38855860",
-      "footprintSource": "Reviewed dining footprint (OpenStreetMap)"
+      "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-405-union",
@@ -5994,7 +6377,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-404-union",
@@ -6174,7 +6562,12 @@
         ]
       ],
       "diningBuildingId": "way/38855398",
-      "footprintSource": "Reviewed dining footprint (OpenStreetMap)"
+      "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-438-union",
@@ -6289,7 +6682,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-439-union",
@@ -6357,7 +6755,161 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
+      "id": "vending-441-other",
+      "name": "Nutritional Sciences",
+      "provider": "other",
+      "address": "1415 Linden Dr.",
+      "coordinates": [
+        -89.40892800625295,
+        43.07481936455
+      ],
+      "mapObjectId": 441,
+      "buildingNumber": "0449",
+      "areas": [],
+      "machineCount": 0,
+      "locationCount": 0,
+      "rings": [
+        [
+          [
+            -89.4093507,
+            43.074901501
+          ],
+          [
+            -89.4093499,
+            43.074846801
+          ],
+          [
+            -89.4092594,
+            43.074847101
+          ],
+          [
+            -89.4092594,
+            43.074835601
+          ],
+          [
+            -89.4090126,
+            43.074834201
+          ],
+          [
+            -89.4090111,
+            43.074803101
+          ],
+          [
+            -89.4089935,
+            43.074784101
+          ],
+          [
+            -89.4089936,
+            43.074769701
+          ],
+          [
+            -89.40891,
+            43.074769301
+          ],
+          [
+            -89.408912,
+            43.074567001
+          ],
+          [
+            -89.4088948,
+            43.074566901
+          ],
+          [
+            -89.4088952,
+            43.074528601
+          ],
+          [
+            -89.4087356,
+            43.074528001
+          ],
+          [
+            -89.4087351,
+            43.074572101
+          ],
+          [
+            -89.4087204,
+            43.074572001
+          ],
+          [
+            -89.4087179,
+            43.074817801
+          ],
+          [
+            -89.4086819,
+            43.074817701
+          ],
+          [
+            -89.408681,
+            43.074904201
+          ],
+          [
+            -89.4086802,
+            43.074985101
+          ],
+          [
+            -89.4089318,
+            43.074986501
+          ],
+          [
+            -89.408932,
+            43.074966501
+          ],
+          [
+            -89.4092597,
+            43.074968301
+          ],
+          [
+            -89.4092597,
+            43.074958701
+          ],
+          [
+            -89.4092669,
+            43.074958801
+          ],
+          [
+            -89.40935,
+            43.074959201
+          ],
+          [
+            -89.4093504,
+            43.074929301
+          ],
+          [
+            -89.4093434,
+            43.074929301
+          ],
+          [
+            -89.4093437,
+            43.074901401
+          ],
+          [
+            -89.4093507,
+            43.074901501
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": true,
+      "managementLabel": "Management account unconfirmed in provider lookup",
+      "supplementalAreas": [
+        "Nutritional Science"
+      ],
+      "supplementalEvidence": [
+        "Milk Location Lookup",
+        "Not Serviced this Month"
+      ],
+      "supplementalReferences": [
+        "https://map.wisc.edu/?initObj=0449"
+      ]
     },
     {
       "id": "vending-550-housing",
@@ -6676,7 +7228,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-450-union",
@@ -6856,7 +7413,19 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [
+        "Pyle Center-3rd Fl"
+      ],
+      "supplementalEvidence": [
+        "Milk Location Lookup",
+        "Not Serviced this Month"
+      ],
+      "supplementalReferences": [
+        "https://map.wisc.edu/?initObj=0006"
+      ]
     },
     {
       "id": "vending-452-union",
@@ -7024,7 +7593,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-453-union",
@@ -7187,7 +7761,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-455-union",
@@ -7263,7 +7842,245 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
+      "id": "vending-457-other",
+      "name": "Science Hall",
+      "provider": "other",
+      "address": "550 N. Park St.",
+      "coordinates": [
+        -89.40112082943268,
+        43.07587034344111
+      ],
+      "mapObjectId": 457,
+      "buildingNumber": "0053",
+      "areas": [],
+      "machineCount": 0,
+      "locationCount": 0,
+      "rings": [
+        [
+          [
+            -89.4013977,
+            43.075589601
+          ],
+          [
+            -89.4009155,
+            43.075586601
+          ],
+          [
+            -89.4009112,
+            43.075717001
+          ],
+          [
+            -89.4009733,
+            43.075719001
+          ],
+          [
+            -89.4009711,
+            43.075799001
+          ],
+          [
+            -89.4009186,
+            43.075798001
+          ],
+          [
+            -89.4009174,
+            43.075835701
+          ],
+          [
+            -89.4009165,
+            43.075855601
+          ],
+          [
+            -89.4009159,
+            43.075881101
+          ],
+          [
+            -89.4009147,
+            43.075898201
+          ],
+          [
+            -89.4009139,
+            43.075936401
+          ],
+          [
+            -89.4009675,
+            43.075937601
+          ],
+          [
+            -89.4009649,
+            43.076016901
+          ],
+          [
+            -89.4009038,
+            43.076017101
+          ],
+          [
+            -89.4009033,
+            43.076072401
+          ],
+          [
+            -89.4009028,
+            43.076081201
+          ],
+          [
+            -89.4009014,
+            43.076090801
+          ],
+          [
+            -89.4008997,
+            43.076147701
+          ],
+          [
+            -89.4013813,
+            43.076154001
+          ],
+          [
+            -89.4013857,
+            43.076042701
+          ],
+          [
+            -89.4013865,
+            43.076021701
+          ],
+          [
+            -89.401385,
+            43.076007201
+          ],
+          [
+            -89.4013746,
+            43.075997901
+          ],
+          [
+            -89.4013593,
+            43.075992901
+          ],
+          [
+            -89.4013399,
+            43.075997101
+          ],
+          [
+            -89.4013258,
+            43.076006201
+          ],
+          [
+            -89.4013221,
+            43.076019501
+          ],
+          [
+            -89.4011066,
+            43.076015001
+          ],
+          [
+            -89.4011082,
+            43.075952001
+          ],
+          [
+            -89.4011692,
+            43.075953201
+          ],
+          [
+            -89.4011916,
+            43.075931601
+          ],
+          [
+            -89.401193,
+            43.075905901
+          ],
+          [
+            -89.4011939,
+            43.075865201
+          ],
+          [
+            -89.4011947,
+            43.075825101
+          ],
+          [
+            -89.4011945,
+            43.075800501
+          ],
+          [
+            -89.4011744,
+            43.075784001
+          ],
+          [
+            -89.4010992,
+            43.075782601
+          ],
+          [
+            -89.4011021,
+            43.075715701
+          ],
+          [
+            -89.4012979,
+            43.075718701
+          ],
+          [
+            -89.4013269,
+            43.075719101
+          ],
+          [
+            -89.401329,
+            43.075732201
+          ],
+          [
+            -89.4013351,
+            43.075742901
+          ],
+          [
+            -89.4013488,
+            43.075748901
+          ],
+          [
+            -89.4013645,
+            43.075749201
+          ],
+          [
+            -89.4013744,
+            43.075747901
+          ],
+          [
+            -89.4013845,
+            43.075741801
+          ],
+          [
+            -89.4013883,
+            43.075736201
+          ],
+          [
+            -89.4013928,
+            43.075729101
+          ],
+          [
+            -89.4013955,
+            43.075720201
+          ],
+          [
+            -89.4013977,
+            43.075589601
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": true,
+      "managementLabel": "Management account unconfirmed in provider lookup",
+      "supplementalAreas": [
+        "Science Hall-Basement"
+      ],
+      "supplementalEvidence": [
+        "Milk Location Lookup",
+        "Not Serviced this Month"
+      ],
+      "supplementalReferences": [
+        "https://map.wisc.edu/?initObj=0053"
+      ]
     },
     {
       "id": "vending-459-housing",
@@ -7442,7 +8259,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-466-union",
@@ -7617,7 +8439,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-689-union",
@@ -7737,7 +8564,12 @@
         ]
       ],
       "diningBuildingId": "way/174188355",
-      "footprintSource": "Reviewed dining footprint (OpenStreetMap)"
+      "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-546-housing",
@@ -8052,7 +8884,12 @@
         ]
       ],
       "diningBuildingId": "way/102239119",
-      "footprintSource": "Reviewed dining footprint (OpenStreetMap)"
+      "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-471-union",
@@ -8248,7 +9085,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-478-union",
@@ -8387,7 +9229,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-411-union",
@@ -8698,7 +9545,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-370-union",
@@ -8846,7 +9698,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-654-union",
@@ -8937,7 +9794,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-647-union",
@@ -9109,7 +9971,12 @@
         ]
       ],
       "diningBuildingId": "way/153660065",
-      "footprintSource": "Reviewed dining footprint (OpenStreetMap)"
+      "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-481-union",
@@ -9261,7 +10128,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-482-union",
@@ -9437,7 +10309,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-721-union",
@@ -9726,7 +10603,12 @@
         ]
       ],
       "diningBuildingId": "relation/17899257",
-      "footprintSource": "Reviewed dining footprint (OpenStreetMap)"
+      "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-484-union",
@@ -9862,7 +10744,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-485-union",
@@ -10002,7 +10889,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-487-union",
@@ -10134,7 +11026,296 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
+      "id": "vending-486-other",
+      "name": "Waisman Center",
+      "provider": "other",
+      "address": "1500 Highland Ave.",
+      "coordinates": [
+        -89.43412445383274,
+        43.07846060064663
+      ],
+      "mapObjectId": 486,
+      "buildingNumber": "0459",
+      "areas": [],
+      "machineCount": 0,
+      "locationCount": 0,
+      "rings": [
+        [
+          [
+            -89.4349478,
+            43.078119201
+          ],
+          [
+            -89.4342642,
+            43.078113201
+          ],
+          [
+            -89.43426,
+            43.078266401
+          ],
+          [
+            -89.4341873,
+            43.078265901
+          ],
+          [
+            -89.4341879,
+            43.078240001
+          ],
+          [
+            -89.4341476,
+            43.078239301
+          ],
+          [
+            -89.4341465,
+            43.078182001
+          ],
+          [
+            -89.4339909,
+            43.078180601
+          ],
+          [
+            -89.4339896,
+            43.078152601
+          ],
+          [
+            -89.433857,
+            43.078149101
+          ],
+          [
+            -89.4338574,
+            43.078158001
+          ],
+          [
+            -89.4338393,
+            43.078158001
+          ],
+          [
+            -89.4338385,
+            43.078172901
+          ],
+          [
+            -89.4336448,
+            43.078173001
+          ],
+          [
+            -89.4336354,
+            43.078508201
+          ],
+          [
+            -89.4336622,
+            43.078508901
+          ],
+          [
+            -89.4336602,
+            43.078526501
+          ],
+          [
+            -89.4331872,
+            43.078520301
+          ],
+          [
+            -89.4331847,
+            43.078566301
+          ],
+          [
+            -89.4331023,
+            43.078565901
+          ],
+          [
+            -89.4331006,
+            43.078619901
+          ],
+          [
+            -89.4330595,
+            43.078627001
+          ],
+          [
+            -89.4330287,
+            43.078641601
+          ],
+          [
+            -89.4330039,
+            43.078667101
+          ],
+          [
+            -89.432998,
+            43.078695101
+          ],
+          [
+            -89.4330041,
+            43.078719701
+          ],
+          [
+            -89.4330221,
+            43.078742301
+          ],
+          [
+            -89.4330538,
+            43.078760601
+          ],
+          [
+            -89.4330958,
+            43.078769201
+          ],
+          [
+            -89.4336565,
+            43.078780101
+          ],
+          [
+            -89.4336569,
+            43.078790801
+          ],
+          [
+            -89.4338244,
+            43.078792401
+          ],
+          [
+            -89.4338496,
+            43.078789601
+          ],
+          [
+            -89.4338705,
+            43.078786201
+          ],
+          [
+            -89.4338844,
+            43.078780601
+          ],
+          [
+            -89.433898,
+            43.078774901
+          ],
+          [
+            -89.4339157,
+            43.078761301
+          ],
+          [
+            -89.433924,
+            43.078751001
+          ],
+          [
+            -89.4339328,
+            43.078739201
+          ],
+          [
+            -89.4339402,
+            43.078722601
+          ],
+          [
+            -89.4339429,
+            43.078705201
+          ],
+          [
+            -89.4338742,
+            43.078704201
+          ],
+          [
+            -89.4338737,
+            43.078716801
+          ],
+          [
+            -89.433868,
+            43.078730001
+          ],
+          [
+            -89.4338526,
+            43.078742301
+          ],
+          [
+            -89.4338251,
+            43.078746701
+          ],
+          [
+            -89.4337507,
+            43.078745301
+          ],
+          [
+            -89.433752,
+            43.078735501
+          ],
+          [
+            -89.4337639,
+            43.078731101
+          ],
+          [
+            -89.4338395,
+            43.078730601
+          ],
+          [
+            -89.4338541,
+            43.078722801
+          ],
+          [
+            -89.4338614,
+            43.078713001
+          ],
+          [
+            -89.43386,
+            43.078698701
+          ],
+          [
+            -89.4338513,
+            43.078687901
+          ],
+          [
+            -89.4338365,
+            43.078684001
+          ],
+          [
+            -89.4337588,
+            43.078682601
+          ],
+          [
+            -89.4337587,
+            43.078645501
+          ],
+          [
+            -89.4338547,
+            43.078646301
+          ],
+          [
+            -89.4338553,
+            43.078673301
+          ],
+          [
+            -89.4348139,
+            43.078689401
+          ],
+          [
+            -89.4348174,
+            43.078590701
+          ],
+          [
+            -89.4349327,
+            43.078592901
+          ],
+          [
+            -89.4349478,
+            43.078119201
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": true,
+      "managementLabel": "Management account unconfirmed in provider lookup",
+      "supplementalAreas": [
+        "Waisman Center 6th fl"
+      ],
+      "supplementalEvidence": [
+        "Milk Location Lookup"
+      ],
+      "supplementalReferences": [
+        "https://map.wisc.edu/?initObj=0459"
+      ]
     },
     {
       "id": "vending-374-housing",
@@ -10433,7 +11614,12 @@
         ]
       ],
       "diningBuildingId": "way/37751511",
-      "footprintSource": "Reviewed dining footprint (OpenStreetMap)"
+      "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-489-union",
@@ -10513,7 +11699,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-652-union",
@@ -10681,7 +11872,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-618-union",
@@ -11099,7 +12295,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-547-union",
@@ -11323,7 +12524,12 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
     },
     {
       "id": "vending-491-housing",
@@ -11538,7 +12744,62 @@
         ]
       ],
       "diningBuildingId": null,
-      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson"
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    }
+  ],
+  "supplementalMappedLocations": 8,
+  "supplementalPending": [
+    {
+      "location": "183",
+      "name": "UW Extension Room B121a",
+      "reason": "Room label does not establish which Extension building; confirm street address."
+    },
+    {
+      "location": "93",
+      "name": "Charmony Farms",
+      "reason": "Farm reference does not identify the machine's host building or footprint."
+    },
+    {
+      "location": "5",
+      "name": "Natatarium",
+      "reason": "Legacy facility name; do not transfer machines to a replacement facility without confirmation."
+    },
+    {
+      "location": "49",
+      "name": "Serf-1st Fl",
+      "reason": "Legacy facility name; do not transfer machines to a replacement facility without confirmation."
+    },
+    {
+      "location": "12",
+      "name": "Shell",
+      "reason": "Legacy facility name; location number also occurs in Housing. Needs provider confirmation."
+    },
+    {
+      "location": "13",
+      "name": "Shell",
+      "reason": "Legacy facility name; a lookup machine appears at a conflicting sales location. Needs provider confirmation."
+    },
+    {
+      "location": "122",
+      "name": "Zoology",
+      "reason": "Department-only name does not establish a unique current host building."
+    },
+    {
+      "account": "1025",
+      "location": "163",
+      "name": null,
+      "reason": "Not-serviced machine has a location ID but no host-building name."
+    },
+    {
+      "account": "1025",
+      "location": "189",
+      "name": null,
+      "reason": "Not-serviced machine has a location ID but no host-building name."
     }
   ]
 }

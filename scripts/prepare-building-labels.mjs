@@ -11,7 +11,13 @@ for (const item of source.elements) {
   shapes.set(`${item.type}/${item.id}`, { name: item.tags.name, rings: [exterior.map(({ lon, lat }) => [lon, lat])] });
 }
 // Dining names and corrected geometries take precedence over generic OSM names.
-for (const building of dining.buildings) shapes.set(building.id, building);
+for (const building of dining.buildings) {
+  if (building.components) {
+    // Keep the halls' individual OSM labels; add the distinct dining connector.
+    const market = building.components.find((part) => part.mapObjectId === 734);
+    if (market) shapes.set('campus-map/734', market);
+  } else shapes.set(building.id, building);
+}
 const path = geoPath(geoIdentity());
 const features = [...shapes.entries()].flatMap(([id, building]) => {
   const coordinates = path.centroid({ type: 'Polygon', coordinates: [building.rings[0]] });
