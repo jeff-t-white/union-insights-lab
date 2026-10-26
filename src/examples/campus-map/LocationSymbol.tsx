@@ -7,7 +7,7 @@ export const symbolLabels: Record<LocationKind, string> = {
 
 export function diningKind(name: string, provider: string): LocationKind {
   if (/cafeteria/i.test(name) || (provider === 'housing' && /^(Carson’s|Four Lakes|Gordon Avenue|Liz’s|Rheta’s) Market$/.test(name))) return 'cafeteria';
-  if (/caf[eé]|coffee|peets|java|bean & creamery|ground truth|prairie fire|revive/i.test(name)) return 'coffee';
+  if (/caf[eé]|coffee|peets|starbucks|java|bean & creamery|ground truth|prairie fire|revive/i.test(name)) return 'coffee';
   if (/market|flamingo run/i.test(name)) return 'market';
   return 'restaurant';
 }

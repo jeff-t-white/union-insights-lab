@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom';
 import type { GeoProjection } from 'd3';
 import campusData from './campus-dining.json';
 import vendingData from './vending-locations.json';
-import { diningKind, LocationSymbol, symbolLabels } from './LocationSymbol';
+import { diningKind, LocationSymbol, symbolLabels, type LocationKind } from './LocationSymbol';
 
 export const providers = [
   { id: 'union', label: 'Wisconsin Union' },
@@ -24,12 +24,19 @@ export const campusLocations: DiningLocation[] = [
       name: `Vending · ${building.name}`, provider: building.provider, kind: 'vending' as const,
       sourceName: building.id, buildingName: building.name, buildingId: `campus-map/${building.mapObjectId}`,
       sourceUrl: vendingData.coordinateSource,
-      locationUrl: `https://map.wisc.edu/?initObj=${building.mapObjectId}`,
+      locationUrl: `https://map.wisc.edu/?initObj=${building.buildingNumber}`,
       coordinateMeaning: vendingData.coordinateMeaning, logoPath: null, orderUrl: null,
       address: building.address, areas: building.areas, machineCount: building.machineCount, locationCount: building.locationCount,
     },
   })),
 ];
+
+export function locationKind(location: DiningLocation): LocationKind {
+  return location.properties.kind ?? diningKind(location.properties.name, location.properties.provider);
+}
+export function displayProvider(location: DiningLocation): Provider {
+  return location.properties.kind === 'vending' ? 'other' : location.properties.provider as Provider;
+}
 
 export function DiningMarkers({ locations, projection, width, height, selected, onSelect, onActivate, moving, popupRoot }: {
   locations: DiningLocation[]; projection: GeoProjection; width: number; height: number;
@@ -54,9 +61,9 @@ export function DiningMarkers({ locations, projection, width, height, selected, 
         const [x, y] = projection([location.geometry.coordinates[0], location.geometry.coordinates[1]])!;
         if (x < 0 || y < 0 || x > width || y > height) return null;
         const { name, provider } = location.properties;
-        const kind = location.properties.kind ?? diningKind(name, provider);
+        const kind = locationKind(location);
         // Published source names remain unique even when display names are shared.
-        return <button key={location.properties.sourceName} type="button" className={`dining-marker kind-${kind} provider-${provider}${active === location ? ' is-active' : ''}`}
+        return <button key={location.properties.sourceName} type="button" className={`dining-marker kind-${kind} provider-${displayProvider(location)}${active === location ? ' is-active' : ''}`}
           data-location-id={location.properties.sourceName} style={{ left: x, top: y }} aria-label={`${name}${location.properties.buildingName && kind !== 'vending' ? ` at ${location.properties.buildingName}` : ""}, ${symbolLabels[kind]}, ${providers.find((item) => item.id === provider)?.label}`}
           aria-pressed={selected === location} onPointerEnter={() => show(location)} onPointerLeave={leave}
           onFocus={() => show(location)} onBlur={leave} onClick={() => { if (!moving) onSelect(selected === location ? null : location); }}
@@ -66,7 +73,7 @@ export function DiningMarkers({ locations, projection, width, height, selected, 
     {active && popupRoot && createPortal(<aside className="building-popup location-popup" aria-label="Location details" onPointerEnter={() => show(active)} onPointerLeave={leave}>
       <button type="button" className="popup-close" aria-label="Close location details" onClick={() => { setHovered(null); onSelect(null); }}>×</button>
       <h3>{active.properties.name}</h3>
-      <p>{providers.find((item) => item.id === active.properties.provider)?.label}</p><p>{active.properties.buildingName}</p>
+      <p>{active.properties.kind === 'vending' ? 'Managed by: ' : ''}{providers.find((item) => item.id === active.properties.provider)?.label}</p><p>{active.properties.buildingName}</p>
       {active.properties.kind === 'vending' && <>
         <p>{active.properties.address}</p>
         <p>{active.properties.machineCount} reported machines across {active.properties.locationCount} vendor locations · {vendingData.period}</p>

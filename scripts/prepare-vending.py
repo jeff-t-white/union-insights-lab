@@ -5,13 +5,13 @@ The second argument is a saved https://map.wisc.edu/api/v1/map_objects.geojson.
 Explicit reviewed matches live in vending-building-matches.json. No financial
 values or individual machine numbers are written to the application dataset.
 """
+import argparse
 import collections
 import datetime
 import json
 import math
 import pathlib
 import re
-import sys
 import xml.etree.ElementTree as ET
 import zipfile
 
@@ -50,9 +50,14 @@ def read_locations(path):
 
 
 def main():
-    workbook, campus_path = sys.argv[1:]
-    groups = read_locations(workbook)
-    campus = {b["id"]: b for b in json.loads(pathlib.Path(campus_path).read_text(encoding="utf-8-sig"))}
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('workbook')
+    parser.add_argument('campus_source')
+    parser.add_argument('--period', default='September 2026')
+    parser.add_argument('--checked', default=datetime.date.today().isoformat(), type=lambda s: datetime.date.fromisoformat(s).isoformat())
+    args = parser.parse_args()
+    groups = read_locations(args.workbook)
+    campus = {b["id"]: b for b in json.loads(pathlib.Path(args.campus_source).read_text(encoding="utf-8-sig"))}
     matches = json.loads((ROOT / "scripts/vending-building-matches.json").read_text())
     reviewed = {(m["account"], m["location"]): m for m in matches}
     buildings = {}
@@ -77,7 +82,7 @@ def main():
         record["areas"] = sorted(set(record["areas"]) | group["names"])
         record["machineCount"] += len(group["machines"])
         record["locationCount"] += 1
-    data = {"period": "September 2026", "checked": datetime.date.today().isoformat(), "coordinateSource": SOURCE, "coordinateMeaning": "Campus map host-building reference point, not an exact machine position.", "totalLocations": len(groups), "unresolved": unresolved, "buildings": sorted(buildings.values(), key=lambda b: b["name"])}
+    data = {"period": args.period, "checked": args.checked, "coordinateSource": SOURCE, "coordinateMeaning": "Campus map host-building reference point, not an exact machine position.", "totalLocations": len(groups), "unresolved": unresolved, "buildings": sorted(buildings.values(), key=lambda b: b["name"])}
     (ROOT / "src/examples/campus-map/vending-locations.json").write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"{len(buildings)} building markers; {sum(b['locationCount'] for b in buildings.values())} matched locations; {len(unresolved)} unresolved; {sum(b['machineCount'] for b in buildings.values())} reported machines mapped.")
 

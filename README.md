@@ -57,6 +57,16 @@ Keep data preparation separate from drawing, and give chart components explicit 
 
 The visual scaffold uses [UW–Madison’s digital color palette](https://brand.wisc.edu/visual-identity/colors/) with Badger Red (`#C5050C`), dark red, black, white, and light gray. The typographic wordmark is project text, not an official university logo. Fonts load from Google Fonts with local fallbacks.
 
+## Vending and location symbols
+
+The map includes 64 vending building markers from the September 2026 provider report (worksheets 7–9), representing 77 account/location pairs and 170 reported machines. All vending markers use green and belong to the Other Dining Options display group, while source management accounts remain visible in location details. Checkboxes in the symbol key filter caf�s, cafeterias, restaurants, markets, and vending. Type and provider filters combine to control markers, building outlets/highlights, the location directory, and view fitting. A single V marker groups reported floors within each host building; popup and directory entries show the reported area names and machine counts. The monthly report does not establish current availability or a complete installed inventory. No sales, commissions, or individual machine numbers are bundled.
+
+`vending-locations.json` stores the reviewed building snapshot. Coordinates are host-building reference points from the [official campus map export](https://map.wisc.edu/api/v1/map_objects.geojson), not surveyed machine positions. `scripts/vending-building-matches.json` explicitly maps account/location pairs to campus map object IDs and records exclusions. Vendor location IDs repeat across accounts and are not campus building numbers. Of 111 vendor locations, 34 remain omitted: 23 lack names and 11 have ambiguous identities. Changed source names invalidate prior matches during import. Update the reviewed matches when the provider master list arrives; do not geocode missing names or automatically accept fuzzy candidates.
+
+To refresh, save the official campus export locally, then run `python scripts/prepare-vending.py "<private-workbook.xlsx>" "<campus-map-source.json>" --period "September 2026" --checked 2026-10-26`, substituting the actual report period and review date. Python's standard library reads the workbook without executing formulas, macros, or document instructions. The source workbook stays outside the repository. The importer only writes location metadata and aggregate machine counts. Review any name changes before using another month's workbook.
+
+`LocationSymbol.tsx` supplies small SVG symbols for cafés/coffee, dining halls/cafeterias, markets, restaurants/other dining, and vending. Dining icons inherit provider colors (Union red, Housing blue, Other green); all vending icons use Other green. The map legend filters each type, and marker accessible names include both type and provider. Existing dining points and provider building highlights remain intact.
+
 ## Work information
 
 Only commit information approved for the repository’s audience. Frontend files and bundled data are visible to anyone who can access a deployed site. Keep private datasets and credentials out of Git; `.env` files are ignored, but client-side environment values are still public in builds.
