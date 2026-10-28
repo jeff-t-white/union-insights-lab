@@ -2,7 +2,7 @@ import { geoMercator } from 'd3';
 import { useEffect, useId, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import type { Map as MapLibreMap } from 'maplibre-gl';
-import { DINING_SOURCE } from './mapConfig';
+import { DINING_SOURCE, CAMPUS_FIT_EXCLUDED_MAP_OBJECT_IDS } from './mapConfig';
 import { QuietBasemap } from './QuietBasemap';
 import { fitDiningView } from './fitDiningView';
 import './campus-map.css';
@@ -18,11 +18,12 @@ const diningPoints = [...buildingPoints, ...campusLocations.filter((location) =>
 const diningCenter = fitDiningView(diningPoints, 1000, 600).center;
 const locationKinds = Object.keys(symbolLabels) as LocationKind[];
 const defaultLocationKinds = locationKinds.filter((kind) => kind !== 'vending');
+const excludedFromCampusFit = new Set(vendingData.buildings.filter((building) => CAMPUS_FIT_EXCLUDED_MAP_OBJECT_IDS.includes(building.mapObjectId)).map((building) => building.id));
 function filteredMap(enabled: Provider[], kinds: LocationKind[]) {
   const locations = campusLocations.filter((location) => enabled.includes(displayProvider(location)) && kinds.includes(locationKind(location)));
   const buildings = diningData.buildings.map((building) => ({ ...building, outlets: building.outlets.filter((outlet) => enabled.includes(outlet.provider as Provider) && kinds.includes(diningKind(outlet.name, outlet.provider))) })).filter((building) => building.outlets.length);
   const vendingBuildings = vendingData.buildings.filter((building) => locations.some((location) => location.properties.sourceName === building.id));
-  return { locations, buildings, vendingBuildings, points: [...buildings.flatMap((building) => building.rings.flat()), ...vendingBuildings.flatMap((building) => building.rings.flat()), ...locations.map((location) => location.geometry.coordinates)] };
+  return { locations, buildings, vendingBuildings, points: [...buildings.flatMap((building) => building.rings.flat()), ...vendingBuildings.filter((building) => !excludedFromCampusFit.has(building.id)).flatMap((building) => building.rings.flat()), ...locations.filter((location) => !excludedFromCampusFit.has(location.properties.sourceName)).map((location) => location.geometry.coordinates)] };
 }
 
 export function CampusMap() {

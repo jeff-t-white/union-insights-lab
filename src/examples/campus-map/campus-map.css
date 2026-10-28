@@ -26,5 +26,5 @@
 .symbol-legend .location-symbol{width:15px;height:15px}
 
 .vending-scope{font-size:12px;color:var(--muted);margin-top:18px;max-width:950px}
-.vending-footprint{fill:none;stroke:var(--marker-color);stroke-width:1.5;stroke-opacity:.75;vector-effect:non-scaling-stroke;stroke-linejoin:round;pointer-events:none}
+.vending-footprint{fill:var(--marker-color);fill-opacity:.12;fill-rule:evenodd;stroke:var(--marker-color);stroke-width:1.5;stroke-opacity:.75;vector-effect:non-scaling-stroke;stroke-linejoin:round;pointer-events:none}
 @media(max-width:600px){.symbol-legend{padding:9px 10px;gap:8px 14px}.provider-filters{gap:8px 12px}}
