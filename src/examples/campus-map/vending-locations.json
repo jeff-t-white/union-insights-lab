@@ -1,6 +1,6 @@
 {
   "period": "September 2026",
-  "checked": "2026-10-26",
+  "checked": "2026-10-28",
   "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
   "coordinateMeaning": "Campus map host-building reference point, not an exact machine position.",
   "totalLocations": 111,
@@ -59,11 +59,6 @@
       "account": "1025",
       "location": "179",
       "reason": "ROTC building is not specified."
-    },
-    {
-      "account": "1025",
-      "location": "188",
-      "reason": "DoIT Digital & Printing building is not specified."
     },
     {
       "account": "1025",
@@ -163,16 +158,6 @@
     {
       "account": "1026",
       "location": "28",
-      "reason": "No usable location name; await provider master list."
-    },
-    {
-      "account": "1028",
-      "location": "1",
-      "reason": "No usable location name; await provider master list."
-    },
-    {
-      "account": "1028",
-      "location": "2",
       "reason": "No usable location name; await provider master list."
     }
   ],
@@ -320,6 +305,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -385,6 +371,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -450,6 +437,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -623,6 +611,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -807,6 +796,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -887,6 +877,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -1004,6 +995,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -1403,6 +1395,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -1704,6 +1697,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -1829,6 +1823,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -2041,6 +2036,7 @@
       ],
       "diningBuildingId": "way/39201164",
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -2181,6 +2177,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -2422,6 +2419,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [
@@ -2525,6 +2523,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [
@@ -2844,6 +2843,56 @@
       ],
       "diningBuildingId": "way/173709889",
       "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "buildingConfirmation": null,
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
+      "id": "vending-723-union",
+      "name": "Digital Publishing & Printing Services",
+      "provider": "union",
+      "address": "2109 S. Stoughton Road",
+      "coordinates": [
+        -89.30803567171097,
+        43.067623491949526
+      ],
+      "mapObjectId": 723,
+      "buildingNumber": "DPPS",
+      "areas": [
+        "DoIT Digital & Printing"
+      ],
+      "machineCount": 2,
+      "locationCount": 1,
+      "rings": [
+        [
+          [
+            -89.3083616,
+            43.0678027
+          ],
+          [
+            -89.3076813,
+            43.0678177
+          ],
+          [
+            -89.3076652,
+            43.0674277
+          ],
+          [
+            -89.3083455,
+            43.0674127
+          ],
+          [
+            -89.3083616,
+            43.0678027
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://www.openstreetmap.org/way/438087108",
+      "buildingConfirmation": "Printing-services name and address matched to the official campus map and UW location inventory.",
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -3009,6 +3058,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -3134,6 +3184,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -3279,6 +3330,7 @@
       ],
       "diningBuildingId": "way/56997838",
       "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -3372,6 +3424,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -3453,6 +3506,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -3601,11 +3655,142 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
       "supplementalEvidence": [],
       "supplementalReferences": []
+    },
+    {
+      "id": "vending-382-other",
+      "name": "Extension Building",
+      "provider": "other",
+      "address": "432 N. Lake St.",
+      "coordinates": [
+        -89.39789677222102,
+        43.07422286554876
+      ],
+      "mapObjectId": 382,
+      "buildingNumber": "0500",
+      "areas": [],
+      "machineCount": 0,
+      "locationCount": 0,
+      "rings": [
+        [
+          [
+            -89.3980986,
+            43.074077901
+          ],
+          [
+            -89.3980082,
+            43.074076301
+          ],
+          [
+            -89.3980093,
+            43.074043901
+          ],
+          [
+            -89.3980099,
+            43.074027101
+          ],
+          [
+            -89.3978084,
+            43.074023501
+          ],
+          [
+            -89.3978078,
+            43.074041501
+          ],
+          [
+            -89.3978066,
+            43.074077101
+          ],
+          [
+            -89.3977015,
+            43.074075301
+          ],
+          [
+            -89.397701,
+            43.074091401
+          ],
+          [
+            -89.3977002,
+            43.074114001
+          ],
+          [
+            -89.3976995,
+            43.074135401
+          ],
+          [
+            -89.3976915,
+            43.074377101
+          ],
+          [
+            -89.3977461,
+            43.074378101
+          ],
+          [
+            -89.3977921,
+            43.074378901
+          ],
+          [
+            -89.3977911,
+            43.074408001
+          ],
+          [
+            -89.397997,
+            43.074411601
+          ],
+          [
+            -89.3979979,
+            43.074386001
+          ],
+          [
+            -89.3980882,
+            43.074387601
+          ],
+          [
+            -89.3980885,
+            43.074379001
+          ],
+          [
+            -89.3980903,
+            43.074326501
+          ],
+          [
+            -89.3980913,
+            43.074294801
+          ],
+          [
+            -89.3980965,
+            43.074141701
+          ],
+          [
+            -89.3980977,
+            43.074105801
+          ],
+          [
+            -89.3980986,
+            43.074077901
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": "Host building and room B121A confirmed by the UW location inventory.",
+      "supplementalOnly": true,
+      "managementLabel": "Management account unconfirmed in provider lookup",
+      "supplementalAreas": [
+        "UW Extension Room B121a"
+      ],
+      "supplementalEvidence": [
+        "Milk Location Lookup",
+        "Not Serviced this Month"
+      ],
+      "supplementalReferences": [
+        "https://map.wisc.edu/?initObj=0500"
+      ]
     },
     {
       "id": "vending-385-union",
@@ -3799,6 +3984,7 @@
       ],
       "diningBuildingId": "way/103242254",
       "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -3963,6 +4149,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -4067,6 +4254,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -4519,6 +4707,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -4780,6 +4969,7 @@
       ],
       "diningBuildingId": "way/107463323",
       "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -4986,6 +5176,7 @@
       ],
       "diningBuildingId": "way/37749300",
       "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -5262,6 +5453,7 @@
       ],
       "diningBuildingId": "way/38855397",
       "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -5382,6 +5574,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -5532,6 +5725,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": true,
       "managementLabel": "Management account unconfirmed in provider lookup",
       "supplementalAreas": [
@@ -5675,6 +5869,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -5729,6 +5924,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": true,
       "managementLabel": "Management account unconfirmed in provider lookup",
       "supplementalAreas": [
@@ -5840,6 +6036,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -6022,6 +6219,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -6219,6 +6417,7 @@
       ],
       "diningBuildingId": "way/38855860",
       "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -6378,6 +6577,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -6563,6 +6763,7 @@
       ],
       "diningBuildingId": "way/38855398",
       "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -6683,6 +6884,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -6756,6 +6958,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -6898,6 +7101,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": true,
       "managementLabel": "Management account unconfirmed in provider lookup",
       "supplementalAreas": [
@@ -7229,6 +7433,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -7414,6 +7619,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [
@@ -7594,6 +7800,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -7762,11 +7969,114 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
       "supplementalEvidence": [],
       "supplementalReferences": []
+    },
+    {
+      "id": "vending-454-union",
+      "name": "Rust-Schreiner Hall",
+      "provider": "union",
+      "address": "115 N. Orchard St.",
+      "coordinates": [
+        -89.40697507060902,
+        43.07032844945721
+      ],
+      "mapObjectId": 454,
+      "buildingNumber": "0158",
+      "areas": [],
+      "machineCount": 0,
+      "locationCount": 0,
+      "rings": [
+        [
+          [
+            -89.4071604,
+            43.070149901
+          ],
+          [
+            -89.4067708,
+            43.070144101
+          ],
+          [
+            -89.4067684,
+            43.070229901
+          ],
+          [
+            -89.4069345,
+            43.070232401
+          ],
+          [
+            -89.4069331,
+            43.070284201
+          ],
+          [
+            -89.4069735,
+            43.070284801
+          ],
+          [
+            -89.4069728,
+            43.070309201
+          ],
+          [
+            -89.4069694,
+            43.070431201
+          ],
+          [
+            -89.406764,
+            43.070428201
+          ],
+          [
+            -89.4067617,
+            43.070511201
+          ],
+          [
+            -89.4071527,
+            43.070517101
+          ],
+          [
+            -89.407155,
+            43.070433901
+          ],
+          [
+            -89.4070703,
+            43.070432601
+          ],
+          [
+            -89.4070738,
+            43.070307801
+          ],
+          [
+            -89.4070758,
+            43.070233701
+          ],
+          [
+            -89.407158,
+            43.070234901
+          ],
+          [
+            -89.4071604,
+            43.070149901
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": "Rust/Schreiner name and host address confirmed by the UW location inventory.",
+      "supplementalOnly": true,
+      "managementLabel": "Campus vending account (not-serviced reference)",
+      "supplementalAreas": [
+        "Rust/Schreiner House"
+      ],
+      "supplementalEvidence": [
+        "Milk Location Lookup",
+        "Not Serviced this Month"
+      ],
+      "supplementalReferences": [
+        "https://map.wisc.edu/?initObj=0158"
+      ]
     },
     {
       "id": "vending-455-union",
@@ -7843,6 +8153,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -8069,6 +8380,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": true,
       "managementLabel": "Management account unconfirmed in provider lookup",
       "supplementalAreas": [
@@ -8260,6 +8572,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -8440,6 +8753,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -8565,6 +8879,7 @@
       ],
       "diningBuildingId": "way/174188355",
       "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -8885,6 +9200,7 @@
       ],
       "diningBuildingId": "way/102239119",
       "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -9086,6 +9402,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -9230,6 +9547,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -9546,6 +9864,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -9699,6 +10018,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -9795,6 +10115,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -9972,6 +10293,7 @@
       ],
       "diningBuildingId": "way/153660065",
       "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -10129,6 +10451,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -10310,6 +10633,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -10604,6 +10928,7 @@
       ],
       "diningBuildingId": "relation/17899257",
       "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -10745,6 +11070,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -10890,6 +11216,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -11027,6 +11354,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -11305,6 +11633,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": true,
       "managementLabel": "Management account unconfirmed in provider lookup",
       "supplementalAreas": [
@@ -11615,6 +11944,7 @@
       ],
       "diningBuildingId": "way/37751511",
       "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -11700,6 +12030,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -11873,8 +12204,195 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
+      "id": "vending-401-other",
+      "name": "Wisconsin Historical Society",
+      "provider": "other",
+      "address": "816 State St.",
+      "coordinates": [
+        -89.40004969827092,
+        43.07540914917626
+      ],
+      "mapObjectId": 401,
+      "buildingNumber": "0016",
+      "areas": [
+        "Vendor location 1 (exact area unconfirmed)",
+        "Vendor location 2 (exact area unconfirmed)"
+      ],
+      "machineCount": 4,
+      "locationCount": 2,
+      "rings": [
+        [
+          [
+            -89.4005028,
+            43.075178501
+          ],
+          [
+            -89.4004873,
+            43.075178301
+          ],
+          [
+            -89.400442,
+            43.075177701
+          ],
+          [
+            -89.4002873,
+            43.075175801
+          ],
+          [
+            -89.4002862,
+            43.075186501
+          ],
+          [
+            -89.400061,
+            43.075183901
+          ],
+          [
+            -89.4000624,
+            43.075114701
+          ],
+          [
+            -89.3999529,
+            43.075113501
+          ],
+          [
+            -89.3999531,
+            43.075103401
+          ],
+          [
+            -89.3998965,
+            43.075102701
+          ],
+          [
+            -89.399864,
+            43.075102301
+          ],
+          [
+            -89.3998463,
+            43.075102101
+          ],
+          [
+            -89.3997786,
+            43.075101401
+          ],
+          [
+            -89.3997784,
+            43.075111001
+          ],
+          [
+            -89.3997097,
+            43.075110201
+          ],
+          [
+            -89.3996631,
+            43.075109701
+          ],
+          [
+            -89.3996579,
+            43.075354701
+          ],
+          [
+            -89.3996571,
+            43.075400801
+          ],
+          [
+            -89.3996563,
+            43.075447901
+          ],
+          [
+            -89.3996507,
+            43.075693501
+          ],
+          [
+            -89.3997647,
+            43.075694801
+          ],
+          [
+            -89.3997645,
+            43.075705101
+          ],
+          [
+            -89.3998318,
+            43.075705901
+          ],
+          [
+            -89.399851,
+            43.075706101
+          ],
+          [
+            -89.3998755,
+            43.075706401
+          ],
+          [
+            -89.3999561,
+            43.075707301
+          ],
+          [
+            -89.3999563,
+            43.075699701
+          ],
+          [
+            -89.4000717,
+            43.075701001
+          ],
+          [
+            -89.4000731,
+            43.075635801
+          ],
+          [
+            -89.4002807,
+            43.075638201
+          ],
+          [
+            -89.4002789,
+            43.075650501
+          ],
+          [
+            -89.400482,
+            43.075653101
+          ],
+          [
+            -89.4004922,
+            43.075653201
+          ],
+          [
+            -89.4004959,
+            43.075502701
+          ],
+          [
+            -89.4004788,
+            43.075502501
+          ],
+          [
+            -89.4004811,
+            43.075409601
+          ],
+          [
+            -89.4004831,
+            43.075325901
+          ],
+          [
+            -89.4004992,
+            43.075326101
+          ],
+          [
+            -89.4005028,
+            43.075178501
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": "Host building assigned to the main Historical Society building from local guidance; provider master-list confirmation pending.",
+      "supplementalOnly": false,
+      "managementLabel": "Historical Society vending account",
       "supplementalAreas": [],
       "supplementalEvidence": [],
       "supplementalReferences": []
@@ -12296,6 +12814,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -12525,6 +13044,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -12745,6 +13265,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": null,
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -12752,13 +13273,8 @@
       "supplementalReferences": []
     }
   ],
-  "supplementalMappedLocations": 8,
+  "supplementalMappedLocations": 10,
   "supplementalPending": [
-    {
-      "location": "183",
-      "name": "UW Extension Room B121a",
-      "reason": "Room label does not establish which Extension building; confirm street address."
-    },
     {
       "location": "93",
       "name": "Charmony Farms",
@@ -12788,12 +13304,6 @@
       "location": "122",
       "name": "Zoology",
       "reason": "Department-only name does not establish a unique current host building."
-    },
-    {
-      "account": "1025",
-      "location": "163",
-      "name": null,
-      "reason": "Not-serviced machine has a location ID but no host-building name."
     },
     {
       "account": "1025",

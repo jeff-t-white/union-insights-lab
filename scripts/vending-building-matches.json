@@ -746,11 +746,11 @@
   {
     "account": "1025",
     "location": "188",
-    "mapObjectId": null,
+    "mapObjectId": 723,
     "expectedSourceNames": [
       "DoIT Digital & Printing"
     ],
-    "reason": "DoIT Digital & Printing building is not specified."
+    "reason": "Reviewed name/address match: official campus map DPPS at 2109 S Stoughton Rd agrees with Workday building 1139. Vendor ID is not a campus building number."
   },
   {
     "account": "1025",
@@ -978,15 +978,21 @@
   {
     "account": "1028",
     "location": "1",
-    "mapObjectId": null,
+    "mapObjectId": 401,
     "expectedSourceNames": [],
-    "reason": "No usable location name; await provider master list."
+    "reason": "User-provided guidance assigns both Historical Society vendor locations to the main building at 816 State St; provider master-list confirmation pending.",
+    "buildingAssignmentNote": "Host building assigned to the main Historical Society building from local guidance; provider master-list confirmation pending.",
+    "managementLabel": "Historical Society vending account",
+    "areaLabel": "Vendor location 1 (exact area unconfirmed)"
   },
   {
     "account": "1028",
     "location": "2",
-    "mapObjectId": null,
+    "mapObjectId": 401,
     "expectedSourceNames": [],
-    "reason": "No usable location name; await provider master list."
+    "reason": "User-provided guidance assigns both Historical Society vendor locations to the main building at 816 State St; provider master-list confirmation pending.",
+    "buildingAssignmentNote": "Host building assigned to the main Historical Society building from local guidance; provider master-list confirmation pending.",
+    "managementLabel": "Historical Society vending account",
+    "areaLabel": "Vendor location 2 (exact area unconfirmed)"
   }
 ]

@@ -15,5 +15,6 @@ export function fitDiningView(points: number[][], width: number, height: number)
     Math.max(1, width - 2 * padding) / (maxX - minX),
     Math.max(1, height - 2 * padding) / (maxY - minY),
   );
-  return { center, zoom: Math.max(12, Math.min(18, Math.log2(scale))) };
+  // Allow the off-campus printing facility to fit on narrow screens as well.
+  return { center, zoom: Math.max(11, Math.min(18, Math.log2(scale))) };
 }

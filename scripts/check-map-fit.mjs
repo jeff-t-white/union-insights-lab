@@ -6,7 +6,7 @@ import { fitDiningView } from '../src/examples/campus-map/fitDiningView.ts';
 
 const data = JSON.parse(await readFile('src/examples/campus-map/campus-dining.json', 'utf8'));
 const vending = JSON.parse(await readFile('src/examples/campus-map/vending-locations.json', 'utf8'));
-const points = [...data.buildings.flatMap((building) => building.rings.flat()), ...data.locations.map((location) => location.geometry.coordinates), ...vending.buildings.map((building) => building.coordinates)];
+const points = [...data.buildings.flatMap((building) => building.rings.flat()), ...data.locations.map((location) => location.geometry.coordinates), ...vending.buildings.map((building) => building.coordinates), ...vending.buildings.flatMap((building) => building.rings.flat())];
 for (const [width, height] of [[1800, 700], [1000, 650], [600, 500], [350, 500]]) {
   const view = fitDiningView(points, width, height);
   const projection = geoMercator().scale(256 * 2 ** view.zoom / (2 * Math.PI)).center(view.center).translate([width / 2, height / 2]);

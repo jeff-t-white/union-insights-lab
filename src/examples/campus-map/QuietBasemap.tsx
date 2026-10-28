@@ -37,7 +37,7 @@ export function QuietBasemap({ center, zoom, width, height, shell, onReady, onVi
         dragRotate: false,
         pitchWithRotate: false,
         touchPitch: false,
-        minZoom: 11,
+        minZoom: 10,
         maxZoom: 17,
         clickTolerance: 5,
         attributionControl: false,

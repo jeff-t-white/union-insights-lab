@@ -1,0 +1,10 @@
+{
+  "sourceFile": "wd_locations_UWMSN.parquet",
+  "reviewed": "2026-10-28",
+  "method": "Current, error-free building/room records; reviewed names and addresses, never numeric vendor-ID equality. Raw warehouse rows and history are not published.",
+  "buildings": {
+    "382": { "cdr": "0500", "plantLedger": "0500", "address": "432 N Lake St", "confirmation": "Host building and room B121A confirmed by the UW location inventory." },
+    "454": { "cdr": "0158", "plantLedger": "0158", "address": "115 N Orchard St", "confirmation": "Rust/Schreiner name and host address confirmed by the UW location inventory." },
+    "723": { "cdr": "1139", "plantLedger": "1139", "address": "2109 S Stoughton Rd", "confirmation": "Printing-services name and address matched to the official campus map and UW location inventory." }
+  }
+}

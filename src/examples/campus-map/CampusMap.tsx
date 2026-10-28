@@ -83,7 +83,7 @@ export function CampusMap() {
 
   const projection = geoMercator().scale(TILE_SIZE * 2 ** zoom / (2 * Math.PI)).center(center).translate([width / 2, height / 2]);
   function navigate(nextCenter: [number, number], nextZoom: number, duration = 400) {
-    nativeMap.current?.easeTo({ center: nextCenter, zoom: Math.max(11, Math.min(17, nextZoom - 1)), duration });
+    nativeMap.current?.easeTo({ center: nextCenter, zoom: Math.max(10, Math.min(17, nextZoom - 1)), duration });
   }
   useEffect(() => {
     if (!overlayRoot || !width || !height || initialFit.current) return;

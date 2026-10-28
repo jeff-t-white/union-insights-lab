@@ -39,8 +39,19 @@ def append_supplemental(data, workbook, campus, make_building):
     matches = json.loads((pathlib.Path(__file__).parent / 'supplemental-vending-matches.json').read_text(encoding='utf-8'))
     pending = []
     matched = 0
+    resolved_not_serviced = set()
     for match in matches:
-        references = [r for r in rows[10] if r.get('C') == match['location'] and r.get('B') == match['name']]
+        if match.get('matchVia') == 'not_serviced_machine_id':
+            account = '1025'
+            machine_ids = set()
+            for row in rows[6]:
+                if row.get('A') == 'Housing':
+                    account = '1026'
+                if account == match['account'] and row.get('B') == match['location'] and row.get('A', '').isdigit():
+                    machine_ids.add(row['A'])
+            references = [r for r in rows[10] if r.get('A') in machine_ids and r.get('B') == match['name']]
+        else:
+            references = [r for r in rows[10] if r.get('C') == match['location'] and r.get('B') == match['name']]
         if not references or not match['mapObjectId']:
             pending.append({'location': match['location'], 'name': match['name'], 'reason': match.get('reason') if references else 'Reviewed lookup name missing or changed; re-review required.'})
             continue
@@ -52,20 +63,24 @@ def append_supplemental(data, workbook, campus, make_building):
             in_not_serviced = in_not_serviced or any(r.get('B') == '75' and r.get('A', '').isdigit() for r in rows[6])
         existing = next((b for b in data['buildings'] if b['mapObjectId'] == match['mapObjectId']), None)
         if existing is None:
-            existing = make_building(campus[match['mapObjectId']], 'other')
+            existing = make_building(campus[match['mapObjectId']], 'union' if match.get('account') == '1025' else 'other')
             existing['supplementalOnly'] = True
             existing['managementLabel'] = 'Management account unconfirmed in provider lookup'
+            if match.get('account') == '1025':
+                existing['managementLabel'] = 'Campus vending account (not-serviced reference)'
             data['buildings'].append(existing)
         existing['supplementalAreas'] = sorted(set(existing['supplementalAreas']) | {match['name']})
         existing['supplementalEvidence'] = sorted(set(existing['supplementalEvidence']) | {'Milk Location Lookup'} | ({'Not Serviced this Month'} if in_not_serviced else set()))
         existing['supplementalReferences'] = sorted(set(existing['supplementalReferences']) | {match['reference']})
         matched += 1
+        if match.get('matchVia') == 'not_serviced_machine_id':
+            resolved_not_serviced.add((match['account'], match['location']))
     # These IDs have explicit Campus rows but no reliable host-building name.
     campus_section = True
     for row in rows[6]:
         if row.get('A') == 'Housing':
             campus_section = False
-        if campus_section and row.get('B') in ('163', '189') and row.get('A', '').isdigit():
+        if campus_section and row.get('B') in ('163', '189') and row.get('A', '').isdigit() and ('1025', row['B']) not in resolved_not_serviced:
             entry = {'account': '1025', 'location': row['B'], 'name': None, 'reason': 'Not-serviced machine has a location ID but no host-building name.'}
             if entry not in pending:
                 pending.append(entry)

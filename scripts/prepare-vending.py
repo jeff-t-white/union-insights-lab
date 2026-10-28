@@ -19,6 +19,8 @@ from supplemental_vending import append_supplemental
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 NS = {"m": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
 SOURCE = "https://map.wisc.edu/api/v1/map_objects.geojson"
+PRINTING_FOOTPRINT = json.loads((ROOT / 'src/examples/campus-map/printing-services-footprint.json').read_text(encoding='utf-8'))
+WORKDAY_EVIDENCE = json.loads((ROOT / 'scripts/workday-vending-evidence.json').read_text(encoding='utf-8'))['buildings']
 # Reuse reviewed dining geometry for shared buildings so both outlines align.
 DINING_BUILDING_IDS = {
     647: 'way/153660065', 689: 'way/174188355', 490: 'way/37749300',
@@ -30,20 +32,29 @@ DINING_BUILDING_IDS = {
 
 
 def make_building(building, provider, dining):
-    if building['object_type'] not in ('building', 'building_partial'):
+    override = PRINTING_FOOTPRINT if building['id'] == PRINTING_FOOTPRINT['mapObjectId'] else None
+    if building['object_type'] not in ('building', 'building_partial') and not override:
         raise ValueError(f"Not a building: {building['id']}")
     coordinates = building['lnglat']
     if len(coordinates) != 2 or not all(math.isfinite(v) for v in coordinates) or not (-90 < coordinates[0] < -88 and 42 < coordinates[1] < 44):
         raise ValueError(f"Invalid campus coordinates: {building['id']}")
     dining_id = DINING_BUILDING_IDS.get(building['id'])
     geometry = building['geojson']
-    if geometry['type'] != 'Polygon':
+    if geometry['type'] != 'Polygon' and not override:
         raise ValueError(f"Unreviewed footprint geometry: {building['id']}")
     # Chadbourne vending does not establish machines across the dining complex.
     use_dining_rings = dining_id and building['id'] != 360
-    rings = dining[dining_id]['rings'] if use_dining_rings else geometry['coordinates']
+    rings = override['rings'] if override else dining[dining_id]['rings'] if use_dining_rings else geometry['coordinates']
     if not rings or any(len(ring) < 4 or ring[0] != ring[-1] or any(len(point) != 2 or not all(math.isfinite(v) for v in point) or not (-90 < point[0] < -88 and 42 < point[1] < 44) for point in ring) for ring in rings):
         raise ValueError(f"Invalid footprint rings: {building['id']}")
+    if override:
+        x, y = coordinates
+        inside = False
+        for a, b in zip(rings[0], rings[0][1:]):
+            if (a[1] > y) != (b[1] > y) and x < (b[0] - a[0]) * (y - a[1]) / (b[1] - a[1]) + a[0]:
+                inside = not inside
+        if not inside:
+            raise ValueError('Printing-services campus point no longer lies in its reviewed footprint')
     return {
         'id': f"vending-{building['id']}-{provider}", 'name': building['name'],
         'provider': provider, 'address': building.get('street_address') or '',
@@ -51,7 +62,8 @@ def make_building(building, provider, dining):
         'buildingNumber': building.get('building_number'), 'areas': [],
         'machineCount': 0, 'locationCount': 0, 'rings': rings,
         'diningBuildingId': dining_id,
-        'footprintSource': 'Reviewed dining footprint (OpenStreetMap)' if use_dining_rings else SOURCE,
+        'footprintSource': override['sourceUrl'] if override else 'Reviewed dining footprint (OpenStreetMap)' if use_dining_rings else SOURCE,
+        'buildingConfirmation': WORKDAY_EVIDENCE.get(str(building['id']), {}).get('confirmation'),
         'supplementalOnly': False, 'managementLabel': None,
         'supplementalAreas': [], 'supplementalEvidence': [], 'supplementalReferences': [],
     }
@@ -113,6 +125,12 @@ def main():
             buildings[building_key] = make_building(building, provider, dining)
         record = buildings[building_key]
         record["areas"] = sorted(set(record["areas"]) | group["names"])
+        if match.get('areaLabel'):
+            record['areas'] = sorted(set(record['areas']) | {match['areaLabel']})
+        if match.get('buildingAssignmentNote'):
+            record['buildingConfirmation'] = match['buildingAssignmentNote']
+        if match.get('managementLabel'):
+            record['managementLabel'] = match['managementLabel']
         record["machineCount"] += len(group["machines"])
         record["locationCount"] += 1
     data = {"period": args.period, "checked": args.checked, "coordinateSource": SOURCE, "coordinateMeaning": "Campus map host-building reference point, not an exact machine position.", "totalLocations": len(groups), "unresolved": unresolved, "buildings": sorted(buildings.values(), key=lambda b: b["name"])}

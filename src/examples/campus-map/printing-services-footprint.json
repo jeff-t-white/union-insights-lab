@@ -1,0 +1,33 @@
+{
+  "mapObjectId": 723,
+  "name": "Digital Publishing & Printing Services",
+  "address": "2109 S Stoughton Rd",
+  "workdayBuildingNumber": "1139",
+  "sourceUrl": "https://www.openstreetmap.org/way/438087108",
+  "checked": "2026-10-28",
+  "note": "Footprint contains the official UW campus map printing-services point; street address agrees with the reviewed Workday building record. Vendor ID 188 is not the Workday building ID.",
+  "rings": [
+    [
+      [
+        -89.3083616,
+        43.0678027
+      ],
+      [
+        -89.3076813,
+        43.0678177
+      ],
+      [
+        -89.3076652,
+        43.0674277
+      ],
+      [
+        -89.3083455,
+        43.0674127
+      ],
+      [
+        -89.3083616,
+        43.0678027
+      ]
+    ]
+  ]
+}
