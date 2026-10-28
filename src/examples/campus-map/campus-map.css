@@ -24,6 +24,8 @@
 .symbol-legend{display:flex;flex-wrap:wrap;gap:9px 20px;padding:9px 20px;background:#faf9f6;border:1px solid var(--line);border-bottom:0;color:#525652;font-size:11px;flex-shrink:0}
 .symbol-legend label{display:inline-flex;align-items:center;gap:6px;cursor:pointer}.symbol-legend legend{float:left;font-weight:600;margin-right:8px}.symbol-legend{margin:0;min-width:0}.symbol-legend input{width:17px;height:17px;accent-color:var(--marker-color,#525652)}.symbol-legend .provider-other{color:var(--marker-color)}
 .symbol-legend .location-symbol{width:15px;height:15px}
+.filter-actions{display:flex;align-items:center;gap:6px;flex-shrink:0}
+.campus-example .filter-actions button{font-size:11px;padding:4px 7px;background:transparent;border-color:#d6d6cf}
 
 .vending-scope{font-size:12px;color:var(--muted);margin-top:18px;max-width:950px}
 .vending-footprint{fill:var(--marker-color);fill-opacity:.12;fill-rule:evenodd;stroke:var(--marker-color);stroke-width:1.5;stroke-opacity:.75;vector-effect:non-scaling-stroke;stroke-linejoin:round;pointer-events:none}

@@ -108,6 +108,10 @@ export function CampusMap() {
     setSelectedId(null);
     setHoveredId(null);
   }
+  function clearSelection() {
+    if (hoverTimer.current) clearTimeout(hoverTimer.current);
+    setSelectedLocation(null); setSelectedId(null); setHoveredId(null);
+  }
 
   return (
     <div className="campus-example">
@@ -118,13 +122,19 @@ export function CampusMap() {
           <button type="button" onClick={reset}>Reset campus view</button>
         </div>
       </div>
-      <fieldset className="provider-filters"><legend>Dining providers</legend>{providers.map((provider) => <label key={provider.id} className={`provider-${provider.id}`}><input type="checkbox" checked={enabled.includes(provider.id)} onChange={() => {
+      <fieldset className="provider-filters"><legend>Dining providers</legend><div className="filter-actions">
+        <button type="button" aria-label="Select all dining providers" disabled={enabled.length === providers.length} onClick={() => { setEnabled(providers.map((provider) => provider.id)); clearSelection(); }}>Select all</button>
+        <button type="button" aria-label="Clear all dining providers" disabled={!enabled.length} onClick={() => { setEnabled([]); clearSelection(); }}>Clear all</button>
+      </div>{providers.map((provider) => <label key={provider.id} className={`provider-${provider.id}`}><input type="checkbox" checked={enabled.includes(provider.id)} onChange={() => {
         const next = enabled.includes(provider.id) ? enabled.filter((id) => id !== provider.id) : [...enabled, provider.id];
         setEnabled(next); setSelectedLocation(null); setSelectedId(null); setHoveredId(null);
       }} />{provider.label}</label>)}
         <span aria-live="polite">{visibleLocations.filter((location) => location.properties.kind !== 'vending').length} dining · {visibleLocations.filter((location) => location.properties.kind === 'vending').length} vending buildings shown</span>
       </fieldset>
-      <fieldset className="symbol-legend"><legend>Location types</legend>{locationKinds.map((kind) => <label key={kind} className={kind === 'vending' ? 'provider-other' : undefined}>
+      <fieldset className="symbol-legend"><legend>Location types</legend><div className="filter-actions">
+        <button type="button" aria-label="Select all location types" disabled={enabledKinds.length === locationKinds.length} onClick={() => { setEnabledKinds(locationKinds); clearSelection(); }}>Select all</button>
+        <button type="button" aria-label="Clear all location types" disabled={!enabledKinds.length} onClick={() => { setEnabledKinds([]); clearSelection(); }}>Clear all</button>
+      </div>{locationKinds.map((kind) => <label key={kind} className={kind === 'vending' ? 'provider-other' : undefined}>
         <input type="checkbox" checked={enabledKinds.includes(kind)} onChange={() => {
           const next = enabledKinds.includes(kind) ? enabledKinds.filter((item) => item !== kind) : [...enabledKinds, kind];
           setEnabledKinds(next); setSelectedLocation(null); setSelectedId(null); setHoveredId(null);
