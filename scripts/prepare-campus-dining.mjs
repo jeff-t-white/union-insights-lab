@@ -2,6 +2,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 const read = async (name) => JSON.parse(await readFile(`src/examples/campus-map/${name}`, 'utf8'));
 const [union, points, source, mobile, additional] = await Promise.all(['dining-buildings.json', 'campus-dining-points.json', 'buildings-source.json', 'mobile-ordering.json', 'additional-dining-points.json'].map(read));
 const rhetasComplex = await read('rhetas-complex-footprint.json');
+const electricEats = await read('electric-eats-stops.json');
 for (const ring of rhetasComplex.rings) {
   if (ring.length < 4 || String(ring[0]) !== String(ring.at(-1)) || ring.some(([lon, lat]) => !Number.isFinite(lon) || !Number.isFinite(lat) || lon < -89.5 || lon > -89.3 || lat < 43 || lat > 43.2)) throw new Error('Invalid Barnard–Chadbourne complex footprint');
 }
@@ -38,7 +39,7 @@ const groups = {
 const buildings = union.buildings.map((building) => ({ ...building, outlets: building.outlets.filter((outlet) => !excludedNames.has(outlet.name)).map((outlet) => ({ ...outlet, provider: 'union', locationUrl: outlet.sourceUrl })) })).filter((building) => building.outlets.length);
 // Keep staff-supplied coordinates separate from the published reference exports.
 // Supplemental coordinates win if a future source refresh includes the same name.
-const mergedPoints = new Map([...points.features, ...additional.features].map((point) => [point.properties.name, point]));
+const mergedPoints = new Map([...points.features, ...additional.features, ...electricEats.features].map((point) => [point.properties.name, point]));
 const locations = structuredClone([...mergedPoints.values()].filter((point) => !excludedNames.has(point.properties.name)));
 for (const location of locations) {
   const [lon, lat] = location.geometry.coordinates;

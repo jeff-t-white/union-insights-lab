@@ -7672,6 +7672,186 @@
         "logoPath": "dining-logos/2465.jpg",
         "orderUrl": "https://weborder.transactcampus.com/230/2465"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.43181784831499,
+          43.0873853307207
+        ]
+      },
+      "properties": {
+        "name": "Electric Eats · Eagle Heights Garden (Lot Z)",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/electric-eats/",
+        "sourceUrl": "https://www.housing.wisc.edu/2026/07/electric-eats-on-the-block/",
+        "coordinateMeaning": "Approximate published stop area, represented by the campus-map reference point for Eagle Heights Community Gardens. Not an exact parking spot or live truck location.",
+        "mobileStop": true,
+        "stopArea": "Eagle Heights Garden (Lot Z)",
+        "stopNotice": "Published July 2026 stop area for one mobile food truck. Service here is not currently confirmed; check Housing for the latest stops.",
+        "scheduleUrl": "https://www.housing.wisc.edu/dining/locations/electric-eats/#events",
+        "referenceMapObjectId": 495,
+        "referencePlace": "Eagle Heights Community Gardens",
+        "published": "2026-07-01",
+        "checked": "2026-10-28",
+        "sourceName": "Electric Eats · Eagle Heights Garden (Lot Z)",
+        "buildingId": null,
+        "buildingName": null,
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.43025562106574,
+          43.077531159841286
+        ]
+      },
+      "properties": {
+        "name": "Electric Eats · Across from HSLC",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/electric-eats/",
+        "sourceUrl": "https://www.housing.wisc.edu/2026/07/electric-eats-on-the-block/",
+        "coordinateMeaning": "Approximate published stop area, represented by the campus-map reference point for Health Sciences Learning Center. Not an exact parking spot or live truck location.",
+        "mobileStop": true,
+        "stopArea": "Across from HSLC",
+        "stopNotice": "Published July 2026 stop area for one mobile food truck. Service here is not currently confirmed; check Housing for the latest stops.",
+        "scheduleUrl": "https://www.housing.wisc.edu/dining/locations/electric-eats/#events",
+        "referenceMapObjectId": 397,
+        "referencePlace": "Health Sciences Learning Center",
+        "published": "2026-07-01",
+        "checked": "2026-10-28",
+        "sourceName": "Electric Eats · Across from HSLC",
+        "buildingId": null,
+        "buildingName": null,
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40989588159957,
+          43.074261857271395
+        ]
+      },
+      "properties": {
+        "name": "Electric Eats · Henry Mall",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/electric-eats/",
+        "sourceUrl": "https://www.housing.wisc.edu/2026/07/electric-eats-on-the-block/",
+        "coordinateMeaning": "Approximate published stop area, represented by the campus-map reference point for 445 Henry Mall. Not an exact parking spot or live truck location.",
+        "mobileStop": true,
+        "stopArea": "Henry Mall",
+        "stopNotice": "Published July 2026 stop area for one mobile food truck. Service here is not currently confirmed; check Housing for the latest stops.",
+        "scheduleUrl": "https://www.housing.wisc.edu/dining/locations/electric-eats/#events",
+        "referenceMapObjectId": 387,
+        "referencePlace": "445 Henry Mall",
+        "published": "2026-07-01",
+        "checked": "2026-10-28",
+        "sourceName": "Electric Eats · Henry Mall",
+        "buildingId": null,
+        "buildingName": null,
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.42071135717248,
+          43.07590543787955
+        ]
+      },
+      "properties": {
+        "name": "Electric Eats · Vet Med Plaza",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/electric-eats/",
+        "sourceUrl": "https://www.housing.wisc.edu/2026/07/electric-eats-on-the-block/",
+        "coordinateMeaning": "Approximate published stop area, represented by the campus-map reference point for Veterinary Medicine North. Not an exact parking spot or live truck location.",
+        "mobileStop": true,
+        "stopArea": "Vet Med Plaza",
+        "stopNotice": "Published July 2026 stop area for one mobile food truck. Service here is not currently confirmed; check Housing for the latest stops.",
+        "scheduleUrl": "https://www.housing.wisc.edu/dining/locations/electric-eats/#events",
+        "referenceMapObjectId": 721,
+        "referencePlace": "Veterinary Medicine North",
+        "published": "2026-07-01",
+        "checked": "2026-10-28",
+        "sourceName": "Electric Eats · Vet Med Plaza",
+        "buildingId": null,
+        "buildingName": null,
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40525869993579,
+          43.076528947135394
+        ]
+      },
+      "properties": {
+        "name": "Electric Eats · Observatory Drive near Social Sciences",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/electric-eats/",
+        "sourceUrl": "https://www.housing.wisc.edu/2026/07/electric-eats-on-the-block/",
+        "coordinateMeaning": "Approximate published stop area, represented by the campus-map reference point for Sewell Social Sciences. Not an exact parking spot or live truck location.",
+        "mobileStop": true,
+        "stopArea": "Observatory Drive near Social Sciences",
+        "stopNotice": "Published July 2026 stop area for one mobile food truck. Service here is not currently confirmed; check Housing for the latest stops.",
+        "scheduleUrl": "https://www.housing.wisc.edu/dining/locations/electric-eats/#events",
+        "referenceMapObjectId": 466,
+        "referencePlace": "Sewell Social Sciences",
+        "published": "2026-07-01",
+        "checked": "2026-10-28",
+        "sourceName": "Electric Eats · Observatory Drive near Social Sciences",
+        "buildingId": null,
+        "buildingName": null,
+        "logoPath": null,
+        "orderUrl": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.39836323641278,
+          43.07121066456369
+        ]
+      },
+      "properties": {
+        "name": "Electric Eats · East Campus Mall near Gordon",
+        "provider": "housing",
+        "locationUrl": "https://www.housing.wisc.edu/dining/locations/electric-eats/",
+        "sourceUrl": "https://www.housing.wisc.edu/2026/07/electric-eats-on-the-block/",
+        "coordinateMeaning": "Approximate published stop area, represented by the campus-map reference point for Gordon Dining and Event Center. Not an exact parking spot or live truck location.",
+        "mobileStop": true,
+        "stopArea": "East Campus Mall near Gordon",
+        "stopNotice": "Published July 2026 stop area for one mobile food truck. Service here is not currently confirmed; check Housing for the latest stops.",
+        "scheduleUrl": "https://www.housing.wisc.edu/dining/locations/electric-eats/#events",
+        "referenceMapObjectId": 669,
+        "referencePlace": "Gordon Dining and Event Center",
+        "published": "2026-07-01",
+        "checked": "2026-10-28",
+        "sourceName": "Electric Eats · East Campus Mall near Gordon",
+        "buildingId": null,
+        "buildingName": null,
+        "logoPath": null,
+        "orderUrl": null
+      }
     }
   ]
 }

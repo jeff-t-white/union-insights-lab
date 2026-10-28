@@ -54,6 +54,15 @@ export function VendingDetails({ location }: { location: DiningLocation }) {
   </>;
 }
 
+export function FoodTruckDetails({ location }: { location: DiningLocation }) {
+  if (!location.properties.mobileStop) return null;
+  return <>
+    <p>{location.properties.stopNotice}</p>
+    <p>Approximate area reference near {location.properties.referencePlace}; not the truck’s exact parking position.</p>
+    <a href={location.properties.sourceUrl}>Published July 2026 stop list ↗</a>
+  </>;
+}
+
 export function DiningMarkers({ locations, projection, width, height, selected, onSelect, onActivate, moving, popupRoot, offsetVending }: {
   locations: DiningLocation[]; projection: GeoProjection; width: number; height: number;
   onActivate: () => void; moving: boolean; popupRoot: HTMLElement | null;
@@ -125,9 +134,10 @@ export function DiningMarkers({ locations, projection, width, height, selected, 
       <h3>{active.properties.name}</h3>
       <p>{active.properties.managementLabel ?? `${active.properties.kind === 'vending' ? 'Managed by: ' : ''}${providers.find((item) => item.id === active.properties.provider)?.label}`}</p><p>{active.properties.buildingName}</p>
       {active.properties.kind === 'vending' && <VendingDetails location={active} />}
+      <FoodTruckDetails location={active} />
       {active.properties.logoPath && <img className="location-logo" src={`${import.meta.env.BASE_URL}${active.properties.logoPath}`} alt="" width="64" height="64" />}
       {active.properties.orderUrl && <p><a href={active.properties.orderUrl}>Mobile ordering ↗</a></p>}
-      <a href={active.properties.locationUrl}>{active.properties.kind === 'vending' ? 'Host building on UW campus map ↗' : 'Location information & hours ↗'}</a>
+      <a href={active.properties.locationUrl}>{active.properties.kind === 'vending' ? 'Host building on UW campus map ↗' : active.properties.mobileStop ? 'Electric Eats information & latest events ↗' : 'Location information & hours ↗'}</a>
     </aside>, popupRoot)}
   </>;
 }

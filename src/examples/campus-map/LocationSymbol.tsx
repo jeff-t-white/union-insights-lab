@@ -1,11 +1,12 @@
-export type LocationKind = 'coffee' | 'cafeteria' | 'restaurant' | 'market' | 'vending';
+export type LocationKind = 'coffee' | 'cafeteria' | 'restaurant' | 'market' | 'food-truck' | 'vending';
 
 export const symbolLabels: Record<LocationKind, string> = {
   coffee: 'Café / coffee', cafeteria: 'Dining halls / all you care to eat',
-  restaurant: 'Restaurant / other dining', market: 'Market / convenience', vending: 'Vending',
+  restaurant: 'Restaurant / other dining', market: 'Market / convenience', 'food-truck': 'Food truck stops', vending: 'Vending',
 };
 
 export function diningKind(name: string, provider: string): LocationKind {
+  if (name.startsWith('Electric Eats · ')) return 'food-truck';
   if (name === 'Oros Executive Dining Room' || /cafeteria/i.test(name) || (provider === 'housing' && /^(Carson’s|Four Lakes|Gordon Avenue|Liz’s|Rheta’s) Market$/.test(name))) return 'cafeteria';
   if (/caf[eé]|coffee|peets|starbucks|java|bean & creamery|ground truth|prairie fire|revive/i.test(name)) return 'coffee';
   if (/market|flamingo run/i.test(name)) return 'market';
@@ -19,6 +20,7 @@ export function LocationSymbol({ kind }: { kind: LocationKind }) {
     {kind === 'cafeteria' && <><path d="M4 12h16l-3 3H7ZM2 20h20M11 8c-4-3 4-3 0-6" /></>}
     {kind === 'restaurant' && <><path d="M5 3v6m3-6v6M2 3v6a3 3 0 0 0 6 0M5 12v9M19 3c-4 3-5 7-5 10h5m0-10v18" /></>}
     {kind === 'market' && <><path d="M5 8h14l2 13H3ZM8 8V6a4 4 0 0 1 8 0v2" /></>}
+    {kind === 'food-truck' && <><path d="M2 6h12v11H2ZM14 10h4l4 4v3h-8M5 10h6" /><circle cx="6" cy="18" r="2" /><circle cx="18" cy="18" r="2" /></>}
     {kind === 'vending' && <><rect x="3" y="2" width="18" height="20" rx="2" /><path d="m7 7 3.5 10L14 7m3 4h1m-1 4h1" /></>}
   </svg>;
 }
