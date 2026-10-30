@@ -1,8 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="300" viewBox="0 0 360 300">
+  <filter id="minerals" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency=".035 .055" numOctaves="2" seed="19" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer>
+      <feFuncR type="table" tableValues=".18 .75"/>
+      <feFuncG type="table" tableValues=".20 .74"/>
+      <feFuncB type="table" tableValues=".17 .69"/>
+      <feFuncA type="linear" slope=".16"/>
+    </feComponentTransfer>
+  </filter>
   <filter id="grain" x="0" y="0" width="100%" height="100%">
     <feTurbulence type="fractalNoise" baseFrequency=".58" numOctaves="3" stitchTiles="stitch"/>
     <feColorMatrix type="saturate" values="0"/>
-    <feComponentTransfer><feFuncA type="linear" slope=".12"/></feComponentTransfer>
+    <feComponentTransfer><feFuncA type="linear" slope=".08"/></feComponentTransfer>
   </filter>
-  <rect width="180" height="180" filter="url(#grain)"/>
+  <rect width="360" height="300" filter="url(#minerals)"/>
+  <rect width="360" height="300" filter="url(#grain)"/>
 </svg>

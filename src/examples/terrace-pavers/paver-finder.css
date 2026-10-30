@@ -46,22 +46,24 @@
 .paver-result-heading h2 { font-size:1.6rem; margin:0; }
 .paver-result-heading p { font-size:.85rem; color:#607052; }
 .paver-result-heading > span { font-size:.7rem; max-width:230px; color:#6d765f; }
-.paver-record-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; }
+.paver-record-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr)); gap:1rem; }
 .paver-record { display:flex; flex-direction:column; background:#fff; border:1px solid #d2d4ca; border-radius:3px; overflow:hidden; min-width:0; }
 .paver-record.is-selected { border-color:#a78335; box-shadow:0 0 0 2px #b48b3330; }
-.paver-record-stone { display:grid; place-items:center; flex:1; min-height:215px; padding:1.6rem 1.2rem; border-bottom:1px solid #ced0c6; background-color:#e5e4dc; background-image:url('./stone-grain.svg'),radial-gradient(ellipse at 20% 30%,#ffffff45,transparent 60%),linear-gradient(125deg,#e9e7df,#dedfd7 55%,#e5e3da); background-size:180px 180px,auto,auto; background-position:0 0; box-shadow:inset 0 1px 0 #ffffff80; }
+.paver-record-stone { display:grid; place-items:center; flex:1; min-height:215px; padding:1.6rem 1.2rem; border-bottom:1px solid #ced0c6; background-color:#e5e4dc; background-image:url('./stone-grain.svg'),radial-gradient(ellipse at 20% 30%,#ffffff45,transparent 60%),linear-gradient(125deg,#e9e7df,#dedfd7 55%,#e5e3da); background-size:360px 300px,auto,auto; background-position:0 0; box-shadow:inset 0 1px 0 #ffffff80; }
 .paver-record:nth-child(3n+2) .paver-record-stone { background-color:#e1e3dd; background-blend-mode:multiply,normal,luminosity; }
-.paver-record-stone pre { margin:0; width:100%; color:#383c38; text-align:center; font:500 .86rem/1.6 'Arial Narrow',Arial,sans-serif; letter-spacing:.035em; white-space:pre-wrap; overflow-wrap:anywhere; text-shadow:0 1px 0 #ffffff65; }
-.paver-record-footer { padding:.95rem 1.1rem .85rem; }
+.paver-record-stone pre { margin:0; width:100%; color:#30332e; text-align:center; font:600 .94rem/1.45 'Arial Narrow',Arial,sans-serif; letter-spacing:.025em; white-space:pre-wrap; overflow-wrap:anywhere; text-shadow:none; }
+.paver-record-footer { padding:.8rem 1rem .7rem; }
 .paver-record-meta { display:flex; align-items:center; flex-wrap:wrap; gap:.65rem; font-size:.7rem; color:#73786c; }
-.paver-zone-badge { display:inline-flex; gap:.35rem; align-items:center; padding:.25rem .5rem; border-radius:3px; background:#edf1e7; color:#37513b; }
+.paver-zone-badge { display:inline-flex; gap:.35rem; align-items:center; min-height:32px; padding:.25rem .5rem; border:1px solid transparent; border-radius:3px; background:#edf1e7; color:#37513b; font:inherit; cursor:pointer; }
+.paver-zone-badge:hover { background:#e0e9d8; border-color:#a3b597; }
+.paver-zone-badge:focus-visible { outline:2px solid #31573a; outline-offset:2px; }
 .paver-zone-badge span { font-size:.65rem; }
 .paver-zone-badge strong { font-weight:700; font-size:.75rem; }
 .paver-photo-badge { margin-left:auto; font-size:.65rem; color:#806522; }
-.paver-record-purchaser { display:flex; flex-wrap:wrap; align-items:baseline; gap:.35rem; font-size:.76rem; margin:.75rem 0; line-height:1.5; color:#364834; }
+.paver-record-purchaser { display:flex; flex-wrap:wrap; align-items:baseline; gap:.35rem; font-size:.76rem; margin:.6rem 0 0; line-height:1.5; color:#364834; }
 .paver-record-purchaser > span { color:#7a8073; font-size:.68rem; }
 .paver-record-purchaser strong { font-weight:500; }
-.paver-record-actions { display:flex; flex-wrap:wrap; gap:.45rem; border-top:1px solid #e6e9e0; padding-top:.65rem; }
+.paver-record-actions { display:flex; flex-wrap:wrap; gap:.45rem; border-top:1px solid #e6e9e0; margin-top:.7rem; padding-top:.65rem; }
 .paver-record-actions button { border:1px solid #c7d0bf; border-radius:3px; background:#fafbf7; padding:.4rem .6rem; cursor:pointer; color:#36543a; font-size:.7rem; text-align:left; min-height:34px; }
 .paver-record-actions button:hover { background:#eaf0e3; border-color:#91a082; }
 .paver-record-actions button:focus-visible { outline:2px solid #31573a; outline-offset:2px; }
@@ -76,8 +78,8 @@
 .paver-reference > a { display:block; max-width:680px; }
 .paver-reference img { display:block; width:100%; height:auto; }
 .paver-reference span { display:block; margin-top:.5rem; }
-@media(max-width:1050px) { .paver-find-form { grid-template-columns:repeat(3,minmax(0,1fr)); } .paver-main-query { grid-column:span 2; } .paver-zone-layout { grid-template-columns:minmax(0,1fr) 250px; } .paver-zone-layout > div { padding:1rem; } .paver-record-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
-@media(max-width:700px) { .paver-catalog-heading,.paver-catalog-heading > div { align-items:start; flex-direction:column; gap:.5rem; } .paver-catalog-heading p { margin:0; } .paver-find-form { grid-template-columns:repeat(2,minmax(0,1fr)); padding:1rem; } .paver-main-query { grid-column:1/-1; } .paver-zone-layout { grid-template-columns:1fr; } .paver-zone-info { border-left:0; border-top:1px solid #d4dccd; padding:1.2rem; } .paver-zone-stat { margin:1rem 0; padding:.7rem 0; } .paver-zone-stat strong { font-size:2rem; } .paver-record-grid { grid-template-columns:1fr; } .paver-result-heading { flex-direction:column; align-items:start; } .paver-result-heading > span { max-width:none; } .paver-view-tabs button { padding:.8rem 1rem; } }
+@media(max-width:1050px) { .paver-find-form { grid-template-columns:repeat(3,minmax(0,1fr)); } .paver-main-query { grid-column:span 2; } .paver-zone-layout { grid-template-columns:minmax(0,1fr) 250px; } .paver-zone-layout > div { padding:1rem; } }
+@media(max-width:700px) { .paver-catalog-heading,.paver-catalog-heading > div { align-items:start; flex-direction:column; gap:.5rem; } .paver-catalog-heading p { margin:0; } .paver-find-form { grid-template-columns:repeat(2,minmax(0,1fr)); padding:1rem; } .paver-main-query { grid-column:1/-1; } .paver-zone-layout { grid-template-columns:1fr; } .paver-zone-info { border-left:0; border-top:1px solid #d4dccd; padding:1.2rem; } .paver-zone-stat { margin:1rem 0; padding:.7rem 0; } .paver-zone-stat strong { font-size:2rem; } .paver-result-heading { flex-direction:column; align-items:start; } .paver-result-heading > span { max-width:none; } .paver-view-tabs button { padding:.8rem 1rem; } }
 
 .paver-all-zones { margin: 0 0 1rem; }
 .paver-all-zones button { border:1px solid #b6c2af; border-radius:3px; padding:.65rem .9rem; background:#fff; color:#274c36; cursor:pointer; font-size:.8rem; }
