@@ -68,3 +68,6 @@
 .paver-reference span { display:block; margin-top:.5rem; }
 @media(max-width:1050px) { .paver-find-form { grid-template-columns:repeat(3,minmax(0,1fr)); } .paver-main-query { grid-column:span 2; } .paver-zone-layout { grid-template-columns:minmax(0,1fr) 250px; } .paver-zone-layout > div { padding:1rem; } .paver-record-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media(max-width:700px) { .paver-catalog-heading,.paver-catalog-heading > div { align-items:start; flex-direction:column; gap:.5rem; } .paver-catalog-heading p { margin:0; } .paver-find-form { grid-template-columns:repeat(2,minmax(0,1fr)); padding:1rem; } .paver-main-query { grid-column:1/-1; } .paver-zone-layout { grid-template-columns:1fr; } .paver-zone-info { border-left:0; border-top:1px solid #d4dccd; padding:1.2rem; } .paver-zone-stat { margin:1rem 0; padding:.7rem 0; } .paver-zone-stat strong { font-size:2rem; } .paver-record-grid { grid-template-columns:1fr; } .paver-result-heading { flex-direction:column; align-items:start; } .paver-result-heading > span { max-width:none; } .paver-view-tabs button { padding:.8rem 1rem; } }
+
+.paver-all-zones { margin: 0 0 1rem; }
+.paver-all-zones button { border:1px solid #b6c2af; border-radius:3px; padding:.65rem .9rem; background:#fff; color:#274c36; cursor:pointer; font-size:.8rem; }
