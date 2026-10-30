@@ -19,13 +19,17 @@ def main():
     parser.add_argument('--out-dir', required=True, type=pathlib.Path)
     parser.add_argument('--parse-only', action='store_true', help='Reparse cached OCR without running recognition')
     parser.add_argument('--accounts', nargs='+', default=['1026', '1028', '1025'])
+    parser.add_argument('--prefix', default='P12', help='Statement filename prefix; caches must use a separate directory per period')
+    parser.add_argument('--statement', action='append', default=[], metavar='ACCOUNT=FILENAME', help='Explicit filename override; account comes from document contents, not its filename')
     args = parser.parse_args()
     args.out_dir.mkdir(parents=True, exist_ok=True)
     ocr = None if args.parse_only else RapidOCR()
+    filenames = dict(value.split('=', 1) for value in args.statement)
     for account, suffix in [('1026', 'Housing'), ('1028', 'Hist Soc'), ('1025', 'UW Campus')]:
         if account not in args.accounts:
             continue
-        document = pymupdf.open(args.folder / f'P12 Commission Statement {account} {suffix}.pdf')
+        filename = filenames.get(account, f'{args.prefix} Commission Statement {account} {suffix}.pdf')
+        document = pymupdf.open(args.folder / filename)
         records = {}
         current = None
         for index, page in enumerate(document):
@@ -53,7 +57,7 @@ def main():
             for line in lines:
                 parts = sorted(line['parts'])
                 text = ' '.join(part[1] for part in parts)
-                match = re.search(r'locati[o0]n[\s:_-]*([0-9OoIlL|]{3})\s*(.+)', text, re.I)
+                match = re.search(r'locati[o0]n[\s:_()\-]*([0-9OoIlL|]{3})\s*(.+)', text, re.I)
                 if match:
                     loc = str(int(match[1].translate(str.maketrans('OoIlL|', '001111'))))
                     current = loc

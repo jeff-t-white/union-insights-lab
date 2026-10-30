@@ -14732,7 +14732,7 @@
       ],
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
-      "buildingConfirmation": "Host building assigned to the main Historical Society building from local guidance; provider master-list confirmation pending.",
+      "buildingConfirmation": "Local guidance identifies the main Historical Society building. The August and September commission statements corroborate 816 State Street and report the first- and third-floor areas.",
       "supplementalOnly": false,
       "managementLabel": "Historical Society vending account",
       "supplementalAreas": [],

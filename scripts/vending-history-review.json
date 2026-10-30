@@ -1,0 +1,51 @@
+{
+  "checked": "2026-10-30",
+  "mapPeriod": "September 2026",
+  "result": "No additional unique host buildings established; nine sales locations remain unresolved. Earlier report counts are not merged into the September map.",
+  "sourceNotes": [
+    "P10 PDFs end July 31, 2026, although the matching workbook filename says June 2026. All 74 supplied statement groups match that workbook exactly.",
+    "P10 Historical Society statement was not supplied; its two workbook locations/four machines are excluded from PDF-validation coverage.",
+    "P11 Historical Society filename says 1026, but its document header confirms account 1028; all three P11 statements end August 31, 2026.",
+    "All supplied P10/P11 statement machine lists match their respective workbooks after visual correction of three OCR issues.",
+    "Earlier workbook area names and lookup-sheet names add no new identities. Different monthly machine lists reflect reported sales activity and do not establish installations, removals, or physical moves.",
+    "Historical Society account addresses in both August and September corroborate 816 State Street."
+  ],
+  "months": [
+    {
+      "label": "P10 (PDF: July 2026; workbook filename: June)",
+      "workbook": "P10-UW Commissions June 2026.xlsx",
+      "reportedLocations": 76,
+      "reportedMachines": 158,
+      "statementLocationsVerified": 74,
+      "statementMachinesVerified": 154,
+      "workbookLocationsWithoutStatement": 2,
+      "locationsAbsentFromBaseline": 0,
+      "changedWorkbookNameGroups": 0,
+      "differentMachineListGroups": 5
+    },
+    {
+      "label": "August 2026",
+      "workbook": "P11-UW Commissions Aug 2026.xlsx",
+      "reportedLocations": 101,
+      "reportedMachines": 215,
+      "statementLocationsVerified": 101,
+      "statementMachinesVerified": 215,
+      "workbookLocationsWithoutStatement": 0,
+      "locationsAbsentFromBaseline": 0,
+      "changedWorkbookNameGroups": 0,
+      "differentMachineListGroups": 6
+    },
+    {
+      "label": "September 2026",
+      "workbook": "P12-UW Commissions Sept 2026.xlsx",
+      "reportedLocations": 111,
+      "reportedMachines": 237,
+      "statementLocationsVerified": 111,
+      "statementMachinesVerified": 237,
+      "workbookLocationsWithoutStatement": 0,
+      "locationsAbsentFromBaseline": 0,
+      "changedWorkbookNameGroups": 0,
+      "differentMachineListGroups": 0
+    }
+  ]
+}

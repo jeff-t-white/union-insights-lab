@@ -1243,5 +1243,22 @@
       "machineCount": 2,
       "machineSignature": "6322266ec29e85171b8d68c053f8eb436c4c30ce0f4666d3846a845dbb92b227"
     }
-  ]
+  ],
+  "accountAddressEvidence": {
+    "1028": {
+      "address": "816 State Street",
+      "periods": [
+        "August 2026",
+        "September 2026"
+      ],
+      "note": "Visually reviewed account headers corroborate local guidance for the host; account billing/ship-to address alone is not an automatic building match.",
+      "sources": [
+        "P11 Commission Statement 1026 UW Historical Society.pdf",
+        "P12 Commission Statement 1028 Hist Soc.pdf"
+      ],
+      "pages": [
+        1
+      ]
+    }
+  }
 }

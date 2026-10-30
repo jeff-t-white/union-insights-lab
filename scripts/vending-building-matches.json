@@ -1002,8 +1002,8 @@
     "location": "1",
     "mapObjectId": 401,
     "expectedSourceNames": [],
-    "reason": "User-provided guidance assigns both Historical Society vendor locations to the main building at 816 State St; provider master-list confirmation pending.",
-    "buildingAssignmentNote": "Host building assigned to the main Historical Society building from local guidance; provider master-list confirmation pending.",
+    "reason": "Local guidance identifies the main building; August and September commission account headers independently list 816 State Street, with first- and third-floor location headings.",
+    "buildingAssignmentNote": "Local guidance identifies the main Historical Society building. The August and September commission statements corroborate 816 State Street and report the first- and third-floor areas.",
     "managementLabel": "Historical Society vending account",
     "areaLabel": "Vendor location 1 (exact area unconfirmed)"
   },
@@ -1012,8 +1012,8 @@
     "location": "2",
     "mapObjectId": 401,
     "expectedSourceNames": [],
-    "reason": "User-provided guidance assigns both Historical Society vendor locations to the main building at 816 State St; provider master-list confirmation pending.",
-    "buildingAssignmentNote": "Host building assigned to the main Historical Society building from local guidance; provider master-list confirmation pending.",
+    "reason": "Local guidance identifies the main building; August and September commission account headers independently list 816 State Street, with first- and third-floor location headings.",
+    "buildingAssignmentNote": "Local guidance identifies the main Historical Society building. The August and September commission statements corroborate 816 State Street and report the first- and third-floor areas.",
     "managementLabel": "Historical Society vending account",
     "areaLabel": "Vendor location 2 (exact area unconfirmed)"
   }
