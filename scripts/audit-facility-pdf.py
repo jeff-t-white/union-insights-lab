@@ -38,9 +38,18 @@ def main():
         for index, page in enumerate(document):
             # Reuse the page's text cache; rebuilding it for every cell is costly.
             textpage = page.get_textpage()
+            words = page.get_text('words', textpage=textpage)
             for table in page.find_tables().tables:
                 for row in table.rows:
-                    fields = [' '.join(page.get_textbox(pymupdf.Rect(cell), textpage=textpage).split()) if cell else '' for cell in row.cells]
+                    fields = []
+                    for cell in row.cells:
+                        if cell is None:
+                            fields.append('')
+                            continue
+                        x0, y0, x1, y1 = cell
+                        contained = [word for word in words if x0 <= (word[0] + word[2]) / 2 < x1 and y0 <= (word[1] + word[3]) / 2 < y1]
+                        contained.sort(key=lambda word: (round(word[1], 1), word[0]))
+                        fields.append(' '.join(word[4] for word in contained))
                     if len(fields) == 6 and re.fullmatch(r'\d{4}[A-Z]?', fields[0]):
                         facilities.append(dict(zip(['facility', 'name', 'address', 'city', 'state', 'zip'], fields)) | {'pdf_page': index + 1})
     if not facilities or len({f['facility'] for f in facilities}) != len(facilities):
@@ -72,6 +81,10 @@ def main():
         host = by_map_id.get(match['mapObjectId'])
         facility = by_code.get(host['buildingNumber']) if host else None
         supplemental.append({'vendor_location_id': match['location'], 'vendor_name': match['name'], 'map_host': host['name'] if host else '', 'facility_number': facility['facility'] if facility else '', 'pdf_page': facility['pdf_page'] if facility else '', 'status': 'mapped_host_verified_in_pdf' if facility else 'pending_vendor_building_confirmation', 'notes': match.get('reason', 'Previously reviewed named host; no new machine count inferred.')})
+    reviewed_keys = {(row['vendor_location_id'], row['vendor_name']) for row in supplemental}
+    for entry in data['supplementalPending']:
+        if (entry['location'], entry['name']) not in reviewed_keys:
+            supplemental.append({'vendor_location_id': entry['location'], 'vendor_name': entry['name'] or '', 'map_host': '', 'facility_number': '', 'pdf_page': '', 'status': 'pending_vendor_building_confirmation', 'notes': entry['reason']})
     write_csv(args.out_dir / 'facility-list-private.csv', facilities)
     write_csv(args.out_dir / 'sales-location-audit.csv', audit)
     write_csv(args.out_dir / 'supplemental-location-audit.csv', supplemental)
