@@ -1,149 +1,73 @@
 {
   "period": "September 2026",
   "checked": "2026-10-30",
+  "commissionChecked": "2026-10-30",
   "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
-  "coordinateMeaning": "Campus map host-building reference point, not an exact machine position.",
+  "coordinateMeaning": "Host-building reference point, not an exact machine position.",
   "totalLocations": 111,
   "unresolved": [
     {
       "account": "1025",
       "location": "39",
-      "reason": "Medical Science could refer to multiple campus buildings."
-    },
-    {
-      "account": "1025",
-      "location": "86",
-      "reason": "No usable location name; await provider master list."
+      "name": "Medical Science-Basement",
+      "machineCount": 2,
+      "reason": "Statement names this location 'Medical Science-Basement', but a unique host building is not confirmed."
     },
     {
       "account": "1025",
       "location": "91",
-      "reason": "Physical Science Lab PS1 is not identified in the campus map export."
-    },
-    {
-      "account": "1025",
-      "location": "118",
-      "reason": "Source names conflict: Shell versus Sterling Hall."
+      "name": "Phvsical Science Lab-Psl",
+      "machineCount": 2,
+      "reason": "Statement names this location 'Phvsical Science Lab-Psl', but a unique host building is not confirmed."
     },
     {
       "account": "1025",
       "location": "125",
-      "reason": "Educational Hall is ambiguous between education buildings."
-    },
-    {
-      "account": "1025",
-      "location": "132",
-      "reason": "No usable location name; await provider master list."
+      "name": "Educational Hall",
+      "machineCount": 2,
+      "reason": "Statement names this location 'Educational Hall', but a unique host building is not confirmed."
     },
     {
       "account": "1025",
       "location": "162",
-      "reason": "Bio-Chem East is ambiguous between biochemistry buildings."
+      "name": "Bio-Chem East",
+      "machineCount": 2,
+      "reason": "Statement names this location 'Bio-Chem East', but a unique host building is not confirmed."
     },
     {
       "account": "1025",
       "location": "179",
-      "reason": "ROTC building is not specified."
-    },
-    {
-      "account": "1025",
-      "location": "190",
-      "reason": "No usable location name; await provider master list."
+      "name": "Rotc",
+      "machineCount": 2,
+      "reason": "Statement names this location 'Rotc', but a unique host building is not confirmed."
     },
     {
       "account": "1025",
       "location": "191",
-      "reason": "No usable location name; await provider master list."
+      "name": "Uw System Administration",
+      "machineCount": 2,
+      "reason": "Statement names this location 'Uw System Administration', but a unique host building is not confirmed."
     },
     {
       "account": "1025",
       "location": "193",
-      "reason": "Bio Chem Delli does not identify a unique biochemistry building."
-    },
-    {
-      "account": "1025",
-      "location": "196",
-      "reason": "No usable location name; await provider master list."
-    },
-    {
-      "account": "1025",
-      "location": "197",
-      "reason": "No usable location name; await provider master list."
-    },
-    {
-      "account": "1026",
-      "location": "1",
-      "reason": "No usable location name; await provider master list."
-    },
-    {
-      "account": "1026",
-      "location": "2",
-      "reason": "No usable location name; await provider master list."
-    },
-    {
-      "account": "1026",
-      "location": "3",
-      "reason": "No usable location name; await provider master list."
-    },
-    {
-      "account": "1026",
-      "location": "4",
-      "reason": "No usable location name; await provider master list."
-    },
-    {
-      "account": "1026",
-      "location": "9",
-      "reason": "No usable location name; await provider master list."
+      "name": "Uw Campus Bio Chem Deli",
+      "machineCount": 2,
+      "reason": "Statement names this location 'Uw Campus Bio Chem Deli', but a unique host building is not confirmed."
     },
     {
       "account": "1026",
       "location": "11",
-      "reason": "No usable location name; await provider master list."
-    },
-    {
-      "account": "1026",
-      "location": "13",
-      "reason": "No usable location name; await provider master list."
-    },
-    {
-      "account": "1026",
-      "location": "14",
-      "reason": "No usable location name; await provider master list."
-    },
-    {
-      "account": "1026",
-      "location": "15",
-      "reason": "No usable location name; await provider master list."
-    },
-    {
-      "account": "1026",
-      "location": "16",
-      "reason": "No usable location name; await provider master list."
+      "name": "Kronshage (specific house unconfirmed)",
+      "machineCount": 2,
+      "reason": "Statement names this location 'Kronshage (specific house unconfirmed)', but a unique host building is not confirmed."
     },
     {
       "account": "1026",
       "location": "17",
-      "reason": "No usable location name; await provider master list."
-    },
-    {
-      "account": "1026",
-      "location": "20",
-      "reason": "No usable location name; await provider master list."
-    },
-    {
-      "account": "1026",
-      "location": "21",
-      "reason": "No usable location name; await provider master list."
-    },
-    {
-      "account": "1026",
-      "location": "25",
-      "reason": "No usable location name; await provider master list."
-    },
-    {
-      "account": "1026",
-      "location": "28",
-      "reason": "No usable location name; await provider master list."
+      "name": "Eagle Heights — 1st floor (building unconfirmed)",
+      "machineCount": 2,
+      "reason": "Statement names this location 'Eagle Heights â€” 1st floor (building unconfirmed)', but a unique host building is not confirmed."
     }
   ],
   "buildings": [
@@ -157,6 +81,7 @@
         43.06819743717501
       ],
       "mapObjectId": 548,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "1078",
       "areas": [
         "21 N Park/Welc Center 6Fl",
@@ -307,6 +232,7 @@
         43.068539090148676
       ],
       "mapObjectId": 697,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0124",
       "areas": [
         "30 North Mills-4th Fl",
@@ -373,6 +299,7 @@
         43.07238842928146
       ],
       "mapObjectId": 525,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0467",
       "areas": [
         "Student Act. Ctr 3rd Fl",
@@ -430,6 +357,196 @@
       "supplementalReferences": []
     },
     {
+      "id": "vending-334-housing",
+      "name": "Adams Residence Hall",
+      "provider": "housing",
+      "address": "1520 Tripp Cir.",
+      "coordinates": [
+        -89.4119889394122,
+        43.07788036306996
+      ],
+      "mapObjectId": 334,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingNumber": "0564",
+      "areas": [
+        "Adams — Noyes basement"
+      ],
+      "machineCount": 2,
+      "locationCount": 1,
+      "rings": [
+        [
+          [
+            -89.4123325,
+            43.077701001
+          ],
+          [
+            -89.4121883,
+            43.077701001
+          ],
+          [
+            -89.4121883,
+            43.077646301
+          ],
+          [
+            -89.4120134,
+            43.077646301
+          ],
+          [
+            -89.4120134,
+            43.077578001
+          ],
+          [
+            -89.4119351,
+            43.077578001
+          ],
+          [
+            -89.4119351,
+            43.077604101
+          ],
+          [
+            -89.4119023,
+            43.077604101
+          ],
+          [
+            -89.4119023,
+            43.077548701
+          ],
+          [
+            -89.4117407,
+            43.077548701
+          ],
+          [
+            -89.4117407,
+            43.077649401
+          ],
+          [
+            -89.4117265,
+            43.077649401
+          ],
+          [
+            -89.4117265,
+            43.077729301
+          ],
+          [
+            -89.4117407,
+            43.077729301
+          ],
+          [
+            -89.4117407,
+            43.078035701
+          ],
+          [
+            -89.4117498,
+            43.078035701
+          ],
+          [
+            -89.4117498,
+            43.078065201
+          ],
+          [
+            -89.4117107,
+            43.078065201
+          ],
+          [
+            -89.4117107,
+            43.078190201
+          ],
+          [
+            -89.4118125,
+            43.078190201
+          ],
+          [
+            -89.4118125,
+            43.078196301
+          ],
+          [
+            -89.4119343,
+            43.078196301
+          ],
+          [
+            -89.4119343,
+            43.078190201
+          ],
+          [
+            -89.4121973,
+            43.078190201
+          ],
+          [
+            -89.4121973,
+            43.078065801
+          ],
+          [
+            -89.4120138,
+            43.078065801
+          ],
+          [
+            -89.4120138,
+            43.078058001
+          ],
+          [
+            -89.4119516,
+            43.078058001
+          ],
+          [
+            -89.4118964,
+            43.078058001
+          ],
+          [
+            -89.4118964,
+            43.078065801
+          ],
+          [
+            -89.4117811,
+            43.078065801
+          ],
+          [
+            -89.4117811,
+            43.078034001
+          ],
+          [
+            -89.4119038,
+            43.078034001
+          ],
+          [
+            -89.4119038,
+            43.077770001
+          ],
+          [
+            -89.4119493,
+            43.077770001
+          ],
+          [
+            -89.4121669,
+            43.077770001
+          ],
+          [
+            -89.4121669,
+            43.077866501
+          ],
+          [
+            -89.4121669,
+            43.078034001
+          ],
+          [
+            -89.4123325,
+            43.078034001
+          ],
+          [
+            -89.4123325,
+            43.077701001
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook.",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
       "id": "vending-339-union",
       "name": "Agricultural Hall",
       "provider": "union",
@@ -439,6 +556,7 @@
         43.07570879386304
       ],
       "mapObjectId": 339,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0070",
       "areas": [
         "Ag Hall",
@@ -613,6 +731,7 @@
         43.076098504071
       ],
       "mapObjectId": 342,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0118",
       "areas": [
         "Animal Science"
@@ -789,6 +908,436 @@
       "supplementalReferences": []
     },
     {
+      "id": "vending-343-union",
+      "name": "Armory and Gymnasium (Red Gym)",
+      "provider": "union",
+      "address": "716 Langdon St.",
+      "coordinates": [
+        -89.39845049122404,
+        43.07631796199038
+      ],
+      "mapObjectId": 343,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingNumber": "0020",
+      "areas": [
+        "Red Gym — 1st floor"
+      ],
+      "machineCount": 2,
+      "locationCount": 1,
+      "rings": [
+        [
+          [
+            -89.3987255,
+            43.076308501
+          ],
+          [
+            -89.3987238,
+            43.076301801
+          ],
+          [
+            -89.398715,
+            43.076294601
+          ],
+          [
+            -89.398705,
+            43.076291601
+          ],
+          [
+            -89.398692,
+            43.076292201
+          ],
+          [
+            -89.3986827,
+            43.076296001
+          ],
+          [
+            -89.3986774,
+            43.076302901
+          ],
+          [
+            -89.398621,
+            43.076302201
+          ],
+          [
+            -89.3986215,
+            43.076278601
+          ],
+          [
+            -89.3986245,
+            43.076126501
+          ],
+          [
+            -89.3986295,
+            43.076123901
+          ],
+          [
+            -89.3986422,
+            43.076115401
+          ],
+          [
+            -89.398649,
+            43.076105101
+          ],
+          [
+            -89.3986519,
+            43.076094001
+          ],
+          [
+            -89.3986507,
+            43.076082301
+          ],
+          [
+            -89.3986434,
+            43.076071901
+          ],
+          [
+            -89.3986337,
+            43.076063101
+          ],
+          [
+            -89.3986196,
+            43.076055101
+          ],
+          [
+            -89.3986029,
+            43.076053101
+          ],
+          [
+            -89.3985705,
+            43.076051501
+          ],
+          [
+            -89.3985629,
+            43.076051301
+          ],
+          [
+            -89.3985561,
+            43.076053001
+          ],
+          [
+            -89.3984568,
+            43.076051501
+          ],
+          [
+            -89.3983385,
+            43.076051101
+          ],
+          [
+            -89.3983278,
+            43.076047401
+          ],
+          [
+            -89.398273,
+            43.076047801
+          ],
+          [
+            -89.3982589,
+            43.076051201
+          ],
+          [
+            -89.3982485,
+            43.076057701
+          ],
+          [
+            -89.3982388,
+            43.076066901
+          ],
+          [
+            -89.3982308,
+            43.076075501
+          ],
+          [
+            -89.3982318,
+            43.076088101
+          ],
+          [
+            -89.3982331,
+            43.076100201
+          ],
+          [
+            -89.3982379,
+            43.076109501
+          ],
+          [
+            -89.3982467,
+            43.076117901
+          ],
+          [
+            -89.3982575,
+            43.076124401
+          ],
+          [
+            -89.3982564,
+            43.076184301
+          ],
+          [
+            -89.3982505,
+            43.076511701
+          ],
+          [
+            -89.3982503,
+            43.076522801
+          ],
+          [
+            -89.3982501,
+            43.076531301
+          ],
+          [
+            -89.3982382,
+            43.076535901
+          ],
+          [
+            -89.398225,
+            43.076549001
+          ],
+          [
+            -89.3982207,
+            43.076560101
+          ],
+          [
+            -89.3982254,
+            43.076568601
+          ],
+          [
+            -89.3982286,
+            43.076576401
+          ],
+          [
+            -89.3982369,
+            43.076582901
+          ],
+          [
+            -89.3982497,
+            43.076587101
+          ],
+          [
+            -89.398264,
+            43.076589401
+          ],
+          [
+            -89.3982794,
+            43.076586201
+          ],
+          [
+            -89.3982921,
+            43.076579901
+          ],
+          [
+            -89.3982994,
+            43.076572201
+          ],
+          [
+            -89.3983067,
+            43.076572301
+          ],
+          [
+            -89.3983085,
+            43.076577501
+          ],
+          [
+            -89.3983137,
+            43.076581601
+          ],
+          [
+            -89.3983221,
+            43.076583401
+          ],
+          [
+            -89.3983308,
+            43.076581901
+          ],
+          [
+            -89.3983368,
+            43.076578001
+          ],
+          [
+            -89.3983398,
+            43.076573001
+          ],
+          [
+            -89.3984124,
+            43.076574401
+          ],
+          [
+            -89.3984149,
+            43.076579701
+          ],
+          [
+            -89.3984207,
+            43.076583401
+          ],
+          [
+            -89.3984282,
+            43.076584801
+          ],
+          [
+            -89.3984369,
+            43.076583101
+          ],
+          [
+            -89.398442,
+            43.076579901
+          ],
+          [
+            -89.398444,
+            43.076575101
+          ],
+          [
+            -89.3985212,
+            43.076576601
+          ],
+          [
+            -89.398523,
+            43.076581701
+          ],
+          [
+            -89.3985284,
+            43.076585601
+          ],
+          [
+            -89.3985366,
+            43.076587401
+          ],
+          [
+            -89.3985446,
+            43.076585701
+          ],
+          [
+            -89.3985499,
+            43.076582201
+          ],
+          [
+            -89.3985531,
+            43.076577201
+          ],
+          [
+            -89.3985611,
+            43.076577401
+          ],
+          [
+            -89.3985661,
+            43.076585301
+          ],
+          [
+            -89.3985792,
+            43.076592401
+          ],
+          [
+            -89.3985952,
+            43.076594701
+          ],
+          [
+            -89.3986109,
+            43.076592801
+          ],
+          [
+            -89.3986286,
+            43.076584501
+          ],
+          [
+            -89.3986367,
+            43.076575701
+          ],
+          [
+            -89.3986389,
+            43.076561501
+          ],
+          [
+            -89.3986303,
+            43.076546901
+          ],
+          [
+            -89.398614,
+            43.076538501
+          ],
+          [
+            -89.3986177,
+            43.076426501
+          ],
+          [
+            -89.3986628,
+            43.076425901
+          ],
+          [
+            -89.3986721,
+            43.076425701
+          ],
+          [
+            -89.398674,
+            43.076429101
+          ],
+          [
+            -89.3986815,
+            43.076435001
+          ],
+          [
+            -89.3986915,
+            43.076438601
+          ],
+          [
+            -89.3987022,
+            43.076438101
+          ],
+          [
+            -89.3987141,
+            43.076433901
+          ],
+          [
+            -89.3987195,
+            43.076429901
+          ],
+          [
+            -89.3987229,
+            43.076421701
+          ],
+          [
+            -89.3987235,
+            43.076413701
+          ],
+          [
+            -89.3987172,
+            43.076406301
+          ],
+          [
+            -89.3987105,
+            43.076401601
+          ],
+          [
+            -89.3987066,
+            43.076398901
+          ],
+          [
+            -89.3987076,
+            43.076331101
+          ],
+          [
+            -89.3987129,
+            43.076328701
+          ],
+          [
+            -89.3987199,
+            43.076324101
+          ],
+          [
+            -89.3987247,
+            43.076316401
+          ],
+          [
+            -89.3987255,
+            43.076308501
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook.",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
       "id": "vending-521-union",
       "name": "Art Lofts",
       "provider": "union",
@@ -798,6 +1347,7 @@
         43.069054868097254
       ],
       "mapObjectId": 521,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0220",
       "areas": [
         "Art Loft-1st Fl"
@@ -879,6 +1429,7 @@
         43.070735865297706
       ],
       "mapObjectId": 344,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0156",
       "areas": [
         "Meteorology & Space Scien",
@@ -988,6 +1539,92 @@
       "supplementalReferences": []
     },
     {
+      "id": "vending-347-housing",
+      "name": "Barnard Residence Hall",
+      "provider": "housing",
+      "address": "970 University Ave.",
+      "coordinates": [
+        -89.40222699941677,
+        43.07367782597888
+      ],
+      "mapObjectId": 347,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingNumber": "0560",
+      "areas": [
+        "Barnard Hall — game room"
+      ],
+      "machineCount": 2,
+      "locationCount": 1,
+      "rings": [
+        [
+          [
+            -89.4023942,
+            43.073457701
+          ],
+          [
+            -89.402028,
+            43.073455201
+          ],
+          [
+            -89.4020262,
+            43.073600401
+          ],
+          [
+            -89.4020626,
+            43.073600701
+          ],
+          [
+            -89.402186,
+            43.073601501
+          ],
+          [
+            -89.4021836,
+            43.073679301
+          ],
+          [
+            -89.4021841,
+            43.073756201
+          ],
+          [
+            -89.4020626,
+            43.073755401
+          ],
+          [
+            -89.4020249,
+            43.073755201
+          ],
+          [
+            -89.4020239,
+            43.073836801
+          ],
+          [
+            -89.4020231,
+            43.073898301
+          ],
+          [
+            -89.4023395,
+            43.073900401
+          ],
+          [
+            -89.4023887,
+            43.073900801
+          ],
+          [
+            -89.4023942,
+            43.073457701
+          ]
+        ]
+      ],
+      "diningBuildingId": "way/39201164",
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook.",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
       "id": "vending-348-union",
       "name": "Bascom Hall",
       "provider": "union",
@@ -997,6 +1634,7 @@
         43.07534639770641
       ],
       "mapObjectId": 348,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0050",
       "areas": [
         "Bascom Hall-Main",
@@ -1397,6 +2035,7 @@
         43.07443071706577
       ],
       "mapObjectId": 354,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0054",
       "areas": [
         "Birge Hall B1",
@@ -1690,6 +2329,120 @@
       "supplementalReferences": []
     },
     {
+      "id": "vending-356-housing",
+      "name": "Bradley Residence Hall",
+      "provider": "housing",
+      "address": "650 Elm Dr.",
+      "coordinates": [
+        -89.41643740567213,
+        43.07790973063353
+      ],
+      "mapObjectId": 356,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingNumber": "0506",
+      "areas": [
+        "Bradley Hall — basement"
+      ],
+      "machineCount": 2,
+      "locationCount": 1,
+      "rings": [
+        [
+          [
+            -89.4167915,
+            43.077779301
+          ],
+          [
+            -89.4163672,
+            43.077779301
+          ],
+          [
+            -89.4163672,
+            43.077819801
+          ],
+          [
+            -89.4163549,
+            43.077819801
+          ],
+          [
+            -89.416134,
+            43.077819801
+          ],
+          [
+            -89.416134,
+            43.077863701
+          ],
+          [
+            -89.4161024,
+            43.077863701
+          ],
+          [
+            -89.4161024,
+            43.077922401
+          ],
+          [
+            -89.4162077,
+            43.077922401
+          ],
+          [
+            -89.4162292,
+            43.077922401
+          ],
+          [
+            -89.4162292,
+            43.077932501
+          ],
+          [
+            -89.4163468,
+            43.077932501
+          ],
+          [
+            -89.4163468,
+            43.078162601
+          ],
+          [
+            -89.4164342,
+            43.078162601
+          ],
+          [
+            -89.4164342,
+            43.078145901
+          ],
+          [
+            -89.4164916,
+            43.078145901
+          ],
+          [
+            -89.4164916,
+            43.077882901
+          ],
+          [
+            -89.41677,
+            43.077882901
+          ],
+          [
+            -89.41677,
+            43.077841801
+          ],
+          [
+            -89.4167915,
+            43.077841801
+          ],
+          [
+            -89.4167915,
+            43.077779301
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook.",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
       "id": "vending-449-union",
       "name": "Brogden Psychology Building",
       "provider": "union",
@@ -1699,6 +2452,7 @@
         43.07258389626221
       ],
       "mapObjectId": 449,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0470",
       "areas": [
         "Brogden Psychology",
@@ -1825,9 +2579,10 @@
         43.07380625427833
       ],
       "mapObjectId": 360,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0557",
       "areas": [
-        "Chadbourne Hall Basement"
+        "Chadbourne Hall — basement"
       ],
       "machineCount": 2,
       "locationCount": 1,
@@ -2038,6 +2793,7 @@
         43.073874885388314
       ],
       "mapObjectId": 361,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0055",
       "areas": [
         "Chamberlain Hall-2nd Fl"
@@ -2170,6 +2926,56 @@
       "supplementalReferences": []
     },
     {
+      "id": "vending-362-housing",
+      "name": "Chamberlin House (Kronshage)",
+      "provider": "housing",
+      "address": "665 Elm Dr.",
+      "coordinates": [
+        -89.41536785,
+        43.07825895053832
+      ],
+      "mapObjectId": 362,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingNumber": "0571",
+      "areas": [
+        "Chamberlin House — basement"
+      ],
+      "machineCount": 2,
+      "locationCount": 1,
+      "rings": [
+        [
+          [
+            -89.4155742,
+            43.078210201
+          ],
+          [
+            -89.4151615,
+            43.078210201
+          ],
+          [
+            -89.4151615,
+            43.078307701
+          ],
+          [
+            -89.4155742,
+            43.078307701
+          ],
+          [
+            -89.4155742,
+            43.078210201
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook.",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
       "id": "vending-363-union",
       "name": "Chemistry Building",
       "provider": "union",
@@ -2179,6 +2985,7 @@
         43.07268086795938
       ],
       "mapObjectId": 363,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0047",
       "areas": [
         "Chemistry - 5th fl",
@@ -2418,6 +3225,96 @@
       ]
     },
     {
+      "id": "vending-365-housing",
+      "name": "Cole Residence Hall",
+      "provider": "housing",
+      "address": "625 Elm Dr.",
+      "coordinates": [
+        -89.41497582918734,
+        43.07736434754442
+      ],
+      "mapObjectId": 365,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingNumber": "0555",
+      "areas": [
+        "Cole Hall — basement"
+      ],
+      "machineCount": 3,
+      "locationCount": 1,
+      "rings": [
+        [
+          [
+            -89.4154252,
+            43.077295601
+          ],
+          [
+            -89.4148897,
+            43.077291301
+          ],
+          [
+            -89.4148891,
+            43.077332701
+          ],
+          [
+            -89.4145252,
+            43.077329801
+          ],
+          [
+            -89.4145243,
+            43.077391701
+          ],
+          [
+            -89.4145483,
+            43.077391901
+          ],
+          [
+            -89.4145477,
+            43.077432301
+          ],
+          [
+            -89.4148781,
+            43.077435001
+          ],
+          [
+            -89.4148779,
+            43.077446801
+          ],
+          [
+            -89.4150299,
+            43.077448001
+          ],
+          [
+            -89.4150306,
+            43.077397201
+          ],
+          [
+            -89.415401,
+            43.077400201
+          ],
+          [
+            -89.4154016,
+            43.077358901
+          ],
+          [
+            -89.4154243,
+            43.077359101
+          ],
+          [
+            -89.4154252,
+            43.077295601
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook.",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
       "id": "vending-366-union",
       "name": "Computer Sciences",
       "provider": "union",
@@ -2427,6 +3324,7 @@
         43.07147417619353
       ],
       "mapObjectId": 366,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0155",
       "areas": [
         "Computer Science Basement",
@@ -2532,6 +3430,7 @@
         43.07775001972469
       ],
       "mapObjectId": 534,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0567",
       "areas": [
         "Dejope"
@@ -2845,6 +3744,7 @@
         43.067623491949526
       ],
       "mapObjectId": 723,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "DPPS",
       "areas": [
         "DoIT Digital & Printing"
@@ -2894,6 +3794,7 @@
         43.07183249640019
       ],
       "mapObjectId": 373,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0154",
       "areas": [
         "Educational Science-Basem",
@@ -3060,6 +3961,7 @@
         43.072728717607276
       ],
       "mapObjectId": 376,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0481",
       "areas": [
         "Engineering Centers Buil",
@@ -3186,6 +4088,7 @@
         43.0717750222946
       ],
       "mapObjectId": 378,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0408",
       "areas": [
         "Electrical Engineering-1s",
@@ -3332,6 +4235,7 @@
         43.072608761834815
       ],
       "mapObjectId": 379,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0762",
       "areas": [
         "Engineering Research Bui",
@@ -3426,6 +4330,7 @@
         43.06885266728973
       ],
       "mapObjectId": 380,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0549",
       "areas": [
         "Environ Health & Safety",
@@ -3508,6 +4413,7 @@
         43.07376203112649
       ],
       "mapObjectId": 381,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0479",
       "areas": [
         "Enzyme Lab-1st Fl"
@@ -3657,6 +4563,7 @@
         43.07422286554876
       ],
       "mapObjectId": 382,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0500",
       "areas": [],
       "machineCount": 0,
@@ -3787,8 +4694,10 @@
         43.07287969496379
       ],
       "mapObjectId": 385,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0139",
       "areas": [
+        "Fluno Center — 4th floor",
         "Fluno Ctr 5th Floor",
         "Fluno Ctr 6th Floor",
         "Fluno Ctr 7th Floor"
@@ -3986,6 +4895,7 @@
         43.07382219127579
       ],
       "mapObjectId": 388,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0082",
       "areas": [
         "Bio Tech-5th Fl"
@@ -4142,6 +5052,56 @@
       "supplementalReferences": []
     },
     {
+      "id": "vending-390-housing",
+      "name": "Gilman House (Kronshage)",
+      "provider": "housing",
+      "address": "1610 Kronshage Dr.",
+      "coordinates": [
+        -89.41296249999999,
+        43.07806380053831
+      ],
+      "mapObjectId": 390,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingNumber": "0569",
+      "areas": [
+        "Kronshage — Gilman basement"
+      ],
+      "machineCount": 2,
+      "locationCount": 1,
+      "rings": [
+        [
+          [
+            -89.4130301,
+            43.077910901
+          ],
+          [
+            -89.4128949,
+            43.077910901
+          ],
+          [
+            -89.4128949,
+            43.078216701
+          ],
+          [
+            -89.4130301,
+            43.078216701
+          ],
+          [
+            -89.4130301,
+            43.077910901
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook.",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
       "id": "vending-392-union",
       "name": "Goodnight Hall",
       "provider": "union",
@@ -4151,6 +5111,7 @@
         43.07884163047381
       ],
       "mapObjectId": 392,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0508",
       "areas": [
         "Good Night Hall-4th Fl"
@@ -4256,6 +5217,7 @@
         43.07271207889702
       ],
       "mapObjectId": 394,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0140",
       "areas": [
         "Grainger Hall"
@@ -4700,6 +5662,92 @@
       "supplementalReferences": []
     },
     {
+      "id": "vending-341-union",
+      "name": "Hanson Biomedical Sciences Building",
+      "provider": "union",
+      "address": "1656 Linden Dr.",
+      "coordinates": [
+        -89.41496867691592,
+        43.07573166496254
+      ],
+      "mapObjectId": 341,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingNumber": "0094",
+      "areas": [
+        "Animal Health & Biomedical Sciences"
+      ],
+      "machineCount": 2,
+      "locationCount": 1,
+      "rings": [
+        [
+          [
+            -89.4153051,
+            43.075684401
+          ],
+          [
+            -89.4152679,
+            43.075684201
+          ],
+          [
+            -89.4152683,
+            43.075650601
+          ],
+          [
+            -89.4151045,
+            43.075649601
+          ],
+          [
+            -89.414665,
+            43.075646901
+          ],
+          [
+            -89.4146647,
+            43.075678601
+          ],
+          [
+            -89.4146353,
+            43.075678401
+          ],
+          [
+            -89.4146347,
+            43.075728701
+          ],
+          [
+            -89.4146645,
+            43.075728901
+          ],
+          [
+            -89.4146636,
+            43.075814101
+          ],
+          [
+            -89.4152712,
+            43.075817701
+          ],
+          [
+            -89.4152721,
+            43.075739201
+          ],
+          [
+            -89.4153045,
+            43.075739401
+          ],
+          [
+            -89.4153051,
+            43.075684401
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook. Animal Health & Biomedical Sciences at 1656 Linden Drive is now Hanson Biomedical Sciences.",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
       "id": "vending-397-union",
       "name": "Health Sciences Learning Center",
       "provider": "union",
@@ -4709,6 +5757,7 @@
         43.077531159841286
       ],
       "mapObjectId": 397,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "1480",
       "areas": [
         "Health Sciences Learning",
@@ -4971,6 +6020,7 @@
         43.076696908922145
       ],
       "mapObjectId": 490,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0018",
       "areas": [
         "Helen C. White-1st Fl",
@@ -5178,6 +6228,7 @@
         43.07548942359363
       ],
       "mapObjectId": 407,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0056",
       "areas": [
         "Commerce/Ingrahm-Basement"
@@ -5455,6 +6506,7 @@
         43.07369127109724
       ],
       "mapObjectId": 416,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0032",
       "areas": [
         "Lathrop Hall- Basement"
@@ -5576,6 +6628,7 @@
         43.07455253245244
       ],
       "mapObjectId": 417,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0430",
       "areas": [],
       "machineCount": 0,
@@ -5725,6 +6778,128 @@
       ]
     },
     {
+      "id": "vending-672-housing",
+      "name": "Leopold Residence Hall",
+      "provider": "housing",
+      "address": "1635 Kronshage Dr.",
+      "coordinates": [
+        -89.41404986450995,
+        43.07752024504238
+      ],
+      "mapObjectId": 672,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingNumber": "0576",
+      "areas": [
+        "Leopold Hall"
+      ],
+      "machineCount": 2,
+      "locationCount": 1,
+      "rings": [
+        [
+          [
+            -89.4144312,
+            43.077394101
+          ],
+          [
+            -89.414431,
+            43.077328901
+          ],
+          [
+            -89.4138964,
+            43.077329601
+          ],
+          [
+            -89.4138964,
+            43.077336301
+          ],
+          [
+            -89.4138231,
+            43.077336401
+          ],
+          [
+            -89.4138233,
+            43.077405401
+          ],
+          [
+            -89.4138873,
+            43.077405301
+          ],
+          [
+            -89.4138873,
+            43.077416501
+          ],
+          [
+            -89.4138677,
+            43.077416601
+          ],
+          [
+            -89.4138686,
+            43.077817401
+          ],
+          [
+            -89.4138771,
+            43.077817401
+          ],
+          [
+            -89.4138772,
+            43.077839001
+          ],
+          [
+            -89.4139129,
+            43.077839001
+          ],
+          [
+            -89.413913,
+            43.077850201
+          ],
+          [
+            -89.4139685,
+            43.077850201
+          ],
+          [
+            -89.4139684,
+            43.077833001
+          ],
+          [
+            -89.4140634,
+            43.077832901
+          ],
+          [
+            -89.4140626,
+            43.077461701
+          ],
+          [
+            -89.414352,
+            43.077461401
+          ],
+          [
+            -89.4143521,
+            43.077469101
+          ],
+          [
+            -89.4143993,
+            43.077469101
+          ],
+          [
+            -89.4143992,
+            43.077394101
+          ],
+          [
+            -89.4144312,
+            43.077394101
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook.",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
       "id": "vending-420-housing",
       "name": "Lowell Center",
       "provider": "housing",
@@ -5734,9 +6909,10 @@
         43.07626741285504
       ],
       "mapObjectId": 420,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0502",
       "areas": [
-        "Lowell Hall 1st Floor"
+        "Lowell Hall — 1st floor"
       ],
       "machineCount": 2,
       "locationCount": 1,
@@ -5871,6 +7047,7 @@
         43.07443293674064
       ],
       "mapObjectId": 423,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0468",
       "areas": [],
       "machineCount": 0,
@@ -5932,6 +7109,7 @@
         43.07277068567592
       ],
       "mapObjectId": 427,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0407",
       "areas": [
         "Mech Engineering Rm 1272",
@@ -6038,6 +7216,7 @@
         43.075361560608634
       ],
       "mapObjectId": 431,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0015",
       "areas": [
         "Memorial Library-1st Fl L",
@@ -6212,6 +7391,136 @@
       "supplementalReferences": []
     },
     {
+      "id": "vending-433-housing",
+      "name": "Merit Residence Hall",
+      "provider": "housing",
+      "address": "919 W. Dayton St.",
+      "coordinates": [
+        -89.40142974354197,
+        43.07075343657847
+      ],
+      "mapObjectId": 433,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingNumber": "0575",
+      "areas": [
+        "Merit House"
+      ],
+      "machineCount": 2,
+      "locationCount": 1,
+      "rings": [
+        [
+          [
+            -89.4017693,
+            43.070713701
+          ],
+          [
+            -89.40175,
+            43.070698301
+          ],
+          [
+            -89.4016292,
+            43.070697701
+          ],
+          [
+            -89.4016142,
+            43.070710201
+          ],
+          [
+            -89.4014684,
+            43.070708201
+          ],
+          [
+            -89.4014677,
+            43.070700201
+          ],
+          [
+            -89.401433,
+            43.070700201
+          ],
+          [
+            -89.401397,
+            43.070700201
+          ],
+          [
+            -89.401397,
+            43.070707301
+          ],
+          [
+            -89.4012523,
+            43.070705601
+          ],
+          [
+            -89.401234,
+            43.070691901
+          ],
+          [
+            -89.4011187,
+            43.070690701
+          ],
+          [
+            -89.4010933,
+            43.070708801
+          ],
+          [
+            -89.4010947,
+            43.070791401
+          ],
+          [
+            -89.401108,
+            43.070804001
+          ],
+          [
+            -89.4011145,
+            43.070810101
+          ],
+          [
+            -89.4012373,
+            43.070811301
+          ],
+          [
+            -89.4012515,
+            43.070798901
+          ],
+          [
+            -89.4016058,
+            43.070801301
+          ],
+          [
+            -89.4016256,
+            43.070815701
+          ],
+          [
+            -89.4017444,
+            43.070816001
+          ],
+          [
+            -89.4017442,
+            43.070799401
+          ],
+          [
+            -89.4017616,
+            43.070799001
+          ],
+          [
+            -89.4017692,
+            43.070798801
+          ],
+          [
+            -89.4017693,
+            43.070713701
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook.",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
       "id": "vending-551-union",
       "name": "Microbial Sciences",
       "provider": "union",
@@ -6221,6 +7530,7 @@
         43.075747824829655
       ],
       "mapObjectId": 551,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0060",
       "areas": [
         "Bacterioloy",
@@ -6419,6 +7729,7 @@
         43.07478605053824
       ],
       "mapObjectId": 434,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0455",
       "areas": [
         "Old Middleton Library-2nd"
@@ -6459,6 +7770,81 @@
       "supplementalReferences": []
     },
     {
+      "id": "vending-729-union",
+      "name": "Morgridge Hall",
+      "provider": "union",
+      "address": "1205 University Avenue",
+      "coordinates": [
+        -89.4067958598904,
+        43.07283433199304
+      ],
+      "mapObjectId": 729,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingNumber": "0215",
+      "areas": [
+        "CDIS — B2 hallway",
+        "Undergraduate Commons — room 2610"
+      ],
+      "machineCount": 4,
+      "locationCount": 2,
+      "rings": [
+        [
+          [
+            -89.4071883,
+            43.0731926
+          ],
+          [
+            -89.406413,
+            43.0731919
+          ],
+          [
+            -89.4063581,
+            43.0731533
+          ],
+          [
+            -89.4062228,
+            43.0731555
+          ],
+          [
+            -89.4060836,
+            43.0730116
+          ],
+          [
+            -89.4063862,
+            43.0728675
+          ],
+          [
+            -89.4066583,
+            43.0727201
+          ],
+          [
+            -89.4066581,
+            43.0723525
+          ],
+          [
+            -89.4071938,
+            43.0723543
+          ],
+          [
+            -89.4071913,
+            43.0727285
+          ],
+          [
+            -89.4071883,
+            43.0731926
+          ]
+        ]
+      ],
+      "diningBuildingId": "way/1391651477",
+      "footprintSource": "Reviewed dining footprint (OpenStreetMap)",
+      "buildingConfirmation": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook. CDIS and Undergraduate Commons room 2610 identify Morgridge Hall; the Workday room inventory corroborates room 2610.",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
       "id": "vending-405-union",
       "name": "Mosse Humanities Building",
       "provider": "union",
@@ -6468,6 +7854,7 @@
         43.074172265595365
       ],
       "mapObjectId": 405,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0469",
       "areas": [
         "Humanities-1st Fl",
@@ -6628,6 +8015,7 @@
         43.07571591385996
       ],
       "mapObjectId": 404,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0085",
       "areas": [
         "Hm Ecology 2nd Robbins",
@@ -6814,6 +8202,7 @@
         43.07962774985195
       ],
       "mapObjectId": 438,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0038",
       "areas": [
         "Nielsen Tennis Stadium"
@@ -6935,6 +8324,7 @@
         43.07153122673736
       ],
       "mapObjectId": 439,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0402",
       "areas": [
         "Nolen",
@@ -7009,6 +8399,7 @@
         43.07481936455
       ],
       "mapObjectId": 441,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0449",
       "areas": [],
       "machineCount": 0,
@@ -7159,9 +8550,10 @@
         43.070536335080945
       ],
       "mapObjectId": 550,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "1243",
       "areas": [
-        "Ogg Hall"
+        "Ogg Hall — 1st floor"
       ],
       "machineCount": 3,
       "locationCount": 1,
@@ -7475,6 +8867,112 @@
       "supplementalReferences": []
     },
     {
+      "id": "vending-386-housing",
+      "name": "Phillips Residence Hall",
+      "provider": "housing",
+      "address": "1950 Willow Dr.",
+      "coordinates": [
+        -89.4179873011807,
+        43.07855215848702
+      ],
+      "mapObjectId": 386,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingNumber": "0507",
+      "areas": [
+        "Phillips Hall — basement"
+      ],
+      "machineCount": 2,
+      "locationCount": 1,
+      "rings": [
+        [
+          [
+            -89.4183539,
+            43.078425601
+          ],
+          [
+            -89.4179385,
+            43.078424901
+          ],
+          [
+            -89.4179385,
+            43.078429701
+          ],
+          [
+            -89.4177533,
+            43.078429401
+          ],
+          [
+            -89.4177532,
+            43.078465801
+          ],
+          [
+            -89.4176886,
+            43.078465701
+          ],
+          [
+            -89.4176885,
+            43.078507701
+          ],
+          [
+            -89.4176614,
+            43.078507701
+          ],
+          [
+            -89.4176612,
+            43.078571101
+          ],
+          [
+            -89.41779,
+            43.078571301
+          ],
+          [
+            -89.41779,
+            43.078578301
+          ],
+          [
+            -89.417904,
+            43.078578501
+          ],
+          [
+            -89.4179033,
+            43.078807901
+          ],
+          [
+            -89.4180505,
+            43.078808201
+          ],
+          [
+            -89.4180514,
+            43.078528601
+          ],
+          [
+            -89.4183313,
+            43.078529001
+          ],
+          [
+            -89.4183314,
+            43.078487901
+          ],
+          [
+            -89.4183537,
+            43.078487901
+          ],
+          [
+            -89.4183539,
+            43.078425601
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook.",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
       "id": "vending-450-union",
       "name": "Pyle Center",
       "provider": "union",
@@ -7484,6 +8982,7 @@
         43.076272112872935
       ],
       "mapObjectId": 450,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0006",
       "areas": [
         "Pyle Center-2nd Fl",
@@ -7677,6 +9176,7 @@
         43.07848475884766
       ],
       "mapObjectId": 452,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0034",
       "areas": [
         "Rennebohm Hall-1st Fl",
@@ -7851,6 +9351,7 @@
         43.075485580515924
       ],
       "mapObjectId": 453,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0114",
       "areas": [
         "Russell Lab Bsmt By Elev"
@@ -8020,6 +9521,7 @@
         43.07032844945721
       ],
       "mapObjectId": 454,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0158",
       "areas": [],
       "machineCount": 0,
@@ -8122,10 +9624,10 @@
         43.074312628453825
       ],
       "mapObjectId": 455,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0453",
       "areas": [
-        "Social Work - 2nd Floor",
-        "Social Work-2nd Fl"
+        "Social Work — 1st floor"
       ],
       "machineCount": 2,
       "locationCount": 1,
@@ -8204,6 +9706,7 @@
         43.07587034344111
       ],
       "mapObjectId": 457,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0053",
       "areas": [],
       "machineCount": 0,
@@ -8438,9 +9941,10 @@
         43.07164463190376
       ],
       "mapObjectId": 459,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "1245",
       "areas": [
-        "Sellery Hall"
+        "Sellery Hall — lobby"
       ],
       "machineCount": 2,
       "locationCount": 1,
@@ -8623,6 +10127,7 @@
         43.076528947135394
       ],
       "mapObjectId": 466,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0046",
       "areas": [
         "Soc Sci-Sewel 4th Fl"
@@ -8804,6 +10309,7 @@
         43.07752145214933
       ],
       "mapObjectId": 689,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0044",
       "areas": [
         "Room 1262 School of Nursing",
@@ -8921,6 +10427,105 @@
       "supplementalReferences": []
     },
     {
+      "id": "vending-462-housing",
+      "name": "Slichter Residence Hall",
+      "provider": "housing",
+      "address": "625 Babcock Dr.",
+      "coordinates": [
+        -89.41220813731039,
+        43.07712886046986
+      ],
+      "mapObjectId": 462,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingNumber": "0558",
+      "areas": [
+        "Slichter — 2nd floor",
+        "Slichter — ground floor"
+      ],
+      "machineCount": 3,
+      "locationCount": 2,
+      "rings": [
+        [
+          [
+            -89.4123288,
+            43.077069701
+          ],
+          [
+            -89.4123157,
+            43.077069701
+          ],
+          [
+            -89.4123164,
+            43.076888901
+          ],
+          [
+            -89.4122595,
+            43.076888701
+          ],
+          [
+            -89.4122596,
+            43.076864701
+          ],
+          [
+            -89.4120507,
+            43.076864301
+          ],
+          [
+            -89.4120503,
+            43.076969401
+          ],
+          [
+            -89.4121559,
+            43.076969601
+          ],
+          [
+            -89.4121546,
+            43.077288401
+          ],
+          [
+            -89.4120536,
+            43.077288201
+          ],
+          [
+            -89.4120531,
+            43.077394101
+          ],
+          [
+            -89.4122594,
+            43.077394501
+          ],
+          [
+            -89.4122595,
+            43.077370901
+          ],
+          [
+            -89.4123146,
+            43.077371001
+          ],
+          [
+            -89.4123153,
+            43.077189901
+          ],
+          [
+            -89.4123283,
+            43.077189901
+          ],
+          [
+            -89.4123288,
+            43.077069701
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook.",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
       "id": "vending-546-housing",
       "name": "Smith Residence Hall",
       "provider": "housing",
@@ -8930,9 +10535,10 @@
         43.06903738975022
       ],
       "mapObjectId": 546,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "1079",
       "areas": [
-        "Smith Hall"
+        "Smith Hall — 1st floor"
       ],
       "machineCount": 3,
       "locationCount": 1,
@@ -9251,6 +10857,7 @@
         43.07611022967858
       ],
       "mapObjectId": 471,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0079",
       "areas": [
         "Steenbock Library",
@@ -9444,6 +11051,160 @@
       "supplementalReferences": []
     },
     {
+      "id": "vending-472-union",
+      "name": "Sterling Hall",
+      "provider": "union",
+      "address": "475 N. Charter St.",
+      "coordinates": [
+        -89.40557233311937,
+        43.07454356672807
+      ],
+      "mapObjectId": 472,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingNumber": "0057",
+      "areas": [
+        "Sterling Hall — ground floor, room 1305"
+      ],
+      "machineCount": 2,
+      "locationCount": 1,
+      "rings": [
+        [
+          [
+            -89.4059708,
+            43.074348801
+          ],
+          [
+            -89.4056147,
+            43.074346101
+          ],
+          [
+            -89.4055755,
+            43.074345801
+          ],
+          [
+            -89.4055291,
+            43.074345501
+          ],
+          [
+            -89.4055293,
+            43.074330801
+          ],
+          [
+            -89.405285,
+            43.074329001
+          ],
+          [
+            -89.4052847,
+            43.074349101
+          ],
+          [
+            -89.4048382,
+            43.074345901
+          ],
+          [
+            -89.4048372,
+            43.074421401
+          ],
+          [
+            -89.4048363,
+            43.074489501
+          ],
+          [
+            -89.404991,
+            43.074490601
+          ],
+          [
+            -89.4052944,
+            43.074492801
+          ],
+          [
+            -89.4052943,
+            43.074502901
+          ],
+          [
+            -89.4053034,
+            43.074502001
+          ],
+          [
+            -89.4053449,
+            43.074502401
+          ],
+          [
+            -89.40575,
+            43.074505901
+          ],
+          [
+            -89.4057496,
+            43.074535701
+          ],
+          [
+            -89.4057494,
+            43.074547001
+          ],
+          [
+            -89.4057493,
+            43.074559701
+          ],
+          [
+            -89.4057471,
+            43.074739801
+          ],
+          [
+            -89.4055876,
+            43.074738801
+          ],
+          [
+            -89.4055875,
+            43.074748501
+          ],
+          [
+            -89.4055873,
+            43.074762301
+          ],
+          [
+            -89.4055856,
+            43.074898701
+          ],
+          [
+            -89.4055958,
+            43.074898801
+          ],
+          [
+            -89.4057441,
+            43.074899701
+          ],
+          [
+            -89.4057473,
+            43.074909501
+          ],
+          [
+            -89.4059628,
+            43.074911101
+          ],
+          [
+            -89.4059636,
+            43.074850701
+          ],
+          [
+            -89.405967,
+            43.074630401
+          ],
+          [
+            -89.4059708,
+            43.074348801
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook.",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
       "id": "vending-474-union",
       "name": "Stovall Building (Wisconsin State Laboratory of Hygiene)",
       "provider": "union",
@@ -9453,6 +11214,7 @@
         43.074777710062236
       ],
       "mapObjectId": 474,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0476",
       "areas": [
         "Hygiene Lab-2nd Fl"
@@ -9497,6 +11259,108 @@
       "supplementalReferences": []
     },
     {
+      "id": "vending-475-housing",
+      "name": "Sullivan Residence Hall",
+      "provider": "housing",
+      "address": "635 Elm Dr.",
+      "coordinates": [
+        -89.415510654597,
+        43.07760382061325
+      ],
+      "mapObjectId": 475,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingNumber": "0556",
+      "areas": [
+        "Sullivan Hall — basement"
+      ],
+      "machineCount": 2,
+      "locationCount": 1,
+      "rings": [
+        [
+          [
+            -89.4157513,
+            43.077679901
+          ],
+          [
+            -89.4157512,
+            43.077623901
+          ],
+          [
+            -89.4157267,
+            43.077623901
+          ],
+          [
+            -89.4157265,
+            43.077361701
+          ],
+          [
+            -89.4156416,
+            43.077361801
+          ],
+          [
+            -89.4156416,
+            43.077377801
+          ],
+          [
+            -89.4155844,
+            43.077377801
+          ],
+          [
+            -89.4155846,
+            43.077608201
+          ],
+          [
+            -89.4151191,
+            43.077608401
+          ],
+          [
+            -89.4151192,
+            43.077662601
+          ],
+          [
+            -89.4151192,
+            43.077673101
+          ],
+          [
+            -89.4151414,
+            43.077673101
+          ],
+          [
+            -89.4151414,
+            43.077716201
+          ],
+          [
+            -89.4155122,
+            43.077716001
+          ],
+          [
+            -89.4155123,
+            43.077723601
+          ],
+          [
+            -89.4157169,
+            43.077723601
+          ],
+          [
+            -89.4157168,
+            43.077679901
+          ],
+          [
+            -89.4157513,
+            43.077679901
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook.",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
       "id": "vending-478-union",
       "name": "Teacher Education",
       "provider": "union",
@@ -9506,6 +11370,7 @@
         43.0713080547704
       ],
       "mapObjectId": 478,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0153",
       "areas": [
         "Teachers Ed-1st Fl"
@@ -9651,6 +11516,7 @@
         43.069414741327655
       ],
       "mapObjectId": 411,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0225",
       "areas": [
         "Kohl Center Loading Dock"
@@ -9959,6 +11825,196 @@
       "supplementalReferences": []
     },
     {
+      "id": "vending-479-housing",
+      "name": "Tripp Residence Hall",
+      "provider": "housing",
+      "address": "1510 Tripp Cir.",
+      "coordinates": [
+        -89.41096614975703,
+        43.077994145559124
+      ],
+      "mapObjectId": 479,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingNumber": "0563",
+      "areas": [
+        "Tripp Hall — Botkin House"
+      ],
+      "machineCount": 2,
+      "locationCount": 1,
+      "rings": [
+        [
+          [
+            -89.4113757,
+            43.078135001
+          ],
+          [
+            -89.4113748,
+            43.078047201
+          ],
+          [
+            -89.4113587,
+            43.078047301
+          ],
+          [
+            -89.4113567,
+            43.077854001
+          ],
+          [
+            -89.4112624,
+            43.077854601
+          ],
+          [
+            -89.411262,
+            43.077817101
+          ],
+          [
+            -89.41129,
+            43.077816901
+          ],
+          [
+            -89.4112893,
+            43.077745201
+          ],
+          [
+            -89.4111815,
+            43.077745801
+          ],
+          [
+            -89.4111822,
+            43.077816001
+          ],
+          [
+            -89.4111522,
+            43.077816201
+          ],
+          [
+            -89.4111516,
+            43.077751001
+          ],
+          [
+            -89.4106961,
+            43.077753501
+          ],
+          [
+            -89.4106972,
+            43.077861001
+          ],
+          [
+            -89.4106267,
+            43.077861401
+          ],
+          [
+            -89.4106284,
+            43.078038201
+          ],
+          [
+            -89.4107829,
+            43.078037301
+          ],
+          [
+            -89.4107813,
+            43.077880001
+          ],
+          [
+            -89.4111522,
+            43.077878001
+          ],
+          [
+            -89.4111519,
+            43.077854701
+          ],
+          [
+            -89.4111952,
+            43.077854501
+          ],
+          [
+            -89.4111956,
+            43.077899401
+          ],
+          [
+            -89.4111973,
+            43.078063701
+          ],
+          [
+            -89.4109844,
+            43.078064801
+          ],
+          [
+            -89.4109843,
+            43.078060001
+          ],
+          [
+            -89.4108658,
+            43.078060601
+          ],
+          [
+            -89.4108658,
+            43.078065601
+          ],
+          [
+            -89.4104854,
+            43.078067601
+          ],
+          [
+            -89.4104866,
+            43.078191601
+          ],
+          [
+            -89.4106288,
+            43.078190901
+          ],
+          [
+            -89.4106289,
+            43.078200501
+          ],
+          [
+            -89.4107474,
+            43.078199901
+          ],
+          [
+            -89.4107473,
+            43.078190201
+          ],
+          [
+            -89.4111507,
+            43.078188101
+          ],
+          [
+            -89.4111498,
+            43.078096601
+          ],
+          [
+            -89.4111965,
+            43.078096301
+          ],
+          [
+            -89.4111976,
+            43.078206801
+          ],
+          [
+            -89.4113603,
+            43.078206001
+          ],
+          [
+            -89.4113595,
+            43.078135101
+          ],
+          [
+            -89.4113757,
+            43.078135001
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook.",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
       "id": "vending-370-union",
       "name": "U.S. Dairy Forage Research Center",
       "provider": "union",
@@ -9968,6 +12024,7 @@
         43.075285267876716
       ],
       "mapObjectId": 370,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0096",
       "areas": [
         "Dairy Forage 2nd Fl",
@@ -10122,6 +12179,7 @@
         43.07540916393189
       ],
       "mapObjectId": 654,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "1435",
       "areas": [
         "Centennial-Medical Found"
@@ -10210,6 +12268,192 @@
       "supplementalReferences": []
     },
     {
+      "id": "vending-osm/way/26721840-union",
+      "name": "UW Shared Services (City Station)",
+      "provider": "union",
+      "address": "660 W. Washington Ave.",
+      "coordinates": [
+        -89.39553645464767,
+        43.06785721027929
+      ],
+      "mapObjectId": "osm/way/26721840",
+      "coordinateSource": "https://www.openstreetmap.org/way/26721840",
+      "buildingNumber": null,
+      "areas": [
+        "Shared Services — 2nd floor"
+      ],
+      "machineCount": 1,
+      "locationCount": 1,
+      "rings": [
+        [
+          [
+            -89.3956417,
+            43.0676824
+          ],
+          [
+            -89.3956381,
+            43.0676904
+          ],
+          [
+            -89.3956147,
+            43.0677312
+          ],
+          [
+            -89.3955878,
+            43.0677781
+          ],
+          [
+            -89.3955848,
+            43.0677777
+          ],
+          [
+            -89.3955712,
+            43.0677769
+          ],
+          [
+            -89.3955573,
+            43.0677774
+          ],
+          [
+            -89.3955467,
+            43.0677789
+          ],
+          [
+            -89.3955359,
+            43.0677814
+          ],
+          [
+            -89.3955278,
+            43.0677841
+          ],
+          [
+            -89.3955195,
+            43.0677874
+          ],
+          [
+            -89.3955091,
+            43.0677941
+          ],
+          [
+            -89.3954995,
+            43.0678014
+          ],
+          [
+            -89.3954967,
+            43.067803
+          ],
+          [
+            -89.3954388,
+            43.0677852
+          ],
+          [
+            -89.3952627,
+            43.0677309
+          ],
+          [
+            -89.3950962,
+            43.0676795
+          ],
+          [
+            -89.3949712,
+            43.067641
+          ],
+          [
+            -89.3948769,
+            43.0678053
+          ],
+          [
+            -89.3958703,
+            43.0681116
+          ],
+          [
+            -89.3958969,
+            43.0680652
+          ],
+          [
+            -89.3959148,
+            43.068034
+          ],
+          [
+            -89.3959312,
+            43.0680066
+          ],
+          [
+            -89.3959417,
+            43.067989
+          ],
+          [
+            -89.3959987,
+            43.0678937
+          ],
+          [
+            -89.3960064,
+            43.0678962
+          ],
+          [
+            -89.3960776,
+            43.0679175
+          ],
+          [
+            -89.3961267,
+            43.0679326
+          ],
+          [
+            -89.3961427,
+            43.0679376
+          ],
+          [
+            -89.3961708,
+            43.0678864
+          ],
+          [
+            -89.3961799,
+            43.067871
+          ],
+          [
+            -89.3961641,
+            43.067866
+          ],
+          [
+            -89.3961134,
+            43.067851
+          ],
+          [
+            -89.3960443,
+            43.0678299
+          ],
+          [
+            -89.3960371,
+            43.0678277
+          ],
+          [
+            -89.3960448,
+            43.0678145
+          ],
+          [
+            -89.3960489,
+            43.067807
+          ],
+          [
+            -89.3960218,
+            43.0677987
+          ],
+          [
+            -89.3956417,
+            43.0676824
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://www.openstreetmap.org/way/26721840",
+      "buildingConfirmation": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook. UW Shared Services is published at 660 W. Washington Ave.; the second-floor tenancy is independently documented by UW.",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
       "id": "vending-647-union",
       "name": "Union South",
       "provider": "union",
@@ -10219,6 +12463,7 @@
         43.07185606563247
       ],
       "mapObjectId": 647,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0088",
       "areas": [
         "Union South 4th",
@@ -10397,6 +12642,7 @@
         43.075577164154005
       ],
       "mapObjectId": 481,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0482",
       "areas": [
         "Van Hise 3rd Floor",
@@ -10555,6 +12801,7 @@
         43.07480652279825
       ],
       "mapObjectId": 482,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0048",
       "areas": [
         "UW Van Vleck",
@@ -10737,6 +12984,7 @@
         43.07590543787955
       ],
       "mapObjectId": 721,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0793",
       "areas": [
         "Vet School New Building"
@@ -11032,6 +13280,7 @@
         43.07513833653663
       ],
       "mapObjectId": 484,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0093",
       "areas": [
         "Vet School 1st FL LG Anim",
@@ -11174,6 +13423,7 @@
         43.07264502572392
       ],
       "mapObjectId": 485,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0545",
       "areas": [
         "Vilas Hall/Bsmt Rm 1153",
@@ -11320,6 +13570,7 @@
         43.076243174666224
       ],
       "mapObjectId": 487,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0039",
       "areas": [
         "WARF-1st Fl",
@@ -11458,6 +13709,7 @@
         43.07846060064663
       ],
       "mapObjectId": 486,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0459",
       "areas": [],
       "machineCount": 0,
@@ -11743,9 +13995,10 @@
         43.07694917047651
       ],
       "mapObjectId": 374,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0559",
       "areas": [
-        "Elizabeth Waters East 2nd"
+        "Elizabeth Waters — east, 2nd floor"
       ],
       "machineCount": 2,
       "locationCount": 1,
@@ -12048,10 +14301,10 @@
         43.071467152055256
       ],
       "mapObjectId": 489,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0404",
       "areas": [
-        "Wendt Library - 4th Fl",
-        "Wendt Library-2nd Fl"
+        "Wendt Library — 2nd floor"
       ],
       "machineCount": 2,
       "locationCount": 1,
@@ -12134,6 +14387,7 @@
         43.073746675296206
       ],
       "mapObjectId": 652,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0752",
       "areas": [
         "Energy Institute",
@@ -12308,10 +14562,11 @@
         43.07540914917626
       ],
       "mapObjectId": 401,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0016",
       "areas": [
-        "Vendor location 1 (exact area unconfirmed)",
-        "Vendor location 2 (exact area unconfirmed)"
+        "Historical Society — 1st floor",
+        "Historical Society — 3rd floor"
       ],
       "machineCount": 4,
       "locationCount": 2,
@@ -12494,6 +14749,7 @@
         43.07804183708091
       ],
       "mapObjectId": 618,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "1485",
       "areas": [
         "WI Inst Med Research 3rd",
@@ -12918,6 +15174,7 @@
         43.06857381189258
       ],
       "mapObjectId": 447,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0526",
       "areas": [
         "Primate Center Basement",
@@ -12984,6 +15241,7 @@
         43.074451005744685
       ],
       "mapObjectId": 547,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "0126",
       "areas": [
         "Diagnostic Lab 2nd floor",
@@ -13214,9 +15472,10 @@
         43.07159091764505
       ],
       "mapObjectId": 491,
+      "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingNumber": "1246",
       "areas": [
-        "Witte"
+        "Witte Hall — B Tower"
       ],
       "machineCount": 3,
       "locationCount": 1,

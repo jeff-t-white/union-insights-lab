@@ -137,7 +137,7 @@
     "expectedSourceNames": [
       "Medical Science-Basement"
     ],
-    "reason": "Medical Science could refer to multiple campus buildings."
+    "reason": "Statement names this location 'Medical Science-Basement', but a unique host building is not confirmed."
   },
   {
     "account": "1025",
@@ -362,9 +362,10 @@
   {
     "account": "1025",
     "location": "86",
-    "mapObjectId": null,
+    "mapObjectId": 343,
     "expectedSourceNames": [],
-    "reason": "No usable location name; await provider master list."
+    "reason": "Same-period commission heading identifies the host; complete machine list matches the workbook.",
+    "buildingAssignmentNote": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook."
   },
   {
     "account": "1025",
@@ -383,7 +384,7 @@
     "expectedSourceNames": [
       "Physical Science Lab-PS1"
     ],
-    "reason": "Physical Science Lab PS1 is not identified in the campus map export."
+    "reason": "Statement names this location 'Phvsical Science Lab-Psl', but a unique host building is not confirmed."
   },
   {
     "account": "1025",
@@ -445,12 +446,13 @@
   {
     "account": "1025",
     "location": "118",
-    "mapObjectId": null,
+    "mapObjectId": 472,
     "expectedSourceNames": [
       "Shell",
       "Sterling Hallgrdfl 1305"
     ],
-    "reason": "Source names conflict: Shell versus Sterling Hall."
+    "reason": "Same-period commission heading identifies the host; complete machine list matches the workbook.",
+    "buildingAssignmentNote": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook."
   },
   {
     "account": "1025",
@@ -478,7 +480,7 @@
     "expectedSourceNames": [
       "Educational Hall"
     ],
-    "reason": "Educational Hall is ambiguous between education buildings."
+    "reason": "Statement names this location 'Educational Hall', but a unique host building is not confirmed."
   },
   {
     "account": "1025",
@@ -503,9 +505,10 @@
   {
     "account": "1025",
     "location": "132",
-    "mapObjectId": null,
+    "mapObjectId": 341,
     "expectedSourceNames": [],
-    "reason": "No usable location name; await provider master list."
+    "reason": "Same-period commission heading identifies the host; complete machine list matches the workbook.",
+    "buildingAssignmentNote": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook. Animal Health & Biomedical Sciences at 1656 Linden Drive is now Hanson Biomedical Sciences."
   },
   {
     "account": "1025",
@@ -588,7 +591,7 @@
     "expectedSourceNames": [
       "Bio-Chem East"
     ],
-    "reason": "Bio-Chem East is ambiguous between biochemistry buildings."
+    "reason": "Statement names this location 'Bio-Chem East', but a unique host building is not confirmed."
   },
   {
     "account": "1025",
@@ -698,7 +701,7 @@
     "expectedSourceNames": [
       "ROTC"
     ],
-    "reason": "ROTC building is not specified."
+    "reason": "Statement names this location 'Rotc', but a unique host building is not confirmed."
   },
   {
     "account": "1025",
@@ -758,16 +761,17 @@
   {
     "account": "1025",
     "location": "190",
-    "mapObjectId": null,
+    "mapObjectId": "osm/way/26721840",
     "expectedSourceNames": [],
-    "reason": "No usable location name; await provider master list."
+    "reason": "Same-period commission heading identifies the host; complete machine list matches the workbook.",
+    "buildingAssignmentNote": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook. UW Shared Services is published at 660 W. Washington Ave.; the second-floor tenancy is independently documented by UW."
   },
   {
     "account": "1025",
     "location": "191",
     "mapObjectId": null,
     "expectedSourceNames": [],
-    "reason": "No usable location name; await provider master list."
+    "reason": "Statement names this location 'Uw System Administration', but a unique host building is not confirmed."
   },
   {
     "account": "1025",
@@ -785,49 +789,55 @@
     "expectedSourceNames": [
       "UW Campus Bio Chem Delli"
     ],
-    "reason": "Bio Chem Delli does not identify a unique biochemistry building."
+    "reason": "Statement names this location 'Uw Campus Bio Chem Deli', but a unique host building is not confirmed."
   },
   {
     "account": "1025",
     "location": "196",
-    "mapObjectId": null,
+    "mapObjectId": 729,
     "expectedSourceNames": [],
-    "reason": "No usable location name; await provider master list."
+    "reason": "Same-period commission heading identifies the host; complete machine list matches the workbook.",
+    "buildingAssignmentNote": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook. CDIS and Undergraduate Commons room 2610 identify Morgridge Hall; the Workday room inventory corroborates room 2610."
   },
   {
     "account": "1025",
     "location": "197",
-    "mapObjectId": null,
+    "mapObjectId": 729,
     "expectedSourceNames": [],
-    "reason": "No usable location name; await provider master list."
+    "reason": "Same-period commission heading identifies the host; complete machine list matches the workbook.",
+    "buildingAssignmentNote": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook. CDIS and Undergraduate Commons room 2610 identify Morgridge Hall; the Workday room inventory corroborates room 2610."
   },
   {
     "account": "1026",
     "location": "1",
-    "mapObjectId": null,
+    "mapObjectId": 462,
     "expectedSourceNames": [],
-    "reason": "No usable location name; await provider master list."
+    "reason": "Same-period commission heading identifies the host; complete machine list matches the workbook.",
+    "buildingAssignmentNote": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook."
   },
   {
     "account": "1026",
     "location": "2",
-    "mapObjectId": null,
+    "mapObjectId": 462,
     "expectedSourceNames": [],
-    "reason": "No usable location name; await provider master list."
+    "reason": "Same-period commission heading identifies the host; complete machine list matches the workbook.",
+    "buildingAssignmentNote": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook."
   },
   {
     "account": "1026",
     "location": "3",
-    "mapObjectId": null,
+    "mapObjectId": 479,
     "expectedSourceNames": [],
-    "reason": "No usable location name; await provider master list."
+    "reason": "Same-period commission heading identifies the host; complete machine list matches the workbook.",
+    "buildingAssignmentNote": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook."
   },
   {
     "account": "1026",
     "location": "4",
-    "mapObjectId": null,
+    "mapObjectId": 433,
     "expectedSourceNames": [],
-    "reason": "No usable location name; await provider master list."
+    "reason": "Same-period commission heading identifies the host; complete machine list matches the workbook.",
+    "buildingAssignmentNote": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook."
   },
   {
     "account": "1026",
@@ -841,9 +851,10 @@
   {
     "account": "1026",
     "location": "9",
-    "mapObjectId": null,
+    "mapObjectId": 347,
     "expectedSourceNames": [],
-    "reason": "No usable location name; await provider master list."
+    "reason": "Same-period commission heading identifies the host; complete machine list matches the workbook.",
+    "buildingAssignmentNote": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook."
   },
   {
     "account": "1026",
@@ -859,7 +870,7 @@
     "location": "11",
     "mapObjectId": null,
     "expectedSourceNames": [],
-    "reason": "No usable location name; await provider master list."
+    "reason": "Statement names this location 'Kronshage (specific house unconfirmed)', but a unique host building is not confirmed."
   },
   {
     "account": "1026",
@@ -873,37 +884,41 @@
   {
     "account": "1026",
     "location": "13",
-    "mapObjectId": null,
+    "mapObjectId": 334,
     "expectedSourceNames": [],
-    "reason": "No usable location name; await provider master list."
+    "reason": "Same-period commission heading identifies the host; complete machine list matches the workbook.",
+    "buildingAssignmentNote": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook."
   },
   {
     "account": "1026",
     "location": "14",
-    "mapObjectId": null,
+    "mapObjectId": 356,
     "expectedSourceNames": [],
-    "reason": "No usable location name; await provider master list."
+    "reason": "Same-period commission heading identifies the host; complete machine list matches the workbook.",
+    "buildingAssignmentNote": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook."
   },
   {
     "account": "1026",
     "location": "15",
-    "mapObjectId": null,
+    "mapObjectId": 362,
     "expectedSourceNames": [],
-    "reason": "No usable location name; await provider master list."
+    "reason": "Same-period commission heading identifies the host; complete machine list matches the workbook.",
+    "buildingAssignmentNote": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook."
   },
   {
     "account": "1026",
     "location": "16",
-    "mapObjectId": null,
+    "mapObjectId": 365,
     "expectedSourceNames": [],
-    "reason": "No usable location name; await provider master list."
+    "reason": "Same-period commission heading identifies the host; complete machine list matches the workbook.",
+    "buildingAssignmentNote": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook."
   },
   {
     "account": "1026",
     "location": "17",
     "mapObjectId": null,
     "expectedSourceNames": [],
-    "reason": "No usable location name; await provider master list."
+    "reason": "Statement names this location 'Eagle Heights — 1st floor (building unconfirmed)', but a unique host building is not confirmed."
   },
   {
     "account": "1026",
@@ -917,16 +932,18 @@
   {
     "account": "1026",
     "location": "20",
-    "mapObjectId": null,
+    "mapObjectId": 386,
     "expectedSourceNames": [],
-    "reason": "No usable location name; await provider master list."
+    "reason": "Same-period commission heading identifies the host; complete machine list matches the workbook.",
+    "buildingAssignmentNote": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook."
   },
   {
     "account": "1026",
     "location": "21",
-    "mapObjectId": null,
+    "mapObjectId": 390,
     "expectedSourceNames": [],
-    "reason": "No usable location name; await provider master list."
+    "reason": "Same-period commission heading identifies the host; complete machine list matches the workbook.",
+    "buildingAssignmentNote": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook."
   },
   {
     "account": "1026",
@@ -940,9 +957,10 @@
   {
     "account": "1026",
     "location": "25",
-    "mapObjectId": null,
+    "mapObjectId": 475,
     "expectedSourceNames": [],
-    "reason": "No usable location name; await provider master list."
+    "reason": "Same-period commission heading identifies the host; complete machine list matches the workbook.",
+    "buildingAssignmentNote": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook."
   },
   {
     "account": "1026",
@@ -956,9 +974,10 @@
   {
     "account": "1026",
     "location": "28",
-    "mapObjectId": null,
+    "mapObjectId": 672,
     "expectedSourceNames": [],
-    "reason": "No usable location name; await provider master list."
+    "reason": "Same-period commission heading identifies the host; complete machine list matches the workbook.",
+    "buildingAssignmentNote": "Host identified from the September 2026 commission statement; all machines match this account/location in the workbook."
   },
   {
     "account": "1026",

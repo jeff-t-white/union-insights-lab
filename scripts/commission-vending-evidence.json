@@ -1,0 +1,1247 @@
+{
+  "period": "September 2026",
+  "checked": "2026-10-30",
+  "note": "Statement headers OCR-transcribed; reviewedAreaName is set only for visually checked replacement labels. Complete machine-list signatures validate each account/location against the original workbook. Financial amounts and individual machine IDs are excluded.",
+  "sources": {
+    "1025": "P12 Commission Statement 1025 UW Campus.pdf",
+    "1026": "P12 Commission Statement 1026 Housing.pdf",
+    "1028": "P12 Commission Statement 1028 Hist Soc.pdf"
+  },
+  "buildingReferences": {
+    "341": [
+      "https://pophealth.wisc.edu/staff/goldberg-tony/",
+      "https://cpla.fpm.wisc.edu/wp-content/uploads/sites/20/2017/05/Agricultural-Campus_rev-2011.pdf"
+    ],
+    "729": [
+      "https://upl.cs.wisc.edu/",
+      "User-provided Workday room inventory: Morgridge Hall room 2610"
+    ],
+    "osm/way/26721840": [
+      "https://studentjobs.hr.wisc.edu/en-us/job/30255/student-assistant",
+      "https://www.wisconsin.edu/regents/download/meeting_materials/2018/december_6-7%2C_2018/1218_CPB_Agenda_Combined-%28rev-12-5-18%29.pdf"
+    ]
+  },
+  "locations": [
+    {
+      "account": "1025",
+      "location": "6",
+      "statementName": "Nielsen Tennis Stadium",
+      "reviewedAreaName": null,
+      "pages": [
+        1
+      ],
+      "machineCount": 2,
+      "machineSignature": "cf8db3ac3c57e7a8fd975706cae7aab6fb99a98b36183930f4d39f510f2477d6"
+    },
+    {
+      "account": "1025",
+      "location": "9",
+      "statementName": "Rennebohm Hall-lst Fl",
+      "reviewedAreaName": null,
+      "pages": [
+        1
+      ],
+      "machineCount": 2,
+      "machineSignature": "d793d79b8f9dad4addd775f2d3cfdcd2079e960497165bb6ba2e31a4762c03fb"
+    },
+    {
+      "account": "1025",
+      "location": "10",
+      "statementName": "Rennebohm Hall-2nd Fl",
+      "reviewedAreaName": null,
+      "pages": [
+        1
+      ],
+      "machineCount": 2,
+      "machineSignature": "44d41314a4fe9b45d455602d061f66502fed106e18eab3cd641ea6539b3b079f"
+    },
+    {
+      "account": "1025",
+      "location": "11",
+      "statementName": "Russell Lab Bsmt By Elev",
+      "reviewedAreaName": null,
+      "pages": [
+        1
+      ],
+      "machineCount": 2,
+      "machineSignature": "c968892faef0b72954cbd39f57ce638ef74aae14ea9bf7864d1143079205c93a"
+    },
+    {
+      "account": "1025",
+      "location": "16",
+      "statementName": "Steenbock Library lst Fl",
+      "reviewedAreaName": null,
+      "pages": [
+        2
+      ],
+      "machineCount": 2,
+      "machineSignature": "ea97e6ce02a815269d4e319099dbf9103fb23b354d1362ae20649f2f64f730f3"
+    },
+    {
+      "account": "1025",
+      "location": "20",
+      "statementName": "Vet School 1st Fl Lg Ani",
+      "reviewedAreaName": null,
+      "pages": [
+        2
+      ],
+      "machineCount": 1,
+      "machineSignature": "396a78ac35b3e9e0d0846776e934178ee0060144e9fb5edf788d3431a5a8c8eb"
+    },
+    {
+      "account": "1025",
+      "location": "21",
+      "statementName": "Vet School 2nd Fl",
+      "reviewedAreaName": null,
+      "pages": [
+        2
+      ],
+      "machineCount": 2,
+      "machineSignature": "e5d460b46e63a342bb627e4730776dd3a24ea714b646bef641e5a6da0008b129"
+    },
+    {
+      "account": "1025",
+      "location": "24",
+      "statementName": "Warf-lst Fl",
+      "reviewedAreaName": null,
+      "pages": [
+        3
+      ],
+      "machineCount": 2,
+      "machineSignature": "4945df0c2af59a9219bc00e2bb69ef1c33f46ac8c818c5b614be4bd692f7078f"
+    },
+    {
+      "account": "1025",
+      "location": "26",
+      "statementName": "Bio Tech-5th Fl",
+      "reviewedAreaName": null,
+      "pages": [
+        3
+      ],
+      "machineCount": 2,
+      "machineSignature": "6a83c69fe4368376104c7066c7865883d571a7ca93f7747a7c1980c9a4ab2ffe"
+    },
+    {
+      "account": "1025",
+      "location": "30",
+      "statementName": "Computer Science Basemen",
+      "reviewedAreaName": null,
+      "pages": [
+        3
+      ],
+      "machineCount": 3,
+      "machineSignature": "c361e4619c337ff106cd7daa7fb0c15cabe4dbec62eb19b802be53f8b4d9328b"
+    },
+    {
+      "account": "1025",
+      "location": "33",
+      "statementName": "Educational Science-Base",
+      "reviewedAreaName": null,
+      "pages": [
+        4
+      ],
+      "machineCount": 2,
+      "machineSignature": "4a9590ae6f639d9df7503210d48d68f3001bc54051928825920e17633c7fa0ca"
+    },
+    {
+      "account": "1025",
+      "location": "35",
+      "statementName": "Ena Hall - Electicial ls",
+      "reviewedAreaName": null,
+      "pages": [
+        4
+      ],
+      "machineCount": 4,
+      "machineSignature": "ed7e12b525d9c057ba59b9d109d7a6e30232e24c95a5cd8b919ba95e49728ea0"
+    },
+    {
+      "account": "1025",
+      "location": "36",
+      "statementName": "Grainger Hall",
+      "reviewedAreaName": null,
+      "pages": [
+        5
+      ],
+      "machineCount": 4,
+      "machineSignature": "7a66577616fb1737be4291dd254e19d31574fb998d00e6912dbd685caa108cd7"
+    },
+    {
+      "account": "1025",
+      "location": "37",
+      "statementName": "Kohl Center Loading Dock",
+      "reviewedAreaName": null,
+      "pages": [
+        5
+      ],
+      "machineCount": 1,
+      "machineSignature": "7a7f265572163f5f73d02b1b321b53c6360ba411fc1d739aeb3aad83ce4ca011"
+    },
+    {
+      "account": "1025",
+      "location": "39",
+      "statementName": "Medical Science-Basement",
+      "reviewedAreaName": null,
+      "pages": [
+        5
+      ],
+      "machineCount": 2,
+      "machineSignature": "e8e044f6c811895b7aa80c670d959d5d377d233257a6df60c536a2f2c6709b98"
+    },
+    {
+      "account": "1025",
+      "location": "42",
+      "statementName": "Meteorology/space Sc 4th",
+      "reviewedAreaName": null,
+      "pages": [
+        6
+      ],
+      "machineCount": 2,
+      "machineSignature": "b06a6701f6db5591b43eb22fcef3641755203168ad8150cbe539463f50e06b55"
+    },
+    {
+      "account": "1025",
+      "location": "44",
+      "statementName": "old Middleton Library-2n",
+      "reviewedAreaName": null,
+      "pages": [
+        6
+      ],
+      "machineCount": 2,
+      "machineSignature": "d76c68d9a97a9d16966e744776cbd2a2b210dc16e382ab76320eef36d10169ac"
+    },
+    {
+      "account": "1025",
+      "location": "45",
+      "statementName": "Primate Center Basement",
+      "reviewedAreaName": null,
+      "pages": [
+        6
+      ],
+      "machineCount": 2,
+      "machineSignature": "2dca4ceebca002e21ebaccf1bd1c907ade533306eb290927293fbbfb70fa46bf"
+    },
+    {
+      "account": "1025",
+      "location": "46",
+      "statementName": "Hvaiene Lab-2nd Fl",
+      "reviewedAreaName": null,
+      "pages": [
+        7
+      ],
+      "machineCount": 2,
+      "machineSignature": "022b58408a2fc3f5cebf8504a1680cd844265b022ffa970d149dc8c112353525"
+    },
+    {
+      "account": "1025",
+      "location": "51",
+      "statementName": "Social Work — 1st floor",
+      "reviewedAreaName": "Social Work — 1st floor",
+      "pages": [
+        7
+      ],
+      "machineCount": 2,
+      "machineSignature": "6ced9ea5575789456d05ce2d5208814643efed0272cab2ade04abcb45ddcd149"
+    },
+    {
+      "account": "1025",
+      "location": "52",
+      "statementName": "Environ Health & Safety",
+      "reviewedAreaName": null,
+      "pages": [
+        7
+      ],
+      "machineCount": 2,
+      "machineSignature": "49ab0093e18456b6fa7f36bb60b2c05742991578eb6b4d31b63919bf0b8dcab8"
+    },
+    {
+      "account": "1025",
+      "location": "53",
+      "statementName": "Art Loft-lst Fl",
+      "reviewedAreaName": null,
+      "pages": [
+        8
+      ],
+      "machineCount": 2,
+      "machineSignature": "63c5c50bd1bbd0305f897f9f3611c39496c22c511ba5f9e9e5bd1d9cd79fcf56"
+    },
+    {
+      "account": "1025",
+      "location": "55",
+      "statementName": "Teachers Ed-lst Fl",
+      "reviewedAreaName": null,
+      "pages": [
+        8
+      ],
+      "machineCount": 3,
+      "machineSignature": "6002e067198c507846580cdb08f0e0935095235191e682ac8af44edbf0d1803e"
+    },
+    {
+      "account": "1025",
+      "location": "56",
+      "statementName": "Vilas Hall/bsmt Rm 1153",
+      "reviewedAreaName": null,
+      "pages": [
+        8
+      ],
+      "machineCount": 1,
+      "machineSignature": "92cc0f171cf57966829b0b39f13e48bbffcb230671a2f821f65349f383cc0412"
+    },
+    {
+      "account": "1025",
+      "location": "60",
+      "statementName": "Nolen/zoology-lst Fl",
+      "reviewedAreaName": null,
+      "pages": [
+        9
+      ],
+      "machineCount": 2,
+      "machineSignature": "df43b9642fe3b3739c984d6ee0f70ab8b81a2f50327344dc80f3b119c4343ea7"
+    },
+    {
+      "account": "1025",
+      "location": "61",
+      "statementName": "Aa Hall Room 50",
+      "reviewedAreaName": null,
+      "pages": [
+        9
+      ],
+      "machineCount": 2,
+      "machineSignature": "fcb3dcea10806bef54c9249b45d156fb3c7f894b428389b308ff44ba39eaa9e2"
+    },
+    {
+      "account": "1025",
+      "location": "63",
+      "statementName": "Bascom Hall-Main",
+      "reviewedAreaName": null,
+      "pages": [
+        9
+      ],
+      "machineCount": 4,
+      "machineSignature": "93e9f8d24e05ce4ad9904e674f4bb4a01b29ffcabf2ec253f8d2dcb566e4f7f8"
+    },
+    {
+      "account": "1025",
+      "location": "64",
+      "statementName": "Birge Hall B1",
+      "reviewedAreaName": null,
+      "pages": [
+        10
+      ],
+      "machineCount": 2,
+      "machineSignature": "441c24adf0272dfe8608d1625e8b7c141030d9cc500e9d60f59261cf31f18470"
+    },
+    {
+      "account": "1025",
+      "location": "67",
+      "statementName": "Commerce/ingrahm-Basemen",
+      "reviewedAreaName": null,
+      "pages": [
+        10
+      ],
+      "machineCount": 2,
+      "machineSignature": "25ee1640e387725bb455ad5f2184f7fadd4ebb0b229a1657e4308fe4a0884db1"
+    },
+    {
+      "account": "1025",
+      "location": "68",
+      "statementName": "Helen C. White-lst Fl",
+      "reviewedAreaName": null,
+      "pages": [
+        11
+      ],
+      "machineCount": 6,
+      "machineSignature": "3b4d1b8d1cd8c86e83368a044aed30627b67cde13b9b71279aba6e906e518470"
+    },
+    {
+      "account": "1025",
+      "location": "69",
+      "statementName": "Helen C. White-5th Fl",
+      "reviewedAreaName": null,
+      "pages": [
+        11
+      ],
+      "machineCount": 2,
+      "machineSignature": "582b044d53f9c4a7253bba55a1613e447db4b6b5d385041c2c02b3be8347054b"
+    },
+    {
+      "account": "1025",
+      "location": "72",
+      "statementName": "Humanities-7th Fl",
+      "reviewedAreaName": null,
+      "pages": [
+        12
+      ],
+      "machineCount": 2,
+      "machineSignature": "7e7cd82809837ac91f4876c8627077fdafc80787ff3ce36ae2c7598510b55d90"
+    },
+    {
+      "account": "1025",
+      "location": "73",
+      "statementName": "Humanities-lst Fl",
+      "reviewedAreaName": null,
+      "pages": [
+        12
+      ],
+      "machineCount": 3,
+      "machineSignature": "68a3475a3af5022876c28f206ded5a137ce13620999115c9794d5767f501a640"
+    },
+    {
+      "account": "1025",
+      "location": "74",
+      "statementName": "Lathrop Hall-Basement",
+      "reviewedAreaName": null,
+      "pages": [
+        12
+      ],
+      "machineCount": 3,
+      "machineSignature": "ff53474fe5b9187777cbd43b0f4d58839bcb61c292a0eb701de1f001623d4a89"
+    },
+    {
+      "account": "1025",
+      "location": "78",
+      "statementName": "Memorial Library-lst Fl",
+      "reviewedAreaName": null,
+      "pages": [
+        13
+      ],
+      "machineCount": 1,
+      "machineSignature": "6e2b5174ed457c326120b555fd18eba029f420e75e904250d812cc978ab674c0"
+    },
+    {
+      "account": "1025",
+      "location": "79",
+      "statementName": "Memorial Library-3rd Fl",
+      "reviewedAreaName": null,
+      "pages": [
+        13
+      ],
+      "machineCount": 2,
+      "machineSignature": "b345a693b50f5c1249f206f2b2ef2bcac46666da954fca06df9e69ae3b287109"
+    },
+    {
+      "account": "1025",
+      "location": "81",
+      "statementName": "Pyle Center-Basement",
+      "reviewedAreaName": null,
+      "pages": [
+        13
+      ],
+      "machineCount": 2,
+      "machineSignature": "49b481baf474ba4d818953b6b6c3c93baa41bfc6e15433eae8ab9a7c049de90b"
+    },
+    {
+      "account": "1025",
+      "location": "83",
+      "statementName": "Pvle Center-2nd Fl",
+      "reviewedAreaName": null,
+      "pages": [
+        14
+      ],
+      "machineCount": 2,
+      "machineSignature": "7e5f7c86e5c2480b20e3d92bcdfdbb6743214cd8f044f53cb2d88579db140540"
+    },
+    {
+      "account": "1025",
+      "location": "86",
+      "statementName": "Red Gym — 1st floor",
+      "reviewedAreaName": "Red Gym — 1st floor",
+      "pages": [
+        14
+      ],
+      "machineCount": 2,
+      "machineSignature": "31ba26ce7f191c655a5b7c880f44a166db5032867e5ce24f02a3116962fd751b"
+    },
+    {
+      "account": "1025",
+      "location": "88",
+      "statementName": "Uw Van Vleck-Level B3",
+      "reviewedAreaName": null,
+      "pages": [
+        14
+      ],
+      "machineCount": 2,
+      "machineSignature": "8be7fd2ee2fc59e27cc6676852c3ae872b271856e1db93e157325cc31747f9a1"
+    },
+    {
+      "account": "1025",
+      "location": "91",
+      "statementName": "Phvsical Science Lab-Psl",
+      "reviewedAreaName": null,
+      "pages": [
+        15
+      ],
+      "machineCount": 2,
+      "machineSignature": "55b71b8ae940a7bc8a020212f16e47ff59fd27fb517f408c3b2c4ffe7ece8a8d"
+    },
+    {
+      "account": "1025",
+      "location": "102",
+      "statementName": "Chamberlain Hall-2nd Fl.",
+      "reviewedAreaName": null,
+      "pages": [
+        15
+      ],
+      "machineCount": 3,
+      "machineSignature": "d26e514edb3235fcd319f538db3d4d8a3183ff46a2cd83a0b564857146e335c4"
+    },
+    {
+      "account": "1025",
+      "location": "108",
+      "statementName": "Health Sciences Learning",
+      "reviewedAreaName": null,
+      "pages": [
+        15
+      ],
+      "machineCount": 4,
+      "machineSignature": "b0ff92898043485b33f5acf2b8ea3dd9f8abca8ee4bce85bfca814923a908e00"
+    },
+    {
+      "account": "1025",
+      "location": "111",
+      "statementName": "Vilas Hall/comm Arts-7th",
+      "reviewedAreaName": null,
+      "pages": [
+        16
+      ],
+      "machineCount": 2,
+      "machineSignature": "0ed5d565d62e5cfe9902260514c0e7ad6169826d7a69f093785ef8ea48963be2"
+    },
+    {
+      "account": "1025",
+      "location": "112",
+      "statementName": "Wi Inst Med Research-7th",
+      "reviewedAreaName": null,
+      "pages": [
+        16
+      ],
+      "machineCount": 2,
+      "machineSignature": "b9bd0084adf4a1470e968463fe494c7973b9d5f7a994be8109680f8ddec1cebb"
+    },
+    {
+      "account": "1025",
+      "location": "114",
+      "statementName": "wi Inst Med Research-1st",
+      "reviewedAreaName": null,
+      "pages": [
+        17
+      ],
+      "machineCount": 2,
+      "machineSignature": "14763163e3a5c5bf216501ef2718fc7d9b916b9f7bbff7a249dc69f9931b2a00"
+    },
+    {
+      "account": "1025",
+      "location": "115",
+      "statementName": "Wendt Library — 2nd floor",
+      "reviewedAreaName": "Wendt Library — 2nd floor",
+      "pages": [
+        17
+      ],
+      "machineCount": 2,
+      "machineSignature": "af2a67ab89e1e7e50ef08d4ba4bf20d29affa714a4d8179d1714a881d2610225"
+    },
+    {
+      "account": "1025",
+      "location": "118",
+      "statementName": "Sterling Hall — ground floor, room 1305",
+      "reviewedAreaName": "Sterling Hall — ground floor, room 1305",
+      "pages": [
+        17
+      ],
+      "machineCount": 2,
+      "machineSignature": "6615b02ce7e067b0b715832c090bd70177b43e128a77600605bacb5177bf3217"
+    },
+    {
+      "account": "1025",
+      "location": "123",
+      "statementName": "Centennial-Medical Found",
+      "reviewedAreaName": null,
+      "pages": [
+        18
+      ],
+      "machineCount": 1,
+      "machineSignature": "e7e29fb0f2280287b2be156f983b25aa93ff553cc507533707c4e462a6fbba4f"
+    },
+    {
+      "account": "1025",
+      "location": "124",
+      "statementName": "Dairy Forage 2nd Fl",
+      "reviewedAreaName": null,
+      "pages": [
+        18
+      ],
+      "machineCount": 2,
+      "machineSignature": "8d72492b465f3e383fb4beda3c20a08ef97b0c8ae9bfc8e054aab2593b9f3398"
+    },
+    {
+      "account": "1025",
+      "location": "125",
+      "statementName": "Educational Hall",
+      "reviewedAreaName": null,
+      "pages": [
+        18
+      ],
+      "machineCount": 2,
+      "machineSignature": "a1728bdd41b616ba81b3abf7a208a63622180075fba52e4aeb6759d22a493973"
+    },
+    {
+      "account": "1025",
+      "location": "126",
+      "statementName": "Chemistry 5th Floor",
+      "reviewedAreaName": null,
+      "pages": [
+        18
+      ],
+      "machineCount": 3,
+      "machineSignature": "a91ba5112def329ff9b0ae44ea0926d73420f2659a3a2882f7f745a1e84b058c"
+    },
+    {
+      "account": "1025",
+      "location": "129",
+      "statementName": "21 N Park/welc Center 6f",
+      "reviewedAreaName": null,
+      "pages": [
+        19
+      ],
+      "machineCount": 2,
+      "machineSignature": "fb0f60a185ec0a641c7bc057cd721679cd16da547087499098d8db194d7283a7"
+    },
+    {
+      "account": "1025",
+      "location": "132",
+      "statementName": "Animal Health & Biomedical Sciences",
+      "reviewedAreaName": "Animal Health & Biomedical Sciences",
+      "pages": [
+        19
+      ],
+      "machineCount": 2,
+      "machineSignature": "d56414e0b6117bff3d2f793d3457771ca90deb5bf9293374b2b7b5873a667820"
+    },
+    {
+      "account": "1025",
+      "location": "133",
+      "statementName": "Animal Science",
+      "reviewedAreaName": null,
+      "pages": [
+        19
+      ],
+      "machineCount": 2,
+      "machineSignature": "432f5a033d2c669ea3aadb2635008d4ccd61fe74e3b06b4484776bfc01197b40"
+    },
+    {
+      "account": "1025",
+      "location": "135",
+      "statementName": "Microbites Rm 2506",
+      "reviewedAreaName": null,
+      "pages": [
+        20
+      ],
+      "machineCount": 2,
+      "machineSignature": "93f2100252f5c877b7fba788f1f8b8411605927b088803c3bfe4284dc3ce8d11"
+    },
+    {
+      "account": "1025",
+      "location": "144",
+      "statementName": "Diagnostic Lab-2nd Fl",
+      "reviewedAreaName": null,
+      "pages": [
+        20
+      ],
+      "machineCount": 2,
+      "machineSignature": "2385b8d6b5e0460ec7c6975aa00b52935b1ab7e0d354034e146ec1ea0f68c777"
+    },
+    {
+      "account": "1025",
+      "location": "148",
+      "statementName": "Enzyme Lab-lst Fl",
+      "reviewedAreaName": null,
+      "pages": [
+        20
+      ],
+      "machineCount": 2,
+      "machineSignature": "c88087a8e242cd628affbeca99dc2504c780d2a75e418a58a5cebd63c9447947"
+    },
+    {
+      "account": "1025",
+      "location": "151",
+      "statementName": "Good Night Hall-4th Fl",
+      "reviewedAreaName": null,
+      "pages": [
+        21
+      ],
+      "machineCount": 2,
+      "machineSignature": "a96ad58b6ee9c78dc07581189a08acb6a1dcfc6f78ba3b1dfdebd2546d75b158"
+    },
+    {
+      "account": "1025",
+      "location": "159",
+      "statementName": "Union South 4th",
+      "reviewedAreaName": null,
+      "pages": [
+        21
+      ],
+      "machineCount": 2,
+      "machineSignature": "cdb3e42fafe75bf2bdd425a4593a7f090c97f431c9906af554d5c1fae9e83405"
+    },
+    {
+      "account": "1025",
+      "location": "160",
+      "statementName": "Union South 5th",
+      "reviewedAreaName": null,
+      "pages": [
+        21
+      ],
+      "machineCount": 2,
+      "machineSignature": "02925334cb13433f23daec2e6aa6293032ade6513d85bda4cc4794e02cfd6ff6"
+    },
+    {
+      "account": "1025",
+      "location": "161",
+      "statementName": "Wi Inst Med Research 3rd",
+      "reviewedAreaName": null,
+      "pages": [
+        22
+      ],
+      "machineCount": 2,
+      "machineSignature": "fc2d6b37354df0bccd41d49e2b9406e9b288a9cec5ca67d9463ce5d7da438a6b"
+    },
+    {
+      "account": "1025",
+      "location": "162",
+      "statementName": "Bio-Chem East",
+      "reviewedAreaName": null,
+      "pages": [
+        22
+      ],
+      "machineCount": 2,
+      "machineSignature": "4a74fb33b4417b606fa4ab1c00c0d53deda0e9acf32dfa5af330189ef81dadd6"
+    },
+    {
+      "account": "1025",
+      "location": "166",
+      "statementName": "Hum EcologY 2nd Robins N",
+      "reviewedAreaName": null,
+      "pages": [
+        22
+      ],
+      "machineCount": 2,
+      "machineSignature": "85474db422a4d2b3b2e10ae7fdccce319ab4d8c8402d93bed55246c3379b6e14"
+    },
+    {
+      "account": "1025",
+      "location": "167",
+      "statementName": "Energy,Institute Ground",
+      "reviewedAreaName": null,
+      "pages": [
+        23
+      ],
+      "machineCount": 2,
+      "machineSignature": "d687be7146ee4886b807c6812bcd0c8da2d1289aa628288a6c141bbab55b549f"
+    },
+    {
+      "account": "1025",
+      "location": "169",
+      "statementName": "Soc Sci -Sewel 4th Fl",
+      "reviewedAreaName": null,
+      "pages": [
+        23
+      ],
+      "machineCount": 2,
+      "machineSignature": "5dd0756bb59082a37d51ae6218775c9a9475a5e572193c58e2259a7dcb991a2f"
+    },
+    {
+      "account": "1025",
+      "location": "170",
+      "statementName": "Van Hise 3rd Floor",
+      "reviewedAreaName": null,
+      "pages": [
+        23
+      ],
+      "machineCount": 3,
+      "machineSignature": "70afe243619b228ecdd8c41534b15d5a237f585203192e89ac5affa0c7b3bf6c"
+    },
+    {
+      "account": "1025",
+      "location": "171",
+      "statementName": "Brogden Psychology Bldg",
+      "reviewedAreaName": null,
+      "pages": [
+        24
+      ],
+      "machineCount": 2,
+      "machineSignature": "ac3c6ca30a42ba960b7692ea63bcb917d0f32c4315ac34cc15034784a20bbae2"
+    },
+    {
+      "account": "1025",
+      "location": "172",
+      "statementName": "Enaineering Research Bui",
+      "reviewedAreaName": null,
+      "pages": [
+        24
+      ],
+      "machineCount": 2,
+      "machineSignature": "4c74542ab5305d5a9aab5a6060b51f1000d832f6b99291e5b9d27ed27751d555"
+    },
+    {
+      "account": "1025",
+      "location": "174",
+      "statementName": "Mech Engineering Rm 1272",
+      "reviewedAreaName": null,
+      "pages": [
+        24
+      ],
+      "machineCount": 2,
+      "machineSignature": "28baff36ea9afdb77802d482fea7364af17751eec225cad68381419fb6e3995c"
+    },
+    {
+      "account": "1025",
+      "location": "175",
+      "statementName": "Enaineering Centers Buil",
+      "reviewedAreaName": null,
+      "pages": [
+        25
+      ],
+      "machineCount": 2,
+      "machineSignature": "ee4123ee8630089fb863508ed1b93881db7d3773aff945c5cf288c39b7252f13"
+    },
+    {
+      "account": "1025",
+      "location": "177",
+      "statementName": "Student Act.Ctr 3rd Fl",
+      "reviewedAreaName": null,
+      "pages": [
+        25
+      ],
+      "machineCount": 4,
+      "machineSignature": "886b3095eb16dc7c6a14c26544cfcc0ac67acd6ffebc3a9cf03854f44e2656ec"
+    },
+    {
+      "account": "1025",
+      "location": "178",
+      "statementName": "Room 1262 School Of Nurs",
+      "reviewedAreaName": null,
+      "pages": [
+        26
+      ],
+      "machineCount": 2,
+      "machineSignature": "faf8fcc44a0b97b445883c4e8e8dcc1ba93a98f5ae56028195c1205265e21d6e"
+    },
+    {
+      "account": "1025",
+      "location": "179",
+      "statementName": "Rotc",
+      "reviewedAreaName": null,
+      "pages": [
+        26
+      ],
+      "machineCount": 2,
+      "machineSignature": "af782920f59e37b5a08e4730a219444a71114e2076754c912816f5bac3a5e107"
+    },
+    {
+      "account": "1025",
+      "location": "180",
+      "statementName": "30 North Mills- 4th Floo",
+      "reviewedAreaName": null,
+      "pages": [
+        26
+      ],
+      "machineCount": 2,
+      "machineSignature": "59f802e5c05a99e2749ecf19ad7773bde92e788c54920028d2a4517702a7bc60"
+    },
+    {
+      "account": "1025",
+      "location": "184",
+      "statementName": "Fluno Center — 4th floor",
+      "reviewedAreaName": "Fluno Center — 4th floor",
+      "pages": [
+        27
+      ],
+      "machineCount": 1,
+      "machineSignature": "0b5f4b2220460e2e5cefa2d49fecffc413ec61d3eb5b474a00341bcaa2fe5754"
+    },
+    {
+      "account": "1025",
+      "location": "185",
+      "statementName": "Fluno Ctr 5th Floor",
+      "reviewedAreaName": null,
+      "pages": [
+        27
+      ],
+      "machineCount": 1,
+      "machineSignature": "87a3dae9121e0f592a1a412a8ccbfeb4705fddbc3a8aefb52feb2e1317e29849"
+    },
+    {
+      "account": "1025",
+      "location": "186",
+      "statementName": "Fluno Ctr 6th Floor",
+      "reviewedAreaName": null,
+      "pages": [
+        27
+      ],
+      "machineCount": 1,
+      "machineSignature": "b913fbeab982e9c63397ebb7eaaa083d6867570a59b7e173f5214acd5199b92b"
+    },
+    {
+      "account": "1025",
+      "location": "187",
+      "statementName": "Fluno Ctr 7th Floor",
+      "reviewedAreaName": null,
+      "pages": [
+        27
+      ],
+      "machineCount": 1,
+      "machineSignature": "2e82fec4755549a80c6fac7d4f14df422c6362a44eb0598bff68817695e5428e"
+    },
+    {
+      "account": "1025",
+      "location": "188",
+      "statementName": "Do It Digital&printing S",
+      "reviewedAreaName": null,
+      "pages": [
+        27
+      ],
+      "machineCount": 2,
+      "machineSignature": "1964002238fccae51c2c5cf56fc5857418af4e8318ffc43e6cd6e350daa99603"
+    },
+    {
+      "account": "1025",
+      "location": "190",
+      "statementName": "Shared Services — 2nd floor",
+      "reviewedAreaName": "Shared Services — 2nd floor",
+      "pages": [
+        28
+      ],
+      "machineCount": 1,
+      "machineSignature": "e6167f9e7222e970ad8b991f823564c33b64055221f71045b4999dc667e26b9c"
+    },
+    {
+      "account": "1025",
+      "location": "191",
+      "statementName": "Uw System Administration",
+      "reviewedAreaName": null,
+      "pages": [
+        28
+      ],
+      "machineCount": 2,
+      "machineSignature": "5369ee32468ee97df0b10b0af2e8147d6d921cfee69aff63abed7c53f6da72f5"
+    },
+    {
+      "account": "1025",
+      "location": "192",
+      "statementName": "Vet School_New Building",
+      "reviewedAreaName": null,
+      "pages": [
+        28
+      ],
+      "machineCount": 3,
+      "machineSignature": "754da383874777fff8ae011906ccb94491c63e0ee6b840238b5da6d549f6836e"
+    },
+    {
+      "account": "1025",
+      "location": "193",
+      "statementName": "Uw Campus Bio Chem Deli",
+      "reviewedAreaName": null,
+      "pages": [
+        28
+      ],
+      "machineCount": 2,
+      "machineSignature": "af48109019101057bf886522e6d4e671db23ee3528b5207c9820293cd952ed09"
+    },
+    {
+      "account": "1025",
+      "location": "196",
+      "statementName": "CDIS — B2 hallway",
+      "reviewedAreaName": "CDIS — B2 hallway",
+      "pages": [
+        29
+      ],
+      "machineCount": 2,
+      "machineSignature": "77e544e6d5e45512489cdfca1bc05dec418a05a6ce2e43360174c67883ed0b9b"
+    },
+    {
+      "account": "1025",
+      "location": "197",
+      "statementName": "Undergraduate Commons — room 2610",
+      "reviewedAreaName": "Undergraduate Commons — room 2610",
+      "pages": [
+        29
+      ],
+      "machineCount": 2,
+      "machineSignature": "78ea7369c2ed9c6f142eaf3df03c8bd78b4b3a48c880ee6a5e6bfe85bcd2f421"
+    },
+    {
+      "account": "1026",
+      "location": "1",
+      "statementName": "Slichter — ground floor",
+      "reviewedAreaName": "Slichter — ground floor",
+      "pages": [
+        1
+      ],
+      "machineCount": 1,
+      "machineSignature": "710161bbed3498fbca42ed5b520c2dfa125d1f7acfe1b79a488d23dcbdcc66fd"
+    },
+    {
+      "account": "1026",
+      "location": "2",
+      "statementName": "Slichter — 2nd floor",
+      "reviewedAreaName": "Slichter — 2nd floor",
+      "pages": [
+        1
+      ],
+      "machineCount": 2,
+      "machineSignature": "8bb28bf930ccbac5e791b292c2373faea230b063976ad20fb7726039e8a0bb88"
+    },
+    {
+      "account": "1026",
+      "location": "3",
+      "statementName": "Tripp Hall — Botkin House",
+      "reviewedAreaName": "Tripp Hall — Botkin House",
+      "pages": [
+        1
+      ],
+      "machineCount": 2,
+      "machineSignature": "10954ee6d715a004719fa2b689b7a71b3dea79fd60690a03d94f1e8f7c5f029b"
+    },
+    {
+      "account": "1026",
+      "location": "4",
+      "statementName": "Merit House",
+      "reviewedAreaName": "Merit House",
+      "pages": [
+        1
+      ],
+      "machineCount": 2,
+      "machineSignature": "9936a33b74a0c10bf357fff628793a01a36889815ffc76a1dc69b436dd741449"
+    },
+    {
+      "account": "1026",
+      "location": "8",
+      "statementName": "Witte Hall — B Tower",
+      "reviewedAreaName": "Witte Hall — B Tower",
+      "pages": [
+        2
+      ],
+      "machineCount": 3,
+      "machineSignature": "1ca5ba813cf3232614d5909efdb805db919ecc75bc97e7ba66237c230eef1145"
+    },
+    {
+      "account": "1026",
+      "location": "9",
+      "statementName": "Barnard Hall — game room",
+      "reviewedAreaName": "Barnard Hall — game room",
+      "pages": [
+        2
+      ],
+      "machineCount": 2,
+      "machineSignature": "e151d48006a4f13ee0db6b039ddd0ebf99ac59a9435c4cc1556526bfd4e14a08"
+    },
+    {
+      "account": "1026",
+      "location": "10",
+      "statementName": "Chadbourne Hall — basement",
+      "reviewedAreaName": "Chadbourne Hall — basement",
+      "pages": [
+        2
+      ],
+      "machineCount": 2,
+      "machineSignature": "182edb666a41efcc3914d7e86ad4bf3c6a8eedc4d6c1854e1785d70e9326c362"
+    },
+    {
+      "account": "1026",
+      "location": "11",
+      "statementName": "Kronshage (specific house unconfirmed)",
+      "reviewedAreaName": "Kronshage (specific house unconfirmed)",
+      "pages": [
+        3
+      ],
+      "machineCount": 2,
+      "machineSignature": "f7589b8955a61472b0331a99649029d9b97bb53671927480ba015710ddc9b6ba"
+    },
+    {
+      "account": "1026",
+      "location": "12",
+      "statementName": "Smith Hall — 1st floor",
+      "reviewedAreaName": "Smith Hall — 1st floor",
+      "pages": [
+        3
+      ],
+      "machineCount": 3,
+      "machineSignature": "a958643764514dcef0dec1ed399d30c9e510aa56e069eeda39e79941c64122f8"
+    },
+    {
+      "account": "1026",
+      "location": "13",
+      "statementName": "Adams — Noyes basement",
+      "reviewedAreaName": "Adams — Noyes basement",
+      "pages": [
+        4
+      ],
+      "machineCount": 2,
+      "machineSignature": "3addb33c8dea4a83064b765b2a84b943238d911ad8923dcba272137e71975cab"
+    },
+    {
+      "account": "1026",
+      "location": "14",
+      "statementName": "Bradley Hall — basement",
+      "reviewedAreaName": "Bradley Hall — basement",
+      "pages": [
+        4
+      ],
+      "machineCount": 2,
+      "machineSignature": "b2e1d629f4d676d5ea591a9c2108fb95141dbd098780adeb877f6743c3582c3a"
+    },
+    {
+      "account": "1026",
+      "location": "15",
+      "statementName": "Chamberlin House — basement",
+      "reviewedAreaName": "Chamberlin House — basement",
+      "pages": [
+        4
+      ],
+      "machineCount": 2,
+      "machineSignature": "c21c2f519f5a31fa44a3306451af31b15768f9672a46198e0042d3f731349882"
+    },
+    {
+      "account": "1026",
+      "location": "16",
+      "statementName": "Cole Hall — basement",
+      "reviewedAreaName": "Cole Hall — basement",
+      "pages": [
+        4
+      ],
+      "machineCount": 3,
+      "machineSignature": "43ec4ef6df9de72b92e818c7fd7e0c6b0c0b903a8610366bea5ab6e7d347a6d8"
+    },
+    {
+      "account": "1026",
+      "location": "17",
+      "statementName": "Eagle Heights — 1st floor (building unconfirmed)",
+      "reviewedAreaName": "Eagle Heights — 1st floor (building unconfirmed)",
+      "pages": [
+        5
+      ],
+      "machineCount": 2,
+      "machineSignature": "e95ce37e4843b6f303c4e503e52821763035f6edfe9c4a93139ee64effc01d29"
+    },
+    {
+      "account": "1026",
+      "location": "18",
+      "statementName": "Elizabeth Waters — east, 2nd floor",
+      "reviewedAreaName": "Elizabeth Waters — east, 2nd floor",
+      "pages": [
+        5
+      ],
+      "machineCount": 2,
+      "machineSignature": "c8731f00615f2b3d367724dceb262541e6763f1228b5ed378a7e4e85608a9831"
+    },
+    {
+      "account": "1026",
+      "location": "20",
+      "statementName": "Phillips Hall — basement",
+      "reviewedAreaName": "Phillips Hall — basement",
+      "pages": [
+        5
+      ],
+      "machineCount": 2,
+      "machineSignature": "b1aedea34a1ab1a29f403c6f8599e3cb16e413f6cdd69d052df0619b99719822"
+    },
+    {
+      "account": "1026",
+      "location": "21",
+      "statementName": "Kronshage — Gilman basement",
+      "reviewedAreaName": "Kronshage — Gilman basement",
+      "pages": [
+        6
+      ],
+      "machineCount": 2,
+      "machineSignature": "505acba9421e011861e421f3ab6a5e5ecee808850a7a083f256030001fb27a8f"
+    },
+    {
+      "account": "1026",
+      "location": "22",
+      "statementName": "Ogg Hall — 1st floor",
+      "reviewedAreaName": "Ogg Hall — 1st floor",
+      "pages": [
+        6
+      ],
+      "machineCount": 3,
+      "machineSignature": "f0a93252f16805301f2562e986a1808a6b95520505b9a0fe24579dfd9cc87377"
+    },
+    {
+      "account": "1026",
+      "location": "25",
+      "statementName": "Sullivan Hall — basement",
+      "reviewedAreaName": "Sullivan Hall — basement",
+      "pages": [
+        7
+      ],
+      "machineCount": 2,
+      "machineSignature": "ce145f640c40c7940bb346efdb8dbda14cae64f26e72bc1fc97db1ed3fc4e357"
+    },
+    {
+      "account": "1026",
+      "location": "27",
+      "statementName": "Dejope",
+      "reviewedAreaName": "Dejope",
+      "pages": [
+        7
+      ],
+      "machineCount": 2,
+      "machineSignature": "e79bb77116f85b355c2b55d832b51c9299901068312cc7f328b55fb63653e7d5"
+    },
+    {
+      "account": "1026",
+      "location": "28",
+      "statementName": "Leopold Hall",
+      "reviewedAreaName": "Leopold Hall",
+      "pages": [
+        7
+      ],
+      "machineCount": 2,
+      "machineSignature": "16da2f9022b971a02fcd920eaa427759e1838ceb434f1f1f8788f21cee257765"
+    },
+    {
+      "account": "1026",
+      "location": "29",
+      "statementName": "Sellery Hall — lobby",
+      "reviewedAreaName": "Sellery Hall — lobby",
+      "pages": [
+        8
+      ],
+      "machineCount": 2,
+      "machineSignature": "a2d389c983255dcf42177cd522a5d8aced9e2b956e29e446f1e963be9f2807c9"
+    },
+    {
+      "account": "1026",
+      "location": "30",
+      "statementName": "Lowell Hall — 1st floor",
+      "reviewedAreaName": "Lowell Hall — 1st floor",
+      "pages": [
+        8
+      ],
+      "machineCount": 2,
+      "machineSignature": "b0343e84736edd371b0a00c0798111ac2c53f34ae3a9796ed56c801c34cf0c76"
+    },
+    {
+      "account": "1028",
+      "location": "1",
+      "statementName": "Historical Society — 1st floor",
+      "reviewedAreaName": "Historical Society — 1st floor",
+      "pages": [
+        1
+      ],
+      "machineCount": 2,
+      "machineSignature": "6d613a01647d00c1ffbdb8a0c55345e7c9f3147799bfe7d1b53808a8ccbd0fd2"
+    },
+    {
+      "account": "1028",
+      "location": "2",
+      "statementName": "Historical Society — 3rd floor",
+      "reviewedAreaName": "Historical Society — 3rd floor",
+      "pages": [
+        1
+      ],
+      "machineCount": 2,
+      "machineSignature": "6322266ec29e85171b8d68c053f8eb436c4c30ce0f4666d3846a845dbb92b227"
+    }
+  ]
+}

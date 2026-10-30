@@ -24,9 +24,9 @@ export const campusLocations: DiningLocation[] = [
     type: 'Feature', geometry: { type: 'Point', coordinates: building.coordinates },
     properties: {
       name: `Vending · ${building.name}`, provider: building.provider, kind: 'vending' as const,
-      sourceName: building.id, buildingName: building.name, buildingId: `campus-map/${building.mapObjectId}`,
-      sourceUrl: vendingData.coordinateSource,
-      locationUrl: `https://map.wisc.edu/?initObj=${building.buildingNumber}`,
+      sourceName: building.id, buildingName: building.name, buildingId: typeof building.mapObjectId === 'number' ? `campus-map/${building.mapObjectId}` : building.mapObjectId,
+      sourceUrl: building.coordinateSource,
+      locationUrl: building.buildingNumber ? `https://map.wisc.edu/?initObj=${building.buildingNumber}` : building.coordinateSource,
       coordinateMeaning: vendingData.coordinateMeaning, logoPath: null, orderUrl: null,
       address: building.address, areas: [...new Set([...building.areas, ...building.supplementalAreas])], machineCount: building.machineCount, locationCount: building.locationCount,
       supplementalOnly: building.supplementalOnly, managementLabel: building.managementLabel,
@@ -50,7 +50,7 @@ export function VendingDetails({ location }: { location: DiningLocation }) {
     {location.properties.evidenceNote && <p>{location.properties.evidenceNote}</p>}
     {location.properties.buildingConfirmation && <p>{location.properties.buildingConfirmation}</p>}
     <p>Host-building location; exact machine positions and current availability are unconfirmed.</p>
-    <ul aria-label="Workbook vending area names">{location.properties.areas?.map((area) => <li key={area}>{area}</li>)}</ul>
+    <ul aria-label="Reported vending area names">{location.properties.areas?.map((area) => <li key={area}>{area}</li>)}</ul>
   </>;
 }
 
@@ -137,7 +137,7 @@ export function DiningMarkers({ locations, projection, width, height, selected, 
       <FoodTruckDetails location={active} />
       {active.properties.logoPath && <img className="location-logo" src={`${import.meta.env.BASE_URL}${active.properties.logoPath}`} alt="" width="64" height="64" />}
       {active.properties.orderUrl && <p><a href={active.properties.orderUrl}>Mobile ordering ↗</a></p>}
-      <a href={active.properties.locationUrl}>{active.properties.kind === 'vending' ? 'Host building on UW campus map ↗' : active.properties.mobileStop ? 'Electric Eats information & latest events ↗' : 'Location information & hours ↗'}</a>
+      <a href={active.properties.locationUrl}>{active.properties.kind === 'vending' ? 'Host building map ↗' : active.properties.mobileStop ? 'Electric Eats information & latest events ↗' : 'Location information & hours ↗'}</a>
     </aside>, popupRoot)}
   </>;
 }
