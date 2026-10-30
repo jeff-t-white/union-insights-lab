@@ -28,7 +28,7 @@ function cssMatrix(h: number[][]) {
   return `matrix3d(${[h[0][0], h[1][0], 0, h[2][0], h[0][1], h[1][1], 0, h[2][1], 0, 0, 1, 0, h[0][2], h[1][2], 0, h[2][2]].join(',')})`;
 }
 
-export function TerracePavers() {
+export function TerracePavers({ focusSampleId = null }: { focusSampleId?: string | null }) {
   const frame = useRef<HTMLDivElement>(null);
   const current = useRef<View>({ x: 0, y: 0, scale: .15 });
   const [view, setView] = useState(current.current);
@@ -79,6 +79,11 @@ export function TerracePavers() {
     if (bounds.top < 0 || bounds.bottom > window.innerHeight) frame.current?.scrollIntoView({ block: 'center', behavior: 'smooth' });
   };
   const resetGesture = () => { gesture.current = { points: [...pointers.current.values()], view: current.current }; };
+  useEffect(() => {
+    if (!focusSampleId || !mappedSamples.some((sample) => sample.id === focusSampleId)) return;
+    const animation = requestAnimationFrame(() => focusSample(focusSampleId));
+    return () => cancelAnimationFrame(animation);
+  }, [focusSampleId, size.width, size.height]);
   const results = mappedSamples.filter((sample) => `${sample.title} ${sample.text}`.toLowerCase().includes(query.toLowerCase()));
   const active = mappedSamples.find((sample) => sample.id === selected);
   return <div className="paver-poc">
@@ -120,13 +125,13 @@ export function TerracePavers() {
         </div>
         <div className="paver-map-footer"><span>Drag to explore · scroll or pinch to zoom</span><label><input type="checkbox" checked={outlines} onChange={(event) => setOutlines(event.target.checked)} /> Show photo edges</label></div>
       </div>
-      <aside className="paver-search" aria-label="Sample paver search"><p className="eyebrow">Try finding an inscription</p><h2>A place in the picture.</h2><label htmlFor="paver-search">Search five sample inscriptions</label><input id="paver-search" type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Try Gibson or William…" />
-        <p className="paver-small">These are hand-marked examples from the photos. The CSV has not been connected.</p>
+      <aside className="paver-search" aria-label="Photo landmark search"><p className="eyebrow">Five photographed landmarks</p><h2>A place in the picture.</h2><label htmlFor="paver-search">Find a photo landmark</label><input id="paver-search" type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Try Gibson or William…" />
+        <p className="paver-small">These five inscriptions are marked in the photographs. Use the main search above for all CSV records.</p>
         <div className="paver-results" aria-live="polite">{results.length ? results.map((sample) => <button type="button" key={sample.id} onClick={() => focusSample(sample.id)} aria-pressed={selected === sample.id}><span>{mappedSamples.indexOf(sample) + 1}</span><strong>{sample.title}</strong><span aria-hidden="true">↗</span></button>) : <p>No sample matches. Only five inscriptions are indexed in this experiment.</p>}</div>
         {active && <section className="paver-detail"><p className="eyebrow">Sample transcription</p><h3>{active.title}</h3><pre>{active.text}</pre><a href={asset(`${active.photo}.jpeg`)} target="_blank" rel="noreferrer">Open original photograph ↗</a><p className="paver-small">Transcribed for this demonstration; verify against the stone before adding to a permanent record.</p></section>}
       </aside>
     </div>
-    <div className="paver-notes"><section><p className="eyebrow">What this demonstrates</p><h2>A photographic starting point.</h2><p>The eight downward-facing photos are aligned using shared visual features. The photographs are rotated to put south at the bottom. Small seams and perspective differences remain; this is a proof of concept, not a measured site plan.</p><p>Shoe areas are masked in the combined view. Dark gaps indicate missing coverage. All original photographs remain available below.</p></section><section><p className="eyebrow">Next step</p><h2>Connect the records.</h2><p>With the CSV, verified inscriptions can be linked to positions in this view. Closer photographs can provide clearer individual records. No assignments from the old, pre-restoration map are assumed here.</p></section></div>
+    <div className="paver-notes"><section><p className="eyebrow">What this demonstrates</p><h2>A photographic starting point.</h2><p>The eight downward-facing photos are aligned using shared visual features. The photographs are rotated to put south at the bottom. Small seams and perspective differences remain; this is a proof of concept, not a measured site plan.</p><p>Shoe areas are masked in the combined view. Dark gaps indicate missing coverage. All original photographs remain available below.</p></section><section><p className="eyebrow">Next step</p><h2>Verify more positions.</h2><p>Five CSV records are linked to these photographed inscriptions. Other records still need a reviewed photo position. Closer photographs can provide clearer individual records. No assignments from the old, pre-restoration map are assumed here.</p></section></div>
     <details className="paver-sources"><summary>See the original photographs and context view</summary><div className="paver-source-grid">{[...layout.images.map((photo) => photo.file), layout.contextImage].map((file) => <a key={file} href={asset(file)} target="_blank" rel="noreferrer"><img loading="lazy" src={asset(file)} alt={file === layout.contextImage ? 'Wider view of the photographed Terrace section, with the building, tree and railing' : `Original source photograph ${file}`} /><span>{file}{file === layout.contextImage ? ' · wider context' : ''} ↗</span></a>)}</div></details>
   </div>;
 }

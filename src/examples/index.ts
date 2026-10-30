@@ -1,6 +1,6 @@
 import type { ComponentType } from 'react';
 import { CampusMap } from './campus-map/CampusMap';
-import { TerracePavers } from './terrace-pavers/TerracePavers';
+import { PaverFinder } from './terrace-pavers/PaverFinder';
 
 export type VisualizationExample = {
   slug: string;
@@ -16,9 +16,9 @@ export const examples: VisualizationExample[] = [
   {
     slug: 'terrace-pavers',
     title: 'A closer look at the Terrace',
-    description: 'Explore a small Terrace section through overlapping photographs. A first experiment in finding the stories underfoot.',
+    description: 'Find an inscription, explore reported Terrace zones, and see photographed pavers in a small-area photo pilot.',
     category: 'Places & memories',
-    component: TerracePavers,
+    component: PaverFinder,
   },
   {
     slug: 'campus-map',
