@@ -1,5 +1,6 @@
 import type { ComponentType } from 'react';
 import { CampusMap } from './campus-map/CampusMap';
+import { TerracePavers } from './terrace-pavers/TerracePavers';
 
 export type VisualizationExample = {
   slug: string;
@@ -12,6 +13,13 @@ export type VisualizationExample = {
 
 // Add an entry only when there is a real visualization to explore.
 export const examples: VisualizationExample[] = [
+  {
+    slug: 'terrace-pavers',
+    title: 'A closer look at the Terrace',
+    description: 'Explore a small Terrace section through overlapping photographs. A first experiment in finding the stories underfoot.',
+    category: 'Places & memories',
+    component: TerracePavers,
+  },
   {
     slug: 'campus-map',
     title: 'A map of our campus',

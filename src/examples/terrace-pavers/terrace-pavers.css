@@ -1,0 +1,57 @@
+.paver-poc { margin-top: 2rem; }
+.paver-status { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+.paver-status p { font-size: .8rem; margin: 0; color: #636a64; }
+.paver-tag { padding: .4rem .7rem; background: #e5ece4; color: #284333; font-size: .7rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; white-space: nowrap; }
+.paver-workspace { display: grid; grid-template-columns: minmax(0, 1fr) 300px; border: 1px solid #d7dbd3; background: #fff; }
+.paver-map-column { min-width: 0; }
+.paver-toolbar { display: flex; gap: 1rem; align-items: center; justify-content: space-between; padding: 1rem; }
+.paver-toolbar strong { display: block; font-size: .9rem; }
+.paver-toolbar span { display: block; font-size: .7rem; color: #667065; margin-top: .3rem; }
+.paver-controls { display: flex; gap: .3rem; }
+.paver-controls button { background: white; border: 1px solid #c8cec6; border-radius: 3px; min-width: 34px; min-height: 36px; cursor: pointer; padding: .3rem .6rem; color: #1e382b; white-space: nowrap; }
+.paver-controls button:hover { background: #eef2eb; }
+.paver-viewport { height: 680px; position: relative; overflow: hidden; touch-action: none; cursor: grab; background: #252c28; isolation: isolate; }
+.paver-viewport:active { cursor: grabbing; }
+.paver-viewport:focus-visible { outline: 3px solid #c4a447; outline-offset: 3px; }
+.paver-viewport:fullscreen { height: 100vh; width: 100vw; }
+.paver-fullscreen-exit { display: none; position: absolute; top: 14px; right: 14px; padding: .5rem; cursor: pointer; }
+.paver-viewport:fullscreen .paver-fullscreen-exit { display: block; }
+.paver-world { position: absolute; top: 0; left: 0; transform-origin: 0 0; }
+.paver-photo { position: absolute; left: 0; top: 0; transform-origin: 0 0; clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 100%, 65% 84%, 35% 84%, 35% 100%, 0 100%); pointer-events: none; }
+.paver-photo img { display: block; width: 100%; height: 100%; max-width: none; }
+.paver-photo span { display: none; }
+.show-outlines .paver-photo { outline: 4px solid #ffdc7c; }
+.show-outlines .paver-photo span { display: block; position: absolute; left: 5px; top: 5px; background: #193529; color: #fff; font: 30px monospace; padding: 10px; }
+.paver-hotspots { position: absolute; top: 0; left: 0; pointer-events: none; overflow: visible; }
+.paver-hotspots polygon { fill: transparent; stroke: transparent; stroke-width: 4; }
+.paver-hotspots polygon.is-selected { fill: #f4d37a35; stroke: #ffdc7c; }
+.paver-pin { position: absolute; width: 28px; height: 28px; padding: 0; border: 2px solid white; border-radius: 50%; background: #183e2e; color: white; cursor: pointer; font: 700 12px system-ui; box-shadow: 0 1px 5px #0008; transform-origin: center; }
+.paver-pin.is-selected { background: #f4d37a; color: #173628; }
+.paver-orientation { position: absolute; top: 14px; left: 14px; background: #f9faf2ed; color: #344237; font-size: .7rem; padding: .5rem .65rem; pointer-events: none; }
+.paver-loading { position: absolute; bottom: 15px; left: 15px; background: #fff; padding: .7rem; font-size: .8rem; }
+.paver-map-footer { display: flex; justify-content: space-between; gap: 1rem; padding: .8rem 1rem; font-size: .7rem; color: #626b63; flex-wrap: wrap; }
+.paver-map-footer label { display: flex; gap: .4rem; align-items: center; cursor: pointer; }
+.paver-search { padding: 1.6rem 1.3rem; border-left: 1px solid #d7dbd3; background: #fafbf6; }
+.paver-search h2 { font-size: 1.6rem; margin: .5rem 0 1.5rem; line-height: 1.1; }
+.paver-search label { display: block; font-size: .75rem; margin-bottom: .5rem; font-weight: 600; }
+.paver-search input { width: 100%; min-height: 42px; border: 1px solid #c0c8bd; border-radius: 3px; padding: .6rem; font: inherit; font-size: .85rem; background: white; }
+.paver-small { font-size: .75rem; color: #697064; line-height: 1.5; }
+.paver-results { display: grid; gap: .5rem; margin-top: 1.2rem; }
+.paver-results button { display: flex; align-items: center; gap: .7rem; padding: .8rem .5rem; text-align: left; border: 0; border-bottom: 1px solid #d9ded3; background: transparent; color: #1a3e2c; cursor: pointer; }
+.paver-results button[aria-pressed=true] { background: #e6eddf; }
+.paver-results button strong { font-size: .8rem; flex: 1; }
+.paver-results button span:first-child { border: 1px solid #8ca18a; border-radius: 50%; width: 23px; height: 23px; display: grid; place-items: center; font-size: .7rem; }
+.paver-detail { margin-top: 1.5rem; border-top: 1px solid #c7cebe; padding-top: 1rem; }
+.paver-detail h3 { font-size: 1rem; }
+.paver-detail pre { white-space: pre-wrap; font: .78rem/1.6 system-ui; }
+.paver-detail a { font-size: .75rem; }
+.paver-notes { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; padding: 2.5rem 0; }
+.paver-notes h2 { font-size: 1.5rem; margin-top: .6rem; }
+.paver-notes p:not(.eyebrow) { font-size: .9rem; color: #626960; line-height: 1.7; }
+.paver-sources { border-top: 1px solid #d3d9cb; padding: 1.2rem 0; }
+.paver-sources summary { cursor: pointer; font-size: .9rem; }
+.paver-source-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1rem; }
+.paver-source-grid img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.paver-source-grid span { display: block; font-size: .75rem; padding: .5rem 0; }
+@media(max-width: 1000px) { .paver-workspace { grid-template-columns: minmax(0, 1fr) 250px; } .paver-toolbar { flex-wrap: wrap; } }
+@media(max-width: 760px) { .paver-workspace { grid-template-columns: 1fr; } .paver-search { border-left: 0; border-top: 1px solid #d7dbd3; } .paver-viewport { height: 560px; } .paver-notes { grid-template-columns: 1fr; gap: 1rem; } .paver-status { flex-wrap: wrap; gap: .6rem; } .paver-source-grid { grid-template-columns: repeat(2, 1fr); } }
