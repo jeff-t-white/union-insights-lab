@@ -1,0 +1,21 @@
+{
+  "reviewed": "2026-10-30",
+  "method": "Facility-list review cross-checked against public UW building-name/address sources. Vendor IDs are never matched numerically to facility numbers. Raw PDF and extracted facility directory remain local.",
+  "buildings": {
+    "434": {
+      "facilityNumber": "0455",
+      "publicReference": "https://news.wisc.edu/grainger-hall-addition-leads-to-unit-relocations/",
+      "confirmation": "Host-building name and address verified against the facility list and a public UW source; exact machine positions remain unconfirmed."
+    },
+    "447": {
+      "facilityNumber": "0526",
+      "publicReference": "https://science.wisc.edu/science-outreach-venues/",
+      "confirmation": "Host-building name and address verified against the facility list and a public UW source; exact machine positions remain unconfirmed."
+    },
+    "474": {
+      "facilityNumber": "0476",
+      "publicReference": "https://kb.wisc.edu/42460",
+      "confirmation": "Host-building name and address verified against the facility list and a public UW source; exact machine positions remain unconfirmed."
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "period": "September 2026",
-  "checked": "2026-10-28",
+  "checked": "2026-10-30",
   "coordinateSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
   "coordinateMeaning": "Campus map host-building reference point, not an exact machine position.",
   "totalLocations": 111,
@@ -9,21 +9,6 @@
       "account": "1025",
       "location": "39",
       "reason": "Medical Science could refer to multiple campus buildings."
-    },
-    {
-      "account": "1025",
-      "location": "44",
-      "reason": "Old Middleton Library identity requires confirmation."
-    },
-    {
-      "account": "1025",
-      "location": "45",
-      "reason": "Primate Center could refer to multiple facilities."
-    },
-    {
-      "account": "1025",
-      "location": "46",
-      "reason": "Hygiene Lab identity requires confirmation."
     },
     {
       "account": "1025",
@@ -6425,6 +6410,55 @@
       "supplementalReferences": []
     },
     {
+      "id": "vending-434-union",
+      "name": "Middleton Building",
+      "provider": "union",
+      "address": "1305 Linden Dr.",
+      "coordinates": [
+        -89.408199,
+        43.07478605053824
+      ],
+      "mapObjectId": 434,
+      "buildingNumber": "0455",
+      "areas": [
+        "Old Middleton Library-2nd"
+      ],
+      "machineCount": 2,
+      "locationCount": 1,
+      "rings": [
+        [
+          [
+            -89.4084632,
+            43.074665901
+          ],
+          [
+            -89.4079348,
+            43.074665901
+          ],
+          [
+            -89.4079348,
+            43.074906201
+          ],
+          [
+            -89.4084632,
+            43.074906201
+          ],
+          [
+            -89.4084632,
+            43.074665901
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": "Host-building name and address verified against the facility list and a public UW source; exact machine positions remain unconfirmed.",
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
       "id": "vending-405-union",
       "name": "Mosse Humanities Building",
       "provider": "union",
@@ -9403,6 +9437,59 @@
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingConfirmation": null,
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
+      "id": "vending-474-union",
+      "name": "Stovall Building (Wisconsin State Laboratory of Hygiene)",
+      "provider": "union",
+      "address": "465 Henry Mall",
+      "coordinates": [
+        -89.40983902923368,
+        43.074777710062236
+      ],
+      "mapObjectId": 474,
+      "buildingNumber": "0476",
+      "areas": [
+        "Hygiene Lab-2nd Fl"
+      ],
+      "machineCount": 2,
+      "locationCount": 1,
+      "rings": [
+        [
+          [
+            -89.4100233,
+            43.074572301
+          ],
+          [
+            -89.4096602,
+            43.074569801
+          ],
+          [
+            -89.4096547,
+            43.074983101
+          ],
+          [
+            -89.4100179,
+            43.074985601
+          ],
+          [
+            -89.4100206,
+            43.074780301
+          ],
+          [
+            -89.4100233,
+            43.074572301
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": "Host-building name and address verified against the facility list and a public UW source; exact machine positions remain unconfirmed.",
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],
@@ -12815,6 +12902,72 @@
       "diningBuildingId": null,
       "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
       "buildingConfirmation": null,
+      "supplementalOnly": false,
+      "managementLabel": null,
+      "supplementalAreas": [],
+      "supplementalEvidence": [],
+      "supplementalReferences": []
+    },
+    {
+      "id": "vending-447-union",
+      "name": "Wisconsin Primate Center",
+      "provider": "union",
+      "address": "1223 Capitol Ct.",
+      "coordinates": [
+        -89.40694228360188,
+        43.06857381189258
+      ],
+      "mapObjectId": 447,
+      "buildingNumber": "0526",
+      "areas": [
+        "Primate Center Basement",
+        "Primate Center-Basement"
+      ],
+      "machineCount": 2,
+      "locationCount": 1,
+      "rings": [
+        [
+          [
+            -89.4071866,
+            43.068563001
+          ],
+          [
+            -89.4071107,
+            43.068562501
+          ],
+          [
+            -89.4071115,
+            43.068497901
+          ],
+          [
+            -89.4066742,
+            43.068495001
+          ],
+          [
+            -89.4066727,
+            43.068610301
+          ],
+          [
+            -89.4069525,
+            43.068612101
+          ],
+          [
+            -89.4069517,
+            43.068670901
+          ],
+          [
+            -89.4071853,
+            43.068672401
+          ],
+          [
+            -89.4071866,
+            43.068563001
+          ]
+        ]
+      ],
+      "diningBuildingId": null,
+      "footprintSource": "https://map.wisc.edu/api/v1/map_objects.geojson",
+      "buildingConfirmation": "Host-building name and address verified against the facility list and a public UW source; exact machine positions remain unconfirmed.",
       "supplementalOnly": false,
       "managementLabel": null,
       "supplementalAreas": [],

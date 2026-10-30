@@ -21,6 +21,7 @@ NS = {"m": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
 SOURCE = "https://map.wisc.edu/api/v1/map_objects.geojson"
 PRINTING_FOOTPRINT = json.loads((ROOT / 'src/examples/campus-map/printing-services-footprint.json').read_text(encoding='utf-8'))
 WORKDAY_EVIDENCE = json.loads((ROOT / 'scripts/workday-vending-evidence.json').read_text(encoding='utf-8'))['buildings']
+FACILITY_REVIEW = json.loads((ROOT / 'scripts/facility-reviewed-vending-evidence.json').read_text(encoding='utf-8'))['buildings']
 # Reuse reviewed dining geometry for shared buildings so both outlines align.
 DINING_BUILDING_IDS = {
     647: 'way/153660065', 689: 'way/174188355', 490: 'way/37749300',
@@ -63,7 +64,7 @@ def make_building(building, provider, dining):
         'machineCount': 0, 'locationCount': 0, 'rings': rings,
         'diningBuildingId': dining_id,
         'footprintSource': override['sourceUrl'] if override else 'Reviewed dining footprint (OpenStreetMap)' if use_dining_rings else SOURCE,
-        'buildingConfirmation': WORKDAY_EVIDENCE.get(str(building['id']), {}).get('confirmation'),
+        'buildingConfirmation': FACILITY_REVIEW.get(str(building['id']), WORKDAY_EVIDENCE.get(str(building['id']), {})).get('confirmation'),
         'supplementalOnly': False, 'managementLabel': None,
         'supplementalAreas': [], 'supplementalEvidence': [], 'supplementalReferences': [],
     }

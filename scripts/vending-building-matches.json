@@ -152,30 +152,33 @@
   {
     "account": "1025",
     "location": "44",
-    "mapObjectId": null,
+    "mapObjectId": 434,
     "expectedSourceNames": [
       "Old Middleton Library-2nd"
     ],
-    "reason": "Old Middleton Library identity requires confirmation."
+    "reason": "Public UW history identifies the former Middleton Medical Library as the current Middleton Building at 1305 Linden Dr. Checked against the October 30 facility list; vendor floor descriptions are not exact surveyed machine positions.",
+    "reference": "https://news.wisc.edu/grainger-hall-addition-leads-to-unit-relocations/"
   },
   {
     "account": "1025",
     "location": "45",
-    "mapObjectId": null,
+    "mapObjectId": 447,
     "expectedSourceNames": [
       "Primate Center Basement",
       "Primate Center-Basement"
     ],
-    "reason": "Primate Center could refer to multiple facilities."
+    "reason": "Public UW outreach directory identifies the Primate Center at 1223 Capitol Court; this is distinct from the Harlow lab. Checked against the October 30 facility list; vendor floor descriptions are not exact surveyed machine positions.",
+    "reference": "https://science.wisc.edu/science-outreach-venues/"
   },
   {
     "account": "1025",
     "location": "46",
-    "mapObjectId": null,
+    "mapObjectId": 474,
     "expectedSourceNames": [
       "Hygiene Lab-2nd Fl"
     ],
-    "reason": "Hygiene Lab identity requires confirmation."
+    "reason": "Public UW directory explicitly identifies Hygiene Lab at 465 Henry Mall, matching the facility-list legal name. Checked against the October 30 facility list; vendor floor descriptions are not exact surveyed machine positions.",
+    "reference": "https://kb.wisc.edu/42460"
   },
   {
     "account": "1025",
