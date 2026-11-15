@@ -1,6 +1,7 @@
-import type { ComponentType } from 'react';
-import { CampusMap } from './campus-map/CampusMap';
-import { PaverFinder } from './terrace-pavers/PaverFinder';
+import { lazy, type ComponentType } from 'react';
+
+const CampusMap = lazy(() => import('./campus-map/CampusMap').then(module => ({ default: module.CampusMap })));
+const PaverFinder = lazy(() => import('./terrace-pavers/PaverFinder').then(module => ({ default: module.PaverFinder })));
 
 export type VisualizationExample = {
   slug: string;
@@ -15,16 +16,16 @@ export type VisualizationExample = {
 export const examples: VisualizationExample[] = [
   {
     slug: 'terrace-pavers',
-    title: 'A closer look at the Terrace',
+    title: 'Terrace paver finder',
     description: 'Find an inscription, explore reported Terrace zones, and see photographed pavers in a small-area photo pilot.',
     category: 'Places & memories',
     component: PaverFinder,
   },
   {
     slug: 'campus-map',
-    title: 'A map of our campus',
-    description: 'Explore UW–Madison, from the lakeshore to the streets around campus. A foundation for mapping Wisconsin Union dining.',
-    category: 'Geography',
+    title: 'Campus dining map',
+    description: 'Find dining and vending locations across campus. Explore providers, outlets, and the buildings around them.',
+    category: 'Places & services',
     component: CampusMap,
   },
 ];

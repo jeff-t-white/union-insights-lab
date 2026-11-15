@@ -1,6 +1,12 @@
-# Union Insights Lab
+# Wisconsin Union Insights
 
-A React + D3 learning collection for work at the Wisconsin Union, UW–Madison. Examples include an interactive campus basemap and a Terrace paver photo experiment. Raw vendor statements and financial data are excluded.
+A growing home for Wisconsin Union dashboards and visual tools, built with React and D3. The landing page brings together the campus dining map and Terrace paver finder, and introduces the separate Employee Time dashboard. The repository and existing URL retain `union-insights-lab` for now; the visible site identity is Wisconsin Union Insights. Raw vendor statements, employee records, and financial data are excluded.
+
+The home page reflects the proposed broader Insights service: people, operations, finances, sales, attendance, and places. Future coverage is described as tentative; it does not imply that hosted dashboards or NetID/Manifest access already exist. No deployment or hosting changes are made by this redesign.
+
+### Employee Time link
+
+Employee Time is maintained in `../union-timeclock-dashboard`. In development, its overview links to `http://127.0.0.1:5180/`; start that dashboard separately with `npm run managers` from its own project. Production builds omit this local link. Set `VITE_EMPLOYEE_TIME_URL` to an approved hosted HTTPS URL (or a same-site path) when access is ready. This is a link only, not authentication: access must be enforced by the hosting/application configuration. Never put report data or credentials in client-side configuration.
 
 ## Run locally
 
