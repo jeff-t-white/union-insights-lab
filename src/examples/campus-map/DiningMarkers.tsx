@@ -13,9 +13,8 @@ export const providers = [
 export type Provider = typeof providers[number]['id'];
 export type DiningLocation = Omit<typeof campusData.locations[number], 'properties'> & {
   properties: typeof campusData.locations[number]['properties'] & {
-    kind?: 'vending'; address?: string; areas?: string[]; machineCount?: number; locationCount?: number;
-    supplementalOnly?: boolean; evidenceNote?: string | null; managementLabel?: string | null;
-    buildingConfirmation?: string | null;
+    kind?: 'vending'; address?: string; areas?: string[]; machineCount?: number;
+    managementLabel?: string | null;
   };
 };
 export const campusLocations: DiningLocation[] = [
@@ -28,10 +27,8 @@ export const campusLocations: DiningLocation[] = [
       sourceUrl: building.coordinateSource,
       locationUrl: building.buildingNumber ? `https://map.wisc.edu/?initObj=${building.buildingNumber}` : building.coordinateSource,
       coordinateMeaning: vendingData.coordinateMeaning, logoPath: null, orderUrl: null,
-      address: building.address, areas: [...new Set([...building.areas, ...building.supplementalAreas])], machineCount: building.machineCount, locationCount: building.locationCount,
-      supplementalOnly: building.supplementalOnly, managementLabel: building.managementLabel,
-      buildingConfirmation: building.buildingConfirmation,
-      evidenceNote: building.supplementalEvidence.length ? `${building.supplementalOnly ? 'Referenced in the provider lookup; no September sales rows. Current machine count unconfirmed.' : 'Additional areas referenced in the provider lookup; these do not increase the September sales machine count.'}${building.supplementalEvidence.some((evidence) => evidence === 'Not Serviced this Month') ? ' Also referenced in the not-serviced sheet.' : ''}` : null,
+      address: building.address, areas: [...new Set([...building.areas, ...building.supplementalAreas])], machineCount: building.supplementalOnly ? undefined : building.machineCount,
+      managementLabel: building.managementLabel,
     },
   })),
 ];
@@ -46,9 +43,7 @@ export function displayProvider(location: DiningLocation): Provider {
 export function VendingDetails({ location }: { location: DiningLocation }) {
   return <>
     <p>{location.properties.address}</p>
-    {!location.properties.supplementalOnly && <p>{location.properties.machineCount} machines in sales records across {location.properties.locationCount} vendor locations · {vendingData.period}</p>}
-    {location.properties.evidenceNote && <p>{location.properties.evidenceNote}</p>}
-    {location.properties.buildingConfirmation && <p>{location.properties.buildingConfirmation}</p>}
+    {location.properties.machineCount !== undefined && <p>Reported machines: {location.properties.machineCount}</p>}
     <p>Host-building location; exact machine positions and current availability are unconfirmed.</p>
     <ul aria-label="Reported vending area names">{location.properties.areas?.map((area) => <li key={area}>{area}</li>)}</ul>
   </>;
